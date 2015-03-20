@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faces-config 
+    PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+    "http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+    
+<faces-config>
+
+    <!-- global navigational-rules -->
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>search-timecards-usecase</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timecardsearch/search-timecardsuc.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>time-tracker-home-usecase</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timetrackerhome/time-tracker-homeuc.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>timecard-details-usecase</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timecarddetails/timecard-details.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>search-timecards-search-timecards</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timecardsearch/search-timecards.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>timecard-details-usecase</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timecarddetails/timecard-details.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>time-tracker-home-time-tracker-home</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timetrackerhome/time-tracker-home.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>time-tracker-home-search-timecards</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timetrackerhome/time-tracker-home-search-timecards.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>time-tracker-home-new-timecard</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timetrackerhome/time-tracker-home-new-timecard.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>time-tracker-home-approve-timecards</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timetrackerhome/time-tracker-home-approve-timecards.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>time-tracker-home-latest-timecard</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timetrackerhome/time-tracker-home-latest-timecard.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>timecard-details-timecard</from-outcome>
+            <to-view-id>/org/andromda/timetracker/web/timecarddetails/timecard.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+
+</faces-config>
