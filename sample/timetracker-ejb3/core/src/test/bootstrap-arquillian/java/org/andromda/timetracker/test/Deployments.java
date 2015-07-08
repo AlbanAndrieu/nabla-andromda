@@ -1,39 +1,23 @@
-package org.andromda.timetracker.action;
+package org.andromda.timetracker.test;
 
 import java.io.File;
 
-import javax.naming.InitialContext;
-
+import org.andromda.timetracker.action.Authenticator;
+import org.andromda.timetracker.action.AuthenticatorAction;
+import org.andromda.timetracker.action.LoginArquillianTest;
 import org.andromda.timetracker.domain.UserDaoBase;
-import org.andromda.timetracker.service.UserServiceBean;
-import org.andromda.timetracker.service.UserServiceLocal;
-import org.andromda.timetracker.vo.UserVO;
-import org.apache.log4j.Logger;
-import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.container.test.api.OverProtocol;
-import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.seam.mock.JUnitSeamTest;
-import org.jboss.shrinkwrap.api.Archive;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.shrinkwrap.resolver.api.maven.Maven;
 import org.jboss.shrinkwrap.resolver.api.maven.MavenResolverSystem;
 import org.jboss.shrinkwrap.resolver.api.maven.ScopeType;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 
-@RunWith(Arquillian.class)
-public class SimpleSeamArquillianWithDataTest extends JUnitSeamTest
+public class Deployments
 {
-    private static final Logger logger = Logger.getLogger(SimpleSeamArquillianWithDataTest.class);
 
-    @Deployment(name = "SimpleSeamArquillianTestWithData")
-    @OverProtocol("Servlet 3.0")
-    public static Archive<?> createTestArchive()
+    public static WebArchive appDeployment()
     {
-
         MavenResolverSystem resolver = Maven.resolver();
 
         // MavenDependencyResolver resolver = DependencyResolvers.use(MavenDependencyResolver.class).loadMetadataFromPom("pom.xml");
@@ -46,15 +30,20 @@ public class SimpleSeamArquillianWithDataTest extends JUnitSeamTest
         // resolve jboss-seam, because it is provided-scoped in the pom, but we need it bundled in the WAR
         // .resolve("org.jboss.seam:jboss-seam").withTransitivity().asFile();
 
-        return ShrinkWrap.create(WebArchive.class, "core-test.war").addClasses(SimpleSeamArquillianWithDataTest.class, Authenticator.class, AuthenticatorAction.class, UserDaoBase.class, UserServiceBean.class)
-                .addPackages(true, "org.andromda.timetracker.action").addPackages(true, "org.andromda.timetracker.domain")
+        return ShrinkWrap.create(WebArchive.class, "core.war").addClasses(LoginArquillianTest.class, Authenticator.class, AuthenticatorAction.class, UserDaoBase.class)
+                .addPackages(true, "org.andromda.timetracker.action")
+                .addPackages(true, "org.andromda.timetracker.domain")
                 .addPackages(true, "org.andromda.timetracker")
                 // Needed to run in managed / remote container
-                .addAsWebInfResource("META-INF/ejb-jar.xml", "ejb-jar.xml").addAsResource("META-INF/test-persistence.xml", "META-INF/persistence.xml").addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
+                .addAsWebInfResource("META-INF/ejb-jar.xml", "ejb-jar.xml").addAsResource("META-INF/test-persistence.xml", "META-INF/persistence.xml")
+                .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
                 .addAsResource(EmptyAsset.INSTANCE, "seam.properties")
                 // Deploy our test datasource
                 .addAsWebInfResource("test-ds.xml", "test-ds.xml").addAsWebInfResource("WEB-INF/test-web.xml", "web.xml").addAsWebInfResource("WEB-INF/test-components.xml", "components.xml")
-                .addAsWebInfResource("WEB-INF/jboss-deployment-structure.xml").addAsResource("META-INF/security.drl", "META-INF/security.drl").addAsResource("import.sql", "import.sql").addAsLibraries(libs)
+                .addAsWebInfResource("WEB-INF/jboss-deployment-structure.xml").addAsResource("META-INF/security.drl", "META-INF/security.drl").addAsResource("import.sql", "import.sql")
+                .addAsResource("log4j.xml", "log4j.xml").addAsLibraries(libs)
+        // resolve jboss-seam, because it is provided-scoped in the pom, but we need it bundled in the WAR
+        // .addAsLibraries(resolver.resolve("org.jboss.seam:jboss-seam:2.3.1.Final").withTransitivity().asFile())
         // libraries resolved using ShrinkWrap Resolver
         // .addAsLibraries(resolver.resolve("org.jboss.seam:jboss-seam").withTransitivity().asFile())
         // .addAsLibraries(resolver.resolve("commons-collections:commons-collections").withTransitivity().asFile())
@@ -76,27 +65,4 @@ public class SimpleSeamArquillianWithDataTest extends JUnitSeamTest
         // .addAsWebResource("register.xhtml")
         // .addAsWebResource("registered.xhtml")
     }
-
-    // required import.sql
-    @Test
-    public void testEJBs() throws Exception
-    {
-
-        final InitialContext initialContext = this.getInitialContext();
-        final UserServiceLocal local = (UserServiceLocal) initialContext.lookup("java:app/core/UserServiceBean");
-        Assert.assertNotNull(local);
-
-        final UserVO userVOLocal = local.getUser("testuser");
-        Assert.assertNotNull(userVOLocal);
-        System.out.println("Successfully found TestUser from @Local interface");
-
-        /*
-         * UserServiceRemote remote = (UserServiceRemote) initialContext.lookup("java:app/core/UserServiceBean!org.andromda.timetracker.service.UserServiceRemote");
-         * Assert.assertNotNull(remote);
-         * final UserVO userVORemote = remote.getUser("admin");
-         * Assert.assertNotNull(userVORemote);
-         */
-        System.out.println("Successfully found Admin from @Remote interface");
-    }
-
 }

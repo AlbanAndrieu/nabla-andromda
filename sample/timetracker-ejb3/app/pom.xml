@@ -308,6 +308,11 @@
 	</dependency>
 	-->
     </dependencies>
+    
+    <properties>
+    	<jboss.ear.version>4</jboss.ear.version> <!-- Fix eclipse issue -->
+    </properties> 
+    
     <build>
         <finalName>${application.id}-${project.version}</finalName>
         <resources>

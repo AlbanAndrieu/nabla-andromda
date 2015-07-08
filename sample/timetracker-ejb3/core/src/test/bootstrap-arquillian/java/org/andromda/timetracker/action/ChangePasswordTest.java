@@ -1,17 +1,30 @@
 package org.andromda.timetracker.action;
 
+import org.andromda.timetracker.test.Deployments;
 import org.apache.log4j.Logger;
+import org.jboss.arquillian.container.test.api.Deployment;
+import org.jboss.arquillian.container.test.api.OverProtocol;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.seam.contexts.Contexts;
 import org.jboss.seam.core.Manager;
 import org.jboss.seam.mock.JUnitSeamTest;
+import org.jboss.shrinkwrap.api.Archive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(Arquillian.class)
 public class ChangePasswordTest extends JUnitSeamTest
 {
-    private static final Logger logger = Logger.getLogger(ChangePasswordTest.class);
+
+    private static final Logger LOGGER = Logger.getLogger(ChangePasswordTest.class);
+
+    @Deployment(name = "ChangePasswordTest")
+    @OverProtocol("Servlet 3.0")
+    public static Archive<?> createTestArchive()
+    {
+
+        return Deployments.appDeployment();
+    }
 
     @Test
     public void testChangePassword() throws Exception
@@ -26,9 +39,9 @@ public class ChangePasswordTest extends JUnitSeamTest
                 // final Date date = (new SimpleDateFormat("yyyy-MM-dd hh:mm")).parse("2011-01-01 09:00");
                 // Contexts.getSessionContext().set("user", new User("admin", PasswordEncoder.getMD5Base64EncodedPassword("cooldude"), "Alban", "Andrieu", "alban.andrieu@free.fr", true, date, "Alban Andrieu"));
                 this.setValue("#{identity.username}", "admin");
-                ChangePasswordTest.logger.info("Identity username : " + this.getValue("#{identity.username}"));
+                ChangePasswordTest.LOGGER.info("Identity username : " + this.getValue("#{identity.username}"));
                 this.setValue("#{identity.password}", "cooldude");
-                ChangePasswordTest.logger.info("Identity password : " + this.getValue("#{identity.password}"));
+                ChangePasswordTest.LOGGER.info("Identity password : " + this.getValue("#{identity.password}"));
                 this.invokeMethod("#{identity.login}");
             }
 
@@ -41,7 +54,7 @@ public class ChangePasswordTest extends JUnitSeamTest
             protected void processValidations() throws Exception
             {
                 final boolean validate = this.validateValue("#{user.password}", "xxx");
-                ChangePasswordTest.logger.info("User password : " + validate + " - " + this.getValue("#{user.username}") + " + " + this.getValue("#{user.password}") + " - " + this.isValidationFailure());
+                ChangePasswordTest.LOGGER.info("User password : " + validate + " - " + this.getValue("#{user.username}") + " + " + this.getValue("#{user.password}") + " - " + this.isValidationFailure());
                 assert this.isValidationFailure(); // because xxx is too small
             }
 
@@ -88,7 +101,7 @@ public class ChangePasswordTest extends JUnitSeamTest
                 // assert this.getValue("#{identity.loggedIn}").equals(true);
 
                 this.setValue("#{user.password}", "xxxyyy");
-                ChangePasswordTest.logger.info("User password : " + this.getValue("#{user.username}") + " + " + this.getValue("#{user.password}"));
+                ChangePasswordTest.LOGGER.info("User password : " + this.getValue("#{user.username}") + " + " + this.getValue("#{user.password}"));
                 assert this.getValue("#{user.password}").equals("xxxyyy");
                 this.setValue("#{changePassword.verify}", "xxyyyx");
                 // this.setValue("#{changePassword.user}", user);
@@ -123,7 +136,7 @@ public class ChangePasswordTest extends JUnitSeamTest
             protected void updateModelValues() throws Exception
             {
                 this.setValue("#{user.password}", "xxxyyy");
-                ChangePasswordTest.logger.info("updateModelValues User password : " + this.getValue("#{user.username}") + " + " + this.getValue("#{user.password}"));
+                ChangePasswordTest.LOGGER.info("updateModelValues User password : " + this.getValue("#{user.username}") + " + " + this.getValue("#{user.password}"));
                 this.setValue("#{changePassword.verify}", "xxxyyy");
             }
 

@@ -14,6 +14,9 @@ call mvn -U -B clean install -Psample,microcontainer-openejb,arq-weld-ee-embedde
 REM ???? NOK MovieTest.java:217 FAILED call mvn -U -B clean install -Psample,openejb,arq-weld-ee-embedded > install.log 2>&1
 REM OK call mvn -U -B clean install -Psample,openejb,arq-jbossas-managed > install.log 2>&1
 call mvn -U -B clean install -P\!jacoco,sample,arquillian,arq-jbossas-managed,jboss7x,hibernate-4 -Darquillian=arq-jbossas-managed > install.log 2>&1
+call mvn -U -B clean install -P\!jacoco,sample,arquillian,arq-jbossas-managed,jboss7x,hibernate-4 -Darquillian=arq-jbossas-managed -Dtest=HelloWorldArquillianTest > install.log 2>&1
+call mvn -U -B clean install -P\!jacoco,sample,arquillian,arq-jbossas-managed,jboss7x,hibernate-4 -Darquillian=arq-jbossas-managed -Dtest=AuthenticatorArquillianTest > install.log > install.log 2>&1
+call mvn -U -B clean install -P\!jacoco,sample,arquillian,arq-jbossas-managed,jboss7x,hibernate-4 -Darquillian=arq-jbossas-managed -Dtest=LoginTest > install.log 2>&1
 
 REM TO ADD in eclipse maven profile \!jacoco,sample,arquillian,arq-jbossas-managed,jboss7x -Dserver=jboss7x -Darquillian=arq-jbossas-managed
 

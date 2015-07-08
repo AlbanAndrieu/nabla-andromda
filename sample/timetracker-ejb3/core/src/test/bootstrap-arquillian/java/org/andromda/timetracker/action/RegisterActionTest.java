@@ -11,12 +11,16 @@ import org.andromda.timetracker.security.PasswordEncoder;
 import org.andromda.timetracker.service.UserDoesNotExistException;
 import org.andromda.timetracker.service.UserServiceBean;
 import org.andromda.timetracker.service.UserServiceLocal;
+import org.andromda.timetracker.test.Deployments;
 import org.andromda.timetracker.vo.UserVO;
 import org.apache.log4j.Logger;
+import org.jboss.arquillian.container.test.api.Deployment;
+import org.jboss.arquillian.container.test.api.OverProtocol;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.seam.Component;
 import org.jboss.seam.contexts.Contexts;
 import org.jboss.seam.mock.JUnitSeamTest;
+import org.jboss.shrinkwrap.api.Archive;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,7 +30,15 @@ import org.junit.runner.RunWith;
 public class RegisterActionTest extends JUnitSeamTest
 {
 
-    private static final Logger logger = Logger.getLogger(RegisterActionTest.class);
+    private static final Logger LOGGER = Logger.getLogger(RegisterActionTest.class);
+
+    @Deployment(name = "RegisterActionTest")
+    @OverProtocol("Servlet 3.0")
+    public static Archive<?> createTestArchive()
+    {
+
+        return Deployments.appDeployment();
+    }
 
     /*
      * @Override
@@ -72,10 +84,10 @@ public class RegisterActionTest extends JUnitSeamTest
                         }
                     } catch (final UserDoesNotExistException e)
                     {
-                        RegisterActionTest.logger.debug("UserDoesNotExistException : " + e);
+                        RegisterActionTest.LOGGER.debug("UserDoesNotExistException : " + e);
                     } catch (final Exception e)
                     {
-                        RegisterActionTest.logger.debug("Exception : " + e);
+                        RegisterActionTest.LOGGER.debug("Exception : " + e);
                         Assert.fail();
                     }
 
@@ -84,7 +96,7 @@ public class RegisterActionTest extends JUnitSeamTest
             }.run();
         } catch (final Exception e)
         {
-            RegisterActionTest.logger.debug("Exception : " + e);
+            RegisterActionTest.LOGGER.debug("Exception : " + e);
         }
     }
 
@@ -188,7 +200,6 @@ public class RegisterActionTest extends JUnitSeamTest
                 try
                 {
 
-
                     Date date;
 
                     date = (new SimpleDateFormat("yyyy-MM-dd hh:mm")).parse("2011-01-01 09:00");
@@ -221,7 +232,7 @@ public class RegisterActionTest extends JUnitSeamTest
 
                 } catch (final Exception e)
                 {
-                    RegisterActionTest.logger.info("error : " + e);
+                    RegisterActionTest.LOGGER.info("error : " + e);
                     Assert.fail();
                 } /*
                    * finally

@@ -629,8 +629,8 @@
                 in JBoss AS 7 -->
             <dependency>
                 <groupId>org.hibernate.javax.persistence</groupId>
-                <artifactId>hibernate-jpa-2.0-api</artifactId>
-                <version>${hibernate.jpa.api.version}</version>
+                <artifactId>hibernate-jpa-2.1-api</artifactId>
+                <version>${hibernate.jpa21.api.version}</version>
                 <scope>provided</scope>
             </dependency>
 

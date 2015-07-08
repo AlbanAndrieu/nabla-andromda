@@ -8,9 +8,13 @@ import javax.persistence.EntityManager;
 import javax.transaction.TransactionManager;
 
 import org.andromda.timetracker.domain.User;
+import org.andromda.timetracker.test.Deployments;
 import org.apache.log4j.Logger;
+import org.jboss.arquillian.container.test.api.Deployment;
+import org.jboss.arquillian.container.test.api.OverProtocol;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.seam.mock.JUnitSeamTest;
+import org.jboss.shrinkwrap.api.Archive;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +22,15 @@ import org.junit.runner.RunWith;
 @RunWith(Arquillian.class)
 public class EntityManagerTest extends JUnitSeamTest
 {
-    private static final Logger logger           = Logger.getLogger(EntityManagerTest.class);
+    private static final Logger LOGGER = Logger.getLogger(EntityManagerTest.class);
+
+    @Deployment(name = "EntityManagerTest")
+    @OverProtocol("Servlet 3.0")
+    public static Archive<?> createTestArchive()
+    {
+
+        return Deployments.appDeployment();
+    }
 
     // @Ignore("Pending improvment")
     @Test

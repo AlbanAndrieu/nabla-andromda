@@ -538,7 +538,7 @@
     			<!--<validation.api.version>1.1.0.Beta2</validation.api.version>-->
     			<validation.api.version>1.0.0.GA</validation.api.version> <!-- OK see http://central.maven.org/maven2/org/jboss/bom/jboss-bom-parent/1.0.7.Final/jboss-bom-parent-1.0.7.Final.pom -->
     			<!--<cxf.version>2.7.1</cxf.version>-->
-    			<cxf.version>2.7.8</cxf.version>
+    			<cxf.version>2.7.14</cxf.version>
     		    <!--<jsf.version>1.2_15</jsf.version>-->
         		<!--<hibernate.core.version>4.3.0.Final</hibernate.core.version>-->
         		<hibernate.core.version>4.0.1.Final</hibernate.core.version> <!-- OK http://central.maven.org/maven2/org/jboss/bom/jboss-bom-parent/1.0.7.Final/jboss-bom-parent-1.0.7.Final.pom -->
@@ -548,7 +548,6 @@
         		<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
         		<hibernate.search.version>4.5.0.Alpha2</hibernate.search.version>
         		<javax.persistence.version>1.0</javax.persistence.version>
-        		<hibernate.jpa.api.version>1.0.1.Final</hibernate.jpa.api.version>
 				<hibernate.common.commons.annotations.version>4.0.1.Final</hibernate.common.commons.annotations.version>
 				<org.apache.myfaces.trinidad.version>2.0.1</org.apache.myfaces.trinidad.version>
 				<richfaces.version>4.3.3.Final</richfaces.version>
@@ -595,6 +594,7 @@
         		<!--<org.jboss.shrinkwrap.bom.version>2.1.1</org.jboss.shrinkwrap.bom.version>-->
 
         		<sun.jsf.version>2.1.7</sun.jsf.version> <!-- TODO http://www.mastertheboss.com/jsf/installing-jsf-22-on-jboss-as-7 -->
+        		<aspectj.version>1.8.1</aspectj.version>
     		</properties>
     	</profile>
     </profiles>

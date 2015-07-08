@@ -5,6 +5,7 @@ import java.io.File;
 import org.andromda.timetracker.action.Authenticator;
 import org.andromda.timetracker.action.AuthenticatorAction;
 import org.andromda.timetracker.action.ChangePassword;
+import org.andromda.timetracker.action.ChangePasswordAction;
 import org.andromda.timetracker.domain.UserDaoBase;
 import org.andromda.timetracker.service.UserServiceBean;
 import org.andromda.timetracker.service.UserServiceLocal;
@@ -29,7 +30,7 @@ import org.junit.runner.RunWith;
 @RunWith(Arquillian.class)
 public class SimpleSeamArquillianInjectTest extends JUnitSeamTest
 {
-    private static final Logger logger = Logger.getLogger(SimpleSeamArquillianInjectTest.class);
+    private static final Logger LOGGER = Logger.getLogger(SimpleSeamArquillianInjectTest.class);
 
     @Deployment(name = "SimpleSeamArquillianTestWithData")
     @OverProtocol("Servlet 3.0")
@@ -48,7 +49,8 @@ public class SimpleSeamArquillianInjectTest extends JUnitSeamTest
         // resolve jboss-seam, because it is provided-scoped in the pom, but we need it bundled in the WAR
         // .resolve("org.jboss.seam:jboss-seam").withTransitivity().asFile();
 
-        return ShrinkWrap.create(WebArchive.class, "core-test.war").addClasses(SimpleSeamArquillianInjectTest.class, Authenticator.class, AuthenticatorAction.class, UserDaoBase.class, UserServiceBean.class)
+        return ShrinkWrap.create(WebArchive.class, "core.war")
+                .addClasses(SimpleSeamArquillianInjectTest.class, Authenticator.class, AuthenticatorAction.class, UserDaoBase.class, UserServiceBean.class, ChangePassword.class, ChangePasswordAction.class)
                 .addPackages(true, "org.andromda.timetracker.action").addPackages(true, "org.andromda.timetracker.domain")
                 .addPackages(true, "org.andromda.timetracker")
                 // Needed to run in managed / remote container
@@ -96,7 +98,7 @@ public class SimpleSeamArquillianInjectTest extends JUnitSeamTest
             {
                 Assert.assertNotNull(beanChangePassword);
 
-                System.out.println("Successfully loaded ChangePassword");
+                LOGGER.debug("Successfully loaded ChangePassword");
             }
         }.run();
     }
@@ -115,7 +117,7 @@ public class SimpleSeamArquillianInjectTest extends JUnitSeamTest
             {
                 Assert.assertNotNull(userServiceLocal);
 
-                System.out.println("Successfully loaded UserService");
+                LOGGER.debug("Successfully loaded UserService");
             }
         }.run();
     }

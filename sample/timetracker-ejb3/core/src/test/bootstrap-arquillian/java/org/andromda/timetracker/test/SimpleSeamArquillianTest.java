@@ -10,6 +10,7 @@ import org.andromda.timetracker.action.ChangePassword;
 import org.andromda.timetracker.action.ChangePasswordAction;
 import org.andromda.timetracker.domain.User;
 import org.andromda.timetracker.domain.UserDaoBase;
+import org.andromda.timetracker.service.UserService;
 import org.andromda.timetracker.service.UserServiceBean;
 import org.apache.log4j.Logger;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -52,7 +53,7 @@ public class SimpleSeamArquillianTest extends JUnitSeamTest
         // resolve jboss-seam, because it is provided-scoped in the pom, but we need it bundled in the WAR
         // .resolve("org.jboss.seam:jboss-seam").withTransitivity().asFile();
 
-        return ShrinkWrap.create(WebArchive.class, "core-test.war")
+        return ShrinkWrap.create(WebArchive.class, "core.war")
                 .addClasses(SimpleSeamArquillianTest.class, Authenticator.class, AuthenticatorAction.class, UserDaoBase.class, UserServiceBean.class, ChangePasswordAction.class)
                 .addPackages(true, "org.andromda.timetracker.action").addPackages(true, "org.andromda.timetracker.domain")
                 .addPackages(true, "org.andromda.timetracker")
@@ -84,6 +85,9 @@ public class SimpleSeamArquillianTest extends JUnitSeamTest
         // .addAsWebResource("registered.xhtml")
     }
 
+    // @In
+    // ChangePassword beanChangePassword;
+
     @Test
     public void testLogin() throws Exception
     {
@@ -95,10 +99,8 @@ public class SimpleSeamArquillianTest extends JUnitSeamTest
 
                 Identity.setSecurityEnabled(true);
 
-                /*
-                 * ChangePassword bean = (ChangePassword) Component.getInstance(ChangePasswordAction.class, true);
-                 * Assert.assertNotNull(bean)
-                 */;
+                ChangePassword bean = (ChangePassword) Component.getInstance(ChangePasswordAction.class, true);
+                Assert.assertNotNull(bean);
 
                 Identity identity = Identity.instance();
 
@@ -218,6 +220,71 @@ public class SimpleSeamArquillianTest extends JUnitSeamTest
     }
 
     @Test
+    public void testBeanInstance() throws Exception
+    {
+        new ComponentTest()
+        {
+            @Override
+            protected void testComponents() throws Exception
+            {
+
+                Identity.setSecurityEnabled(false);
+
+                ChangePassword bean = (ChangePassword) Component.getInstance(ChangePasswordAction.class, true);
+                Assert.assertNotNull(bean);
+
+                Identity identity = Identity.instance();
+
+                final Date date = (new SimpleDateFormat("yyyy-MM-dd hh:mm")).parse("2011-01-01 09:00");
+                Contexts.getSessionContext().set("user", new User("admin", "cooldude", "Alban", "Andrieu", "alban.andrieu@free.fr", true, date, "Alban Andrieu"));
+                identity.setUsername("admin");
+                identity.setPassword("cooldude");
+                identity.login();
+
+                // ChangePassword beanChangePassword = (ChangePassword) getInstance("changePassword");
+                ChangePassword beanChangePassword = (ChangePassword) Component.getInstance(ChangePasswordAction.class, true);
+                Assert.assertNotNull(beanChangePassword);
+
+                final User beanUser = beanChangePassword.getUser();
+
+                Assert.assertNotNull(beanUser);
+                SimpleSeamArquillianTest.logger.debug("User : " + beanUser);
+
+                Assert.assertEquals(beanUser.getUsername(), "admin");
+
+                System.out.println("Successfully found User from ChangePasswordAction");
+            }
+        }.run();
+    }
+
+    @Test
+    public void testGetUser() throws Exception
+    {
+        new ComponentTest()
+        {
+
+            @Override
+            protected void testComponents() throws Exception
+            {
+                User user = (User) Component.getInstance("user", true);
+                Assert.assertNotNull(user);
+                SimpleSeamArquillianTest.logger.debug("User : " + user);
+
+                final Date date = (new SimpleDateFormat("yyyy-MM-dd hh:mm")).parse("2011-01-01 09:00");
+                Contexts.getSessionContext().set("user", new User("admin", "cooldude", "Alban", "Andrieu", "alban.andrieu@free.fr", true, date, "Alban Andrieu"));
+
+                user = (User) Component.getInstance("user", true);
+
+                SimpleSeamArquillianTest.logger.debug("User : " + user);
+
+                Assert.assertEquals(user.getUsername(), "admin");
+
+                System.out.println("Successfully found User admin");
+            }
+        }.run();
+    }
+
+    @Test
     public void testGetChangePasswordAction() throws Exception
     {
         new ComponentTest()
@@ -249,6 +316,31 @@ public class SimpleSeamArquillianTest extends JUnitSeamTest
                 Assert.assertEquals(beanUser.getUsername(), "admin");
 
                 System.out.println("Successfully found User from ChangePasswordAction");
+            }
+        }.run();
+    }
+
+    @Test
+    public void testGetUserServiceBean() throws Exception
+    {
+        new ComponentTest()
+        {
+
+            @Override
+            protected void testComponents() throws Exception
+            {
+                final Date date = (new SimpleDateFormat("yyyy-MM-dd hh:mm")).parse("2011-01-01 09:00");
+                Contexts.getSessionContext().set("user", new User("admin", "cooldude", "Alban", "Andrieu", "alban.andrieu@free.fr", true, date, "Alban Andrieu"));
+
+                final UserService bean1 = (UserService) Component.getInstance(UserServiceBean.class, true);
+                Assert.assertNotNull(bean1);
+                SimpleSeamArquillianTest.logger.debug("UserServiceBean bean : " + bean1);
+
+                final UserService bean2 = (UserService) Component.getInstance("userService", true);
+                Assert.assertNotNull(bean2);
+                SimpleSeamArquillianTest.logger.debug("UserServiceBean bean : " + bean2);
+
+                System.out.println("Successfully loaded UserService");
             }
         }.run();
     }

@@ -3,14 +3,17 @@ package org.andromda.timetracker.action;
 import java.util.List;
 
 import org.andromda.timetracker.domain.Movie;
+import org.andromda.timetracker.test.Deployments;
+import org.apache.log4j.Logger;
+import org.jboss.arquillian.container.test.api.Deployment;
+import org.jboss.arquillian.container.test.api.OverProtocol;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.seam.Component;
 import org.jboss.seam.core.Conversation;
-import org.jboss.seam.log.LogProvider;
-import org.jboss.seam.log.Logging;
 import org.jboss.seam.mock.JUnitSeamTest;
 import org.jboss.seam.security.Credentials;
 import org.jboss.seam.security.Identity;
+import org.jboss.shrinkwrap.api.Archive;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,21 +22,30 @@ import org.junit.runner.RunWith;
 public class MovieTest extends JUnitSeamTest
 {
 
-    private static final String      DIRECTOR_JOEL_COEN     = "Joel Coen";
-    private static final String      THE_BIG_LEBOWSKI_TITLE = "The Big Lebowski";
-    private static final Integer     THE_BIG_LEBOWSKI_YEAR  = 1992;
-    private static final String      THE_BIG_LEBOWSKI_PLOT  = "\"Dude\" Lebowski, mistaken for a millionaire Lebowski, seeks restitution for his " + "ruined rug and enlists his bowling buddies to help get it.";
+    private static final String  DIRECTOR_JOEL_COEN     = "Joel Coen";
+    private static final String  THE_BIG_LEBOWSKI_TITLE = "The Big Lebowski";
+    private static final Integer THE_BIG_LEBOWSKI_YEAR  = 1992;
+    private static final String  THE_BIG_LEBOWSKI_PLOT  = "\"Dude\" Lebowski, mistaken for a millionaire Lebowski, seeks restitution for his " + "ruined rug and enlists his bowling buddies to help get it.";
 
-    private static final String      THE_WALL_DIRECTOR      = "Alan Parker";
-    private static final String      THE_WALL_TITLE         = "The Wall";
-    private static final Integer     THE_WALL_YEAR          = 1999;
-    private static final String      THE_WALL_PLOT          = "A troubled rock star descends into madness " + "in the midst of his physical and social isolation from everyone.";
+    private static final String  THE_WALL_DIRECTOR      = "Alan Parker";
+    private static final String  THE_WALL_TITLE         = "The Wall";
+    private static final Integer THE_WALL_YEAR          = 1999;
+    private static final String  THE_WALL_PLOT          = "A troubled rock star descends into madness " + "in the midst of his physical and social isolation from everyone.";
 
-    private Long                     theBigLebowskiId;
-    private Long                     reservoirDogsId;
-    private Long                     theWallId;
+    private Long                 theBigLebowskiId;
+    private Long                 reservoirDogsId;
+    private Long                 theWallId;
 
-    private static final LogProvider log                    = Logging.getLogProvider(MovieTest.class);
+    // private static final LogProvider LOGGER = Logging.getLogProvider(MovieTest.class);
+    private static final Logger  LOGGER                 = Logger.getLogger(MovieTest.class);
+
+    @Deployment(name = "MovieTest")
+    @OverProtocol("Servlet 3.0")
+    public static Archive<?> createTestArchive()
+    {
+
+        return Deployments.appDeployment();
+    }
 
     private boolean mockLogin()
     {
@@ -45,32 +57,26 @@ public class MovieTest extends JUnitSeamTest
     }
 
     /*
-    @Override
-    @BeforeClass
-    public void setupClass() throws Exception
-    {
-        super.setupClass();
-
-        // Delete all movies
-        CrudService crudService = doJndiLookup("crudService");
-        crudService.removeByExample(new Movie(), true);
-        assert crudService.findWithType(Movie.class).size() == 0 : "List.size():";
-
-        // Persist 3 movies
-        ArrayList<Movie> movies = new ArrayList<Movie>();
-        movies.add(new Movie(DIRECTOR_JOEL_COEN, THE_BIG_LEBOWSKI_TITLE, THE_BIG_LEBOWSKI_YEAR, "..."));
-
-        movies.add(new Movie("Quentin Tarantino", "Reservoir Dogs", 1992, "After a simple jewelery heist goes terribly wrong, the surviving criminals begin " + "to suspect that one of them is a police informant."));
-
-        movies.add(new Movie(DIRECTOR_JOEL_COEN, "Fargo", 1996, "Jerry Lundegaard's inept crime falls apart due to his and his henchmen's bungling " + "and the persistent police work of pregnant Marge Gunderson."));
-
-        movies = (ArrayList<Movie>) crudService.persistCollection(movies);
-        assert crudService.findWithType(Movie.class).size() == 3 : "List.size():";
-
-        theBigLebowskiId = movies.get(0).getId();
-        reservoirDogsId = movies.get(1).getId();
-    }
-    */
+     * @Override
+     * @BeforeClass
+     * public void setupClass() throws Exception
+     * {
+     * super.setupClass();
+     * // Delete all movies
+     * CrudService crudService = doJndiLookup("crudService");
+     * crudService.removeByExample(new Movie(), true);
+     * assert crudService.findWithType(Movie.class).size() == 0 : "List.size():";
+     * // Persist 3 movies
+     * ArrayList<Movie> movies = new ArrayList<Movie>();
+     * movies.add(new Movie(DIRECTOR_JOEL_COEN, THE_BIG_LEBOWSKI_TITLE, THE_BIG_LEBOWSKI_YEAR, "..."));
+     * movies.add(new Movie("Quentin Tarantino", "Reservoir Dogs", 1992, "After a simple jewelery heist goes terribly wrong, the surviving criminals begin " + "to suspect that one of them is a police informant."));
+     * movies.add(new Movie(DIRECTOR_JOEL_COEN, "Fargo", 1996, "Jerry Lundegaard's inept crime falls apart due to his and his henchmen's bungling " + "and the persistent police work of pregnant Marge Gunderson."));
+     * movies = (ArrayList<Movie>) crudService.persistCollection(movies);
+     * assert crudService.findWithType(Movie.class).size() == 3 : "List.size():";
+     * theBigLebowskiId = movies.get(0).getId();
+     * reservoirDogsId = movies.get(1).getId();
+     * }
+     */
 
     @Test
     public void newMovie() throws Exception
@@ -201,7 +207,7 @@ public class MovieTest extends JUnitSeamTest
                 {
                     assert e.getCause() instanceof org.jboss.seam.security.NotLoggedInException : "Expected to fail with: 'org.jboss.seam.security.NotLoggedInException'";
 
-                    log.debug("Passed expected unauthorized access failure: " + e.getMessage());
+                    LOGGER.debug("Passed expected unauthorized access failure: " + e.getMessage());
                 } finally
                 {
                     Conversation.instance().end();
@@ -234,7 +240,7 @@ public class MovieTest extends JUnitSeamTest
                 {
                     assert e.getCause() instanceof javax.persistence.PersistenceException : "Expected to fail with: 'javax.persistence.PersistenceException'";
 
-                    log.debug("Passed expected missing required field value failure: " + e.getMessage());
+                    LOGGER.debug("Passed expected missing required field value failure: " + e.getMessage());
                 } finally
                 {
                     Conversation.instance().end();
@@ -268,7 +274,7 @@ public class MovieTest extends JUnitSeamTest
                 {
                     assert e.getCause() instanceof javax.persistence.PersistenceException : "Expected to fail with: 'javax.persistence.PersistenceException'";
 
-                    log.debug("Passed expected duplicate unique secondary index failure: " + e.getMessage());
+                    LOGGER.debug("Passed expected duplicate unique secondary index failure: " + e.getMessage());
                 } finally
                 {
                     Conversation.instance().end();
@@ -315,7 +321,7 @@ public class MovieTest extends JUnitSeamTest
                 List<Movie> list = (List<Movie>) invokeMethod("#{movieList.getResultList()}");
                 Assert.assertEquals("#{movieList.getResultList()}", list.size(), 2);
                 Movie movie = list.get(0);
-                Assert.assertEquals(movie.getDirector(), DIRECTOR_JOEL_COEN, "movie.getDirector()");
+                Assert.assertEquals(movie.getDirector(), DIRECTOR_JOEL_COEN, invokeMethod("#{movieList.movie.getDirector()}"));
             }
         }.run();
     }

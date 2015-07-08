@@ -60,8 +60,7 @@ public class UserServiceTest extends JUnitSeamTest
 
         File[] libs = resolver.loadPomFromFile("pom.xml").importDependencies(ScopeType.TEST, ScopeType.COMPILE, ScopeType.PROVIDED).resolve().withTransitivity().asFile();
 
-        return ShrinkWrap.create(WebArchive.class, "core-test.war").addClasses(UserServiceTest.class, Authenticator.class, AuthenticatorAction.class, UserDaoBase.class)
-                .addPackages(true, "org.andromda.timetracker.action")
+        return ShrinkWrap.create(WebArchive.class, "core.war").addClasses(UserServiceTest.class, Authenticator.class, AuthenticatorAction.class, UserDaoBase.class).addPackages(true, "org.andromda.timetracker.action")
                 .addPackages(true, "org.andromda.timetracker.domain")
                 .addPackages(true, "org.andromda.timetracker.service")
                 .addPackages(true, "org.andromda.timetracker")
