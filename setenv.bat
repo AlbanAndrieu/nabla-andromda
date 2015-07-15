@@ -6,7 +6,7 @@ set VERSION=10
 set HOME=C:\workspace\users\albandri%VERSION%
 set THIRDPARTY_ROOT=C:\thirdparty
 
-set JAVA_HOME=C:\SUN\SDK\jdk1.7.0_05
+set JAVA_HOME=C:\Sun\SDK\jdk
 set JAVA=%JAVA_HOME%\bin
 set ANT_HOME=C:\apache-ant-1.7.1
 set ANT=%ANT_HOME%\bin
