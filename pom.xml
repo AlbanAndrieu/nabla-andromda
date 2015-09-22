@@ -17,12 +17,12 @@
         <description>Nabla Assembly</description>
         <url>${JOB_URL}</url>
             
-        <scm>
-            <connection>scm:svn:http://alban.googlecode.com/svn/${project.svn.path}/nabla</connection>
-            <developerConnection>scm:svn:https://alban.googlecode.com/svn/${project.svn.path}/nabla</developerConnection>
-            <url>https://alban.googlecode.com/svn/${project.svn.path}/nabla</url>
-            <tag>HEAD</tag>
-        </scm>
+    	<scm>
+		<connection>scm:git:git://github.com/AlbanAndrieu/nabla-andromda.git</connection>
+		<developerConnection>scm:git:git@github.com:AlbanAndrieu/nabla-andromda.git</developerConnection>
+		<url>https://github.com/AlbanAndrieu/nabla-andromda</url>
+		<tag>HEAD</tag>			
+    	</scm>
         
         <profiles>
             <profile>
