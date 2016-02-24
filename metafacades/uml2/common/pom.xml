@@ -6,8 +6,8 @@
         <artifactId>uml2</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
-    <modelVersion>4.0.0</modelVersion>    
+
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>andromda-metafacades-uml</artifactId>
     <version>3.6-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -15,14 +15,16 @@
     <description>
         The common UML metafacades. This is the set of core UML metafacades used to provide access UML meta models.
     </description>
-    
+
+    <!--
     <scm>
     	<connection>scm:svn:http://alban.googlecode.com/svn/${project.svn.path}/nabla/metafacades/uml2/common</connection>
     	<developerConnection>scm:svn:https://alban.googlecode.com/svn/${project.svn.path}/nabla/metafacades/uml2/common</developerConnection>
     	<url>https://alban.googlecode.com/svn/${project.svn.path}/nabla/metafacades/uml2/common</url>
     	<tag>HEAD</tag>
     </scm>
-     
+    -->
+
     <dependencies>
         <!-- fix Error running AndroMDA: com_cenqua_clover/CoverageRecorder -->
         <dependency>
@@ -63,7 +65,7 @@
                     </execution>
                 </executions>
             </plugin>
-            -->            
+            -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -99,7 +101,7 @@
 	    	<configuration>
 	    		<skip>true</skip>
 	    	</configuration>
-	    </plugin>               
+	    </plugin>
         </plugins>
         <resources>
             <resource>
@@ -117,15 +119,15 @@
                    <property>
                        <name>!mda</name>
                    </property>
-               </activation>            
+               </activation>
                <build>
-                   <plugins>   
+                   <plugins>
             		<plugin>
             		    <groupId>org.andromda.maven.plugins</groupId>
             		    <artifactId>andromda-bootstrap-plugin</artifactId>
-            		</plugin>            
+            		</plugin>
                    </plugins>
                </build>
            </profile>
-       </profiles>           
+       </profiles>
 </project>
