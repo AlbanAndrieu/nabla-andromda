@@ -13,7 +13,7 @@
     <artifactId>web</artifactId>
     <packaging>war</packaging>
     <name>[${project.parent.artifactId} :: EJB3 Web] - ${project.artifactId} : ${project.version}</name>
-    
+
     <dependencyManagement>
         <dependencies>
 				<dependency>
@@ -31,14 +31,14 @@
 				    <version>${org.jboss.shrinkwrap.resolver.bom.version}</version>
 				    <type>pom</type>
 				    <scope>import</scope>
-				</dependency>					
+				</dependency>
 				<dependency>
 				    <groupId>org.jboss.arquillian</groupId>
 				    <artifactId>arquillian-bom</artifactId>
 				    <version>${org.jboss.arquillian.bom.version}</version>
 				    <type>pom</type>
 				    <scope>import</scope>
-				</dependency>	        
+				</dependency>
             <!-- JBoss distributes a complete set of Java EE 6 APIs including a Bill
                 of Materials (BOM). A BOM specifies the versions of a "stack" (or a collection)
                 of artifacts. We use this here so that we always get the correct versions
@@ -63,7 +63,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-        
+
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -145,7 +145,7 @@
             <artifactId>hibernate-validator</artifactId>
             <scope>${scope.type}</scope>
         </dependency>
- 
+
         <!-- GWT validation uses Hibernate Validator, and requires the sources
           at compile time. -->
         <dependency>
@@ -334,13 +334,13 @@
 
 	<!-- for cannot access javax.faces.application.FacesMessage -->
 	<!-- see in core project it is provided (needed for jboss 7) -->
+	<!--
 	<dependency>
 		<groupId>javax.faces</groupId>
 		<artifactId>jsf-api</artifactId>
-		<!--<scope>${scope.type}</scope>-->
 		<scope>${scope.tomcat.never.type}</scope>
-		<!-- <scope>compile</scope> compile needed for jetty -->
 	</dependency>
+	-->
 
 	<!-- http://download.java.net/maven/2 needed for tomcat only -->
 	<!-- replaced by javax.faces for other except tomcat -->
@@ -353,8 +353,8 @@
 		<groupId>com.sun.faces</groupId>
 		<artifactId>jsf-impl</artifactId>
 		<scope>${scope.tomcat.only.type}</scope>
-	</dependency>	   
-		
+	</dependency>
+
 	<!--
 	<dependency>
 		<groupId>org.testng</groupId>
@@ -362,7 +362,7 @@
 		<scope>test</scope>
 	</dependency>
 	-->
-						
+
         <!-- replace this by slf4j-api and slf4j-simple
         http://pwu-developer.blogspot.com/2010/08/caused-by-javalangerror-this-version-of.html
         <dependency>
@@ -919,7 +919,7 @@
 				  </goals>
 				</execution>
 			  </executions>
-			</plugin>            
+			</plugin>
 			-->
 <!--
 	    <plugin>
@@ -1150,7 +1150,7 @@
 				  <exclude>xmldsig-</exclude>
 				</excludes>
 			  </configuration>
-			</plugin>              
+			</plugin>
             <!--
 	    <plugin>
 	    	<groupId>com.atlassian.maven.plugins</groupId>
@@ -1158,9 +1158,9 @@
 	    	<configuration>
 	    		<skip>true</skip>
 	    	</configuration>
-	    </plugin>    
-	    -->                 
-        </plugins>       
+	    </plugin>
+	    -->
+        </plugins>
     </build>
 
     <profiles>
@@ -1200,15 +1200,15 @@
                                     <scope>test</scope>
                                 </dependency>
                                 -->
-                                
+
                                 <!--
                                 <dependency>
                                         <groupId>junit</groupId>
                                         <artifactId>junit</artifactId>
                                         <type>jar</type>
                                         <scope>test</scope>
-                                </dependency>         
-                                -->                       
+                                </dependency>
+                                -->
                                 <!-- comment <provider>org.hibernate.ejb.HibernatePersistence</provider> in persistence.xml to enable openjpa -->
                                 <!--
                                 <dependency>
@@ -1225,24 +1225,24 @@
                                   <scope>test</scope>
                                 </dependency>
                                 -->
-                                
+
 								<dependency>
 									<groupId>org.jboss.arquillian.junit</groupId>
 									<artifactId>arquillian-junit-container</artifactId>
 									<scope>test</scope>
-								</dependency>                                
+								</dependency>
                                 <!-- not recommended for Seam 2.3 http://docs.jboss.org/seam/2.3.0.Final/reference/en-US/html/testing.html
 								<dependency>
 									<groupId>org.jboss.arquillian.testng</groupId>
 									<artifactId>arquillian-testng-container</artifactId>
 									<scope>test</scope>
-								</dependency>	                  
-								-->              
+								</dependency>
+								-->
 								<dependency>
 									<groupId>org.jboss.as</groupId>
 									<artifactId>jboss-as-arquillian-container-managed</artifactId>
 									<scope>test</scope>
-								</dependency>				
+								</dependency>
 
 								<!--
 								<dependency>
@@ -1253,12 +1253,12 @@
 								  <scope>test</scope>
 								</dependency>
 								-->
-								
+
 								<dependency>
 									<groupId>org.jboss.shrinkwrap.resolver</groupId>
 									<artifactId>shrinkwrap-resolver-impl-maven</artifactId>
 									<version>${org.jboss.shrinkwrap.resolver.version}</version>
-									<scope>test</scope>  
+									<scope>test</scope>
 								</dependency>
 
 								<!--
@@ -1266,8 +1266,8 @@
 										  <groupId>org.jboss.arquillian.protocol</groupId>
 										  <artifactId>arquillian-protocol-servlet</artifactId>
 										  <scope>test</scope>
-								</dependency>		
-								-->								
+								</dependency>
+								-->
                         </dependencies>
                         <build>
                                 <plugins>
@@ -1308,7 +1308,7 @@
                                             <inherited>true</inherited>
                                             <configuration>
                                                 <skip>${maven.test.skip}</skip>
-                                                <trimStackTrace>false</trimStackTrace>   
+                                                <trimStackTrace>false</trimStackTrace>
                                                 <testFailureIgnore>${maven.test.failure.skip}</testFailureIgnore>
                                                 <environmentVariables>
                                                     <JBOSS_HOME>${jboss.home}</JBOSS_HOME>
@@ -1333,7 +1333,7 @@
                                 <testResources>
                                         <testResource>
                                                 <directory>${basedir}/src/test/resources</directory>
-                                                <filtering>true</filtering> 
+                                                <filtering>true</filtering>
                                         </testResource>
                                         <testResource>
                                                 <directory>${basedir}/src/test/bootstrap-arquillian/resources</directory>
@@ -1341,7 +1341,7 @@
                                         </testResource>
                                 </testResources>
                         </build>
-                </profile>    
+                </profile>
 	<profile>
 			<id>arq-jbossas-managed-nok</id>
 			<activation>
@@ -1590,7 +1590,7 @@
 											<!--<argLine>-Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djava.util.logging.manager=org.jboss.logmanager.LogManager -Djava.endorsed.dirs=${env.JBOSS_HOME}/lib/endorsed -Djboss.home=${env.JBOSS_HOME} -Djboss.boot.server.log.dir=${env.JBOSS_HOME}</argLine>-->
             		                    </configuration>
             		                </plugin>
-								
+
 									<!-- start app using java -jar target/dependency/jetty-runner.jar target/*.war -port 9090 -->
 									<plugin>
 										<groupId>org.apache.maven.plugins</groupId>
@@ -1613,7 +1613,7 @@
 												</configuration>
 											</execution>
 										</executions>
-									</plugin>	
+									</plugin>
 				</plugins>
 				<resources>
 					<resource>
@@ -1676,7 +1676,7 @@
 					  <artifactId>jboss-common-core</artifactId>
 					  <scope>test</scope>
 				   </dependency>
-				   
+
 				   <dependency>
 			         <groupId>dom4j</groupId>
 			         <artifactId>dom4j</artifactId>
