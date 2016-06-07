@@ -12,12 +12,12 @@ import org.testng.annotations.Test;
 /**
  *
  */
-public class TimeTrackingServiceTest
+public class TimeTrackingServiceUTest
 {
     private static String       TimecardHdrFormat = "%-13s %-13s %-10s %-11s";
     private static String       TimecardRowFormat = "%-13s %-13s %-10s %-11tD";
 
-    private Log                 logger            = LogFactory.getLog(TimeTrackingServiceTest.class);
+    private Log                 logger            = LogFactory.getLog(TimeTrackingServiceUTest.class);
     private TimeTrackingService timeTrackingService;
 
     /**
