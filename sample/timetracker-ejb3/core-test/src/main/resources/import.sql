@@ -5,4 +5,4 @@ insert into USERS (ID, USERNAME, PASSWORD, FIRST_NAME, LAST_NAME) values (1, 'te
 insert into USERS (ID, USERNAME, PASSWORD, FIRST_NAME, LAST_NAME) values (2, 'admin',    'cooldude', 'Alban',    'Andrieu');
 insert into USERS (ID, USERNAME, PASSWORD, FIRST_NAME, LAST_NAME) values (3, 'aandrieu', 'cooldude', 'Alban',    'Andrieu');
 insert into USERS (ID, USERNAME, PASSWORD, FIRST_NAME, LAST_NAME) values (4, 'rbrooke',  'cooldude', 'Rachael',  'Brooke');
-commit;      
+commit;

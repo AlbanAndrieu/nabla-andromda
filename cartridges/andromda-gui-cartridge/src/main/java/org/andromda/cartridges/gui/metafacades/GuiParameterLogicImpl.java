@@ -69,7 +69,7 @@ import org.apache.log4j.Logger;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.gui.metafacades.GuiParameter.
- * 
+ *
  * @see org.andromda.cartridges.gui.metafacades.GuiParameter
  */
 public class GuiParameterLogicImpl extends GuiParameterLogic
@@ -90,7 +90,7 @@ public class GuiParameterLogicImpl extends GuiParameterLogic
 
     /**
      * Overridden to make sure it's not an inputTable.
-     * 
+     *
      * @see org.andromda.metafacades.uml.FrontEndParameter#isTable()
      */
     @Override
@@ -194,7 +194,7 @@ public class GuiParameterLogicImpl extends GuiParameterLogic
 
     /**
      * Indicates whether or not we should normalize messages.
-     * 
+     *
      * @return true/false
      */
     private boolean isNormalizeMessages()
@@ -279,7 +279,7 @@ public class GuiParameterLogicImpl extends GuiParameterLogic
     /**
      * If this is a table this method returns all those actions that are declared to work
      * on this table.
-     * 
+     *
      * @param hyperlink denotes on which type of actions to filter
      */
     private List<GuiAction> getTableActions(final boolean hyperlink)
@@ -526,7 +526,7 @@ public class GuiParameterLogicImpl extends GuiParameterLogic
     /**
      * Gets the current value of the specified input type (or an empty string
      * if one isn't specified).
-     * 
+     *
      * @return the input type name.
      */
     private String getInputType()
@@ -538,7 +538,7 @@ public class GuiParameterLogicImpl extends GuiParameterLogic
 
     /**
      * Indicates whether or not this parameter is of the given input type.
-     * 
+     *
      * @param inputType the name of the input type to check for.
      * @return true/false
      */
@@ -963,7 +963,7 @@ public class GuiParameterLogicImpl extends GuiParameterLogic
 
     /**
      * Constructs a string representing an array initialization in Java.
-     * 
+     *
      * @return A String representing Java code for the initialization of an array.
      */
     private String constructDummyArray()
@@ -1145,7 +1145,7 @@ public class GuiParameterLogicImpl extends GuiParameterLogic
 
     /**
      * Overridden to have the same behavior as gui.
-     * 
+     *
      * @see org.andromda.metafacades.uml.ParameterFacade#isRequired()
      */
     @Override
@@ -3641,7 +3641,7 @@ public class GuiParameterLogicImpl extends GuiParameterLogic
 
     /**
      * Overridden to provide quotes around string types.
-     * 
+     *
      * @see org.andromda.metafacades.uml.ParameterFacade#getDefaultValue()
      */
 

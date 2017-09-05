@@ -10,8 +10,8 @@
 ##      xmlns:c="http://java.sun.com/jstl/core"
 ##      xmlns:fn="http://java.sun.com/jsp/jstl/functions"
       xmlns:af="http://xmlns.oracle.com/adf/faces"
-      xmlns:afh="http://xmlns.oracle.com/adf/faces/html">   
-#end   
+      xmlns:afh="http://xmlns.oracle.com/adf/faces/html">
+#end
     <ui:insert name="head">
         <ui:include src="head.xhtml"/>
     </ui:insert>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<components 
+<components
   xmlns:core="http://jboss.com/products/seam/core"
   xmlns="http://jboss.com/products/seam/components"
   xmlns:persistence="http://jboss.com/products/seam/persistence"
@@ -35,8 +35,8 @@
 
         <!-- Make sure this URL pattern is the same as that used by the Faces Servlet -->
         <web:hot-deploy-filter url-pattern="*.seam"/>
-   
-	<!-- TODO: How do we define OpenEjb entity manager factory here??? 
+
+	<!-- TODO: How do we define OpenEjb entity manager factory here???
 	<persistence:entity-manager-factory
 		name="entityManagerFactory"
 		class="no.knowit.seam.openejb.mock.SeamManagedEntityManagerFactoryBean"
@@ -44,31 +44,31 @@
 		installed="true"
 		startup="true" />
 	-->
-	
+
 	<persistence:managed-persistence-context
-		name="entityManager" 
+		name="entityManager"
 		auto-create="true"
-		scope="conversation" 
-		entity-manager-factory="#{entityManagerFactory}" 
+		scope="conversation"
+		entity-manager-factory="#{entityManagerFactory}"
 		persistence-unit-jndi-name="${pu.jboss.entity.manager.factory.jndi.name}" />
 
   	<factory name="hibernateSession" method="#{entityManager.getDelegate( )}" scope="STATELESS" auto-create="true" />
-  	
+
    	<!--
    	<security:jpa-identity-store
    	 entity-manager="#{entityManager}" user-class="org.andromda.timetracker.domain.User"
    	 role-class="org.andromda.timetracker.domain.Role" />
    	 -->
-   	
+
    	<event type="org.jboss.seam.security.notLoggedIn">
    	   <action execute="#{redirect.captureCurrentView}"/>
    	</event>
    	<event type="org.jboss.seam.security.loginSuccessful">
    	   <action execute="#{redirect.returnToCapturedView}"/>
    	</event>
-   	
+
    	<mail:mail-session host="localhost" port="25"/>
-   	
+
    	<!-- For use with jBPM pageflow or process management -->
    	<!--
    	<bpm:jbpm>
@@ -76,13 +76,13 @@
    	   <bpm:pageflow-definitions></bpm:pageflow-definitions>
    	</bpm:jbpm>
    	-->
-   
+
    	<drools:rule-base name="securityRules">
    	  <drools:rule-files>
    	    <value>/META-INF/security.drl</value>
    	  </drools:rule-files>
    	</drools:rule-base>
-	
+
   	<security:identity authenticate-method="#{authenticator.authenticate}" remember-me="true" />
-		
+
 </components>

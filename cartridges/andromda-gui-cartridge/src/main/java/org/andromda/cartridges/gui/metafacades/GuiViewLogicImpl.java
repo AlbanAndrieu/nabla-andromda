@@ -63,7 +63,7 @@ import java.util.Map;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.gui.metafacades.GuiView.
- * 
+ *
  * @see org.andromda.cartridges.gui.metafacades.GuiView
  */
 public class GuiViewLogicImpl extends GuiViewLogic
@@ -126,7 +126,7 @@ public class GuiViewLogicImpl extends GuiViewLogic
 
     /**
      * Indicates whether or not we should normalize messages.
-     * 
+     *
      * @return true/false
      */
     private boolean isNormalizeMessages()
@@ -657,7 +657,7 @@ public class GuiViewLogicImpl extends GuiViewLogic
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     @Override
@@ -825,7 +825,7 @@ public class GuiViewLogicImpl extends GuiViewLogic
 
     /**
      * Collects all actions that are entering the argument state vertex.
-     * 
+     *
      * @param stateVertex the statevertex to process
      * @param processedTransitions the transitions that have already been processed
      * @param actions the actions collected so far
@@ -851,7 +851,7 @@ public class GuiViewLogicImpl extends GuiViewLogic
 
     /**
      * Collects all actions that are possibly traversing the argument transitions.
-     * 
+     *
      * @param transition the transition to process
      * @param processedTransitions the transitions that have already been processed
      * @param actions the actions collected so far

@@ -100,8 +100,8 @@
             <bean class="org.springframework.remoting.caucho.BurlapProxyFactoryBean">
 #elseif($manageable.remotingTypeRmi)
             <bean class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
-#else            
-            <bean class="org.springframework.remoting.rmi.OtherProxyFactoryBean">            
+#else
+            <bean class="org.springframework.remoting.rmi.OtherProxyFactoryBean">
 #end
                 <property name="serviceUrl"><value>$manageable.remoteUrl</value></property>
                 <property name="serviceInterface"><value>$manageable.fullyQualifiedManageableServiceName</value></property>

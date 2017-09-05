@@ -8,8 +8,8 @@
         <artifactId>timetracker-ejb3</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
-    <modelVersion>4.0.0</modelVersion>    
+
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>database</artifactId>
     <packaging>jar</packaging>
     <name>[${project.parent.artifactId} :: EJB3 Database Business Tier] - ${project.artifactId} : ${project.version}</name>
@@ -19,7 +19,7 @@
             <artifactId>common</artifactId>
             <version>${project.version}</version>
         </dependency>
-   
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
@@ -27,7 +27,7 @@
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
-		</dependency>          
+		</dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -35,7 +35,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-        </dependency>           
+        </dependency>
         <!-- Do not use 3.3.0.ga See https://jira.springsource.org/browse/SPR-7701, http://forum.springsource.org/showthread.php?89693-AnnotationSessionFactoryBean-needs-MetadataProvider -->
         <!-- validator-legacy forces an earlier version of annotations. Change scope if < JBoss6>
         <dependency>
@@ -69,7 +69,7 @@
 			<groupId>javax.persistence</groupId>
 			<artifactId>persistence-api</artifactId>
 			<scope>provided</scope>
-		</dependency>        
+		</dependency>
         <!--
         <dependency>
             <groupId>net.sf.ehcache</groupId>
@@ -168,7 +168,7 @@
                       <groupId>javax.validation</groupId>
                       <artifactId>validation-api</artifactId>
                       <version>${validation.api.version}</version>
-                  </dependency>    
+                  </dependency>
                   <dependency>
                       <groupId>org.slf4j</groupId>
                       <artifactId>slf4j-api</artifactId>
@@ -178,7 +178,7 @@
                       <groupId>org.slf4j</groupId>
                       <artifactId>slf4j-simple</artifactId>
                       <version>${slf4j.version}</version>
-                  </dependency>                         
+                  </dependency>
                 </dependencies>
             </plugin>
 			<plugin>
@@ -287,17 +287,17 @@
                     <groupId>org.hibernate</groupId>
                     <artifactId>hibernate-entitymanager</artifactId>
                     <version>${hibernate.legacy.entitymanager.version}</version>
-                  </dependency>        
+                  </dependency>
                   <dependency>
                       <groupId>org.hibernate</groupId>
                       <artifactId>hibernate-validator</artifactId>
                       <version>${hibernate.legacy.validator.version}</version>
-                  </dependency>    
+                  </dependency>
                   <dependency>
                       <groupId>javax.validation</groupId>
                       <artifactId>validation-api</artifactId>
                       <version>${validation.api.version}</version>
-                  </dependency>    
+                  </dependency>
                   <dependency>
                       <groupId>org.slf4j</groupId>
                       <artifactId>slf4j-api</artifactId>
@@ -307,28 +307,28 @@
                       <groupId>org.slf4j</groupId>
                       <artifactId>slf4j-simple</artifactId>
                       <version>${slf4j.version}</version>
-                  </dependency>      
+                  </dependency>
 				  <dependency>
 					<groupId>javassist</groupId>
 					<artifactId>javassist</artifactId>
 					<version>${javassist.version}</version>
-				  </dependency>			
+				  </dependency>
                   <dependency>
                   	<groupId>asm</groupId>
                   	<artifactId>asm</artifactId>
                   	<version>${asm.version}</version>
-                  </dependency>		
+                  </dependency>
                   <dependency>
 					<groupId>cglib</groupId>
 					<artifactId>cglib</artifactId>
 					<version>${cglib.version}</version>
-				  </dependency>	                  
-	          
+				  </dependency>
+
                   <dependency>
                   	<groupId>xerces</groupId>
                   	<artifactId>xercesImpl</artifactId>
                   	<version>${xerces.version}</version>
-                  </dependency>	  
+                  </dependency>
                 </dependencies>
             </plugin>
             <!-- H2 chokes on 'ENGINE=InnoDB' in DDL, remove from generated SQL before running against H2 DB >
@@ -479,7 +479,7 @@
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
-            </resource>             
-        </resources>        
+            </resource>
+        </resources>
     </build>
 </project>

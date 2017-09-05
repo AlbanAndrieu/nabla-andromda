@@ -27,7 +27,7 @@
                     <a href="http://docs.andromda.org/samples.html">AndroMDA Samples</a>.
                 </p>
                 <p>
-                    This sample demo illustrates the use of the EJB3 cartridge (EJB 3.0 functionality), 
+                    This sample demo illustrates the use of the EJB3 cartridge (EJB 3.0 functionality),
                     manageable entities and web services.  It is built for the MySQL database engine using
                     JBoss 4.0.4 GA or newer.
                 </p>
@@ -44,7 +44,7 @@
                         <li>demo-ejb3/app/target/demo-ejb3-1.0-SNAPSHOT.ear</li>
                     </ul>
                 <p>
-                    The demo also contains simple clients that you can alter and execute to better understand 
+                    The demo also contains simple clients that you can alter and execute to better understand
                     the functionality in each demo sub-package.
                 </p>
             </subsection>
@@ -60,7 +60,7 @@
                 </p>
                 <p>
                     This booking system tries to replicate the JBoss Booking System (available from JBoss)
-                    to illustrate the JBoss Seam features.  It also relies on the EJB3 cartridge. 
+                    to illustrate the JBoss Seam features.  It also relies on the EJB3 cartridge.
                     It is built for the MySQL database engine using JBoss 4.0.5 GA or newer.
                 </p>
                 <p>
@@ -91,7 +91,7 @@
                     <a href="http://docs.andromda.org/samples.html">AndroMDA Samples</a>.
                 </p>
                 <p>
-                    This sample application is a re-make of the 
+                    This sample application is a re-make of the
                     <a href="http://www.andromda.org/index.php?option=com_content&amp;task=category&amp;sectionid=11&amp;id=42&amp;Itemid=89">
                     AndroMDA Timetracker sample application</a> but
                     instead uses the EJB3 and the JSF cartridges.

@@ -63,6 +63,6 @@
 
         <menu ref="reports"/>
 
-        <footer/>     
+        <footer/>
     </body>
 </project>

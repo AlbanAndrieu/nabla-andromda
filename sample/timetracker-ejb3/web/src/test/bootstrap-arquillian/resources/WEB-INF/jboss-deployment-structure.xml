@@ -8,7 +8,7 @@
           <module name="org.hibernate.validator" slot="main"/>
           <!--
           <module name="org.hibernate" slot="main"/>
-          
+
           <module name="javax.persistence.api" slot="main"/>
           -->
      </exclusions>
@@ -28,6 +28,6 @@
           <module name="javax.faces.api" slot="main"/>
           <module name="com.sun.jsf-impl" slot="main"/>
     </exclusions>
-   </sub-deployment> 
+   </sub-deployment>
    -->
 </jboss-deployment-structure>

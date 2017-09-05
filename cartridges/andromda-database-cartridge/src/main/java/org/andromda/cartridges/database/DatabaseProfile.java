@@ -39,7 +39,7 @@ import org.andromda.metafacades.uml.UMLProfile;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author$
  * @version $Revision$
  * @since $Date$

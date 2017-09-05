@@ -31,4 +31,3 @@
     </tiles:put>
 
 </tiles:insert>
-

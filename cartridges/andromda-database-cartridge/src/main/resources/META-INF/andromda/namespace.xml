@@ -40,13 +40,13 @@
             </property>
             <property name="indexPrefix">
                 <default>IDX</default>
-            </property> 
+            </property>
             <property name="foreignKeyConstraintPrefix">
                 <default>FK</default>
-            </property> 
+            </property>
             <property name="dummyLoadMultiplier">
                 <default>1</default>
-            </property> 
+            </property>
         </propertyGroup>
     </properties>
 </namespace>

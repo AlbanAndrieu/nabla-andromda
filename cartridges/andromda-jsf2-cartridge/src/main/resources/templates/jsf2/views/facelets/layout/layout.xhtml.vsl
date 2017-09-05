@@ -10,9 +10,9 @@
       xmlns:tr="http://myfaces.apache.org/trinidad">
 #elseif ($adf)
       xmlns:af="http://xmlns.oracle.com/adf/faces"
-      xmlns:afh="http://xmlns.oracle.com/adf/faces/html"> 
-#end   
-       
+      xmlns:afh="http://xmlns.oracle.com/adf/faces/html">
+#end
+
     <ui:insert name="head">
         <ui:include src="head.xhtml"/>
     </ui:insert>
@@ -45,7 +45,7 @@
             <f:facet name="menu3">
                 <ui:insert name="menu">
                     <ui:include src="menu.xhtml"/>
-                </ui:insert> 
+                </ui:insert>
             </f:facet>
 #end
             <f:facet name="infoStatus">
@@ -137,7 +137,7 @@
         </tr:form>
     </trh:body>
 #elseif ($adf)
-        </af:panelPage>        
+        </af:panelPage>
     </body>
 #else
     </body>

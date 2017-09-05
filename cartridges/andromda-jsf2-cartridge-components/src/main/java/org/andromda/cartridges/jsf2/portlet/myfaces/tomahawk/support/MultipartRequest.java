@@ -6,7 +6,7 @@ import org.apache.commons.fileupload.FileItem;
 
 /**
  * This interface handles the multpart request for inputFileUpload components.
- * 
+ *
  * @author <a href="mailto:shinsuke@yahoo.co.jp">Shinsuke Sugaya</a>
  */
 public interface MultipartRequest

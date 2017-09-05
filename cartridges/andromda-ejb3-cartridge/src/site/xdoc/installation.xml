@@ -16,7 +16,7 @@
             <subsection name="Requirements">
                 <p>
                     You must have the latest Maven (currently 3.0.4) installed and configured.
-                    You can install Maven 
+                    You can install Maven
                     <a href="http://maven.apache.org/download.html#Installation">here</a>.
                 </p>
                 <p>
@@ -37,14 +37,14 @@
             <subsection name="Getting the Cartridge">
                 <p>
                     Once you have met the requirements above, checkout the latest EJB3 cartridge from
-                    CVS HEAD.  
+                    CVS HEAD.
                     You have two options:
                 </p>
                 <ul>
                     <li>
                         Follow the anonymous CVS access at
                         <a href="http://sourceforge.net/cvs/?group_id=154568">andromdaplugins project</a>
-                        on SourceForge to checkout the latest <b>andromda-plugins</b> module from 
+                        on SourceForge to checkout the latest <b>andromda-plugins</b> module from
                         <code>HEAD</code>.
                     </li>
                     <li>
@@ -54,14 +54,14 @@
                         (/cvsroot/andromdaplugins).  Once connected, expand HEAD and check out
                         <code>andromda-plugins</code>.
                     </li>
-                </ul>  
-                <p>Note that this will check out all cartridges and plugins 
+                </ul>
+                <p>Note that this will check out all cartridges and plugins
                 which are not relevant to the EJB3 cartridge, but will ease the your build process.</p>
             </subsection>
             <a name="Building_the_Cartridge"/>
             <subsection name="Building the Cartridge">
                 <p>
-                    Once you have checked out the <code>andromda-plugins</code> project, you can simply build 
+                    Once you have checked out the <code>andromda-plugins</code> project, you can simply build
                     the <b>andromda-ejb3</b> cartridge in <code>andromda-plugins/cartridges/andromda-ejb3</code>
                     by running <i>mvn</i> in the latter location.
                 </p>

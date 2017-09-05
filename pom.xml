@@ -12,18 +12,18 @@
         <modelVersion>4.0.0</modelVersion>
         <groupId>com.nabla.project.uml</groupId>
         <artifactId>nabla</artifactId>
-        <name>Nabla Assembly</name>    
+        <name>Nabla Assembly</name>
         <packaging>pom</packaging>
         <description>Nabla Assembly</description>
         <url>${JOB_URL}</url>
-            
+
     	<scm>
 		<connection>scm:git:git://github.com/AlbanAndrieu/nabla-andromda.git</connection>
 		<developerConnection>scm:git:git@github.com:AlbanAndrieu/nabla-andromda.git</developerConnection>
 		<url>https://github.com/AlbanAndrieu/nabla-andromda</url>
-		<tag>HEAD</tag>			
+		<tag>HEAD</tag>
     	</scm>
-        
+
         <profiles>
             <profile>
                 <id>root-mda</id>
@@ -104,7 +104,7 @@
                                         <configurationUri>${project.basedir}/conf/andromdapp/nabla/configuration.xml</configurationUri>
                                     </configuration>
                                 </execution>
-        
+
                                 <execution>
                                     <id>clean-nabla-structure</id>
                                     <phase>post-clean</phase>

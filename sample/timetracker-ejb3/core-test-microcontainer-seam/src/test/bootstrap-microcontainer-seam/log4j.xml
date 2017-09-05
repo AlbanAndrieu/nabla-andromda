@@ -18,7 +18,7 @@
     <category name="com.arjuna">
         <priority value="ERROR"/>
     </category>
-    
+
     <!-- EMB-6, JMS activation throws an error due to deployment ordering, but as there is a timeout
     and retry the tests pass. Hide the error message -->
     <category name="jboss.resource.adapter.jms.inflow.JmsActivation">

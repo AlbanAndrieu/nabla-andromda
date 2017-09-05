@@ -210,7 +210,7 @@ public interface ClassifierFacade
     public List getProperties(boolean follow);
 
     /**
-     * A collection containing all required and/or read-only 'properties' of the classifier. 
+     * A collection containing all required and/or read-only 'properties' of the classifier.
      * Properties are any attributes and navigable connecting association ends.
      * @return Collection<ModelElementFacade>
      */

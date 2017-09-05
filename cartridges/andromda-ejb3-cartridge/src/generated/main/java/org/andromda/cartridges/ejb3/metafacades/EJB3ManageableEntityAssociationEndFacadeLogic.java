@@ -38,7 +38,7 @@ public abstract class EJB3ManageableEntityAssociationEndFacadeLogic
 {
 
     private static final long serialVersionUID = 1L;
-    
+
     /**
      * The underlying UML object
      * @see Object

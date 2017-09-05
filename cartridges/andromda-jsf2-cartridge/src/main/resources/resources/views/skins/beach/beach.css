@@ -465,13 +465,13 @@ af|panelFormLayout::label-cell
     line-height:normal;
     display:block;
     padding:1px;
-    
+
 }
 
 .autocomplete-selected-line{
     background-color: #C2DAEF;
     background-color: #E3EBD7;
-    
+
     cursor:pointer;
     color:#4E4E4E;
     font-family:Tahoma,Arial,Verdana;
@@ -488,13 +488,13 @@ af|panelFormLayout::label-cell
     font-size:11px;
 }
 .autocomplete-table-list {
-    position:absolute; 
+    position:absolute;
     z-index:100;
     background-color : #F7F9F4;
-    
+
 }
 .autocomplete-table-list table{
-    display: none;  
+    display: none;
 }
 
 .autocomplete-table-text td{
@@ -512,7 +512,7 @@ af|panelFormLayout::label-cell
     cursor:pointer;
 
 }
-    
+
 .autocomplete-button-action{
     background-image:url(/skins/default/images/autocomplete-button-action.gif);
 }

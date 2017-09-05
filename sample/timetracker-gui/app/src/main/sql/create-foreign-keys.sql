@@ -30,5 +30,3 @@ ALTER TABLE USER_ROLE
         FOREIGN KEY (USERS)
             REFERENCES USERS
                 ) ;
-
-

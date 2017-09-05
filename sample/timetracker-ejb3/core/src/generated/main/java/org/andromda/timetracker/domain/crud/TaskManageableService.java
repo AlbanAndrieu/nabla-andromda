@@ -17,8 +17,8 @@ public interface TaskManageableService
 
 
     public TaskVO readById(Long id)
-        throws TaskReadManageableException;    
-        
+        throws TaskReadManageableException;
+
     public List read(String name, Long id)
         throws TaskReadManageableException;
 

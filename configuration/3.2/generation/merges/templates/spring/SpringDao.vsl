@@ -94,7 +94,7 @@ public interface $entity.daoName
      * Converts this DAO's entity to a Collection of instances of type {@link $valueObjectRef.targetElement.fullyQualifiedName}.
      */
     public void ${valueObjectRef.transformationToCollectionMethodName}(java.util.Collection entities);
-    
+
     /**
      * Copies the fields of {@link $valueObjectRef.targetElement.fullyQualifiedName} to the specified entity.
      * @param copyIfNull If FALSE, the value object's field will not be copied to the entity if the value is NULL. If TRUE,
@@ -177,7 +177,7 @@ public interface $entity.daoName
      * @return the loaded entities.
      */
     public java.util.Collection loadAll(final int transform, final int maxRowCount);
-    
+
     /**
      * <p>
      * Does the same thing as {@link #loadAll()} with an
@@ -187,7 +187,7 @@ public interface $entity.daoName
      *
      * @param transform the flag indicating what transformation to use.
      * @param max number of results returned
-     * @param oder by identifier flag     
+     * @param oder by identifier flag
      * @return the loaded entities.
      */
     public java.util.Collection loadAll(final int transform, final int maxRowCount, final boolean orderByIdentifier);
@@ -366,7 +366,7 @@ public interface $entity.daoName
      * Removes the instance of $entity.fullyQualifiedEntityName having the given
      * <code>identifier</code> from the persistent store.
      */
-  
+
 #if($entity.compositeIdentifier)
   public void remove($primaryKeyType $primaryKeyName);
 #else

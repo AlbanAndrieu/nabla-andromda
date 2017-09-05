@@ -40,7 +40,7 @@
 	            <artifactId>log4j</artifactId>
 	        </exclusion>
 	    </exclusions>
-	</dependency>        
+	</dependency>
 	-->
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
@@ -76,7 +76,7 @@
         </dependency>
         <dependency>
             <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>            
+            <artifactId>commons-fileupload</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>

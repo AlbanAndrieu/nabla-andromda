@@ -6,16 +6,16 @@
         <version>3.6-SNAPSHOT</version>
     </parent>
     <artifactId>andromda-profile-shared</artifactId>
-    <packaging>xml.zip</packaging>    
+    <packaging>xml.zip</packaging>
     <name>AndroMDA UML 2.0 Shared Profile</name>
-    
+
     <scm>
     	<connection>scm:svn:http://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/shared</connection>
     	<developerConnection>scm:svn:https://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/shared</developerConnection>
     	<url>https://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/shared</url>
     	<tag>HEAD</tag>
     </scm>
-    
+
     <dependencies>
         <dependency>
             <groupId>org.andromda.profiles.uml2</groupId>
@@ -44,6 +44,6 @@
             <version>${project.version}</version>
             <type>xml.zip</type>
             <scope>runtime</scope>
-        </dependency>        
+        </dependency>
     </dependencies>
 </project>

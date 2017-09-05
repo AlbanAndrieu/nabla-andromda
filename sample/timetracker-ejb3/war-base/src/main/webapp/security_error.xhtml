@@ -5,9 +5,9 @@
   xmlns:f="http://java.sun.com/jsf/core"
   xmlns:h="http://java.sun.com/jsf/html"
   template="layout/template.xhtml">
-  
+
   <ui:define name="body">
-  
+
     <h1>A Security Error has occurred</h1>
     <s:fragment rendered="#{not empty facesMessages.currentMessages}">
       <h:messages styleClass="message" errorClass="errormsg" infoClass="infomsg" warnClass="warnmsg" globalOnly="true" />
@@ -15,6 +15,6 @@
     <s:fragment rendered="#{empty facesMessages.currentMessages}">
       <p>#{not empty org.jboss.seam.handledException.message ? org.jboss.seam.handledException.message : 'The cause of the error is unknown'}</p>
     </s:fragment>
-  
-  </ui:define> 
+
+  </ui:define>
 </ui:composition>

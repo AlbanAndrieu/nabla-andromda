@@ -33,7 +33,7 @@
                 The EJB 3.0 related files are listed below.  The <code>ManageableServiceLocator</code> is used by the
                 Struts <b>Action</b> classes in much the same way as the <code>ServiceLocator</code> is used
                 by the Service Delegates.  Notice how the <code>CarManageableService</code> and
-                <code>PersonManageableService</code> beans are defined int the <code>ejb-jar.xml</code> and 
+                <code>PersonManageableService</code> beans are defined int the <code>ejb-jar.xml</code> and
                 <code>jboss.xml</code> deployment descriptors.
             </p>
             <ul>
@@ -118,12 +118,12 @@
                         </p>
                         <p>
                             Typically, only administrators have access to manageable entities.  Therefore, as a
-                            bare minimum, you can have an actor (i.e. Admin) with a dependency to the 
+                            bare minimum, you can have an actor (i.e. Admin) with a dependency to the
                             manageable entity.  This will generate the security constraints in the DAO service
                             layer and provide the web front end cartridge with the role information.
                         </p>
                         <p>
-                            The EJB3 cartridge has introduced a namespace property called 
+                            The EJB3 cartridge has introduced a namespace property called
                             <code><a href="namespace.html#manageableRolesAllowed">manageableRolesAllowed</a></code>.
                             You must set this within your <code>ejb3</code> namespace section of your
                             <code>andromda.xml</code> descriptor file.  This property takes the comma separated
@@ -152,7 +152,7 @@
                             Finally, the web.xml security and role elements will not be rendered unless you have
                             modeled a front end application use case with the appropriate actor associations.
                             Every use case must have one associated activity diagram.  For the most trivial
-                            application, this activity diagram would consist of an initial state with a 
+                            application, this activity diagram would consist of an initial state with a
                             transition to a front end view action state.  The generated JSP allows you to
                             provide a 'cover' page for your manageable entity component pages.
                         </p>
@@ -164,11 +164,11 @@
                 <p>
                     You should assign one attribute of every manageable entity as a <i>unique</i> attribute.  This is
                     achieved by modeling the <![CDATA[<<Unique>>]]> stereotype on the attribute.  As a result, it
-                    will display the unique attribute value for foreign key reference columns when listing entities, 
+                    will display the unique attribute value for foreign key reference columns when listing entities,
                     rather than the complete target entity property name-value pairs.
                 </p>
                 <p>
-                    By assigning a unique manageable entity attribute, the <code>readAll</code> method of the 
+                    By assigning a unique manageable entity attribute, the <code>readAll</code> method of the
                     manageable service base implementation avoids the use of <code>left join fetch</code> to
                     retrieve collection association objects.
                 </p>

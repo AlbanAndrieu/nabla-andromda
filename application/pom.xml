@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    
+
     <parent>
 	<groupId>com.nabla.project.uml</groupId>
 	<artifactId>nabla</artifactId>
 	<version>1.0</version>
     </parent>
-    
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.nabla.project.uml.application</groupId>
     <artifactId>application</artifactId>
@@ -26,7 +26,7 @@
         <module>app</module>
         <module>client</module>
     </modules>
-        
+
     <dependencyManagement>
         <dependencies>
             <!--
@@ -45,7 +45,7 @@
                 <scope>runtime</scope>
             </dependency>
             -->
-            
+
 
             <!-- TODO check in core -->
             <!-- replace this by slf4j-api and slf4j-simple
@@ -56,7 +56,7 @@
                     <version>${slf4j.version}</version>
                 <scope>provided</scope>
             </dependency>
-            -->            
+            -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
@@ -68,8 +68,8 @@
                 <artifactId>slf4j-simple</artifactId>
                 <version>${slf4j.version}</version>
                 <scope>provided</scope>
-            </dependency>    
-                  
+            </dependency>
+
             <dependency>
                 <groupId>cglib</groupId>
                 <artifactId>cglib-nodep</artifactId>
@@ -112,7 +112,7 @@
                         <artifactId>log4j</artifactId>
                     </exclusion>
                 </exclusions>
-            </dependency>                     
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
@@ -128,24 +128,24 @@
                 <groupId>org.twdata.maven</groupId>
                 <artifactId>maven-cli-plugin</artifactId>
             </plugin>
-        </plugins>        
+        </plugins>
     </build>
 
-    <properties>      
+    <properties>
         <commons.digester.version>1.8.1</commons.digester.version>
-    
-        <slf4j.version>1.5.8</slf4j.version>        
-                                 
+
+        <slf4j.version>1.5.8</slf4j.version>
+
         <!--error in test <hibernate.annotations.version>3.2.0.ga</hibernate.annotations.version>-->
         <hibernate.entitymanager.version>3.4.0.GA</hibernate.entitymanager.version>
-                
+
         <database.name>${application.id}</database.name>
- 
+
     	<application.context>${application.id}</application.context>
     	<application.web.context>${application.context}</application.web.context>
     	<application.display.name>Seam Reference Implementation</application.display.name>
     	<application.description>
-    	  The Seam Reference Implementation is a Maven multi module project 
+    	  The Seam Reference Implementation is a Maven multi module project
     	  you can use as a template for your own JBoss Seam project
     	</application.description>
     	<application.distributable>false</application.distributable>

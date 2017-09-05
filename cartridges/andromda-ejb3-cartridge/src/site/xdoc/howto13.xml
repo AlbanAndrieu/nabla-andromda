@@ -94,7 +94,7 @@
                 <p>
                     If you would like to define multiple class level interceptors, then to guarantee the ordering
                     in which these interceptors are invoked, you must draw a dependency from the first interceptor
-                    to the second interceptor and so forth.  This will chain the interceptors and allow the 
+                    to the second interceptor and so forth.  This will chain the interceptors and allow the
                     cartridge to configure them correctly in the ejb-jar deployment descriptor.
                 </p>
             </subsection>
@@ -141,7 +141,7 @@
                     It also allows you to exclude class level interceptors for bean methods.
                 </p>
                 <p>
-                    To exclude the default interceptors, model the 
+                    To exclude the default interceptors, model the
                     <code>andromda_service_interceptor_excludeDefault</code> tagged value.  If this is applied to
                     a bean class, then the interceptor will be ignored for all methods of the bean class.  If
                     it is modeled on a business method of a bean, then invocation of that business method
@@ -159,7 +159,7 @@
                 <p>
                     In situations where you have an inheritance hierarchy, interceptor methods from the super
                     class are always invoked first.  The exception to this rule is the case where the interceptor
-                    has been overridden, regardless of whether the overriding method is defined as an 
+                    has been overridden, regardless of whether the overriding method is defined as an
                     interceptor.
                 </p>
                 <p>
@@ -168,7 +168,7 @@
                     to continue to call the next interceptor.
                 </p>
                 <p>
-                    Similar to bean classes, interceptor classes enjoy the benefits of dependency injection 
+                    Similar to bean classes, interceptor classes enjoy the benefits of dependency injection
                     in much the same way.
                     You can inject resources using the <code>@Resource</code> annotation or an
                     entity manager using the <code>@PersistenceContext</code> annotation.

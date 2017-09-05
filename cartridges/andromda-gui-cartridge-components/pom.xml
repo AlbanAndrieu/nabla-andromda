@@ -42,9 +42,9 @@
                 <exclusion>
                     <groupId>org.andromda</groupId>
                     <artifactId>andromda-core</artifactId>
-                </exclusion>	        
+                </exclusion>
 	    </exclusions>
-	</dependency>    
+	</dependency>
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-impl</artifactId>
@@ -56,7 +56,7 @@
             <artifactId>myfaces-api</artifactId>
             <version>${myfaces.version}</version>
             <scope>provided</scope>
-        </dependency-->    
+        </dependency-->
         <dependency>
             <groupId>javax.el</groupId>
             <artifactId>el-api</artifactId>
@@ -107,7 +107,7 @@
             <groupId>commons-validator</groupId>
             <artifactId>commons-validator</artifactId>
         </dependency>
-        <!-- taglib dependencies -->  
+        <!-- taglib dependencies -->
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>

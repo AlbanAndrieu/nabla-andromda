@@ -22,7 +22,7 @@
 	-->
    <bean name="SchemaResolverConfig"
       class="org.jboss.xb.binding.sunday.unmarshalling.SchemaResolverConfig">
-      
+
       <!-- schemaLocation to JBossXBuilder binding classes -->
       <property name="bindingClassesByLocations">
          <map keyClass="java.lang.String" valueClass="java.lang.String">
@@ -127,7 +127,7 @@
                <key>jboss-client_5_0.xsd</key>
                <value>org.jboss.metadata.client.jboss.JBossClient5MetaData</value>
             </entry>
-            
+
             <!-- EjbJarMetaData -->
             <entry>
                <key>ejb-jar</key>
@@ -149,37 +149,37 @@
                <key>ejb-jar_3_0.xsd</key>
                <value>org.jboss.metadata.ejb.spec.EjbJar30MetaData</value>
             </entry>
-            
+
             <!-- JBossMetaData -->
             <entry>
                <key>jboss</key>
                <value>org.jboss.metadata.ejb.jboss.JBoss50DTDMetaData</value>
-            </entry>            
+            </entry>
             <entry>
                <key>jboss_3_0.dtd</key>
                <value>org.jboss.metadata.ejb.jboss.JBoss50DTDMetaData</value>
-            </entry>            
+            </entry>
             <entry>
                <key>jboss_3_2.dtd</key>
                <value>org.jboss.metadata.ejb.jboss.JBoss50DTDMetaData</value>
-            </entry>            
+            </entry>
             <entry>
                <key>jboss_4_0.dtd</key>
                <value>org.jboss.metadata.ejb.jboss.JBoss50DTDMetaData</value>
-            </entry>            
+            </entry>
             <entry>
                <key>jboss_4_2.dtd</key>
                <value>org.jboss.metadata.ejb.jboss.JBoss50DTDMetaData</value>
-            </entry>            
+            </entry>
             <entry>
                <key>jboss_5_0.dtd</key>
                <value>org.jboss.metadata.ejb.jboss.JBoss50DTDMetaData</value>
-            </entry>            
+            </entry>
             <entry>
                <key>jboss_5_0.xsd</key>
                <value>org.jboss.metadata.ejb.jboss.JBoss50MetaData</value>
             </entry>
-            
+
             <!-- WebMetaData -->
             <entry>
                <key>web-app</key>
@@ -233,5 +233,5 @@
          </map>
       </property>
    </bean>
-   
+
 </deployment>

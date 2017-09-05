@@ -19,8 +19,8 @@ public interface UserManageableService
 
 
     public UserVO readById(Long id)
-        throws UserReadManageableException;    
-        
+        throws UserReadManageableException;
+
     public List read(String username, String password, String firstName, String lastName, String email, boolean isEnable, Date creationDate, String comment, Long id, Long[] roles)
         throws UserReadManageableException;
 

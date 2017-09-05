@@ -9,7 +9,7 @@
     <body>
         <section name="Exceptions">
             <p>
-                The EJB3 cartridge provides a similar exception handling process for applications 
+                The EJB3 cartridge provides a similar exception handling process for applications
                 as the other persistence cartridges.
             </p>
             <p>
@@ -30,7 +30,7 @@
                 application specific exceptions.
             </p>
             <p>
-                The next thing to do is draw a dependency from a <![CDATA[<<Service>>]]> to this exception, 
+                The next thing to do is draw a dependency from a <![CDATA[<<Service>>]]> to this exception,
                 this will make all operations throw this exception.
                 You may choose to have a single operation throw a specific exception by drawing the dependency
                 from that operation to the exception.

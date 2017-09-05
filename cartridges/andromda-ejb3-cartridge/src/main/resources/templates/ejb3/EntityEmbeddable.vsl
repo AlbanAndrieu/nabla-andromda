@@ -435,15 +435,15 @@ $attribute.getDocumentation("     * ")
 ## Only specify this validator if identifier explicity specified and explicity set as not null
 ##
 ##    //$attribute.type $attribute.type.name
-#*          *##if (!$attribute.type.name.equals("boolean") && !$attribute.type.name.equals("Date"))    
+#*          *##if (!$attribute.type.name.equals("boolean") && !$attribute.type.name.equals("Date"))
 ##    @javax.validation.constraints.NotNull(message = "You should enter a value for ${attribute.name}.")
-#*            *##if (!$attribute.columnEmptyable )    
+#*            *##if (!$attribute.columnEmptyable )
 #if($hibernateUtils.version4)
     @org.hibernate.validator.constraints.NotEmpty(message = "You should enter a value for ${attribute.name}.")
 #else
     @org.hibernate.validator.NotEmpty(message = "You should enter a value for ${attribute.name}.")
-#end        
-#*            *##end    
+#end
+#*            *##end
 #*          *##end
 #*        *##end
 
@@ -486,7 +486,7 @@ $attribute.getDocumentation("     * ")
 	@org.jboss.seam.annotations.security.management.UserEnabled
 #*      *##end
 #*      *##if ($attribute.columnIdentityUserRoles)
-	@org.jboss.seam.annotations.security.management.UserRoles   
+	@org.jboss.seam.annotations.security.management.UserRoles
 #*      *##end
 #*      *##if ($attribute.columnIdentityRoleName)
 	@org.jboss.seam.annotations.security.management.RoleName

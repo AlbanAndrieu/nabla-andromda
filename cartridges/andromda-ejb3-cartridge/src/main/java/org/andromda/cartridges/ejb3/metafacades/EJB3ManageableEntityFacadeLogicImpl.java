@@ -48,7 +48,7 @@ import org.andromda.metafacades.uml.UMLMetafacadeProperties;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.ejb3.metafacades.EJB3ManageableEntityFacade.
- * 
+ *
  * @see EJB3ManageableEntityFacade
  */
 public class EJB3ManageableEntityFacadeLogicImpl extends EJB3ManageableEntityFacadeLogic
@@ -86,7 +86,7 @@ public class EJB3ManageableEntityFacadeLogicImpl extends EJB3ManageableEntityFac
 
     /**
      * Constructor
-     * 
+     *
      * @param metaObject
      * @param context
      */

@@ -7,11 +7,11 @@
       <artifactId>skin</artifactId>
       <version>1.0</version>
     </skin>
-    
+
     <custom>
       <fluidoSkin>
 	<topBarEnabled>true</topBarEnabled>
-        <!--<sideBarEnabled>false</sideBarEnabled>-->     
+        <!--<sideBarEnabled>false</sideBarEnabled>-->
         <googleSearch>
           <sitesearch/>
         </googleSearch>
@@ -21,30 +21,30 @@
           <user>AlbanAndrieu</user>
           <showUser>true</showUser>
           <showFollowers>true</showFollowers>
-        </twitter>        
+        </twitter>
       </fluidoSkin>
     </custom>
-    
+
     <bannerLeft>
       <name>${project.name}</name>
     </bannerLeft>
     <bannerRight>
-      <href>http://www.maven.nabla.mobi/project</href> 
-      <border>1</border> 
-      <width>48</width> 
-      <height>48</height> 
-      <src>images/home.png</src>       
+      <href>http://www.maven.nabla.mobi/project</href>
+      <border>1</border>
+      <width>48</width>
+      <height>48</height>
+      <src>images/home.png</src>
     </bannerRight>
-    
+
     <!--<publishDate format="dd MMM yyyy hh:mm zzz"/>-->
 
-    <body>    	
+    <body>
     	<!--
     	<breadcrumbs>
     	  <item name="Nabla" href="http://www.maven.nabla.mobi" />
     	</breadcrumbs>
     	-->
-    	
+
     	<links>
     	    <item name="EJB3" href="index.html"/>
       	    <item name="Cartridges" href="http://galaxy.andromda.org/docs/andromda-cartridges/index.html"/>
@@ -53,9 +53,9 @@
             <item name="Nabla Code" href="http://code.google.com/p/alban" />
      	    <!--<item name="FR" href="/fr/index.html" />-->
     	</links>
-        
+
         <menu ref="parent"/>
-        
+
     	<menu name="Overview">
             <item name="About EJB3 Cartridge" href="index.html"/>
     	    <!--<item name="Getting Started Guide" href="startup.html"/>-->

@@ -21,7 +21,7 @@
             </plugin>
         </plugins>
     </build>
-    <modules>        
+    <modules>
         <module>gui</module>
         <module>backend</module>
         <module>test</module>

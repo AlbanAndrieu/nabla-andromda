@@ -5,7 +5,7 @@ import org.andromda.utils.StringUtilsHelper;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFEvent.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFEvent
  */
 public class JSFEventLogicImpl extends JSFEventLogic
@@ -72,7 +72,7 @@ public class JSFEventLogicImpl extends JSFEventLogic
 
     /**
      * Indicates whether or not we should normalize messages.
-     * 
+     *
      * @return normalizeMessages true/false
      */
     private boolean isNormalizeMessages()

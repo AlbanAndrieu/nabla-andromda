@@ -47,7 +47,7 @@ protected PersonDetails handleGet(Long id) throws Exception
 </modelPackages>
                 ]]></source>
                 (look at <a href="http://www.andromda.org/docs/configuration.html#modelPackage">http://www.andromda.org/docs/configuration.html#modelPackage</a>)
-                The EJB3 cartridge should generate the <code>@EJB</code> injections from the dependency for the 
+                The EJB3 cartridge should generate the <code>@EJB</code> injections from the dependency for the
                 source class.
             </p>
         </section>

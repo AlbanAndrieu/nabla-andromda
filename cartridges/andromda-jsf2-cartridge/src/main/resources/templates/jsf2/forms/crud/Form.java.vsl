@@ -20,7 +20,7 @@ $fieldName = null;
 package $manageable.manageablePackageName;
 
 /**
- * This form encapsulates the fields that are used in the execution of the CRUD operations in ${manageable.name} 
+ * This form encapsulates the fields that are used in the execution of the CRUD operations in ${manageable.name}
  *
  */
 public class $manageable.formBeanClassName

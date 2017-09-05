@@ -232,7 +232,7 @@ ${comma}${property.getterSetterTypeName} ${property.name}## no newline
         }
 #end
     }
-    
+
 #end
 // HibernateEntity.vsl merge-point
 }

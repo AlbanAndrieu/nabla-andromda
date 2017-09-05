@@ -115,7 +115,7 @@ public abstract class TaskDaoBase implements TaskDao
 
     /**
      * Create Task with no VO transformation
-     * 
+     *
      * @see TaskDao#create(Task)
      */
     @Override
@@ -126,7 +126,7 @@ public abstract class TaskDaoBase implements TaskDao
 
     /**
      * Create Task with VO transformation
-     * 
+     *
      * @see TaskDao#create(int, Task)
      */
     @Override
@@ -150,7 +150,7 @@ public abstract class TaskDaoBase implements TaskDao
 
     /**
      * Create a Collection of Task with no VO transformation
-     * 
+     *
      * @see TaskDao#create(Collection)
      */
     @Override
@@ -162,7 +162,7 @@ public abstract class TaskDaoBase implements TaskDao
 
     /**
      * Create a Collection of Task with VO transformation
-     * 
+     *
      * @see TaskDao#create(int, Collection)
      */
     @Override
@@ -190,7 +190,7 @@ public abstract class TaskDaoBase implements TaskDao
 
     /**
      * Create Entity Task using instance attributes with no VO transformation
-     * 
+     *
      * @see TaskDao#create(String)
      */
     @Override
@@ -201,7 +201,7 @@ public abstract class TaskDaoBase implements TaskDao
 
     /**
      * Create Entity Task using instance attributes with VO transformation
-     * 
+     *
      * @see TaskDao#create(int, String)
      * composite=false identifiers=1
      */
@@ -395,7 +395,7 @@ public abstract class TaskDaoBase implements TaskDao
     /**
      * Default implementation for transforming the results of a report query into a value object. This
      * implementation exists for convenience reasons only. It needs only be overridden in the {@link TaskDaoImpl} class if you intend to use reporting queries.
-     * 
+     *
      * @param row Object[] Array of Task to transform
      * @return target TaskVO
      * @see TaskDao#toTaskVO(Task)

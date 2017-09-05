@@ -11,12 +11,12 @@
           <param-name>org.ajax4jsf.VIEW_HANDLERS</param-name>
           <param-value>com.sun.facelets.FaceletViewHandler</param-value>
     </context-param>
-    
+
     <!-- ************************ Seam Listener **************************** -->
     <listener>
         <listener-class>org.jboss.seam.servlet.SeamListener</listener-class>
     </listener>
-    
+
     <!-- ************************ Ajax4jsf Filter **************************** -->
     <!--
     <filter>
@@ -32,7 +32,7 @@
             <param-value>true</param-value>
         </init-param>
     </filter>
-    
+
     <filter-mapping>
         <filter-name>ajax4jsf</filter-name>
         <servlet-name>Faces Servlet</servlet-name>
@@ -41,7 +41,7 @@
         <dispatcher>INCLUDE</dispatcher>
     </filter-mapping>
     -->
-    
+
     <!-- ************************ Ajax4JSF Config **************************** -->
     <!--
     <context-param>
@@ -65,13 +65,13 @@
     <filter>
     	<filter-name>Seam Filter</filter-name>
     	<filter-class>org.jboss.seam.servlet.SeamFilter</filter-class>
-    </filter>  
-    
+    </filter>
+
     <filter-mapping>
     	<filter-name>Seam Filter</filter-name>
     	<url-pattern>/*</url-pattern>
-    </filter-mapping>     
-    
+    </filter-mapping>
+
     <!-- ************************ SEAM Config **************************** -->
     <!-- 300 second conversation timeout -->
     <!--
@@ -84,24 +84,24 @@
         <param-value>true</param-value>
     </context-param>
     -->
-           
+
     <!-- ************************ Seam Servlet Mapping ************************ -->
     <servlet>
     	<servlet-name>Seam Resource Servlet</servlet-name>
     	<servlet-class>org.jboss.seam.servlet.SeamResourceServlet</servlet-class>
-    </servlet> 
-    <!--        
+    </servlet>
+    <!--
     <servlet>
         <servlet-name>Seam Resource Servlet</servlet-name>
         <servlet-class>org.jboss.seam.servlet.ResourceServlet</servlet-class>
     </servlet>
     -->
-    
+
     <servlet-mapping>
         <servlet-name>Seam Resource Servlet</servlet-name>
         <url-pattern>/seam/resource/*</url-pattern>
     </servlet-mapping>
-        
+
     <!-- ********************* Facelets Config ************************** -->
     <context-param>
         <description>Prevents HTML-Comments from beeing rendered</description>
@@ -137,7 +137,7 @@
         <param-name>javax.faces.PROJECT_STAGE</param-name>
         <param-value>Development</param-value>
     </context-param>
-      
+
 <!-- Options JSF avec utilisation de SUN RI
     <context-param>
     	<param-name>com.sun.faces.validateXml</param-name>
@@ -149,42 +149,42 @@
     </context-param>
 -->
 
-   
+
     <!-- ************************ RichFaces Config **************************** -->
     <context-param>
     	<param-name>org.richfaces.SKIN</param-name>
     	<param-value>glassX</param-value>
     	<!--<param-value>ruby</param-value>-->
     </context-param>
-    
+
     <!-- Suppress spurious stylesheets -->
     <context-param>
     	<param-name>org.richfaces.CONTROL_SKINNING</param-name>
     	<param-value>disable</param-value>
     </context-param>
-    
+
     <context-param>
     	<param-name>org.richfaces.CONTROL_SKINNING_CLASSES</param-name>
     	<param-value>disable</param-value>
     </context-param>
-    
+
     <!-- Change load strategy to DEFAULT to disable sending scripts/styles as packs -->
     <context-param>
     	<param-name>org.richfaces.LoadStyleStrategy</param-name>
     	<param-value>ALL</param-value>
     </context-param>
-    
+
     <context-param>
     	<param-name>org.richfaces.LoadScriptStrategy</param-name>
     	<param-value>ALL</param-value>
     </context-param>
-      
 
 
 
 
 
-  
+
+
     <!-- ************************ Faces Servlet Mapping **************************** -->
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
@@ -195,8 +195,8 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.seam</url-pattern>
     </servlet-mapping>
-        
-        
+
+
     <!--
     <servlet>
         <servlet-name>File Download Servlet</servlet-name>
@@ -209,7 +209,7 @@
     </servlet-mapping>
     -->
     <!-- resource loader servlet -->
-    <!-- 
+    <!--
     <servlet>
         <servlet-name>AndroMDA JSF Servlet</servlet-name>
         <servlet-class>org.andromda.cartridges.jsf.JSFServlet</servlet-class>
@@ -218,16 +218,16 @@
     <servlet-mapping>
         <servlet-name>AndroMDA JSF Servlet</servlet-name>
         <url-pattern>/jsf/*</url-pattern>
-    </servlet-mapping>  
-    -->  
+    </servlet-mapping>
+    -->
 
 
     <!-- ************************ Manual Servlets **************************** -->
     <!-- precompilation merge-point -->
-      
-    
-    
-    
+
+
+
+
     <!-- ************************ Manual Filters **************************** -->
     <!-- uncomment the following if you're using the open-session-in-view pattern
          note: that you'll need to update the filter-class value if you've changed
@@ -247,31 +247,31 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     -->
-    
+
     <!-- ************************ Manual Merged Config **************************** -->
     <!-- Instruct JBoss to not use Mojarra libs with this application - avoids Myfaces conflict -->
     <!-- uncomment if you want to myfaces
     <context-param>
          <param-name>org.jboss.jbossfaces.WAR_BUNDLES_JSF_IMPL</param-name>
          <param-value>true</param-value>
-    </context-param> 
+    </context-param>
     -->
-    
+
     <!-- pretty-faces filter -->
     <!--
     <filter>
        <filter-name>Pretty Filter</filter-name>
        <filter-class>com.ocpsoft.pretty.PrettyFilter</filter-class>
-    </filter>    
-    <filter-mapping> 
-        <filter-name>Pretty Filter</filter-name> 
-        <url-pattern>/*</url-pattern> 
-        <dispatcher>FORWARD</dispatcher> 
-        <dispatcher>REQUEST</dispatcher> 
+    </filter>
+    <filter-mapping>
+        <filter-name>Pretty Filter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>REQUEST</dispatcher>
         <dispatcher>ERROR</dispatcher>
     </filter-mapping>
-    -->  
-        
+    -->
+
 
 
     <!--
@@ -282,11 +282,11 @@
         <session-timeout>45</session-timeout>
         <!-- session-config merge-point -->
     </session-config>
-    
+
 
     <!-- Welcome files -->
     <welcome-file-list>
-        
+
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
@@ -301,8 +301,8 @@
     <error-page>
     	<error-code>404</error-code>
     	<location>/404.xhtml</location>
-    </error-page>    
-    
+    </error-page>
+
     <!-- taglib merge-point -->
     <!-- resource-ref merge-point -->
 

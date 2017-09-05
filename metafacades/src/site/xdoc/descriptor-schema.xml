@@ -1,12 +1,12 @@
 <document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd"> 
+       xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
 	<properties>
-    	<title>Metafacades Descriptor Schema</title> 
+    	<title>Metafacades Descriptor Schema</title>
     </properties>
-  	<body> 
+  	<body>
   		<section name="Metafacades Descriptor Schema">
 			<p>
-  				Each Metafacades descriptor (andromda-metafacades.xml) must comply with the following XSD Schema: 
+  				Each Metafacades descriptor (andromda-metafacades.xml) must comply with the following XSD Schema:
   			</p>
 			<source>
 <![CDATA[
@@ -73,9 +73,9 @@
             <xs:attribute name="metaclassPattern" type="xs:string" use="optional">
                 <xs:annotation>
                     <xs:documentation>
-                        Specifies the pattern of the metaclass implementation classes based on the name of the metaclass 
-                        interface, for example <em>{0}.{1}Impl</em> might be the value, where <em>{0}</em> represents 
-                        the metaclass interface package and <em>{1}</em> the name of the metafacade.  At least 
+                        Specifies the pattern of the metaclass implementation classes based on the name of the metaclass
+                        interface, for example <em>{0}.{1}Impl</em> might be the value, where <em>{0}</em> represents
+                        the metaclass interface package and <em>{1}</em> the name of the metafacade.  At least
                         one set of registered metafacades must have this attribute defined.
                     </xs:documentation>
                 </xs:annotation>
@@ -96,6 +96,6 @@
     <xs:element name="stereotype" type="xs:string"/>
 </xs:schema>]]>
 	  		</source>
-  		</section>  	
-  	</body> 
+  		</section>
+  	</body>
 </document>

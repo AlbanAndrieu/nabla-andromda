@@ -26,7 +26,7 @@
             <stereotype>FRONT_END_USE_CASE</stereotype>
         </mapping>
     </metafacade>
-    
+
     <metafacade class="org.andromda.cartridges.bpm4struts.metafacades.StrutsControllerLogicImpl">
         <mapping>
             <property name="useCase"/>
@@ -138,14 +138,14 @@
             <property name="containedInFrontEndUseCase"/>
         </mapping>
     </metafacade>
-    
+
     <!-- mapping rule for emf-uml2 support -->
     <metafacade class="org.andromda.cartridges.bpm4struts.metafacades.StrutsTriggerLogicImpl">
         <mapping class="org.eclipse.uml2.impl.ActivityImpl">
             <property name="containedInFrontEndUseCase"/>
         </mapping>
     </metafacade>
-    
+
     <!-- mapping rule for emf-uml22 support -->
     <metafacade class="org.andromda.cartridges.bpm4struts.metafacades.StrutsTriggerLogicImpl">
         <mapping class="org.eclipse.uml2.uml.internal.impl.ActivityImpl">

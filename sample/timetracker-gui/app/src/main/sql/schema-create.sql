@@ -44,29 +44,29 @@
         primary key (ID)
     );
 
-    alter table TIMECARD 
-        add constraint TIMECARD_SUBMITTERC 
-        foreign key (SUBMITTER) 
+    alter table TIMECARD
+        add constraint TIMECARD_SUBMITTERC
+        foreign key (SUBMITTER)
         references USERS;
 
-    alter table TIMECARD 
-        add constraint TIMECARD_APPROVERC 
-        foreign key (APPROVER) 
+    alter table TIMECARD
+        add constraint TIMECARD_APPROVERC
+        foreign key (APPROVER)
         references USERS;
 
-    alter table TIME_ALLOCATION 
-        add constraint TIME_ALLOCATION_TASKC 
-        foreign key (TASK) 
+    alter table TIME_ALLOCATION
+        add constraint TIME_ALLOCATION_TASKC
+        foreign key (TASK)
         references TASK;
 
-    alter table TIME_ALLOCATION 
-        add constraint TIME_ALLOCATION_TIMECARDC 
-        foreign key (TIMECARD) 
+    alter table TIME_ALLOCATION
+        add constraint TIME_ALLOCATION_TIMECARDC
+        foreign key (TIMECARD)
         references TIMECARD;
 
     create index USERNAME_INDEX on USERS (USERNAME);
 
-    alter table USER_ROLE 
-        add constraint USER_ROLE_USERSC 
-        foreign key (USERS) 
+    alter table USER_ROLE
+        add constraint USER_ROLE_USERSC
+        foreign key (USERS)
         references USERS;

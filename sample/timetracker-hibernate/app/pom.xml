@@ -8,8 +8,8 @@
         <artifactId>timetracker-hibernate</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
-    <modelVersion>4.0.0</modelVersion>    
+
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>app</artifactId>
     <packaging>ear</packaging>
     <name>TimeTracker Hibernate Application</name>
@@ -130,7 +130,7 @@
                         </copy>
                     </target>
                 </configuration>
-            </plugin>            
+            </plugin>
             <plugin>
                 <groupId>org.andromda.maven.plugins</groupId>
                 <artifactId>andromdapp-maven-plugin</artifactId>

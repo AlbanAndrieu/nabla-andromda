@@ -3,8 +3,8 @@
 /** All these styles/icons/properties are overrides of the simple skin */
 
 /** :alias means that this class or icon is not used directly. It is included
-in other component's style selectors or other component's icons. It is 
-meant to be a fast way to change styles. The alternative is to style each 
+in other component's style selectors or other component's icons. It is
+meant to be a fast way to change styles. The alternative is to style each
 component. **/
 .AFInstructionText
 {
@@ -13,9 +13,9 @@ component. **/
 
 .AFDarkForeground:alias {color:#035D5C;}
 .AFDarkBackground:alias {background-color:Purple;}
-/** In the base styles, AFDarkBorder uses the background-color of 
+/** In the base styles, AFDarkBorder uses the background-color of
     AFDarkBackground for its border color, so no need to set it directly. */
-    
+
 /* make up a color for hovering over menuTabs and menuBars */
 /* put the extension :alias so it won't get written out to the final css file,
    cuz I know it won't be used directly. Instead it will be included in
@@ -40,10 +40,10 @@ button {font-family:Arial,Helvetica,Geneva,sans-serif;font-weight:normal;font-si
 
 /** showOneTab **/
 /** ---------- **/
-/** .AFShowOneTab:alias is included in af|showOneTab::orientation-top and 
+/** .AFShowOneTab:alias is included in af|showOneTab::orientation-top and
     af|showOneTab::orientation-bottom which are the styles on the table. **/
 .AFShowOneTab:alias {
-  background-color:#BB95BB; 
+  background-color:#BB95BB;
   text-align:center;
 }
 /** make the top tab bar have a solid border underneath **/
@@ -66,16 +66,16 @@ af|showOneTab::separator {
 
 af|showOneTab::tab {
   font-weight:bold;
-  font-family:Tahoma; 
+  font-family:Tahoma;
   padding:2px 8px;
 }
 
 af|showOneTab::tab-selected {
   font-family:Tahoma;
-  padding:2px 8px; 
-  text-decoration: none; 
+  padding:2px 8px;
+  text-decoration: none;
   background-color:white
-}  
+}
 
 af|showOneTab::tab-link {
   color:white;
@@ -90,7 +90,7 @@ af|showOneTab::tab-link:hover
 /* put some space in the
 first cell */
 af|showOneTab::cell-start {
-  background-color:transparent; 
+  background-color:transparent;
   padding-left:10px
 }
 /** put some space between the tabs and the body */
@@ -115,7 +115,7 @@ af|showOneTab::body
 /** this isn't needed when we are using icons for the tabs(but the padding helps!)
 .AFTabBarItem:alias
 {
-  border-style:solid; 
+  border-style:solid;
   border-color:#5D025E;
   border-width: 3px 2px 0px 2px;
   padding:2px 6px;
@@ -258,15 +258,15 @@ af|menuBar::separator
 
 af|panelBox::medium-header-start-icon
 {
-  content:url(/skins/default/images/panelBoxStart.gif); 
-  width:8px; 
+  content:url(/skins/default/images/panelBoxStart.gif);
+  width:8px;
   height:26px
 }
 af|panelBox::medium-header-end-icon
 {
   content:url(/skins/default/images/panelBoxEnd.gif);
-  width:8px; 
-  height:26px  
+  width:8px;
+  height:26px
 }
 
 .AFPanelBoxBody:alias
@@ -291,7 +291,7 @@ af|panelBox::header
   border-color: #E7E4EA;
   border-style:solid;
   border-width:3px;
-  margin:2px; 
+  margin:2px;
   padding:5px;
 }
 
@@ -321,14 +321,14 @@ af|panelSideBar
 /** selectInputDate launch icon **/
 af|selectInputDate::launch-icon
 {
-  content:url(/skins/default/images/dateButtonPurple.gif); 
-  width:19px; 
+  content:url(/skins/default/images/dateButtonPurple.gif);
+  width:19px;
   height:24px
 }
 af|selectInputDate::launch-icon:rtl
 {
-  content:url(/skins/default/images/dateButtonPurpleRTL.gif); 
-  width:19px; 
+  content:url(/skins/default/images/dateButtonPurpleRTL.gif);
+  width:19px;
   height:24px
 }
 
@@ -372,10 +372,10 @@ af|menuPath {-ora-show-last-item:false}
     can hide it like this (this feature will be more useful when skins can
     extends other skins besides simple)
 
-af|menuPath::separator-icon {content:inhibit}    
+af|menuPath::separator-icon {content:inhibit}
 */
 
-.AFHeaderErrorIcon:alias 
+.AFHeaderErrorIcon:alias
 {
   content:url(/skins/default/images/errorl.gif); width:18px; height: 18px;
 
@@ -416,7 +416,7 @@ af|column::sort-ascend-icon
 
 af|column::sort-descend-icon
 {
-  content: url(/skins/default/images/sort_des_n.png); 
+  content: url(/skins/default/images/sort_des_n.png);
 }
 
 af|column::header-text
@@ -454,12 +454,12 @@ af|selectRangeChoiceBar::next-disabled-icon
 }
 
 /** These are the styles on the table header **/
-.OraTableBorder0001,.x5m 
+.OraTableBorder0001,.x5m
 {
     border: none;
 }
 
-.OraSortableHeaderBorder,.x66 
+.OraSortableHeaderBorder,.x66
 {
     border: none;
 }
@@ -562,13 +562,13 @@ a:hover
     line-height:normal;
     display:block;
     padding:1px;
-    
+
 }
 
 .autocomplete-selected-line{
     background-color: #C2DAEF;
     background-color: #E3EBD7;
-    
+
     cursor:pointer;
     color:#4E4E4E;
     font-family:Tahoma,Arial,Verdana;
@@ -587,10 +587,10 @@ a:hover
 }
 
 .autocomplete-table-list {
-    position:absolute; 
+    position:absolute;
     z-index:100;
     background-color : #F7F9F4;
-    
+
 }
 
 .autocomplete-table-text td{
@@ -608,7 +608,7 @@ a:hover
     cursor:pointer;
 
 }
-    
+
 .autocomplete-button-action{
     background-image:url(/skins/default/images/autocomplete-button-action.gif);
 }

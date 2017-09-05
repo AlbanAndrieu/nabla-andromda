@@ -1,17 +1,17 @@
 
-    alter table TIMECARD 
+    alter table TIMECARD
         drop constraint TIMECARD_SUBMITTERC;
 
-    alter table TIMECARD 
+    alter table TIMECARD
         drop constraint TIMECARD_APPROVERC;
 
-    alter table TIME_ALLOCATION 
+    alter table TIME_ALLOCATION
         drop constraint TIME_ALLOCATION_TASKC;
 
-    alter table TIME_ALLOCATION 
+    alter table TIME_ALLOCATION
         drop constraint TIME_ALLOCATION_TIMECARDC;
 
-    alter table USER_ROLE 
+    alter table USER_ROLE
         drop constraint USER_ROLE_USERSC;
 
     drop table TASK if exists;

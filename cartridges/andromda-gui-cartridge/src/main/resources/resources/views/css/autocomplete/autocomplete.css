@@ -12,13 +12,13 @@
     line-height:normal;
     display:block;
     padding:1px;
-    
+
 }
 
 .autocomplete-selected-line{
     background-color: #C2DAEF;
     background-color: #E3EBD7;
-    
+
     cursor:pointer;
     color:#4E4E4E;
     font-family:Tahoma,Arial,Verdana;
@@ -37,19 +37,19 @@
 }
 
 .autocomplete-table-list {
-    position:absolute; 
+    position:absolute;
     z-index:100;
     background-color : #F7F9F4;
-    
+
 }
 
 .autocomplete-table-text td{
     padding-left: 3px;
 }
 
-.autocomplete-button, 
-.autocomplete-button-action, 
-.autocomplete-button-multiple-add, 
+.autocomplete-button,
+.autocomplete-button-action,
+.autocomplete-button-multiple-add,
 .autocomplete-button-multiple-remove
 {
     border:0px;
@@ -63,12 +63,12 @@
     vertical-align:middle;
 
 }
-    
+
 .autocomplete-button-action{
     background-image:url(../../images/autocomplete-button-action.gif);
 }
 .autocomplete-input-text{
-    vertical-align:middle;	
+    vertical-align:middle;
 }
 
 .autocomplete-button-multiple-add{

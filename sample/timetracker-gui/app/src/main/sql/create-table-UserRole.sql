@@ -1,5 +1,5 @@
 /* --------------- UserRole table definition --------------------- */
-CREATE TABLE USER_ROLE 
+CREATE TABLE USER_ROLE
 (
     ID BIGINT NOT NULL,
     ROLE VARCHAR(256) NOT NULL,

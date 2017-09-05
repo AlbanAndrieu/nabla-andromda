@@ -1,5 +1,5 @@
 <cartridge>
-    
+
     <templateEngine className="org.andromda.templateengines.velocity.VelocityTemplateEngine">
         <macrolibrary name="templates/jsf/escapeMacros.vm"/>
         <macrolibrary name="templates/jsf/controllers/Controller.java.vm"/>
@@ -14,7 +14,7 @@
         <macrolibrary name="templates/jsf/views/portlet/renderPortletActionFormInput.vm"/>
         <!-- cartridge-macrolibrary merge-point-->
     </templateEngine>
-    
+
     <!-- define the template objects that are made available to the template -->
     <templateObject name="stringUtils" className="org.andromda.utils.StringUtilsHelper"/>
     <templateObject name="jsfUtils" className="org.andromda.cartridges.gui.GuiUtils">
@@ -56,7 +56,7 @@
     <property reference="virtualHost"/>
     <property reference="defaultMultiSelectSize"/>
     <property reference="enablePreferences"/>
-    <property reference="enableOds"/>    
+    <property reference="enableOds"/>
     <property reference="distributable"/>
     <property reference="stateSavingMethod"/>
     <property reference="sessionTimeout"/>
@@ -67,7 +67,7 @@
     <property reference="seam"/>
     <property reference="tomahawk"/>
     <property reference="extension"/>
-    <property reference="standalone"/> 
+    <property reference="standalone"/>
     <property reference="strictDateTimeFormat"/>
     <property reference="libraries"/>
     <property reference="application-libraries"/>
@@ -89,7 +89,7 @@
     <property reference="manageableReferenceParameterPrefix"/>
     <property reference="crudValueObjectSuffix"/>
     <property reference="crudConfirmationMessages"/>
-    <property reference="portletContainer"/>   
+    <property reference="portletContainer"/>
     <property reference="portletClass"/>
     <property reference="paginationResultClassName"/>
     <property reference="defaultPortletClassName"/>
@@ -100,7 +100,7 @@
     <property reference="controllerScope"/>
     <property reference="navigationBeanScope"/>
     <!-- cartridge-property merge-point -->
-    
+
     <!--<condition name="viewTypeIsJsp">$viewType.equalsIgnoreCase("jsp")</condition>-->
     <condition name="viewTypeIsFacelets">$viewType.equalsIgnoreCase("facelets")</condition>
     <condition name="outputCustomResources">$stringUtils.isNotBlank($custom-resources)</condition>
@@ -110,7 +110,7 @@
     <condition name="enableMyFacesDevelopmentSupport">$enableMyFacesDevelopmentSupport.equalsIgnoreCase("true")</condition>
     <condition name="outputLibraries">$stringUtils.isNotBlank($libraries)</condition>
     <condition name="enablePreferences">#if($enablePreferences.equalsIgnoreCase("true") &amp;&amp; $stringUtils.isBlank($portletContainer))true#end</condition>
-    <condition name="enableOds">#$enableOds.equalsIgnoreCase("true")</condition>    
+    <condition name="enableOds">#$enableOds.equalsIgnoreCase("true")</condition>
     <condition name="commonsValidator">$validationExtension.equalsIgnoreCase("commons-validator")</condition>
     <condition name="annotationsValidator">$validationExtension.equalsIgnoreCase("annotations")</condition>
     <condition name="clientValidation">$clientValidation.equalsIgnoreCase("true")</condition>
@@ -150,35 +150,35 @@
         outlet="application-libraries"
         overwrite="true"
         lastModifiedCheck="true"/>
-        
+
     <resource
         path="lib/seam/jboss-seam-*.*"
         outputPattern="WEB-INF/lib/jboss-seam-{0}"
         outlet="libraries"
         overwrite="true"
         lastModifiedCheck="true"/>
-    
+
     <resource
         path="lib/seam/oscache-2.3.2.jar"
         outputPattern="WEB-INF/lib/oscache-2.3.2.jar"
         outlet="libraries"
         overwrite="true"
         lastModifiedCheck="true"/>
-        
+
     <resource
         path="lib/tomahawk/*.*"
         outputPattern="WEB-INF/lib/{0}"
         outlet="libraries"
         overwrite="true"
         lastModifiedCheck="true"/>
-        
+
     <resource
         path="lib/facelets/jsf-facelets.jar"
         outputPattern="WEB-INF/lib/jsf-facelets.jar"
         outlet="libraries"
         overwrite="true"
         lastModifiedCheck="true"/>
- 
+
     <resource
         path="lib/facelets/el*.jar"
         outputPattern="resources/lib/el{0}"
@@ -270,7 +270,7 @@
         lastModifiedCheck="true"
         outputCondition="portlet"/>
 -->
-        
+
     <resource
         path="resources/views/css/icefaces/*"
         outputPattern="css/icefaces/{0}"
@@ -325,14 +325,14 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/configuration/jboss-web.xml.vsl"
         outputPattern="WEB-INF/jboss-web.xml"
         outlet="configuration"
         overwrite="true"
         outputCondition="standalone"/>
-    
+
     <template
         path="templates/jsf/configuration/faces-config.xml.vsl"
         outputPattern="WEB-INF/${facesConfig}"
@@ -407,7 +407,7 @@
             </modelElement>
         </modelElements>
     </template>
-        
+
     <template
         path="templates/jsf/configuration/log4j.xml.vsl"
         outputPattern="WEB-INF/classes/log4j.xml"
@@ -456,7 +456,7 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/controllers/Controller.java.vsl"
         outputPattern="$generatedFile"
@@ -496,9 +496,9 @@
                     <property name="entryUseCase"/>
                 </type>
             </modelElement>
-        </modelElements>    
+        </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/configuration/components.xml.vsl"
         outputPattern="WEB-INF/components.xml"
@@ -506,7 +506,7 @@
         overwrite="true"
         outputToSingleFile="true"
         outputCondition="useSeam"/>
-    
+
     <template
         path="templates/jsf/messages/messages.properties.vsl"
         outputPattern="WEB-INF/classes/${messageResources}.properties"
@@ -758,7 +758,7 @@
             </modelElement>
         </modelElements>
     </template>
-       
+
     <!-- Facelets specific view rendering -->
     <template
         path="templates/jsf/views/facelets/layout/layout.xhtml.vsl"
@@ -784,7 +784,7 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/views/facelets/layout/header.xhtml.vsl"
         outputPattern="layout/header.xhtml"
@@ -807,7 +807,7 @@
         outlet="views"
         overwrite="true"
         outputCondition="standalone"/>
-    
+
     <template
         path="templates/jsf/views/facelets/layout/menu.xhtml.vsl"
         outputPattern="layout/menu.xhtml"
@@ -820,9 +820,9 @@
                     <property name="registrationUseCase">false</property>
                 </type>
             </modelElement>
-        </modelElements>        
+        </modelElements>
     </template>
-   
+
     <template
         path="templates/jsf/views/facelets/layout/footer.xhtml.vsl"
         outputPattern="layout/footer.xhtml"
@@ -845,7 +845,7 @@
         outlet="views"
         overwrite="true"
         generateEmptyFiles="true"/>
-    
+
     <template
         path="templates/jsf/views/facelets/view.xhtml.vsl"
         outputPattern="${view.path}.xhtml"
@@ -860,7 +860,7 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/views/facelets/view-popup.xhtml.vsl"
         outputPattern="${view.path}.xhtml"
@@ -891,7 +891,7 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/views/facelets/view-table.xhtml.vsl"
         outputPattern="${table.view.path}-${table.name}.xhtml"
@@ -906,7 +906,7 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/views/facelets/view-variables.xhtml.vsl"
         outputPattern="${view.path}-vars.xhtml"
@@ -921,7 +921,7 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/views/facelets/view-hidden-parameters.xhtml.vsl"
         outputPattern="${action.viewFragmentPath}-hidden-params.xhtml"
@@ -937,7 +937,7 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/jsf/views/facelets/preferences/preferences.xhtml.vsl"
         outputPattern="preferences/preferences.xhtml"
@@ -962,13 +962,13 @@
     </template>
 
     <!-- manageable -->
- 
+
     <template
         path="templates/jsf/utils/ControllerBase.java.vsl"
         outputPattern="$stringUtils.replace($managedBeansPackage, '.', '/')/${className}.java"
         outlet="managed-beans"
         overwrite="true"/>
-        
+
     <template
         path="templates/jsf/utils/JsfVariableResolver.java.vsl"
         outputPattern="$stringUtils.replace($managedBeansPackage, '.', '/')/${className}.java"

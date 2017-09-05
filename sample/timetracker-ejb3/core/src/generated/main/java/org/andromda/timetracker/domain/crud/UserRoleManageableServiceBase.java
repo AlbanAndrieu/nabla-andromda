@@ -134,7 +134,7 @@ public final class UserRoleManageableServiceBase
         }
     }
 
- 
+
      /**
      * Entity read operation
      *
@@ -152,7 +152,7 @@ public final class UserRoleManageableServiceBase
             throw new UserRoleReadManageableException(ex);
         }
     }
-       
+
     /**
      * Read operation
      *

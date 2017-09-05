@@ -1,5 +1,5 @@
 /* start selectInputText style */
-.iceSelInpTxtRow, .iceSelInpTxtSelRow 
+.iceSelInpTxtRow, .iceSelInpTxtSelRow
 {
     vertical-align: top;
     padding: 2px;
@@ -7,13 +7,13 @@
     color: #000000;
 }
 
-.iceSelInpTxtSelRow 
+.iceSelInpTxtSelRow
 {
     color: #FFFFFF;
     background-color: #008B8B;
 }
 
-.iceSelInpTxtList 
+.iceSelInpTxtList
 {
     border: 1px solid #CCCCCC;
     background-color: #FFFFFF;
@@ -21,7 +21,7 @@
 /* end selectInputText style */
 
 /* start outputConnectionStatus status style */
-.navConnectionStatus 
+.navConnectionStatus
 {
     float:right;
 }
@@ -35,14 +35,14 @@
     margin-top: 10px;
 }
 
-.iceDatTbl th 
+.iceDatTbl th
 {
     padding: 2px;
     text-align: left;
     border: none;
 }
 
-.iceDatTbl td 
+.iceDatTbl td
 {
     border: none;
 }

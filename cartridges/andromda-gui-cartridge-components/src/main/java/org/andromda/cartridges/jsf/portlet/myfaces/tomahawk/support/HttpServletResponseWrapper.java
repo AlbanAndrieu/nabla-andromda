@@ -48,7 +48,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * This class is a dummy HttpServletResponse.
- * 
+ *
  * @author <a href="mailto:shinsuke@yahoo.co.jp">Shinsuke Sugaya</a>
  */
 public class HttpServletResponseWrapper implements HttpServletResponse, RenderResponse
@@ -80,7 +80,7 @@ public class HttpServletResponseWrapper implements HttpServletResponse, RenderRe
 
     /**
      * Returns writer to which MyFaces' AddResource stores elements.
-     * 
+     *
      * @return writer which has elements, such as &lt;script&gt; and
      * &lt;link&gt; public StringWriter getStringWriter() { return
      * (StringWriter) writer; }

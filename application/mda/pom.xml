@@ -52,7 +52,7 @@
             <artifactId>andromda-seam-cartridge</artifactId>
             <version>${andromda.version}</version>
             <scope>runtime</scope>
-        </dependency> 
+        </dependency>
         <dependency>
             <groupId>org.andromda.cartridges</groupId>
             <artifactId>andromda-webservice-cartridge</artifactId>
@@ -70,14 +70,14 @@
             <artifactId>andromda-deployment-cartridge</artifactId>
             <version>${andromda.version}</version>
             <scope>runtime</scope>
-        </dependency>         
+        </dependency>
         <dependency>
             <groupId>org.andromda.cartridges</groupId>
             <artifactId>andromda-database-cartridge</artifactId>
             <version>${andromda.version}</version>
             <scope>runtime</scope>
-        </dependency>                  		
-                                		
+        </dependency>
+
         <dependency>
             <groupId>org.andromda.translationlibraries</groupId>
             <artifactId>andromda-ocl-validation-library</artifactId>
@@ -97,8 +97,8 @@
             <artifactId>andromda-metafacades-emf-uml22</artifactId>
             <version>${andromda.version}</version>
             <scope>compile</scope>
-        </dependency>                    
-        
+        </dependency>
+
     </dependencies>
     <profiles>
         <profile>
@@ -154,7 +154,7 @@
 		                				value="${project.basedir}/test/mda/src/main/uml/"/>
 		                			-->
 		                			<property name="output.dir" value="${target.dir}/uml/" />
-		                			<property name="lib.dir" value="${jdbc.driver.lib}" />			                			
+		                			<property name="lib.dir" value="${jdbc.driver.lib}" />
 		                			<property name="mappings.dir" value="${configuration.mda.dir}" />
 		                			<property name="build.dir" value="${target.dir}" />
 		                			<path id="schema2xmi.classpath">
@@ -211,18 +211,18 @@
 		                	<executions>
 		                		<execution>
 		                			<!--<phase>process-classes</phase>-->
-		                			<phase>package</phase>		                			
+		                			<phase>package</phase>
 		                			<goals>
 		                				<goal>run</goal>
 		                			</goals>
 		                		</execution>
 		                	</executions>
-		                	<dependencies>		                                                         			                				                			   			                	
+		                	<dependencies>
 		                		<dependency>
 		                			<groupId>${jdbc.groupId}</groupId>
 		                			<artifactId>${jdbc.artifactId}</artifactId>
 		                			<version>${jdbc.version}</version>
-		                		</dependency>	       
+		                		</dependency>
                                         </dependencies>
 		                </plugin>
 			</plugins>
@@ -233,13 +233,13 @@
                	        <artifactId>andromda-schema2xmi</artifactId>
                	        <version>${andromda.version}</version>
                	        <scope>compile</scope>
-               	    </dependency>             
+               	    </dependency>
                	    <!-- START USED BY Schema2XMI -->
             	    <dependency>
             	        <groupId>commons-beanutils</groupId>
             	        <artifactId>commons-beanutils</artifactId>
             	        <version>${commons.beanutils.version}</version>
-            	    </dependency>               	    
+            	    </dependency>
                	    <dependency>
                	        <groupId>org.andromda</groupId>
                	        <artifactId>andromda-core</artifactId>
@@ -262,7 +262,7 @@
                	    	<artifactId>andromda-metafacades-uml14</artifactId>
                	    	<version>${andromda.version}</version>
                	    	<scope>provided</scope>
-               	    </dependency>     
+               	    </dependency>
                     <dependency>
                         <groupId>org.andromda.translationlibraries</groupId>
                         <artifactId>andromda-ocl-translation-core</artifactId>
@@ -274,11 +274,11 @@
                         <artifactId>andromda-ocl-validation-library</artifactId>
                         <version>${andromda.version}</version>
                         <scope>provided</scope>
-                    </dependency>                                                         
-               	    <!-- END USED BY Schema2XMI -->        
-               	    
-    		</dependencies>			
-	</profile>        
+                    </dependency>
+               	    <!-- END USED BY Schema2XMI -->
+
+    		</dependencies>
+	</profile>
     </profiles>
     <build>
         <sourceDirectory>${project.basedir}/src/main/uml/${uml.type}</sourceDirectory>
@@ -295,7 +295,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <configurationUri>file:${conf.dir}/${uml.type}/andromda-${model.name}.xml</configurationUri>                    
+                    <configurationUri>file:${conf.dir}/${uml.type}/andromda-${model.name}.xml</configurationUri>
                     <lastModifiedCheck>true</lastModifiedCheck>
                 </configuration>
                 -->
@@ -313,40 +313,40 @@
         <andromda.project>${project.basedir}/..</andromda.project>
         <conf.dir>${project.basedir}/src/main/config</conf.dir>
         -->
-        <!-- cartridge output locations -->        
+        <!-- cartridge output locations -->
         <mda.generated.dir>${project.basedir}/../mda/${target.dir}/src/main/java</mda.generated.dir>
         <mda.manual.dir>${project.basedir}/../mda/src/main/java</mda.manual.dir>
         <sql.generated.dir>${project.basedir}/../app/src/main/sql</sql.generated.dir>
-        
+
         <common.generated.dir>${project.basedir}/../common/${maven.build.generated}/main/java</common.generated.dir>
-        <common.manual.dir>${project.basedir}/../common/src/main/java</common.manual.dir>        
-        
+        <common.manual.dir>${project.basedir}/../common/src/main/java</common.manual.dir>
+
         <core.generated.dir>${project.basedir}/../core/${maven.build.generated}/main/java</core.generated.dir>
-        <core.generated.test.dir>${project.basedir}/../core/${maven.build.generated}/main/java</core.generated.test.dir>        
+        <core.generated.test.dir>${project.basedir}/../core/${maven.build.generated}/main/java</core.generated.test.dir>
         <core.manual.dir>${project.basedir}/../core/src/main/java</core.manual.dir>
         <!--<core.manual.java.resources>${project.basedir}/../core/src/main/resources</core.manual.java.resources>-->
         <core.generated.resources.dir>${project.basedir}/../core/${maven.build.generated}/main/resources</core.generated.resources.dir>
         <core.manual.test.dir>${project.basedir}/../core/src/test/java</core.manual.test.dir>
-        <core.manual.test.resources.dir>${project.basedir}/../core/src/test/resources</core.manual.test.resources.dir>        
-     
+        <core.manual.test.resources.dir>${project.basedir}/../core/src/test/resources</core.manual.test.resources.dir>
+
         <database.generated.dir>${project.basedir}/../database/${maven.build.generated}/main/java</database.generated.dir>
-        <database.generated.test.dir>${project.basedir}/../database/${maven.build.generated}/main/java</database.generated.test.dir>        
+        <database.generated.test.dir>${project.basedir}/../database/${maven.build.generated}/main/java</database.generated.test.dir>
         <database.manual.dir>${project.basedir}/../database/src/main/java</database.manual.dir>
         <!--<database.manual.java.resources>${project.basedir}/../database/src/main/resources</database.manual.java.resources>-->
         <database.generated.resources.dir>${project.basedir}/../database/${maven.build.generated}/main/resources</database.generated.resources.dir>
         <database.manual.test.dir>${project.basedir}/../database/src/test/java</database.manual.test.dir>
-        <database.manual.test.resources.dir>${project.basedir}/../database/src/test/resources</database.manual.test.resources.dir>  
+        <database.manual.test.resources.dir>${project.basedir}/../database/src/test/resources</database.manual.test.resources.dir>
 
         <service.generated.dir>${project.basedir}/../service/${maven.build.generated}/main/java</service.generated.dir>
-        <service.generated.test.dir>${project.basedir}/../service/${maven.build.generated}/main/java</service.generated.test.dir>        
+        <service.generated.test.dir>${project.basedir}/../service/${maven.build.generated}/main/java</service.generated.test.dir>
         <service.manual.dir>${project.basedir}/../service/src/main/java</service.manual.dir>
         <!--<service.manual.java.resources>${project.basedir}/../service/src/main/resources</service.manual.java.resources>-->
         <service.generated.resources.dir>${project.basedir}/../service/${maven.build.generated}/main/resources</service.generated.resources.dir>
         <service.manual.test.dir>${project.basedir}/../service/src/test/java</service.manual.test.dir>
-        <service.manual.test.resources.dir>${project.basedir}/../service/src/test/resources</service.manual.test.resources.dir> 
-           
-        <web.generated.dir>${project.basedir}/../web/${maven.build.generated}/main/java</web.generated.dir>           
-        <!--        
+        <service.manual.test.resources.dir>${project.basedir}/../service/src/test/resources</service.manual.test.resources.dir>
+
+        <web.generated.dir>${project.basedir}/../web/${maven.build.generated}/main/java</web.generated.dir>
+        <!--
         <web.generated.web.dir>${project.basedir}/../web/${maven.build.generated}/main/webapp</web.generated.web.dir>
         -->
         <web.generated.web.dir>${project.basedir}/../web/src/main/webapp</web.generated.web.dir>
@@ -354,18 +354,18 @@
         <web.manual.resources.dir>${web.manual.root.dir}/resources</web.manual.resources.dir>
         <web.manual.web.dir>${web.manual.root.dir}/webapp</web.manual.web.dir>
         <web.manual.dir>${web.manual.root.dir}/java</web.manual.dir>
-        
+
         <webservice.project>${project.basedir}/../webservice</webservice.project>
         <webservice.generated.dir>${project.basedir}/../webservice/${maven.build.generated}/main/webapp</webservice.generated.dir>
         <webservice.manual.java.dir>${project.basedir}/../webservice/src/main/java</webservice.manual.java.dir>
-        
-        <workflow.generated.dir>${project.basedir}/../workflow/${maven.build.generated}/main/java</workflow.generated.dir>        
+
+        <workflow.generated.dir>${project.basedir}/../workflow/${maven.build.generated}/main/java</workflow.generated.dir>
         <workflow.manual.dir>${project.basedir}/../workflow/src/main</workflow.manual.dir>
-        
+
         <application.config.dir>${project.basedir}/../app/src/main/config</application.config.dir>
         <application.metainf.dir>${project.basedir}/../app/src/main/application/META-INF</application.metainf.dir>
-        <application.generated.dir>${project.basedir}/../app/${target.dir}/src</application.generated.dir>        
-                
+        <application.generated.dir>${project.basedir}/../app/${target.dir}/src</application.generated.dir>
+
 	    <!--<merge.templates.location>file:${project.basedir}/src/main/config/mappings</merge.templates.location>-->
 	    <merge.mappings.web>file:${project.basedir}/src/main/config/mappings/WebMergeMappings.xml</merge.mappings.web>
         <!--<merge.mappings.web>file:${merge.templates.location}/WebMergeMappings.xml</merge.mappings.web>-->

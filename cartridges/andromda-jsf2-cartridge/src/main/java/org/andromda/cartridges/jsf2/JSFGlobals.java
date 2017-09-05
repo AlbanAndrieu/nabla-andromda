@@ -2,7 +2,7 @@ package org.andromda.cartridges.jsf2;
 
 /**
  * Stores globals for the JSF cartridge metafacades.
- * 
+ *
  * @author Chad Brandon
  */
 public class JSFGlobals

@@ -1,6 +1,6 @@
 
 See : http://www.andromda.org/docs/andromda-documentation/getting-started-java/timetracker-tour.html
-    
+
     A n d r o M D A  -  3.4-SNAPSHOT
 
 
@@ -47,7 +47,7 @@ See : http://www.andromda.org/docs/andromda-documentation/getting-started-java/t
          |              importantly the cartridges which are listed in
          |              their own namespace; global settings are done in the
          |              'default' namespace
-         |     
+         |
          +-- /common
          |     |
          |     |    The COMMON module collects those resources and classes
@@ -122,13 +122,13 @@ See : http://www.andromda.org/docs/andromda-documentation/getting-started-java/t
             deployed
 
         %> mvn clean
-        
+
             cleans all generated files from each target directory
-            
+
         %> mvn install -Ddeploy
 
             rebuilds the entire application and deploys
-             
+
         %> mvn install -Denv=prod
 
             builds the entire application for the production environment, possible 'env' property values
@@ -164,7 +164,7 @@ See : http://www.andromda.org/docs/andromda-documentation/getting-started-java/t
 
             generates the DDL drop code and subsequently tells the database
             to drop the schema for the entities
-            
+
         %> mvn -f core/pom.xml andromdapp:schema -Dtasks=drop,create
 
             generates the drop and create DDL code and subsequently tells the database
@@ -209,12 +209,12 @@ See : http://www.andromda.org/docs/andromda-documentation/getting-started-java/t
 
             runs AndroMDA using only the Java cartridge, rebuilds the core
             module and web module and deploys afterwards
-            
+
         %> mvn -N andromdapp:build -Dconsole   ---> or if this does not work try this:
            mvn -N org.andromda.maven.plugins:andromdapp-maven-plugin:build -Dconsole
-            
+
             runs the AndroMDApp build goal in 'console' mode, once running, this allows you to execute any goal or subproject
-            goal in the manner described above without having to specify the andromdapp:build goal or 
+            goal in the manner described above without having to specify the andromdapp:build goal or
             restarting maven (i.e. you can run the mda goal by typing 'mda', build the core module by type 'core', etc).
             The general syntax is <module name>:[goal1+goal2+goal3]. So if you wanted to clean only the web module
             you would type 'web:[clean]'.
@@ -240,5 +240,3 @@ See : http://www.andromda.org/docs/andromda-documentation/getting-started-java/t
 
 
         -- The AndroMDA Team
-
-

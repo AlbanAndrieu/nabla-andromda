@@ -55,7 +55,7 @@
     <property reference="hibernateJdbcUseStreamsForBinary"/>
     <property reference="hibernateCacheProvider"/>
     <property reference="hibernateTreecacheMbeanObject"/>
-    <property reference="hibernateJpaProviderModule"/>    
+    <property reference="hibernateJpaProviderModule"/>
     <property reference="hibernateEnableCache"/>
     <property reference="hibernateEnableAssociationsCache"/>
     <property reference="hibernateUseQueryCache"/>

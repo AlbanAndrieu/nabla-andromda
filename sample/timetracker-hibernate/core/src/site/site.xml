@@ -74,6 +74,6 @@
         <menu ref="reports" inherit="bottom" />
 -->
 
-        <footer/>    
+        <footer/>
     </body>
 </project>

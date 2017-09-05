@@ -13,7 +13,7 @@
       This requires the org.jboss.jdbc.HypersonicDatabase mbean.
       <connection-url>jdbc:hsqldb:hsql://${jboss.bind.address}:1701</connection-url>
       -->
-      <!-- For totally in-memory db, not saved when jboss stops. 
+      <!-- For totally in-memory db, not saved when jboss stops.
       The org.jboss.jdbc.HypersonicDatabase mbean is required for proper db shutdown
       <connection-url>jdbc:hsqldb:.</connection-url>
       -->
@@ -50,7 +50,7 @@
         <new-connection-sql>some arbitrary sql</new-connection-sql>
       -->
 
-      <!-- sql to call on an existing pooled connection when it is obtained from pool 
+      <!-- sql to call on an existing pooled connection when it is obtained from pool
          <check-valid-connection-sql>some arbitrary sql</check-valid-connection-sql>
       -->
 
@@ -85,10 +85,10 @@
    </local-tx-datasource>
 
    <!-- Uncomment if you want hsqldb accessed over tcp (server mode)
-   <mbean code="org.jboss.jdbc.HypersonicDatabase" 
+   <mbean code="org.jboss.jdbc.HypersonicDatabase"
      name="jboss:service=Hypersonic">
      <attribute name="Port">1701</attribute>
-     <attribute name="BindAddress">${jboss.bind.address}</attribute>     
+     <attribute name="BindAddress">${jboss.bind.address}</attribute>
      <attribute name="Silent">true</attribute>
      <attribute name="Database">default</attribute>
      <attribute name="Trace">false</attribute>
@@ -96,11 +96,11 @@
    </mbean>
    -->
 
-   <!-- For hsqldb accessed from jboss only, in-process (standalone) mode --> 
-   <mbean code="org.jboss.jdbc.HypersonicDatabase" 
+   <!-- For hsqldb accessed from jboss only, in-process (standalone) mode -->
+   <mbean code="org.jboss.jdbc.HypersonicDatabase"
      name="jboss:service=Hypersonic,database=localDB">
      <attribute name="Database">localDB</attribute>
      <attribute name="InProcessMode">true</attribute>
    </mbean>
-   
+
 </datasources>

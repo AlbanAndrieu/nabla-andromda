@@ -21,7 +21,7 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFManageableEntity.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFManageableEntity
  */
 public class JSFManageableEntityLogicImpl extends JSFManageableEntityLogic

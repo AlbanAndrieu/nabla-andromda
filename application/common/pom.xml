@@ -38,11 +38,11 @@
 				<directory>${maven.build.generated}/main/java</directory>
                 		<includes>
                 			<include>*/.*</include>
-				</includes>		
-				<filtering>false</filtering>				
-			</resource>																		
+				</includes>
+				<filtering>false</filtering>
+			</resource>
 		</resources>
-	<!--    
+	<!--
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>

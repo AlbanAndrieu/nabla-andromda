@@ -36,14 +36,14 @@
             </property>
             <property name="libraries" required="false">
                 <documentation>
-                    The location to which JSF libraries will be generated (these are the libraries required for JSF support, 
+                    The location to which JSF libraries will be generated (these are the libraries required for JSF support,
                     myfaces libraries, etc).  If this isn't defined, its expected that the libraries will be provided by another means.
                 </documentation>
             </property>
             <property name="application-libraries" required="false">
                 <documentation>
                     The location to which JSF/Seam libraries will be generated in the app folder
-                    (these are the libraries required for JSF/Seam support which is most importantly jboss-seam.jar).  
+                    (these are the libraries required for JSF/Seam support which is most importantly jboss-seam.jar).
                     If this isn't defined, its expected that the libraries will be provided by another means.
                 </documentation>
             </property>
@@ -206,7 +206,7 @@
                 <documentation>
                     The default value to set for the maximum rows displayed in a table.
                 </documentation>
-            </property>            
+            </property>
             <property name="menuTheme">
                 <default>ThemePanel</default>
                 <documentation>
@@ -257,13 +257,13 @@
                 <documentation>
                     Use Seam.
                 </documentation>
-            </property>      
+            </property>
             <property name="extension">
                 <default>false</default>
                 <documentation>
                     Use Tomahawk extension.
                 </documentation>
-            </property>                      
+            </property>
             <property name="welcomeFileName">
                 <default>index.jsp</default>
                 <documentation>
@@ -458,7 +458,7 @@
                         <li>4 - Servlet 4.x</li>
                     </ul>
                 </documentation>
-            </property>               
+            </property>
             <property name="ejbJndiNamePrefix" required="false">
                 <documentation>
                     The JNDI name prefix used to construct the JNDI name pattern.
@@ -506,7 +506,7 @@
             <property name="stateSavingMethod">
                 <default>client</default>
                 <documentation>
-                    The JSF state saving method to use within the application (can be 
+                    The JSF state saving method to use within the application (can be
                     either <em>client</em> or <em>server</em>).
                 </documentation>
             </property>

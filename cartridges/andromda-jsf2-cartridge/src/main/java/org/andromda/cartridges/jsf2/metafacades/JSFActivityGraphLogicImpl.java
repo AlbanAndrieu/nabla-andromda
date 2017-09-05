@@ -2,7 +2,7 @@ package org.andromda.cartridges.jsf2.metafacades;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFActivityGraph.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFActivityGraph
  */
 public class JSFActivityGraphLogicImpl extends JSFActivityGraphLogic

@@ -59,15 +59,15 @@
             <a name="Helpful_Hints"/>
             <subsection name="Helpful Hints">
                 <p>
-                    The EJB3 cartridge now uses the persistence ORM mapping file <b>orm.xml</b> to declare the 
+                    The EJB3 cartridge now uses the persistence ORM mapping file <b>orm.xml</b> to declare the
                     embeddable class metadata.  This means that the <code>@Embeddable</code> annotation is no longer
-                    rendered in the base or implementation for the embeddable object.  
-                    The ORM mapping file defines the embeddable implementation, which extends the abstract embeddable 
+                    rendered in the base or implementation for the embeddable object.
+                    The ORM mapping file defines the embeddable implementation, which extends the abstract embeddable
                     base object, as the embeddable class.
                 </p>
                 <p>
-                    This has been adopted so that you can have an implementation for embeddable value object operations 
-                    or any other aspect requiring manual implementation, without having to be concerned with code 
+                    This has been adopted so that you can have an implementation for embeddable value object operations
+                    or any other aspect requiring manual implementation, without having to be concerned with code
                     regeneration over-writing your implementation.  This could not be achieved with pure annotations.
                 </p>
                 <p>

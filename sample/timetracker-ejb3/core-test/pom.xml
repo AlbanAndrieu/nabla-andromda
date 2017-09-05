@@ -8,7 +8,7 @@
 		<artifactId>timetracker-ejb3</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>
- 
+
  	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.andromda.timetracker.ejb3</groupId>
 	<artifactId>core-test</artifactId>
@@ -17,7 +17,7 @@
 
 	<dependencies>
 		<!-- remove components.xml from core -->
-		<!--		
+		<!--
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>core</artifactId>
@@ -29,7 +29,7 @@
 			<groupId>${project.groupId}</groupId>
 			<artifactId>common</artifactId>
 			<version>${project.version}</version>
-		</dependency>	
+		</dependency>
 
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -37,15 +37,15 @@
 			<version>${testng.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- replace this by slf4j-api and slf4j-simple http://pwu-developer.blogspot.com/2010/08/caused-by-javalangerror-this-version-of.html -->
-		<dependency> 
-			<groupId>org.slf4j</groupId> 
-			<artifactId>slf4j-log4j12</artifactId> 
-			<version>${slf4j.version}</version> 
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<!--		
+		<!--
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -65,31 +65,31 @@
 			<version>${log4j.version}</version>
 			<!--scope>provided</scope -->
 		</dependency>
-		
+
 		<dependency>
 		  <groupId>commons-collections</groupId>
 		  <artifactId>commons-collections</artifactId>
 		  <scope>compile</scope>
 		</dependency>
-		
+
 		<dependency>
 		  <groupId>commons-lang</groupId>
 		  <artifactId>commons-lang</artifactId>
 		  <scope>compile</scope>
 		</dependency>
-		
+
 		<dependency>
 		  <groupId>commons-logging</groupId>
 		  <artifactId>commons-logging</artifactId>
 		  <scope>compile</scope>
 		</dependency>
-        				    	        					
+
 		<dependency>
 		  <groupId>javax.persistence</groupId>
 		  <artifactId>persistence-api</artifactId>
 		  <scope>compile</scope>
 		</dependency>
-                                
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -104,18 +104,18 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate.validator.version}</version>
-		</dependency>					
+		</dependency>
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>antlr</groupId>
 			<artifactId>antlr</artifactId>
 			<version>${antlr.version}</version>
-		</dependency>		
-		
+		</dependency>
+
 		<dependency>
 			<groupId>javax.faces</groupId>
 			<artifactId>jsf-api</artifactId>
@@ -127,8 +127,8 @@
 			<artifactId>jsf-impl</artifactId>
 			<version>${jsf.version}</version>
 			<scope>provided</scope>
-		</dependency>		
-		<!-- must be use with hibernate.cache.provider_class org.hibernate.cache.EhCacheProvider in persistence.xml			
+		</dependency>
+		<!-- must be use with hibernate.cache.provider_class org.hibernate.cache.EhCacheProvider in persistence.xml
 		<dependency>
 			<groupId>net.sf.ehcache</groupId>
 			<artifactId>ehcache</artifactId>
@@ -136,7 +136,7 @@
 			<type>pom</type>
 		</dependency>
 		-->
-		
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-search</artifactId>
@@ -147,28 +147,28 @@
 		    		<groupId>org.hibernate</groupId>
 		    		<artifactId>hibernate</artifactId>
 		    	</exclusion>
-		    </exclusions>     
-        </dependency>	
-        
+		    </exclusions>
+        </dependency>
+
 		<dependency>
 		   <groupId>org.apache.lucene</groupId>
 		   <artifactId>lucene-core</artifactId>
-		</dependency>   
-		
+		</dependency>
+
 		<dependency>
 			<groupId>javax.el</groupId>
 			<artifactId>el-api</artifactId>
 			<version>${el.api.version}</version>
 			<scope>provided</scope>
-		</dependency>	
-    		    
+		</dependency>
+
 		<dependency>
 		  <groupId>javax.ejb</groupId>
 		  <artifactId>ejb-api</artifactId>
 		  <scope>provided</scope>
-		  <optional>true</optional> 
+		  <optional>true</optional>
 		</dependency>
-        			    		    
+
 		<!-- *************** Seam Dependencies *************** -->
 		<dependency>
 			<groupId>org.javassist</groupId>
@@ -176,12 +176,12 @@
 			<version>${org.javassist.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>javassist</groupId>
 			<artifactId>javassist</artifactId>
 			<version>${javassist.version}</version>
-		</dependency>            		
+		</dependency>
 
 		<dependency>
 			<groupId>org.jboss.seam</groupId>
@@ -199,7 +199,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.jboss.seam</groupId>
 			<artifactId>jboss-seam-ui</artifactId>
@@ -241,10 +241,10 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency> 
-			<groupId>dom4j</groupId> 
-			<artifactId>dom4j</artifactId> 
-		</dependency> 		
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.jboss.seam</groupId>
 			<artifactId>jboss-seam-pdf</artifactId>
@@ -261,7 +261,7 @@
 			<version>${richfaces.version}</version>
 			<exclusions>
 				<exclusion>
-					<groupId>commons-collections</groupId>  
+					<groupId>commons-collections</groupId>
 					<artifactId>commons-collections</artifactId>
 				</exclusion>
 				<exclusion>
@@ -348,22 +348,22 @@
 			  	<excludes>
 			  		<exclude>**/*.ref</exclude>
 			  	</excludes>
-			  </configuration>      			  
-      			</plugin>		
-      			
+			  </configuration>
+      			</plugin>
+
         		<!--
         		  see:   http://mojo.codehaus.org/maven-hibernate3/hibernate3-maven-plugin/
         		  see:   http://unmaintainable.wordpress.com/2008/04/12/hibernate3-schema-creation/
-        		  requires: 
+        		  requires:
         		    * ${app.persistence.unit.name}
-        		  usage: 
+        		  usage:
         		    * cd  to parent project
         		    * mvn install
         		    * cd  to project containing the entities, e.g. ejb
         		    * mvn install
         		    * mvn hibernate3:hbm2ddl
         		    * see target/hibernate3/sql/schema.ddl
-        		-->      			
+        		-->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>hibernate3-maven-plugin</artifactId>
@@ -402,11 +402,11 @@
     				<dependency>
     				  <groupId>no.knowit.seam</groupId>
     				  <artifactId>seam-utils-ejb</artifactId>
-    				  <version>${seam.utils.version}</version>    				  
+    				  <version>${seam.utils.version}</version>
     				  <type>ejb</type>
     				  <scope>test</scope>
     				</dependency>
-    
+
     				<dependency>
     				  <groupId>no.knowit.seam</groupId>
     				  <artifactId>seam-utils-openejb</artifactId>
@@ -414,40 +414,40 @@
     				  <type>ejb</type>
     				  <scope>test</scope>
     				</dependency>
-                                
-                                <!--	
+
+                                <!--
                                 <dependency>
                                   <groupId>javax.servlet</groupId>
                                   <artifactId>servlet-api</artifactId>
                                   <scope>compile</scope>
                                 </dependency>
-                                
+
                                 <dependency>
                                   <groupId>javax.transaction</groupId>
                                   <artifactId>jta</artifactId>
                                   <scope>compile</scope>
                                 </dependency>
-                                
+
                                 <dependency>
                                   <groupId>javax.jms</groupId>
                                   <artifactId>jms</artifactId>
                                   <scope>compile</scope>
-                                </dependency> 
-                                -->   				            			
+                                </dependency>
+                                -->
 			</dependencies>
-			<build>        
+			<build>
 				<resources>
 					<resource>
 						<directory>${basedir}/src/main/resources</directory>
 						<filtering>true</filtering>
-					</resource>									
+					</resource>
 				</resources>
-				
+
 				<testResources>
 					<testResource>
 						<directory>${basedir}/src/test/resources</directory>
 						<filtering>true</filtering>
-					</testResource>		
+					</testResource>
 					<testResource>
 						<directory>${basedir}/src/test/bootstrap-openejb</directory>
 						<filtering>true</filtering>
@@ -456,16 +456,16 @@
 				<!--
 				<filters>
 					<filter>${home.dir}/build-tools/src/main/resources/project/project-development.properties</filter>
-				</filters>   
-				-->				
+				</filters>
+				-->
 			</build>
-		</profile>			
+		</profile>
 		<!-- old profile Test have changed using extends SeamOpenEjbTest instead of extends SeamTest -->
 		<profile>
 			<id>microcontainer-seam</id>
 			<activation>
 				<property>
-					<name>profile.activation</name> 
+					<name>profile.activation</name>
 				</property>
 			</activation>
 			<dependencies>
@@ -474,8 +474,8 @@
 					<artifactId>hibernate-all</artifactId>
 					<version>beta3.SP15</version>
 					<scope>provided</scope>
-				</dependency>		
-						
+				</dependency>
+
 				<dependency>
 					<groupId>org.jboss.seam.embedded</groupId>
 					<artifactId>jboss-embedded-all</artifactId>
@@ -486,7 +486,7 @@
 							<groupId>org.jboss.microcontainer</groupId>
 							<artifactId>jboss-deployers-client-spi</artifactId>
 						</exclusion>
-					</exclusions>              		
+					</exclusions>
 				</dependency>
 				<dependency>
 					<groupId>org.jboss.seam.embedded</groupId>
@@ -499,18 +499,18 @@
 					<artifactId>thirdparty-all</artifactId>
 					<version>beta3.SP15</version>
 					<scope>test</scope>
-				</dependency>			
-		                
+				</dependency>
+
 				<dependency>
 					<groupId>javax.activation</groupId>
 					<artifactId>activation</artifactId>
 					<version>${javax.activation.version}</version>
 					<scope>test</scope>
-				</dependency>							        
-		        				
+				</dependency>
+
 			</dependencies>
 			<build>
-				<plugins>			
+				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
@@ -521,7 +521,7 @@
 								-Dsun.lang.ClassLoader.allowArraySyntax=true
 							</argLine>
 						</configuration>
-					</plugin>	
+					</plugin>
 
 					<!--
  					<plugin>
@@ -548,8 +548,8 @@
  					       </configuration>
  					     </execution>
  					   </executions>
- 					</plugin>	
- 					-->							
+ 					</plugin>
+ 					-->
 				</plugins>
 				<resources>
 					<resource>
@@ -561,21 +561,21 @@
 						<!--
 						<excludes>
 							<exclude>**/*.java</exclude>
-						</excludes>	
+						</excludes>
 						-->
-					</resource>	
+					</resource>
 					<!--
 					<resource>
 						<directory>${basedir}/src/main/webapp</directory>
-					</resource>	
-					-->											
+					</resource>
+					-->
 				</resources>
-				
+
 				<testResources>
 					<testResource>
 						<directory>${basedir}/src/test/resources</directory>
 						<filtering>true</filtering>
-					</testResource>		
+					</testResource>
 					<testResource>
 						<directory>${basedir}/src/test/bootstrap-microcontainer-seam</directory>
 						<filtering>true</filtering>
@@ -585,13 +585,13 @@
 						<!--
 						<excludes>
 							<exclude>**/*.java</exclude>
-						</excludes>	
+						</excludes>
 						-->
-					</testResource>			
+					</testResource>
 				</testResources>
-				<filters>				
+				<filters>
 					<filter>${home.dir}/build-tools/src/main/resources/project/${project.parent.artifactId}-development.properties</filter>
-				</filters>	
+				</filters>
 			</build>
 		</profile>
 	</profiles>

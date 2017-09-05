@@ -3,10 +3,10 @@
 <faces-config version="2.1"
               xmlns="http://java.sun.com/xml/ns/javaee"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">    
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">
 
 <!-- =========== FULL CONFIGURATION FILE ================================== -->
-    
+
     <application>
 
 
@@ -27,7 +27,7 @@
             <supported-locale>it</supported-locale>
             <supported-locale>no</supported-locale>
             <supported-locale>tr</supported-locale>
-        </locale-config>        
+        </locale-config>
 
         <!--<message-bundle>messages</message-bundle>-->
     </application>

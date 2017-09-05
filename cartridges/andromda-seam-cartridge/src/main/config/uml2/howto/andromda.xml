@@ -14,7 +14,7 @@
                         <location patterns="**/*.xml">jar:file:${settings.localRepository}/org/omg/profiles/uml14/UML_Standard_Profile/1.0/UML_Standard_Profile-1.0.jar!/</location>
                     </moduleSearchLocations>
                 </model>
-            </models>            
+            </models>
         </repository>
     </repositories>
     -->
@@ -33,12 +33,12 @@
                 </model>
             </models>
         </repository>
-    </repositories>     
+    </repositories>
     <namespaces>
         <namespace name="seam">
             <properties>
                 <property name="overwrite">true</property>
-                <property name="facesServletExtension">seam</property> 
+                <property name="facesServletExtension">seam</property>
                 <property name="xhtml">false</property>
                 <property name="dummyData">true</property>
                 <property name="breadCrumbs">true</property>
@@ -62,7 +62,7 @@
                 <property name="roleNameMask">uppercamelcase</property>
                 <property name="servletVersion">3</property>
                 <property name="seamVersion">2.3</property>
-            </properties>            
-        </namespace>        
+            </properties>
+        </namespace>
     </namespaces>
 </andromda>

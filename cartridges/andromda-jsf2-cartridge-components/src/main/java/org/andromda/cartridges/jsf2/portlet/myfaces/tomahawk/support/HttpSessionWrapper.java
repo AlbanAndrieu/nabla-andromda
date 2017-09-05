@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSessionContext;
 
 /**
  * This class is a dummy HttpSessionWrapper.
- * 
+ *
  * @author <a href="mailto:shinsuke@yahoo.co.jp">Shinsuke Sugaya</a>
  */
 public class HttpSessionWrapper implements HttpSession

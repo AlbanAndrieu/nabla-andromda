@@ -50,7 +50,7 @@
 #elseif($service.remotingTypeRmi)
             <bean class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
 #else
-            <bean class="org.springframework.remoting.rmi.OtherProxyFactoryBean">            
+            <bean class="org.springframework.remoting.rmi.OtherProxyFactoryBean">
 #end
                 <property name="serviceUrl"><value>$service.remoteUrl</value></property>
                 <property name="serviceInterface"><value>$service.fullyQualifiedName</value></property>

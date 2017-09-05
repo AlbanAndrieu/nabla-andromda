@@ -59,7 +59,7 @@
                     action.click();
                 } else {
                     #{hideResultTable}();
-                } 
+                }
             }
             function #{getLeftTop}(_tag){
                 var _tagTmp = _tag;
@@ -87,12 +87,12 @@
                 } else {
                     document.getElementById('#{jsActionId}').className = 'autocomplete-button';
                     TrPage.getInstance().getRequestQueue().removeStateChangeListener(#{pprMonitor});
-                    
+
                     var firstElement = document.getElementById('#{jsTableId}0');
                     if(firstElement){
                         var table = document.getElementById('#{jsTableId}');
                         var edit=document.getElementById('#{jsEditId}');
-                    
+
                         #{lineArrayName} = table.getElementsByTagName('TD');
                         #{selectedLineName} = 0;
                         firstElement.className='autocomplete-selected-line';
@@ -102,7 +102,7 @@
                         table.style.left = editOffset[0];
                         table.style.top = editOffset[1]+edit.offsetHeight;
                         table.style.width = edit.offsetWidth;
-                    
+
                         edit.focus();
                     } else {
                         #{selectedLineName} = null;
@@ -114,13 +114,13 @@
             {
                 var requestQueue = TrPage.getInstance().getRequestQueue();
                 requestQueue.addStateChangeListener(#{pprMonitor});
-            }            
+            }
             function #{setValuesFromTable}(hiddenValue, editValue){
                 #{orgValue} = document.getElementById('#{jsHiddenId}').value;
                 #{orgEditValue} = #{hiddenEditValue};
                 #{hiddenEditValue} = editValue;
                 document.getElementById('#{jsEditId}').value=editValue;             //the order matters
-                document.getElementById('#{jsHiddenId}').value=hiddenValue; 
+                document.getElementById('#{jsHiddenId}').value=hiddenValue;
                 #{hideResultTable}();
             }
             function #{hideResultTable}(){
@@ -136,7 +136,7 @@
                 if(hidden.value == ''){
                     edit.value = '';
                 } else {
-                    edit.value = edit.value.replace(/^\s\s*/, '').replace(/\s\s*$/, ''); //trim 
+                    edit.value = edit.value.replace(/^\s\s*/, '').replace(/\s\s*$/, ''); //trim
                     if(edit.value == ''){
                         hidden.value = '';
                     }
@@ -145,14 +145,14 @@
             function #{editKeydown}(_event) {
                 window.clearTimeout(#{timeoutName});
                 var event = window.event || _event;
-            
+
                 var _keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
 
                 if(#{selectedLineName} == null){
                     if(_keyCode==40) { //down arrow
                         #{showResultTable}(true);
                     } else if(_keyCode==27){ //esc
-                        #{setValuesFromTableFunc}(#{orgValue}, #{orgEditValue});                        
+                        #{setValuesFromTableFunc}(#{orgValue}, #{orgEditValue});
                         return false;
                     } else {
                         #{timeoutName}=window.setTimeout('#{showResultTable}(false);',900);
@@ -172,7 +172,7 @@
                             document.getElementById('#{jsTableId}'+#{selectedLineName}).className='autocomplete-selected-line';
                         }
                     }else if(_keyCode==27){ //esc
-                        #{setValuesFromTable}(#{orgValue}, #{orgEditValue});                        
+                        #{setValuesFromTable}(#{orgValue}, #{orgEditValue});
                         return false;
                     }else if(_keyCode==13){ //enter
                         document.getElementById('#{jsTableId}'+#{selectedLineName}).onclick();
@@ -196,7 +196,7 @@
                 if(hiddenValue != ''){
                     #{addValueToLists}(hiddenValue, document.getElementById('#{jsEditId}').value);
                     #{setValuesFromTable}('', '')
-                } 
+                }
             }
             function #{removeActionClick} (){
                 var hiddenList = document.getElementById('#{jsHiddenListId}');
@@ -228,7 +228,7 @@
                     onchange="#{checkChangeEditFunc}(); return true;"
                     onblur="window.clearTimeout(#{timeoutName}); #{checkEmptyEdit}(); #{timeoutName}=window.setTimeout('#{hideResultTable}();',100);" />
                 <f:facet name="footer">
-                    <tr:selectManyListbox id="visibleList" simple="true" contentStyle="width:100%;border-top-width:0px;" valuePassThru="true">                
+                    <tr:selectManyListbox id="visibleList" simple="true" contentStyle="width:100%;border-top-width:0px;" valuePassThru="true">
                         <c:forEach var="item" items="#{value}">
                             <f:selectItem itemValue="#{item}" itemLabel="#{ajsfc:valueFromConverter(item,itemConverterId)}" />
                         </c:forEach>
@@ -255,7 +255,7 @@
                     <h:outputText value="#{row[locateVisibleFieldName]}" /></div>
                 </tr:column>
             </tr:table>
-            
+
         </h:panelGrid>
     </tr:subform>
 </ui:component>

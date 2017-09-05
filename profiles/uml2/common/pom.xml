@@ -6,16 +6,16 @@
         <version>3.6-SNAPSHOT</version>
     </parent>
     <artifactId>andromda-profile</artifactId>
-    <packaging>xml.zip</packaging>    
+    <packaging>xml.zip</packaging>
     <name>AndroMDA UML 2.0 Common Profile</name>
-    
+
     <scm>
     	<connection>scm:svn:http://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/common</connection>
     	<developerConnection>scm:svn:https://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/common</developerConnection>
     	<url>https://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/common</url>
     	<tag>HEAD</tag>
     </scm>
-    
+
     <dependencies>
         <dependency>
             <groupId>org.andromda.metafacades</groupId>
@@ -24,7 +24,7 @@
             <type>pom</type>
             <scope>runtime</scope>
             <optional>true</optional>
-        </dependency>    
+        </dependency>
         <dependency>
             <groupId>org.andromda.profiles.uml2</groupId>
             <artifactId>andromda-profile-datatype</artifactId>

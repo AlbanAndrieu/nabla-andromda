@@ -35,7 +35,7 @@
       </layout>
    </appender>
    -->
-   
+
 ## Just use the shortest Entity package, assume that's the top level package in the hierarchy
 #set ($pkg="0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789")
 #foreach ($entity in $entities)

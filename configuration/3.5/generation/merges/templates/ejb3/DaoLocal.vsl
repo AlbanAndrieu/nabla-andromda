@@ -454,13 +454,13 @@ $operation.getDocumentation("     * ")
      * @throws $exception.fullyQualifiedName
 #end
      */
-    $operation.visibility $returnType $operation.signature     
+    $operation.visibility $returnType $operation.signature
 #**##if ($operation.exceptionsPresent)
         throws $operation.exceptionList, ${entity.fullyQualifiedDaoDefaultExceptionName};
 #**##else
         throws ${entity.fullyQualifiedDaoDefaultExceptionName};
 #**##end
-    
+
 #end
 }
 #end

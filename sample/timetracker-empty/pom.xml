@@ -2,20 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    
+
     <parent>
 	<groupId>com.nabla.project.uml.timetracker</groupId>
 	<artifactId>sample</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
     </parent>
-             
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.andromda.timetracker</groupId>
     <artifactId>timetracker-gui</artifactId>
     <packaging>pom</packaging>
     <name>TimeTracker</name>
     <description>The TimeTracker Project.</description>
-        
+
     <dependencyManagement>
         <dependencies>
              <!--
@@ -24,7 +24,7 @@
                <artifactId>timetracker-sar</artifactId>
                <version>${project.version}</version>
                <type>sar</type>
-             </dependency>        
+             </dependency>
              -->
             <dependency>
                 <groupId>org.andromda.cartridges</groupId>
@@ -36,17 +36,17 @@
                 <groupId>org.apache.myfaces.core</groupId>
                 <artifactId>myfaces-api</artifactId>
                 <!--<version>1.2.9</version>-->
-                <version>${myfaces.version}</version>                
+                <version>${myfaces.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.myfaces.core</groupId>
                 <artifactId>myfaces-impl</artifactId>
                 <!--<version>1.2.9</version>-->
                 <version>${myfaces.version}</version>
-            </dependency>            
+            </dependency>
             <dependency>
                 <groupId>org.apache.myfaces.tomahawk</groupId>
-                <artifactId>tomahawk12</artifactId>         
+                <artifactId>tomahawk12</artifactId>
                 <version>${org.apache.myfaces.tomahawk.version}</version>
                 <exclusions>
                     <exclusion>
@@ -137,7 +137,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-orm</artifactId>
@@ -175,7 +175,7 @@
                 <artifactId>spring-test</artifactId>
                 <version>${spring.version}</version>
             </dependency -->
-            
+
             <!--dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
@@ -201,20 +201,20 @@
                 <version>${icefaces.version}</version>
                 <!--<scope>runtime</scope>-->
                 <scope>compile</scope>
-            </dependency>            
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
         <!--<defaultGoal>install</defaultGoal>-->
         <pluginManagement>
-            <plugins>         
-                <!--     
+            <plugins>
+                <!--
 		<plugin>
                   <groupId>org.codehaus.mojo</groupId>
                   <artifactId>jboss-packaging-maven-plugin</artifactId>
                   <version>2.0-SNAPSHOT</version>
-                </plugin>     
-                -->                  
+                </plugin>
+                -->
             </plugins>
         </pluginManagement>
         <plugins>
@@ -226,8 +226,8 @@
                <!-- Enable 'jboss-sar', etc., as a recoginized maven packaging type -->
                <!--
                <extensions>true</extensions>
-             </plugin>   
-             -->          
+             </plugin>
+             -->
         </plugins>
     </build>
     <modules>
@@ -258,12 +258,12 @@
         <module>app</module>
     </modules>
     <properties>
-        <!--<andromda.version>3.4</andromda.version>-->           
+        <!--<andromda.version>3.4</andromda.version>-->
         <application.id>timetracker</application.id>
         <application.package>org.andromda.timetracker</application.package>
         <application.name>TimeTracker</application.name>
         <!--<application.version>${project.version}</application.version>-->
-        
+
         <!--
         <hibernate.version>3.6.7.Final</hibernate.version>
         <spring.version>3.0.6.RELEASE</spring.version>
@@ -280,7 +280,7 @@
                     <plugins>
                         <plugin>
                             <groupId>org.andromda.maven.plugins</groupId>
-                            <artifactId>andromdapp-maven-plugin</artifactId> 
+                            <artifactId>andromdapp-maven-plugin</artifactId>
                             <version>${andromda.version}</version>
                             <!-- provides the injection of the script wrapper support into the class files (this should only
                                  be done when developing locally), uncomment this executions element to enable
@@ -299,7 +299,7 @@
                                 <scriptWrapper>org.andromda.scriptwrappers.GroovyScriptWrapper</scriptWrapper>
                                 <locations>
                                     <location>
-                                        <rootPath>${project.basedir}/src/main/java</rootPath> 
+                                        <rootPath>${project.basedir}/src/main/java</rootPath>
                                         <!--<rootPath>${project.basedir}/${maven.build.generated}/main/java</rootPath>-->
                                         <!-- adjust these to include or exclude specific files, by default
                                              all files found in the rootPath are considered
@@ -317,6 +317,6 @@
                     </plugins>
                 </pluginManagement>
             </build>
-        </profile>       
+        </profile>
     </profiles>
 </project>

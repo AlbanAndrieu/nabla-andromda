@@ -105,10 +105,10 @@ public class $serviceLocatorName
 #foreach ($service in $services)
     /**
      * Gets an instance of## no new line
-#if ($service.viewTypeRemote)        
+#if ($service.viewTypeRemote)
  {@link ${service.fullyQualifiedServiceRemoteInterfaceName}}.
-#elseif ($service.viewTypeLocal)     
- {@link ${service.fullyQualifiedServiceLocalInterfaceName}}. 
+#elseif ($service.viewTypeLocal)
+ {@link ${service.fullyQualifiedServiceLocalInterfaceName}}.
 #else
  {@link ${service.serviceInterfaceName}}.
 #end
@@ -119,8 +119,8 @@ public class $serviceLocatorName
     public final## no new line
 #if ($service.viewTypeRemote)
  $service.fullyQualifiedServiceRemoteInterfaceName## no new line
-#elseif ($service.viewTypeLocal)   
-$service.fullyQualifiedServiceLocalInterfaceName## no new line   
+#elseif ($service.viewTypeLocal)
+$service.fullyQualifiedServiceLocalInterfaceName## no new line
 #else
 ${service.serviceInterfaceName}## no new line
 #end
@@ -128,20 +128,20 @@ ${service.serviceInterfaceName}## no new line
  get${service.serviceInterfaceName}()## no new line
  throws javax.naming.NamingException
     {
-#if ($service.viewTypeRemote)        
+#if ($service.viewTypeRemote)
         return get_${transform.toUnderscoreName(${service.fullyQualifiedServiceName})}_Remote(null);
-#elseif ($service.viewTypeLocal)     
-        return get_${transform.toUnderscoreName(${service.fullyQualifiedServiceName})}_Local(null);  
+#elseif ($service.viewTypeLocal)
+        return get_${transform.toUnderscoreName(${service.fullyQualifiedServiceName})}_Local(null);
 #else
 #set ($jndiName = "${manageable.manageableServiceName}/remote")
         return ($service.serviceInterfaceName)## no new line
  getContext(env).lookup("${jndiName}");
 #end
-            
+
     }
     */
-    
-#**##if ($service.viewTypeRemote)   
+
+#**##if ($service.viewTypeRemote)
     /**
      * Gets the remote interface {@link ${service.fullyQualifiedServiceRemoteInterfaceName}}.
      *

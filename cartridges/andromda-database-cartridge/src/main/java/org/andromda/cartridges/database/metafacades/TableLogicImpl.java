@@ -54,7 +54,7 @@ import java.util.Iterator;
 /**
  * MetafacadeLogic implementation for
  * org.andromda.cartridges.database.metafacades.Table.
- * 
+ *
  * @see org.andromda.cartridges.database.metafacades.Table
  */
 public class TableLogicImpl extends TableLogic implements org.andromda.cartridges.database.metafacades.Table
@@ -68,7 +68,7 @@ public class TableLogicImpl extends TableLogic implements org.andromda.cartridge
     // ---------------- constructor -------------------------------
     /**
      * Creates a new TableLogicImpl object.
-     * 
+     *
      * @param metaObject DOCUMENT ME!
      * @param context DOCUMENT ME!
      */

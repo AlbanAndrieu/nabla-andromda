@@ -87,7 +87,7 @@
                 </p>
                 <p>
                     Once of the most interesting configuration files generated is the <code>embedded-jboss-beans.xml</code>.
-                    Take a look at your project's file and notice that the EJB3 cartridge has added 
+                    Take a look at your project's file and notice that the EJB3 cartridge has added
                     your datasource to this file, along with the existing <code>DefaultDS</code> datasource, which
                     is used by the JMS provider.  You are free to modify the connection settings so that
                     you point this to your development database server.
@@ -105,7 +105,7 @@
                     enable security for your project on the first run, a relevant security context will not be
                     generated for you in this file.  Say that you want to enable security at a later point, then
                     by simply following <a href="howto8.html">the security howto</a>, you uncomment the
-                    <code>securityRealm</code> property in the <b>ejb3</b> and the web framework namespaces.  You 
+                    <code>securityRealm</code> property in the <b>ejb3</b> and the web framework namespaces.  You
                     must then copy the last <code>application-policy</code> section of the <code>login-config.xml</code>
                     and change the name property to your <code>application.id</code>.  If your project application id
                     name is <b>howtomodel</b>, the <code>login-config.xml</code> should contain the following:
@@ -135,7 +135,7 @@
                 <p>
                     It is important to note that if you want to propagate security credentials (principal and password)
                     because you have enable security and secured your session beans by modeling actors to the class
-                    or operations, you must use the overloaded <code>getInitialContext</code> methods with signature 
+                    or operations, you must use the overloaded <code>getInitialContext</code> methods with signature
                     that allows you to provide a username and password.  The generated tests actually provide a basic
                     template that shows you how to do this.
                 </p>
@@ -173,22 +173,22 @@
             <a name="Message_Driven_Bean_Tests"/>
             <subsection name="Message Driven Tests">
                 <p>
-                    If you have one or more message driven beans, you must make sure the 
+                    If you have one or more message driven beans, you must make sure the
                     <code>EJB3Container.java</code> contains the following section
                     in the <i>startup</i> method:
 <source><![CDATA[
             logger.info("==>Deploying jboss-jms-beans - init JBoss MQ core services");
             EJB3StandaloneBootstrap.deployXmlResource("jboss-jms-beans.xml");
             logger.info("==>Deployed jboss-jms-beans");
-            
+
             logger.info("==>Configure test queue and topic");
             EJB3StandaloneBootstrap.deployXmlResource("testjms.xml");
             logger.info("==>Configured test queues and topics");
 ]]></source>
                 </p>
                 <p>
-                    The cartridge will generate one test class with one test case per message driven bean to 
-                    the <code>core/src/test/java</code> source folder in the corresponding package.  
+                    The cartridge will generate one test class with one test case per message driven bean to
+                    the <code>core/src/test/java</code> source folder in the corresponding package.
                     The the test source files will NOT be
                     over-written, so if you wish, you can add further cases.
                 </p>
@@ -206,7 +206,7 @@
                 </p>
                 <p class="highlight">
                     For your message driven test framework to work, you need to make sure the <code>jms-ra.rar</code>
-                    and <code>jcainflow.rar</code> RAR files exist in your project <code>src/test/resources</code> 
+                    and <code>jcainflow.rar</code> RAR files exist in your project <code>src/test/resources</code>
                     folder.  These are from JBoss Embeddable Microcontainer <code>lib</code>.  When you run
                     your model generation phase, these libs will be automatically copied to your resources
                     folder.  We are forced to do this until Eclipse (perhaps other IDE's don't have this issue) can

@@ -8,12 +8,12 @@
         <artifactId>timetracker-ejb3</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>app</artifactId>
     <packaging>ear</packaging>
     <name>[${project.parent.artifactId} :: EJB3 Application] - ${project.artifactId} : ${project.version}</name>
-    
+
     <!-- TODO jboss tomcat https://repository.jboss.org/nexus/content/groups/public/org/jboss/seam/examples/hibernate-web/2.3.0-SNAPSHOT/hibernate-web-2.3.0-20120313.055246-7.pom -->
     <!-- TODO for hibernate https://repository.jboss.org/nexus/content/groups/public/org/jboss/seam/examples/2.3.0-SNAPSHOT/examples-2.3.0-20120313.054422-7.pom -->
     <dependencies>
@@ -165,7 +165,7 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- NOTE: hibernate-annotations are not included here, since hibernate-core 
+        <!-- NOTE: hibernate-annotations are not included here, since hibernate-core
         3.6.X contains former artifact. -->
         <!--
 	<dependency>
@@ -174,7 +174,7 @@
 		<scope>compile</scope>
 	</dependency>
 	-->
-	
+
         <!-- Define dependency version of hibernate-commons-annotations -->
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -308,11 +308,11 @@
 	</dependency>
 	-->
     </dependencies>
-    
+
     <properties>
     	<jboss.ear.version>4</jboss.ear.version> <!-- Fix eclipse issue -->
-    </properties> 
-    
+    </properties>
+
     <build>
         <finalName>${application.id}-${project.version}</finalName>
         <resources>
@@ -517,7 +517,7 @@
                     <filename>${application.id}-ear.ear</filename>
                     <skip>false</skip>
                 </configuration>
-            </plugin>            
+            </plugin>
                <plugin>
                   <groupId>org.codehaus.mojo</groupId>
                   <artifactId>jboss-maven-plugin</artifactId>
@@ -530,7 +530,7 @@
                         <param>${project.build.directory}/${project.build.finalName}.war</param>
                      </fileNames>
                   </configuration>
-               </plugin>            
+               </plugin>
             <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>

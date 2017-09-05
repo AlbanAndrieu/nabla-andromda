@@ -373,7 +373,7 @@ public interface TimecardDao
      * @param criteria
      * @return List
      */
-    public List findByCriteria(TimecardSearchCriteriaVO criteria)     
+    public List findByCriteria(TimecardSearchCriteriaVO criteria)
         throws TimecardDaoException;
-    
+
 }

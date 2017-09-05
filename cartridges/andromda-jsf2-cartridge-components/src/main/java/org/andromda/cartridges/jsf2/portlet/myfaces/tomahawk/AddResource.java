@@ -14,14 +14,14 @@ import org.apache.myfaces.shared_tomahawk.renderkit.html.HtmlResponseWriterImpl;
 /**
  * Extends the default MyFaces Tomahawk {DefaultAddResource} class in order to
  * allow injection of the required content into portlets.
- * 
+ *
  * @author Chad Brandon
  */
 public class AddResource extends org.apache.myfaces.renderkit.html.util.DefaultAddResource
 {
     /**
      * Overridden to allow injection of the required content for portlets (i.e. which have no <head/>, <body/>, etc tags).
-     * 
+     *
      * @see org.apache.myfaces.renderkit.html.util.DefaultAddResource#writeWithFullHeader(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
      */
     @Override

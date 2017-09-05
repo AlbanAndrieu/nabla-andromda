@@ -8,8 +8,8 @@
         <artifactId>timetracker-hibernate</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
-    <modelVersion>4.0.0</modelVersion>    
+
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>web</artifactId>
     <packaging>war</packaging>
     <name>TimeTracker Hibernate Web</name>
@@ -66,8 +66,8 @@
         <dependency>
             <groupId>oro</groupId>
             <artifactId>oro</artifactId>
-        </dependency> 
-        
+        </dependency>
+
         <dependency>
             <groupId>org.andromda.cartridges</groupId>
             <artifactId>andromda-jsf-cartridge-components</artifactId>
@@ -90,7 +90,7 @@
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
-        </dependency>        
+        </dependency>
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-api</artifactId>
@@ -98,7 +98,7 @@
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-impl</artifactId>
-        </dependency>        
+        </dependency>
         <dependency>
             <groupId>org.apache.myfaces.tomahawk</groupId>
             <artifactId>tomahawk12</artifactId>
@@ -127,8 +127,8 @@
         <dependency>
             <groupId>javax.faces</groupId>
             <artifactId>jsf-api</artifactId>
-            <!--<version>${jsf.api.version}</version>--> 
-            <version>1.2_15</version>      
+            <!--<version>${jsf.api.version}</version>-->
+            <version>1.2_15</version>
         </dependency>
         <!--
         <dependency>
@@ -136,8 +136,8 @@
             <artifactId>jsf-impl</artifactId>
             <version>2.1.2</version>
             <scope>compile</scope>
-        </dependency>   
-        -->     
+        </dependency>
+        -->
         <dependency>
             <artifactId>hibernate-validator</artifactId>
             <groupId>org.hibernate</groupId>
@@ -201,7 +201,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-        </dependency>             
+        </dependency>
     </dependencies>
     <build>
         <finalName>timetracker</finalName>

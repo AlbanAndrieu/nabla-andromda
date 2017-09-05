@@ -19,7 +19,7 @@
         <view-handler>org.ajax4jsf.framework.ajax.AjaxViewHandler</view-handler>
         -->
     </application>
-    
+
     <!-- Seam transaction management -->
     <lifecycle>
         <phase-listener>org.jboss.seam.jsf.TransactionalSeamPhaseListener</phase-listener>

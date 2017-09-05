@@ -38,7 +38,7 @@ public interface UserDao
      * Copies the fields of the specified entity to the target value object. This method is similar to
      * toUserVO(), but it does not handle any attributes in the target
      * value object that are "read-only" (as those do not have setter methods exposed).
-     * 
+     *
      * @param sourceEntity
      * @param targetVO
      */
@@ -46,7 +46,7 @@ public interface UserDao
 
     /**
      * Converts this DAO's entity to an object of type {@link UserVO}.
-     * 
+     *
      * @param entity
      * @return UserVO
      */
@@ -54,14 +54,14 @@ public interface UserDao
 
     /**
      * Converts this DAO's entity to a Collection of instances of type {@link UserVO}.
-     * 
+     *
      * @param entities
      */
     public void toUserVOCollection(Collection entities);
 
     /**
      * Copies the fields of {@link UserVO} to the specified entity.
-     * 
+     *
      * @param sourceVO
      * @param targetEntity
      * @param copyIfNull If FALSE, the value object's field will not be copied to the entity if the value is NULL. If TRUE,
@@ -71,7 +71,7 @@ public interface UserDao
 
     /**
      * Converts an instance of type {@link UserVO} to this DAO's entity.
-     * 
+     *
      * @param userVO
      * @return User
      */
@@ -80,7 +80,7 @@ public interface UserDao
     /**
      * Converts a Collection of instances of type {@link UserVO} to this
      * DAO's entity.
-     * 
+     *
      * @param instances
      */
     public void userVOToEntityCollection(Collection instances);
@@ -98,7 +98,7 @@ public interface UserDao
      * Copies the fields of the specified entity to the target value object. This method is similar to
      * toUserDetailsVO(), but it does not handle any attributes in the target
      * value object that are "read-only" (as those do not have setter methods exposed).
-     * 
+     *
      * @param sourceEntity
      * @param targetVO
      */
@@ -106,7 +106,7 @@ public interface UserDao
 
     /**
      * Converts this DAO's entity to an object of type {@link UserDetailsVO}.
-     * 
+     *
      * @param entity
      * @return UserDetailsVO
      */
@@ -114,14 +114,14 @@ public interface UserDao
 
     /**
      * Converts this DAO's entity to a Collection of instances of type {@link UserDetailsVO}.
-     * 
+     *
      * @param entities
      */
     public void toUserDetailsVOCollection(Collection entities);
 
     /**
      * Copies the fields of {@link UserDetailsVO} to the specified entity.
-     * 
+     *
      * @param sourceVO
      * @param targetEntity
      * @param copyIfNull If FALSE, the value object's field will not be copied to the entity if the value is NULL. If TRUE,
@@ -131,7 +131,7 @@ public interface UserDao
 
     /**
      * Converts an instance of type {@link UserDetailsVO} to this DAO's entity.
-     * 
+     *
      * @param userDetailsVO
      * @return User
      */
@@ -140,14 +140,14 @@ public interface UserDao
     /**
      * Converts a Collection of instances of type {@link UserDetailsVO} to this
      * DAO's entity.
-     * 
+     *
      * @param instances
      */
     public void userDetailsVOToEntityCollection(Collection instances);
 
     /**
      * Loads an instance of User from the persistent store.
-     * 
+     *
      * @param id the identifier of the entity to load.
      * @throws UserDaoException
      */
@@ -160,7 +160,7 @@ public interface UserDao
      * defined in this class then the result <strong>WILL BE</strong> passed through an operation which can
      * optionally transform the entity (into a value object for example). By default, transformation does
      * not occur.
-     * 
+     *
      * @param id the identifier of the entity to load.
      * @return either the entity or the object transformed from the entity.
      * @throws UserDaoException
@@ -169,7 +169,7 @@ public interface UserDao
 
     /**
      * Loads all entities of type {@link User}.
-     * 
+     *
      * @return the loaded entities.
      * @throws UserDaoException
      */
@@ -182,7 +182,7 @@ public interface UserDao
      * defined here then the result <strong>WILL BE</strong> passed through an operation which can optionally
      * transform the entity (into a value object for example). By default, transformation does
      * not occur.
-     * 
+     *
      * @param transform the flag indicating what transformation to use.
      * @return Collection of the loaded entities.
      * @throws UserDaoException
@@ -191,7 +191,7 @@ public interface UserDao
 
     /**
      * Creates an instance of User and adds it to the persistent store.
-     * 
+     *
      * @param user
      * @return User
      * @throws UserDaoException
@@ -205,7 +205,7 @@ public interface UserDao
      * defined here then the result <strong>WILL BE</strong> passed through an operation which can optionally
      * transform the entity (into a value object for example). By default, transformation does
      * not occur.
-     * 
+     *
      * @param transform
      * @param user
      * @return Object
@@ -216,7 +216,7 @@ public interface UserDao
     /**
      * Creates a new instance of User and adds
      * from the passed in <code>entities</code> collection
-     * 
+     *
      * @param entities the collection of User
      * instances to create.
      * @return the created instances. Collection<User>
@@ -231,7 +231,7 @@ public interface UserDao
      * defined here then the result <strong>WILL BE</strong> passed through an operation which can optionally
      * transform the entities (into value objects for example). By default, transformation does
      * not occur.
-     * 
+     *
      * @param transform
      * @param entities
      * @return the created instances. Collection
@@ -243,7 +243,7 @@ public interface UserDao
      * Creates a new <code>User</code>
      * instance from <strong>all</strong> attributes and adds it to
      * the persistent store.
-     * 
+     *
      * @param username
      * @param password
      * @param firstName
@@ -264,7 +264,7 @@ public interface UserDao
      * defined here then the result <strong>WILL BE</strong> passed through an operation which can optionally
      * transform the entity (into a value object for example). By default, transformation does
      * not occur.
-     * 
+     *
      * @param transform
      * @param username
      * @param password
@@ -281,7 +281,7 @@ public interface UserDao
 
     /**
      * Updates the <code>user</code> instance in the persistent store.
-     * 
+     *
      * @param user
      * @throws UserDaoException
      */
@@ -289,7 +289,7 @@ public interface UserDao
 
     /**
      * Updates all instances in the <code>entities</code> collection in the persistent store.
-     * 
+     *
      * @param entities
      * @throws UserDaoException
      */
@@ -297,7 +297,7 @@ public interface UserDao
 
     /**
      * Removes the instance of User from the persistent store.
-     * 
+     *
      * @param user
      * @throws UserDaoException
      */
@@ -306,7 +306,7 @@ public interface UserDao
     /**
      * Removes the instance of User having the given
      * <code>identifier</code> from the persistent store.
-     * 
+     *
      * @param id
      * @throws UserDaoException
      */
@@ -314,7 +314,7 @@ public interface UserDao
 
     /**
      * Removes all entities in the given <code>entities<code> collection.
-     * 
+     *
      * @param entities
      * @throws UserDaoException
      */
@@ -331,7 +331,7 @@ public interface UserDao
      * Does the same thing as {@link #findByEmail(String)} with an
      * additional argument called <code>queryString</code>. This <code>queryString</code>
      * argument allows you to override the query string defined in {@link #findByEmail(String)}.
-     * 
+     *
      * @param email
      * @return User
      * @throws UserDaoException
@@ -346,7 +346,7 @@ public interface UserDao
      * then finder results <strong>WILL BE</strong> passed through an operation which can optionally
      * transform the entities (into value objects for example). By default, transformation does
      * not occur.
-     * 
+     *
      * @param email
      * @return Object
      * @throws UserDaoException

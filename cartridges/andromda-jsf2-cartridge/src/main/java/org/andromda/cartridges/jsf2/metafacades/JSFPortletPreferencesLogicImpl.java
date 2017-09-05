@@ -7,7 +7,7 @@ import org.andromda.metafacades.uml.UseCaseFacade;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFPortletPreferences.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFPortletPreferences
  */
 public class JSFPortletPreferencesLogicImpl extends JSFPortletPreferencesLogic

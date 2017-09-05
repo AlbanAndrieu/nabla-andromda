@@ -288,9 +288,9 @@
                     <li>(5) If all else fails, the default convention of an <b>alphabetical</b> name ordering is adopted.</li>
                 </ul>
                 <p>
-                    The join table name is defined by default to be the table name of the primary table of the owning 
-                    side concatenated with the table name of the primary table of the inverse side.  
-                    You can override the <code>name</code> property by modeling the 
+                    The join table name is defined by default to be the table name of the primary table of the owning
+                    side concatenated with the table name of the primary table of the inverse side.
+                    You can override the <code>name</code> property by modeling the
                     <![CDATA[<<PersistentAssociation>>]]><b><code>andromda_persistence_table</code></b> tagged value on the association or alternatively,
                     specify a name for the association.
                 </p>

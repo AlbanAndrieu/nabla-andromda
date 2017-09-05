@@ -6,14 +6,14 @@
         <version>3.6-SNAPSHOT</version>
     </parent>
     <artifactId>andromda-profile-test</artifactId>
-    <packaging>xml.zip</packaging>    
+    <packaging>xml.zip</packaging>
     <name>AndroMDA UML 2.0 Test Profile</name>
-    
+
     <scm>
     	<connection>scm:svn:http://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/test</connection>
     	<developerConnection>scm:svn:https://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/test</developerConnection>
     	<url>https://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/test</url>
     	<tag>HEAD</tag>
     </scm>
-        
+
 </project>

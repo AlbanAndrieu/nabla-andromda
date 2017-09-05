@@ -45,7 +45,7 @@ The outline of the application-policy is:
       </authentication>
    </application-policy>
 
-   
+
   <!-- Used by clients within the application server VM such as
   mbeans and servlets that access EJBs.
   -->
@@ -78,4 +78,3 @@ The outline of the application-policy is:
   </application-policy>
 
 </policy>
-

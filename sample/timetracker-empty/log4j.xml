@@ -56,7 +56,7 @@
     <category name="de.plushnikov.doctorjim">
         <priority value="ERROR" />
     </category>
-   
+
     <category name="org.andromda">
         <priority value="ERROR" />
     </category>
@@ -74,16 +74,16 @@
         <priority value="INFO" />
     </category>
     -->
-    
+
     <!-- this produce a lot of output in debug mode -->
     <category name="org.andromda.namespaces">
         <priority value="INFO" />
     </category>
-    
+
     <category name="org.andromda.utils.beautifier.core.JavaImportBeautifierImpl">
         <priority value="ERROR" />
     </category>
-    
+
     <category name="org.andromda.core.configuration">
         <priority value="INFO" />
     </category>
@@ -114,8 +114,8 @@
 
     <category name="org.andromda.cartridges.gui">
         <priority value="DEBUG" />
-    </category>        
-    
+    </category>
+
     <!-- =========================
           Setup the Root category
          ========================= -->

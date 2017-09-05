@@ -31,7 +31,7 @@ import org.jboss.seam.annotations.In;
  * Base EJB3 DAO Class: is able to create, update, remove, load, and find
  * objects of type <code>User</code>.
  * </p>
- * 
+ *
  * @see UserDao
  */
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
@@ -430,7 +430,7 @@ public abstract class UserDaoBase implements UserDao
      * <li>{@link UserDetailsVO} - {@link TRANSFORM_USERDETAILSVO}</li>
      * </ul>
      * If the integer argument value is unknown {@link #TRANSFORM_NONE} is assumed.
-     * 
+     *
      * @param transform one of the constants declared in {@link UserDao}
      * @param entity an entity that was found
      * @return the transformed entity (i.e. new value object, etc)
@@ -462,7 +462,7 @@ public abstract class UserDaoBase implements UserDao
      * <p/>
      * Transforms into the same collection as the argument, but this time containing the transformed entities
      * This method is to be used internally only.
-     * 
+     *
      * @param transform one of the constants declared in <code>UserDao</code>
      * @param entities the collection of entities to transform
      * @see #transformEntity(int, User)
@@ -498,7 +498,7 @@ public abstract class UserDaoBase implements UserDao
     /**
      * Default implementation for transforming the results of a report query into a value object. This
      * implementation exists for convenience reasons only. It needs only be overridden in the {@link UserDaoImpl} class if you intend to use reporting queries.
-     * 
+     *
      * @see UserDao#toUserVO(User)
      */
     protected UserVO toUserVO(final Object[] row)
@@ -628,7 +628,7 @@ public abstract class UserDaoBase implements UserDao
     /**
      * Default implementation for transforming the results of a report query into a value object. This
      * implementation exists for convenience reasons only. It needs only be overridden in the {@link UserDaoImpl} class if you intend to use reporting queries.
-     * 
+     *
      * @see UserDao#toUserDetailsVO(User)
      */
     protected UserDetailsVO toUserDetailsVO(final Object[] row)

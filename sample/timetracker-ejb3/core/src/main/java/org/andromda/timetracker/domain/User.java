@@ -65,7 +65,7 @@ public class User extends UserEmbeddable implements Serializable, Comparable<Use
 
     /**
      * Constructor with all POJO attribute values and CMR relations.
-     * 
+     *
      * @param username Value for the username property
      * @param password Value for the password property
      * @param firstName Value for the firstName property

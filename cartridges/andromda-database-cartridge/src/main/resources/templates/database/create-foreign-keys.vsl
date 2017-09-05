@@ -11,4 +11,3 @@ ALTER TABLE $foreignKeyColumn.tableName
 #end
 #end
 #end
-

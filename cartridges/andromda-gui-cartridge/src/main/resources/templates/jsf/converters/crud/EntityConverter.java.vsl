@@ -40,10 +40,10 @@ public class $manageable.converterClassName
         return vo.get$stringUtils.upperCamelCaseName($manageable.displayAttribute.name)();
 #else
         return String.valueOf(vo.get$stringUtils.upperCamelCaseName($manageable.displayAttribute.name)());
-#end        
+#end
 ##else
 ##        return "";
-##end        
+##end
     }
 
     /**

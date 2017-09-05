@@ -25,7 +25,7 @@ public class AuthenticatorTest extends JUnitSeamTest //SeamOpenEjbTest
 
     private static final Logger logger = Logger.getLogger(AuthenticatorTest.class);
 
-    /* 
+    /*
     @Override
     @BeforeSuite
     public void beforeSuite() throws Exception

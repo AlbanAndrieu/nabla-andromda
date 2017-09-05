@@ -133,7 +133,7 @@ public class ExtensionsResponseWrapper extends HttpServletResponseWrapper implem
 
     /**
      * This method is used by Jetty.
-     * 
+     *
      * @throws IOException
      */
     @Override
@@ -243,7 +243,7 @@ public class ExtensionsResponseWrapper extends HttpServletResponseWrapper implem
 
         /**
          * Creates a new MyServletOutputStream object.
-         * 
+         *
          * @param outputStream DOCUMENT ME!
          */
         public MyServletOutputStream(final OutputStream outputStream)
@@ -255,7 +255,7 @@ public class ExtensionsResponseWrapper extends HttpServletResponseWrapper implem
 
         /**
          * DOCUMENT ME!
-         * 
+         *
          * @param b DOCUMENT ME!
          * @throws IOException DOCUMENT ME!
          */
@@ -269,7 +269,7 @@ public class ExtensionsResponseWrapper extends HttpServletResponseWrapper implem
 
         /**
          * DOCUMENT ME!
-         * 
+         *
          * @param bytes DOCUMENT ME!
          * @throws IOException DOCUMENT ME!
          */
@@ -283,7 +283,7 @@ public class ExtensionsResponseWrapper extends HttpServletResponseWrapper implem
 
         /**
          * DOCUMENT ME!
-         * 
+         *
          * @param bytes DOCUMENT ME!
          * @param off DOCUMENT ME!
          * @param len DOCUMENT ME!

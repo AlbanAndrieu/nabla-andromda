@@ -31,13 +31,13 @@ public abstract class MovieDaoBase implements MovieDao
 {
 
     private static final Logger logger = Logger.getLogger(MovieDaoBase.class);
-    
+
     /** Session Context Injection */
     @Resource
     protected SessionContext context;
 
     /**
-     * Inject persistence context timetracker-ejb3     */    
+     * Inject persistence context timetracker-ejb3     */
     @PersistenceContext(unitName = "timetracker-ejb3")    protected EntityManager entityManager;
 
     /**
@@ -398,7 +398,7 @@ public abstract class MovieDaoBase implements MovieDao
 
     /**
      * @return the hibernateSession
-     */   
+     */
     public Session getHibernateSession()
     {
         if (this.entityManager.getDelegate() instanceof HibernateEntityManager)
@@ -408,6 +408,6 @@ public abstract class MovieDaoBase implements MovieDao
         {
             return (Session) this.entityManager.getDelegate();
         }
-    }    
+    }
 
 }

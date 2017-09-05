@@ -4,7 +4,7 @@ input.newuser {
   width: 113px;
   margin: 4px 4px 4px 4px;
   border: 0px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 input.newrole {
@@ -13,7 +13,7 @@ input.newrole {
   width: 113px;
   margin: 4px 4px 4px 4px;
   border: 0px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 input.newpermission {
@@ -22,7 +22,7 @@ input.newpermission {
   width: 113px;
   margin: 4px 4px 4px 4px;
   border: 0px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 input.manageusers {
@@ -50,7 +50,7 @@ input.manageroles {
   font-weight: bold;
   color: #333333;
   border: 0px;
-  cursor: pointer;  
+  cursor: pointer;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -74,7 +74,7 @@ div.status-true {
   width: 14px;
   height: 15px;
   margin-left: auto;
-  margin-right: auto;    
+  margin-right: auto;
 }
 
 div.status-false {

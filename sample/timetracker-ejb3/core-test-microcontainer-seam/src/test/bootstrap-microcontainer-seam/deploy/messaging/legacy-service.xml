@@ -11,5 +11,5 @@
     </mbean>
     <mbean code="org.jboss.mq.server.jmx.DummySecurityMgr"
         name="jboss.mq:service=SecurityManager" />
-    
+
 </server>

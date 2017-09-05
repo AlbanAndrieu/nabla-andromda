@@ -14,22 +14,22 @@
             </p>
             <p>
                 To create a service you just create another class and model the <![CDATA[<<Service>>]]> stereotype
-                on this class. 
+                on this class.
             </p>
             <p>
                 Most of the time you only model operations in these services which represent
                 the operations that can be called remotely (default view type).  The EJB3 cartridge allows you to
-                specify <i>local</i> operation or even both.  These operations are the <b>API</b> of your 
+                specify <i>local</i> operation or even both.  These operations are the <b>API</b> of your
                 application's back-end.
             </p>
             <p>
                 The following illustrates the use of a service bean that operates on the 2 entities.
-                Notice how we have modeled dependencies from the service to the entities.  This will render 
+                Notice how we have modeled dependencies from the service to the entities.  This will render
                 the getter accessor to the DAOs of both entities in the service and inject the corresponding
                 DAO (stateless session bean containing CRUD API for entity).
             </p>
             <p>
-                Drawing these dependencies indicates the need to access the persistent storage 
+                Drawing these dependencies indicates the need to access the persistent storage
                 of entities via the persistence entity manager injected in the DAO that handle this task and
                 eliminates much of the complexity.
             </p>
@@ -101,7 +101,7 @@
             <a name="View_Interface"/>
             <subsection name="View Interfaces">
                 <p>
-                    By default, the EJB3 cartridge creates and registers a remote view interface which implies 
+                    By default, the EJB3 cartridge creates and registers a remote view interface which implies
                     that the client view of the session bean is location-independent.  In this case, the session bean
                     and the client can exist in different JVMs on the same or different machines.
                 </p>
@@ -117,14 +117,14 @@
                 </ul>
                 <p>
                     If you have operations that exist in both the local and remote interfaces, your service
-                    delegate class will allow you to select how you want to invoke your bean operations. 
+                    delegate class will allow you to select how you want to invoke your bean operations.
                 </p>
             </subsection>
             <a name="Transactions"/>
             <subsection name="Transactions">
                 <p>
                     To declare the transactional nature of session bean business methods, you can model
-                    the <code>andromda_ejb_transaction_type</code> tagged value on the session bean business 
+                    the <code>andromda_ejb_transaction_type</code> tagged value on the session bean business
                     methods individually, or on the session bean class.  To find out more information, click on
                     <a href="howto15.html">Transaction</a>.
                 </p>
@@ -140,14 +140,14 @@
             <a name="Environment_Entry_Injection"/>
             <subsection name="Environment Entry Injections">
                 <p>
-                    To inject an environment entry resource value, model a service attribute with 
+                    To inject an environment entry resource value, model a service attribute with
                     <code>classifier</code> scope
                     and set the attribute stereotype to <![CDATA[<<EnvEntry>>]]>.  The environment
-                    entries will be defined in the session bean class and configured in the ejb-jar.xml 
+                    entries will be defined in the session bean class and configured in the ejb-jar.xml
                     deployment descriptor.
-                    You must define a default value for these attributes in the model.  Refer to 
-                    <a href="howto11.html#Simple_Environment_Entry_Injection">Environment Entry Injections</a> 
-                    for further information. 
+                    You must define a default value for these attributes in the model.  Refer to
+                    <a href="howto11.html#Simple_Environment_Entry_Injection">Environment Entry Injections</a>
+                    for further information.
                 </p>
             </subsection>
             <a name="Nullable_Parameter"/>
@@ -182,7 +182,7 @@
             <a name="Interceptors"/>
             <subsection name="Interceptors">
                 <p>
-                    You can intercept calls to session bean business method invocations via an interceptor class.  
+                    You can intercept calls to session bean business method invocations via an interceptor class.
                     By default,  this class is NOT generated.  To find out more information, click on
                     <a href="howto13.html">Interceptors</a>.
                 </p>
@@ -190,8 +190,8 @@
             <a name="JNDI_Bindings"/>
             <subsection name="JNDI Bindings">
                 <p>
-                    The container will supply default JNDI bindings for the remote and local interface of 
-                    the session bean.  By default, JBoss will use <code>ejbName/local</code> and 
+                    The container will supply default JNDI bindings for the remote and local interface of
+                    the session bean.  By default, JBoss will use <code>ejbName/local</code> and
                     <code>ejbName/remote</code> for the local and remote interfaces, respectively.  Other providers
                     will do something similar.
                 </p>
@@ -209,7 +209,7 @@
                     The EJB3 cartridge derives a default persistence context associated with the default
                     entity manager for every session bean.  The persistence context <code>unitName</code>
                     property is determined via the <code>persistenceContextUnitName</code> namespace property
-                    which is provided via your application <code>andromda.xml</code> descriptor. 
+                    which is provided via your application <code>andromda.xml</code> descriptor.
                 </p>
                 <p>
                     Every session bean provides the facility to override the default persistence context
@@ -270,9 +270,9 @@
                     <li class="gen"><a class="changed" href="howto/META-INF/persistence.xml"><code>persistence.xml</code></a></li>
                 </ul>
                 <p>
-                    Notice that <code>SecondaryEntityManager</code> has defined the 
+                    Notice that <code>SecondaryEntityManager</code> has defined the
                     <code>andromda_service_persistence_context_datasource</code> tagged value specifying the
-                    JNDI name of the JDBC datasource used in this persistence context.  You can specify this tag 
+                    JNDI name of the JDBC datasource used in this persistence context.  You can specify this tag
                     on a class where the <![CDATA[<<PersistenceContext>>]]> stereotype has been modeled.
                 </p>
             </subsection>
@@ -281,7 +281,7 @@
                 <p>
                     To inject another session bean into the current session bean, simply model a dependency
                     from the source session bean (which will contain the <code>@javax.annotation.EJB</code>
-                    annotation) to the target session bean.  For more information on dependency injections, 
+                    annotation) to the target session bean.  For more information on dependency injections,
                     click <a href="howto11.html#Dependency_Injection">here</a>.
                 </p>
             </subsection>
@@ -294,7 +294,7 @@
                 <p>
                     Once you have modeled the MDB with <![CDATA[<<MessageDriven>>]]> stereotype,
                     you can model a dependency from the source session bean to the MDB.  This will render
-                    the appropriate <code>@javax.annotation.Resource</code> injections associated with JMS specific 
+                    the appropriate <code>@javax.annotation.Resource</code> injections associated with JMS specific
                     objects such as <code>QueueConnectionFactory</code>, <code>TopicConnectionFactory</code> and
                     the <code>Destination</code> object.
                 </p>

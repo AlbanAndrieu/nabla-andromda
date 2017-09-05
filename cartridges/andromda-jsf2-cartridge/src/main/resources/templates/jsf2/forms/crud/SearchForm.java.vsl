@@ -6,7 +6,7 @@
 package $manageable.manageablePackageName;
 
 /**
- * This form holds the fields that are used in the search operation of ${manageable.name} 
+ * This form holds the fields that are used in the search operation of ${manageable.name}
  *
  */
 public final class $manageable.searchFormBeanClassName
@@ -21,7 +21,7 @@ public final class $manageable.searchFormBeanClassName
 #set ($fieldTypeName = $field.type.wrapperName)
 #else
 #set ($fieldTypeName = $field.type.fullyQualifiedName)
-#end 
+#end
 #end
     private $fieldTypeName $field.name;
 

@@ -292,7 +292,7 @@ $operation.getDocumentation("     * ")
 ##// ($entity.allRequiredConstructorParameters.size() + $entity.identifiers.size()) > $entity.allProperties.size()
 #if ($requiredParams < $allSize && $requiredParams > 0)
         // requiredParams not identifier : $requiredParams allSize minus identifier : $allSize all required constructor parameters : $entity.allRequiredConstructorParameters.size() identifiers : $entity.identifiers.size() all properties :  $entity.allProperties.size()
-##// Don't use 3.4 or 3.3 use 3.2 vsl 
+##// Don't use 3.4 or 3.3 use 3.2 vsl
 #if (($entity.allRequiredConstructorParameters.size() + $entity.identifiers.size()) > $entity.allProperties.size())
         // Comment function below
 #end

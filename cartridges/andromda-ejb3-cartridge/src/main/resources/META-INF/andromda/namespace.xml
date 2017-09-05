@@ -423,7 +423,7 @@
                         <li>jboss.cache:service=EJB3EntityTreeCache</li>
                     </ul>
                 </documentation>
-            </property>            
+            </property>
             <property name="hibernateEnableCache">
                 <default>false</default>
                 <documentation>

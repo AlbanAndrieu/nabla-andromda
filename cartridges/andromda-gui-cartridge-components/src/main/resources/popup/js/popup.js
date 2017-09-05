@@ -42,14 +42,14 @@ var popupLink,popupFrameForm, popupFrame;
 var popupForm;
 var popupId;
 registerClickListener("hidePopupFrameEvent");
-function showPopupFrame(form, link, eventRef, closeId, styleClass, style, hposOffset, 
+function showPopupFrame(form, link, eventRef, closeId, styleClass, style, hposOffset,
                         vposOffset, abs, center, height, width, scrolling)
 {
-	if(popupDisplay == link.id) 
-	{ 
+	if(popupDisplay == link.id)
+	{
 	    return;
 	}
-	else 
+	else
 	{
 	    popupDisplay = link.id;
 	}
@@ -67,27 +67,27 @@ function showPopupFrame(form, link, eventRef, closeId, styleClass, style, hposOf
 		popupForm = form;
 		popupId = closeId;
 		popupFrame.innerHTML = '<iframe src="" name="hiddenPopupFrameTarget" frameborder="0" style="height: ' + height +'; width: ' + width + '; " scrolling="' + scrolling + '" />';
-		if (center == true) 
+		if (center == true)
 		{
 			if(browserType=="Gecko")
 			{
 				popupFrameForm.style.left = (window.innerWidth - popupFrameForm.clientWidth)/2;
 				popupFrameForm.style.top = (window.innerHeight - popupFrameForm.clientHeight)/2;
-			} 
-			else 
+			}
+			else
 			{
 				popupFrameForm.style.left = (screen.width - popupFrameForm.clientWidth)/2;
 				popupFrameForm.style.top = (screen.height - popupFrameForm.clientHeight - 90)/2;
 			}
-		} 
-		else 
+		}
+		else
 		{
-			if (abs == true) 
+			if (abs == true)
 			{
 				popupFrameForm.style.left=hposOffset;
 				popupFrameForm.style.top=vposOffset;
-			} 
-			else 
+			}
+			else
 			{
 				popupFrameForm.style.left = eventRef.clientX+document.body.scrollLeft+document.documentElement.scrollLeft-20+hposOffset;
 				popupFrameForm.style.top = eventRef.clientY+document.body.scrollTop+document.documentElement.scrollTop+5+vposOffset;
@@ -113,11 +113,11 @@ function hidePopupFrameEvent(anEvent)
 			var icon = popupLink.id;
 			while(rel)
 			{
-				if(rel.id == "popupFrameContainer" || rel.id == icon) 
+				if(rel.id == "popupFrameContainer" || rel.id == icon)
 				{
 				    break;
 				}
-				else 
+				else
 				{
 				    rel = rel.parentNode;
 				}
@@ -131,7 +131,7 @@ function hidePopupFrameEvent(anEvent)
 		}
 		return;
 	}
-	else 
+	else
 	{
 	    popupFrameForm = false;
 	}

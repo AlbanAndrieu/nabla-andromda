@@ -38,7 +38,7 @@ import org.andromda.metafacades.uml.UMLProfile;
 
 /**
  * The EJB3 profile. Contains the profile information (tagged values, and stereotypes) for the EJB3 cartridge.
- * 
+ *
  * @author Vance Karimi
  */
 public class EJB3Profile extends UMLProfile

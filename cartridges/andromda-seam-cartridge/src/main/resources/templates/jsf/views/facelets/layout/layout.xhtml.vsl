@@ -25,7 +25,7 @@
         <ui:insert name="title"/>
         <tr:panelPage>
 #elseif ($adf)
-    <body>    
+    <body>
         <ui:insert name="title"/>
         <af:panelPage title="#{title}">
 #end
@@ -47,7 +47,7 @@
             <f:facet name="menu3">
                 <ui:insert name="menu">
                     <ui:include src="menu.xhtml"/>
-                </ui:insert> 
+                </ui:insert>
             </f:facet>
 #end
 
@@ -133,7 +133,7 @@
                 </ui:insert>
                 <ui:insert name="content"/>
             </div>
-        </af:panelPage>        
-    </body>  
+        </af:panelPage>
+    </body>
 #end
 </html>

@@ -85,7 +85,7 @@
             </modelElement>
         </modelElements>
     </template>
-    
+
     <template
         path="templates/database/drop-sequences.vsl"
         outputPattern="drop-sequences.sql"

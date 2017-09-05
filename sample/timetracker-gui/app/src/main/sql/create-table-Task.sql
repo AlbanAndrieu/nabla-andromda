@@ -1,5 +1,5 @@
 /* --------------- Task table definition --------------------- */
-CREATE TABLE TASK 
+CREATE TABLE TASK
 (
     ID BIGINT NOT NULL,
     NAME VARCHAR(256) NOT NULL

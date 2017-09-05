@@ -18,7 +18,7 @@
             </p>
             <p>
                 <i>A message-driven bean instance has no state for a specific client.  However, the instance
-                variables of the message-driven bean instance can contain state across the handling of 
+                variables of the message-driven bean instance can contain state across the handling of
                 client messages.  Examples of such state include an open database connection and a reference
                 to an enterprise bean.</i>
             </p>
@@ -30,7 +30,7 @@
             <p>
                 Like a session bean, the EJB3 cartridge generates a message driven bean class which should NOT be
                 modified manually and a corresponding implementation class that requires the business logic
-                for message processing.  The MDB class contains all the necessary annotations.  The MDB 
+                for message processing.  The MDB class contains all the necessary annotations.  The MDB
                 implementation class extends the MDB class.
             </p>
             <p>
@@ -136,7 +136,7 @@
                 <p>
                     To specify the acknowledge mode for a JMS message driven bean, simply model the
                     <code>andromda_ejb_mdb_acknowledge_mode</code> tagged value on the class.
-                    This only needs to be specified if <code>DUPS_OK_ACKNOWLEDGE</code> mode is required since 
+                    This only needs to be specified if <code>DUPS_OK_ACKNOWLEDGE</code> mode is required since
                     the default is <code>AUTO_ACKNOWLEDGE</code>.
                 </p>
             </subsection>
@@ -165,9 +165,9 @@
             <a name="Listener_Interceptor"/>
             <subsection name="Listener Interceptor">
                 <p>
-                    Message driven beans have lifecycle callback interceptor methods or regular interceptors which 
-                    can be defined in a separate interceptor class using the EJB3 cartridge.  To find out more 
-                    information on interceptors, click on <a href="howto13.html">interceptors</a>.  
+                    Message driven beans have lifecycle callback interceptor methods or regular interceptors which
+                    can be defined in a separate interceptor class using the EJB3 cartridge.  To find out more
+                    information on interceptors, click on <a href="howto13.html">interceptors</a>.
                     To find out more information on lifecycle callbacks, click on
                     <a href="howto14.html">lifecycle callbacks</a>.
                 </p>
@@ -210,7 +210,7 @@
             <subsection name="Message Driven Context">
                 <p>
                 The EJB3 cartridge injects the <code>MessageDrivenContext</code> into every MDB using the
-                <code>@Resource</code> annotation by default.  The <code>MessageDrivenContext</code> instance, 
+                <code>@Resource</code> annotation by default.  The <code>MessageDrivenContext</code> instance,
                 named <code>context</code>, provides the following methods:
                 </p>
                 <ul>
@@ -238,10 +238,10 @@
                 <p>
                     To inject an environment entry resource value, model an attribute with classifier scope
                     and set the attribute stereotype to <![CDATA[<<EnvEntry>>]]>.  The environment
-                    entries will be defined in the MDB class and configured in the ejb-jar.xml 
+                    entries will be defined in the MDB class and configured in the ejb-jar.xml
                     deployment descriptor.
-                    You must define a default value for these attributes in the model.  Refer to 
-                    <a href="howto11.html">Environment Entry Injections</a> for further information. 
+                    You must define a default value for these attributes in the model.  Refer to
+                    <a href="howto11.html">Environment Entry Injections</a> for further information.
                 </p>
             </subsection>
             <a name="Singleton_MDB"/>
@@ -253,7 +253,7 @@
                     tagged value which is modeled on the MDB.
                 </p>
                 <p>
-                    You also have the option of configuring the 
+                    You also have the option of configuring the
                     <a href="profile.html#andromda_ejb_mdb_pool_size_min">minimum pool size</a>
                     of the MDB.
                 </p>
@@ -277,11 +277,11 @@
         <attribute name="JNDIName">queue/emailSender</attribute>
     </mbean>
 <!-- jboss mq destinations merge-point -->
-    
+
 </server>
 ]]></source>
                     This file is created in your project/app/target directory and will be named something like
-                    <code>{PROJECT_NAME}-mq-destinations-service.xml</code>.  Just deploy this to your JBoss 
+                    <code>{PROJECT_NAME}-mq-destinations-service.xml</code>.  Just deploy this to your JBoss
                     deploy directory before deploying your application EAR.
                 </p>
             </subsection>

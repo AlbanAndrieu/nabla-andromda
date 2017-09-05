@@ -392,7 +392,7 @@ public interface UserDao
      * @param username
      * @return User
      */
-    public User getUserDetails(String username)     
+    public User getUserDetails(String username)
         throws UserDaoException;
-    
+
 }

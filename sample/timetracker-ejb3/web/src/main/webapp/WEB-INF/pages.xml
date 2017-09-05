@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pages 
+<pages
 	xmlns="http://jboss.com/products/seam/pages"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://jboss.com/products/seam/pages http://jboss.com/products/seam/pages-2.3.xsd"
@@ -79,15 +79,15 @@
       <message severity="warn">Your session has timed out, please try again</message>
     </redirect>
   </exception>
-    
+
     <exception class="org.jboss.seam.ConcurrentRequestTimeoutException" log-level="trace">
       <http-error error-code="503" />
     </exception>
-     
+
     <exception>
         <redirect view-id="/error.xhtml">
             <message severity="error">Unexpected error, please try again</message>
         </redirect>
     </exception>
-    
+
 </pages>

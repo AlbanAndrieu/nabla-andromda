@@ -95,7 +95,7 @@ public final class MovieManageableServiceBase
         }
     }
 
- 
+
      /**
      * Entity read operation
      *
@@ -113,7 +113,7 @@ public final class MovieManageableServiceBase
             throw new MovieReadManageableException(ex);
         }
     }
-       
+
     /**
      * Read operation
      *

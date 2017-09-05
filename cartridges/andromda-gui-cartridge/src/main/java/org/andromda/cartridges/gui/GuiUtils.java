@@ -63,7 +63,7 @@ import java.util.regex.Pattern;
 
 /**
  * Utilities for use within the Gui cartridge.
- * 
+ *
  * @author Chad Brandon
  */
 public class GuiUtils
@@ -76,7 +76,7 @@ public class GuiUtils
 
     /**
      * Sets the version of Servlet we're generating for.
-     * 
+     *
      * @param servletVersion The version to set.
      */
     public void setServletVersion(final String servletVersion)
@@ -86,7 +86,7 @@ public class GuiUtils
 
     /**
      * Indicates whether or not Servlet 2 is enabled.
-     * 
+     *
      * @return true/false
      */
     public boolean isServletVersion2()
@@ -96,7 +96,7 @@ public class GuiUtils
 
     /**
      * Indicates whether or not Servlet 3 is enabled.
-     * 
+     *
      * @return true/false
      */
     public boolean isServletVersion3()
@@ -106,7 +106,7 @@ public class GuiUtils
 
     /**
      * Indicates whether or not Servlet 3 is enabled.
-     * 
+     *
      * @return true/false
      */
     public boolean isServletVersion4()
@@ -116,7 +116,7 @@ public class GuiUtils
 
     /**
      * Indicates whether or not the given property value is version 3 or not.
-     * 
+     *
      * @param servletVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -132,7 +132,7 @@ public class GuiUtils
 
     /**
      * Indicates whether or not the given property value is version 3 or not.
-     * 
+     *
      * @param servletVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -148,7 +148,7 @@ public class GuiUtils
 
     /**
      * Indicates whether or not the given property value is version 3 or not.
-     * 
+     *
      * @param servletVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -173,7 +173,7 @@ public class GuiUtils
     /**
      * Converts the argument into a web resource name, this means: all lowercase
      * characters and words are separated with dashes.
-     * 
+     *
      * @param string any string
      * @return the string converted to a value that would be well-suited for a
      * web file name
@@ -188,7 +188,7 @@ public class GuiUtils
     /**
      * Converts the argument into a web file name, this means: all lowercase
      * characters and words are separated with dashes.
-     * 
+     *
      * @param string any string
      * @return the string converted to a value that would be well-suited for a
      * web file name
@@ -203,7 +203,7 @@ public class GuiUtils
 
     /**
      * Reads the validator arguments from the the given tagged value.
-     * 
+     *
      * @param validatorTaggedValue
      * @return returns a list of String instances or an empty list
      * @throws IllegalArgumentException when the input string does not match the required pattern
@@ -275,7 +275,7 @@ public class GuiUtils
 
     /**
      * Reads the validator variable names from the the given tagged value.
-     * 
+     *
      * @param validatorTaggedValue
      * @return never null, returns a list of String instances
      * @throws IllegalArgumentException when the input string does not match the required pattern
@@ -335,7 +335,7 @@ public class GuiUtils
 
     /**
      * Parses the validator name for a tagged value.
-     * 
+     *
      * @param validatorTaggedValue
      * @return validatorTaggedValue
      * @throws IllegalArgumentException when the input string does not match the required pattern
@@ -374,7 +374,7 @@ public class GuiUtils
 
     /**
      * Constructs a string representing an array initialization in Java.
-     * 
+     *
      * @param name the name to give the array.
      * @param count the number of items to give the array.
      * @return A String representing Java code for the initialization of an array.
@@ -422,7 +422,7 @@ public class GuiUtils
 
     /**
      * Returns the current Date in the specified format.
-     * 
+     *
      * @param format The format for the output date
      * @return the current date in the specified format.
      */
@@ -442,7 +442,7 @@ public class GuiUtils
 
     /**
      * Returns the current Date
-     * 
+     *
      * @return the current date in the default format.
      */
     public static String getDate()
@@ -468,7 +468,7 @@ public class GuiUtils
 
     /**
      * Indicates if the given <code>format</code> is an email format.
-     * 
+     *
      * @param format
      * @return <code>true</code> if this field is to be formatted as an email
      * address, <code>false</code> otherwise
@@ -482,7 +482,7 @@ public class GuiUtils
 
     /**
      * Indicates if the given <code>format</code> is an equal format.
-     * 
+     *
      * @param format
      * @return <code>true</code> if this field is to be formatted as an
      * email address, <code>false</code> otherwise
@@ -496,7 +496,7 @@ public class GuiUtils
 
     /**
      * Indicates if the given <code>format</code> is a credit card format.
-     * 
+     *
      * @param format
      * @return <code>true</code> if this field is to be formatted as a credit card, <code>false</code> otherwise
      */
@@ -509,7 +509,7 @@ public class GuiUtils
 
     /**
      * Indicates if the given <code>format</code> is a pattern format.
-     * 
+     *
      * @param format
      * @return <code>true</code> if this field's value needs to respect a certain pattern, <code>false</code> otherwise
      */
@@ -522,7 +522,7 @@ public class GuiUtils
 
     /**
      * Indicates if the given <code>format</code> is a minlength format.
-     * 
+     *
      * @param format
      * @return <code>true</code> if this field's value needs to consist of at least a certain
      * number of characters, <code>false</code> otherwise
@@ -536,7 +536,7 @@ public class GuiUtils
 
     /**
      * Indicates if the given <code>format</code> is a maxlength format.
-     * 
+     *
      * @param format
      * @return <code>true</code> if this field's value needs to consist of at maximum a certain
      * number of characters, <code>false</code> otherwise
@@ -575,7 +575,7 @@ public class GuiUtils
     /**
      * Retrieves the input format (if one is defined), for the given
      * <code>element</code>.
-     * 
+     *
      * @param element the model element for which to retrieve the input format.
      * @return the input format.
      */
@@ -591,7 +591,7 @@ public class GuiUtils
 
     /**
      * Indicates if the given <code>format</code> is a range format.
-     * 
+     *
      * @param format
      * @return <code>true</code> if this field's value needs to be in a specific range, <code>false</code> otherwise
      */
@@ -745,7 +745,7 @@ public class GuiUtils
 
     /**
      * Indicates if the given element is read-only or not.
-     * 
+     *
      * @param element the element to check.
      * @return true/false
      */
@@ -769,7 +769,7 @@ public class GuiUtils
 
     /**
      * Retrieves the "equal" value from the given element (if one is present).
-     * 
+     *
      * @param element the element from which to retrieve the equal value.
      * @return the "equal" value.
      */
@@ -793,7 +793,7 @@ public class GuiUtils
 
     /**
      * Retrieves the "equal" value from the given element (if one is present).
-     * 
+     *
      * @param element the element from which to retrieve the equal value.
      * @param ownerParameter the optional owner parameter (specified if the element is an attribute).
      * @return the "equal" value.
@@ -825,7 +825,7 @@ public class GuiUtils
 
     /**
      * Retrieves the "validwhen" value from the given element (if one is present).
-     * 
+     *
      * @param element the element from which to retrieve the validwhen value.
      * @return the "validwhen" value.
      */
@@ -942,7 +942,7 @@ public class GuiUtils
     /**
      * Retrieves the validator types as a collection from the given
      * <code>element</code> (if any can be retrieved).
-     * 
+     *
      * @param element the element from which to retrieve the types.
      * @param type the type of the element.
      * @return the collection of validator types.
@@ -1134,7 +1134,7 @@ public class GuiUtils
     /**
      * Gets the validator variables for the given <code>element</code> (if they can
      * be retrieved).
-     * 
+     *
      * @param element the element from which to retrieve the variables
      * @param type the type of the element.
      * @param ownerParameter the optional owner parameter (if the element is an attribute for example).
@@ -1306,7 +1306,7 @@ public class GuiUtils
 
     /**
      * Gets the validator args for the <code>element</code> and the given <code>validatorType</code>.
-     * 
+     *
      * @param element the element for which to retrieve the arguments.
      * @param validatorType the validator type name.
      * @return the validator args as a collection.
@@ -1435,7 +1435,7 @@ public class GuiUtils
 
     /**
      * Sets whether or not the date patterns should be treated as strict.
-     * 
+     *
      * @param strictDateTimeFormat
      */
     public void setStrictDateTimeFormat(final boolean strictDateTimeFormat)
@@ -1448,7 +1448,7 @@ public class GuiUtils
     /**
      * Indicates whether or not the format for this element is a strict date
      * format.
-     * 
+     *
      * @param element
      * @return true/false
      */
@@ -1463,7 +1463,7 @@ public class GuiUtils
 
     /**
      * Gets the format string for the given <code>element</code>.
-     * 
+     *
      * @param element the element for which to retrieve the format.
      * @param type the type of the element.
      * @param defaultDateFormat
@@ -1520,7 +1520,7 @@ public class GuiUtils
 
     /**
      * Gets the extension for the view type.
-     * 
+     *
      * @return the view type extension.
      */
     public String getViewExtension()
@@ -1673,7 +1673,7 @@ public class GuiUtils
     /**
      * Returns a sequence of file formats representing the desired export types for the display tag tables
      * used for the argument element.
-     * 
+     *
      * @param taggedValues the collection of tagged values representing the export types, should only contain
      * <code>String</code> instances and must never be <code>null</code>
      * @param defaultValue the default value to use in case the tagged values are empty
@@ -1742,7 +1742,7 @@ public class GuiUtils
      * library, which basically means it does not start with an lowercase characters followed by an uppercase character.
      * This means there's a bug in that specific library that causes an incompatibility with the Java Beans
      * specification as implemented in the JDK.
-     * 
+     *
      * @param name the name to test, may be <code>null</code>
      * @return <code>true</code> if the name is safe to use with the Jakarta libraries, <code>false</code> otherwise
      */
@@ -1764,7 +1764,7 @@ public class GuiUtils
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param format DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -1808,7 +1808,7 @@ public class GuiUtils
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public static String getDefaultDoubleFormat()

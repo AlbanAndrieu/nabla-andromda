@@ -58,7 +58,7 @@ import java.util.List;
 /**
  * MetafacadeLogic implementation for
  * org.andromda.cartridges.database.metafacades.DataColumn.
- * 
+ *
  * @see org.andromda.cartridges.database.metafacades.DataColumn
  */
 public class ColumnLogicImpl extends ColumnLogic implements org.andromda.cartridges.database.metafacades.Column
@@ -67,7 +67,7 @@ public class ColumnLogicImpl extends ColumnLogic implements org.andromda.cartrid
     // ---------------- constructor -------------------------------
     /**
      * Creates a new ColumnLogicImpl object.
-     * 
+     *
      * @param metaObject DOCUMENT ME!
      * @param context DOCUMENT ME!
      */
@@ -284,7 +284,7 @@ public class ColumnLogicImpl extends ColumnLogic implements org.andromda.cartrid
     /**
      * Returns the actual table (i.e. the table or association table depending
      * on what type of association this foreign key column represents.
-     * 
+     *
      * @return the table or association table.
      */
     private String getIdentifierName(String prefixProperty)
@@ -349,7 +349,7 @@ public class ColumnLogicImpl extends ColumnLogic implements org.andromda.cartrid
     /**
      * Gets the association end that has the foreign identifier
      * flag set (if there is one).
-     * 
+     *
      * @return the foreign identifier association end or null if
      * on can't be found.
      */

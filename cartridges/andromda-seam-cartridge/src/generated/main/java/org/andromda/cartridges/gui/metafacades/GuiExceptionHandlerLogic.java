@@ -47,7 +47,7 @@ public abstract class GuiExceptionHandlerLogic
 {
 
     private static final long serialVersionUID = 1L;
-    
+
     /**
      * The underlying UML object
      * @see Object

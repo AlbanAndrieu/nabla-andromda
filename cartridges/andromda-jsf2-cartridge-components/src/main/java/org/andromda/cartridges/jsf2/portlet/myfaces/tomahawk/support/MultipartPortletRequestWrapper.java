@@ -33,7 +33,7 @@ import org.apache.myfaces.webapp.filter.MultipartRequestWrapper;
 /**
  * This class handles multipart/form-date request for Portlet. It will be called
  * if the request is multipart/form-data.
- * 
+ *
  * @author <a href="mailto:shinsuke@yahoo.co.jp">Shinsuke Sugaya</a>
  * @author Sylvain Vieujot
  */

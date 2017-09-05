@@ -14,7 +14,7 @@
             </p>
             <p>
                 You still have the choice of using the WebService cartridge if you wish to expose session beans or
-                POJOs.  Just follow the instructions 
+                POJOs.  Just follow the instructions
                 <a href="http://www.andromda.org/docs/andromda-webservice-cartridge/index.html">here</a>.
             </p>
             <p>
@@ -48,7 +48,7 @@
                 operation in <code>UserEndPointService</code> session bean.
                 Modeling this is similar to the WebService cartridge process.  The
                 EJB3 cartridge introduces a few extra tagged values.  The example below models the
-                <code>andromda_webservice_operation_result_name</code> tagged value on the 
+                <code>andromda_webservice_operation_result_name</code> tagged value on the
                 <code>addUser</code> operation in <code>UserService</code>.
             </p>
             <p>
@@ -85,8 +85,8 @@
                 contain the <code>@WebService</code>
                 annotation defining the <code>endpointInterface</code> property that references the
                 web service interface <code>UserServiceWSInterface</code> and <code>UserEndPointServiceWSInterface</code>
-                correspondingly, containing all other annotations.  
-                Default values are provided via namespace properties, but you can override them using tagged 
+                correspondingly, containing all other annotations.
+                Default values are provided via namespace properties, but you can override them using tagged
                 values.
             </p>
             <a name="WebService_Client"/>
@@ -105,7 +105,7 @@
     <wsdlToJava wsdlLocation="http://localhost:8080/howtomodel-ws/services/UserService?wsdl">
         <mapping fileName="jaxrpc-mapping.xml"/>
     </wsdlToJava>
-</configuration>  
+</configuration>
 ]]></source>
                 </p>
                 <p>
@@ -138,7 +138,7 @@ port.process(user");
             <a name="Helpful_Hints"/>
             <subsection name="Helpful Hints">
                 <p>
-                    Do not over-load operations as this will cause conflicts when exposing similarly named session 
+                    Do not over-load operations as this will cause conflicts when exposing similarly named session
                     bean operations as web service endpoints.
                 </p>
                 <p>

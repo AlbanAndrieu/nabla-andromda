@@ -4,7 +4,7 @@
 /**
  * This method returns true if the enter key was pressed, false otherwise.
  */
-function enterKeyPressed(event) 
+function enterKeyPressed(event)
 {
 	//13 = enter
 	return keyPressed(event, 13);
@@ -13,7 +13,7 @@ function enterKeyPressed(event)
 /**
  * This method returns true if the tab key was pressed, false otherwise.
  */
-function tabKeyPressed(event) 
+function tabKeyPressed(event)
 {
 	//9 = enter
 	return keyPressed(event, 9);
@@ -21,11 +21,11 @@ function tabKeyPressed(event)
 
 /**
  * This method returns true if the key having the specified charCode was pressed.
- */ 
-function keyPressed(event, charCode) 
+ */
+function keyPressed(event, charCode)
 {
 	var keyPressed = false;
-    if (getKeyCharCode(event) == charCode) 
+    if (getKeyCharCode(event) == charCode)
     {
     	keyPressed = true;
     }
@@ -36,7 +36,7 @@ function keyPressed(event, charCode)
 /**
  * This method returns the charCode value of the key pressed.
  */
-function getKeyCharCode(event) 
+function getKeyCharCode(event)
 {
 	var key = null;
 	if (window.event) {
@@ -51,41 +51,41 @@ function getKeyCharCode(event)
 /**
  * Prevents non-numeric values from being keyed into a field
  */
-function isNumeric(event) 
+function isNumeric(event)
 {
 	// get the ASCII key code of the onKeyPress event
-	
+
 	var isMozilla = false;
-	if (!window.event && event.which) 
+	if (!window.event && event.which)
 	{
 		isMozilla = true;
 	}
 	var key = getKeyCharCode(event);
-	var isNumeric = false;	
-	if (key != null) 
+	var isNumeric = false;
+	if (key != null)
 	{
-		if (key >= 48 && key <= 57)	 
+		if (key >= 48 && key <= 57)
 		{
 			// key is numeric
 			isNumeric = true;
-		} 
-		else if (key == 46) 
+		}
+		else if (key == 46)
 		{
 			// key is a decimal point
 			isNumeric = true;
-		} 
-		else if (key == 13) 
+		}
+		else if (key == 13)
 		{
 			//13 is a return
 			isNumeric = true;
-		} 
-		else if (key == 8 && isMozilla) 
+		}
+		else if (key == 8 && isMozilla)
 		{
 			//8 is a backspace with mozilla
 			isNumeric = true;
 		}
-	} 
-	else 
+	}
+	else
 	{
 		isNumeric = true;
 	}
@@ -96,19 +96,19 @@ function isNumeric(event)
  * Returns true if the entered key is the specified charCode value pressed
  * in conjunction with the ctrl key.
  */
-function keyIsCtrlWithCharCode(event, charCode) 
+function keyIsCtrlWithCharCode(event, charCode)
 {
 	var isCharCode = false;
 	//ie
-	if (window.event) 
+	if (window.event)
 	{
-		if (window.event.ctrlKey && window.event.keyCode == charCode) 
+		if (window.event.ctrlKey && window.event.keyCode == charCode)
 		{
-			isCharCode = true;			
+			isCharCode = true;
 		}
 	}
 	//mozilla
-	if (event.ctrlKey && event.which == charCode) 
+	if (event.ctrlKey && event.which == charCode)
 	{
 		isCharCode = true;
 	}
@@ -119,19 +119,19 @@ function keyIsCtrlWithCharCode(event, charCode)
  * Returns true if the entered key is the specified charCode value pressed
  * in conjunction with the shift key.
  */
-function keyIsShiftWithCharCode(event, charCode) 
+function keyIsShiftWithCharCode(event, charCode)
 {
 	var isCharCode = false;
 	//ie
-	if (window.event) 
+	if (window.event)
 	{
-		if (window.event.shiftKey && window.event.keyCode == charCode) 
+		if (window.event.shiftKey && window.event.keyCode == charCode)
 		{
-			isCharCode = true;			
+			isCharCode = true;
 		}
 	}
 	//mozilla
-	if (event.shiftKey && event.which == charCode) 
+	if (event.shiftKey && event.which == charCode)
 	{
 		isCharCode = true;
 	}
@@ -142,22 +142,21 @@ function keyIsShiftWithCharCode(event, charCode)
  * Returns true if the entered key is the specified charCode value pressed
  * in conjunction with the alt key.
  */
-function keyIsAltWithCharCode(event, charCode) 
+function keyIsAltWithCharCode(event, charCode)
 {
 	var isCharCode = false;
 	//ie
-	if (window.event) 
+	if (window.event)
 	{
-		if (window.event.altKey && window.event.keyCode == charCode) 
+		if (window.event.altKey && window.event.keyCode == charCode)
 		{
-			isCharCode = true;			
+			isCharCode = true;
 		}
 	}
 	//mozilla
-	if (event.altKey && event.which == charCode) 
+	if (event.altKey && event.which == charCode)
 	{
 		isCharCode = true;
 	}
 	return isCharCode;
 }
-

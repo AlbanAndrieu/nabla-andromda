@@ -27,7 +27,7 @@
 #if ($action.hyperlink)
     </af:commandLink>
 #else
-    </a:popup> 
+    </a:popup>
 #end
 </af:form>
 <br/><br/>
@@ -38,7 +38,7 @@
 #if (!$action.hiddenParameters.empty)
     <ui:include src="${action.viewFragmentPath}-hidden-params.xhtml"/>
 #end
-    <af:panelForm>           
+    <af:panelForm>
 #foreach ($parameter in $action.parameters)
 #if (!$parameter.complex)
 #renderActionInput($parameter "")

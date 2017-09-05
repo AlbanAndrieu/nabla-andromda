@@ -49,7 +49,7 @@
     </af:commandLink>
 #end
 #else
-    </a:popup> 
+    </a:popup>
 #end
 #if ($trinidad)
 </tr:subform>
@@ -71,7 +71,7 @@
 #if ($trinidad)
     <tr:panelFormLayout>
 #elseif ($adf)
-    <af:panelForm>   
+    <af:panelForm>
 #end
 #foreach ($parameter in $action.parameters)
 #if (!$parameter.complex || $parameter.type.enumeration)

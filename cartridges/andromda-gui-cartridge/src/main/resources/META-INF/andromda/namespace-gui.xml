@@ -36,14 +36,14 @@
             </property>
             <property name="libraries" required="false">
                 <documentation>
-                    The location to which JSF libraries will be generated (these are the libraries required for JSF support, 
+                    The location to which JSF libraries will be generated (these are the libraries required for JSF support,
                     myfaces libraries, etc).  If this isn't defined, its expected that the libraries will be provided by another means.
                 </documentation>
             </property>
             <property name="application-libraries" required="false">
                 <documentation>
                     The location to which JSF/Seam libraries will be generated in the app folder
-                    (these are the libraries required for JSF/Seam support which is most importantly jboss-seam.jar).  
+                    (these are the libraries required for JSF/Seam support which is most importantly jboss-seam.jar).
                     If this isn't defined, its expected that the libraries will be provided by another means.
                 </documentation>
             </property>
@@ -165,7 +165,7 @@
                 <documentation>
                     Whether or not a ods should be included in the table.
                 </documentation>
-            </property>                        
+            </property>
             <property name="preferencesClassName">
                 <default>Preferences</default>
                 <documentation>
@@ -206,7 +206,7 @@
                 <documentation>
                     The default value to set for the maximum rows displayed in a table.
                 </documentation>
-            </property>            
+            </property>
             <property name="menuTheme">
                 <default>ThemePanel</default>
                 <documentation>
@@ -257,19 +257,19 @@
                 <documentation>
                     Use Seam.
                 </documentation>
-            </property>      
+            </property>
             <property name="tomahawk">
                 <default>false</default>
                 <documentation>
                     Use Tomahawk.
                 </documentation>
-            </property>                      
+            </property>
             <property name="extension">
                 <default>false</default>
                 <documentation>
                     Use Tomahawk extension.
                 </documentation>
-            </property>             
+            </property>
             <property name="welcomeFileName">
                 <default>index.jsp</default>
                 <documentation>
@@ -313,7 +313,7 @@
                 <documentation>
                     Whether or not the generate project as standalone.
                 </documentation>
-            </property>                        
+            </property>
             <property name="defaultDateFormat">
                 <default>MM/dd/yyyy</default>
                 <documentation>
@@ -507,7 +507,7 @@
             <property name="stateSavingMethod">
                 <default>client</default>
                 <documentation>
-                    The JSF state saving method to use within the application (can be 
+                    The JSF state saving method to use within the application (can be
                     either <em>client</em> or <em>server</em>).
                 </documentation>
             </property>

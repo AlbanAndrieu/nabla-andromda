@@ -18,7 +18,7 @@
 
 	<dependencies>
 		<!-- remove components.xml from core -->
-		<!--		
+		<!--
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>core</artifactId>
@@ -30,7 +30,7 @@
 			<groupId>${project.groupId}</groupId>
 			<artifactId>common</artifactId>
 			<version>${project.version}</version>
-		</dependency>	
+		</dependency>
 
 		<!-- This is replaced by the hibernate dependencies below -->
 		<dependency>
@@ -39,7 +39,7 @@
 			<version>beta3.SP15</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<!-- START This is the hibernate dependencies that replace hibernate-all -->
 		<!--
 		<dependency>
@@ -51,7 +51,7 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
@@ -82,7 +82,7 @@
 		</dependency>
 		-->
 		<!-- END This is the hibernate dependencies that replace hibernate-all -->
-				
+
 		<dependency>
 			<groupId>org.jboss.seam.embedded</groupId>
 			<artifactId>jboss-embedded-all</artifactId>
@@ -131,13 +131,13 @@
 			<version>${testng.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency> 
-			<groupId>org.slf4j</groupId> 
-			<artifactId>slf4j-log4j12</artifactId> 
-			<version>${slf4j.version}</version> 
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<!--		
+		<!--
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
