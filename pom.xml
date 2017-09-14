@@ -18,10 +18,10 @@
         <url>${JOB_URL}</url>
 
     	<scm>
-		<connection>scm:git:git://github.com/AlbanAndrieu/nabla-andromda.git</connection>
-		<developerConnection>scm:git:git@github.com:AlbanAndrieu/nabla-andromda.git</developerConnection>
-		<url>https://github.com/AlbanAndrieu/nabla-andromda</url>
-		<tag>HEAD</tag>
+			<connection>scm:git:ssh://git@github.com/AlbanAndrieu/nabla-andromda.git</connection>
+			<developerConnection>scm:git:ssh://git@github.com/AlbanAndrieu/nabla-andromda.git</developerConnection>
+			<url>https://github.com/AlbanAndrieu/nabla-andromda</url>
+			<tag>HEAD</tag>
     	</scm>
 
         <profiles>
