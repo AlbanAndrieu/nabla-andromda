@@ -2,20 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    
+
     <parent>
 	<groupId>com.nabla.project.uml.timetracker</groupId>
 	<artifactId>sample</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
     </parent>
-             
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.andromda.timetracker.gui</groupId>
     <artifactId>timetracker-gui</artifactId>
     <packaging>pom</packaging>
     <name>TimeTracker GUI</name>
     <description>The TimeTracker GUI Project.</description>
-        
+
     <dependencyManagement>
         <dependencies>
             <!--
@@ -28,17 +28,17 @@
             <dependency>
                 <groupId>org.apache.myfaces.core</groupId>
                 <artifactId>myfaces-api</artifactId>
-                <version>${myfaces.version}</version>                
+                <version>${myfaces.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.myfaces.core</groupId>
                 <artifactId>myfaces-impl</artifactId>
                 <version>${myfaces.version}</version>
-            </dependency>  
-            <!--          
+            </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.myfaces.tomahawk</groupId>
-                <artifactId>tomahawk12</artifactId>         
+                <artifactId>tomahawk12</artifactId>
                 <version>${org.apache.myfaces.tomahawk.version}</version>
                 <exclusions>
                     <exclusion>
@@ -101,7 +101,7 @@
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
-                <version>${hibernate.core.version}</version>        
+                <version>${hibernate.core.version}</version>
                 <scope>provided</scope>
                 <exclusions>
                     <exclusion>
@@ -137,7 +137,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-orm</artifactId>
@@ -177,7 +177,7 @@
             </dependency -->
         </dependencies>
     </dependencyManagement>
- 
+
     <modules>
         <!-- Save the values used to generate this project from andromdapp
         ejb3Persistence=$ejb3Persistence
@@ -207,8 +207,8 @@
     <properties>
         <application.package>org.andromda.timetracker</application.package>
         <application.id>timetracker-gui</application.id>
-        <application.name>TimeTracker</application.name> 
-        <database.name>${application.id}</database.name>     
+        <application.name>TimeTracker</application.name>
+        <database.name>${application.id}</database.name>
     </properties>
     <profiles>
     	<profile>
@@ -219,11 +219,11 @@
     			</property>
     		</activation>
     		<properties>
-				<hibernate.core.version>${hibernate.legacy.core.version}</hibernate.core.version> 			
+				<hibernate.core.version>${hibernate.legacy.core.version}</hibernate.core.version>
 				<hibernate.entitymanager.version>${hibernate.legacy.entitymanager.version}</hibernate.entitymanager.version>
 				<hibernate.validator.version>${hibernate.legacy.validator.version}</hibernate.validator.version>
-				<hibernate.legacy.search.version>${hibernate.search.version}</hibernate.legacy.search.version>        
+				<hibernate.legacy.search.version>${hibernate.search.version}</hibernate.legacy.search.version>
     		</properties>
-    	</profile>		  
+    	</profile>
     </profiles>
 </project>

@@ -130,7 +130,7 @@ $attribute.getDocumentation("     * ")
         return this.${attribute.name};
     }
 
-## - always have as public, having read-only causes too many issues when attempting to 
+## - always have as public, having read-only causes too many issues when attempting to
 ##   use in other cartridges
     public void ${attribute.setterName}($attribute.getterSetterTypeName $attribute.name)
     {
@@ -153,7 +153,7 @@ $target.getDocumentation("     * ")
         return this.${target.name};
     }
 
-## - always have as public, having read-only causes too many issues when attempting to 
+## - always have as public, having read-only causes too many issues when attempting to
 ##   use in other cartridges
     /**
      * Sets the $target.name
@@ -168,14 +168,14 @@ $target.getDocumentation("     * ")
 
     public java.lang.String toString()
     {
-      return 
+      return
 ##Searching with ShortName
 #set ($found = 0)
 #foreach ($attribute in $class.allRequiredConstructorParameters)
 #if ($attribute.name.toUpperCase().indexOf("SHORTNAME") >= 0 && ($found == 0))
 #set ($found = 1)
 	       this.${attribute.getterName}();
-#end 
+#end
 #end
 
 ##Searching with Name
@@ -184,7 +184,7 @@ $target.getDocumentation("     * ")
 #if ($attribute.name.toUpperCase().indexOf("NAME") >= 0 && ($found == 0))
 #set ($found = 1)
 	       this.${attribute.getterName}();
-#end 
+#end
 #end
 #end
 
@@ -194,7 +194,7 @@ $target.getDocumentation("     * ")
 #if ($attribute.name.toUpperCase().indexOf("ID") >= 0 && ($found == 0) && $attribute.type.name.equals("int"))
 #set ($found = 1)
 	       String.valueOf(this.${attribute.getterName}());
-#end 
+#end
 #end
 #end
 

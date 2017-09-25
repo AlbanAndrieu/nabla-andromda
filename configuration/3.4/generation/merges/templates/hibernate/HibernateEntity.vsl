@@ -35,14 +35,14 @@ $entity.getDocumentation(" * ")
 #set ($finders = $entity.getQueryOperations(false))
 #if (!$finders.empty)
 @javax.persistence.NamedQueries({
-#if ($entity.genericFinders && !$entity.finderFindAllExists)    
+#if ($entity.genericFinders && !$entity.finderFindAllExists)
 @javax.persistence.NamedQuery(name = "${entity.name}.findAll", query = "select $stringUtils.uncapitalize(${entity.name}) from ${entity.name} AS $stringUtils.uncapitalize(${entity.name})")
 #if (!$finders.empty),
 #end
 #end
-#foreach ($finder in $finders)    
+#foreach ($finder in $finders)
 @javax.persistence.NamedQuery(name = "${entity.name}.${finder.name}", query = "${finder.query}")
-#if($velocityCount != $finders.size()), 
+#if($velocityCount != $finders.size()),
 #end
 #end})
 #else
@@ -72,9 +72,9 @@ public abstract class $entity.entityName##no new line
 #if ($entity.generalization.fullyQualifiedEntityImplementationName)
 #set ($generalizationName = $entity.generalization.fullyQualifiedEntityImplementationName)#else
 #set ($generalizationName = $entity.generalization.fullyQualifiedName)
-#end 
+#end
  extends $generalizationName
-#else 
+#else
  implements Serializable, Comparable<${entity.entityName}>
 #if (!$entity.interfaceAbstractions.empty)
 , $entity.implementedInterfaceList
@@ -146,7 +146,7 @@ $operation.getDocumentation("     * ")
 #foreach ($argument in $operation.arguments)
      * @param $argument.name $argument.getDocumentation("")
 #end
-#if ($operation.returnTypePresent)     
+#if ($operation.returnTypePresent)
      * @return $operation.getterSetterReturnTypeName
 #end
 #foreach ($exception in $operation.exceptions)
@@ -255,7 +255,7 @@ $operation.getDocumentation("     * ")
 ## Don't duplicate newInstance if there are no optional parameters or no required parameters
 #if ($requiredParams < $allSize && $requiredParams > 0)
         // requiredParams not identifier : $requiredParams allSize minus identifier : $allSize all required constructor parameters : $entity.allRequiredConstructorParameters.size() identifiers : $entity.identifiers.size() all properties :  $entity.allProperties.size()
-##// Don't use 3.4 or 3.3 use 3.2 vsl 
+##// Don't use 3.4 or 3.3 use 3.2 vsl
 #if (($entity.allRequiredConstructorParameters.size() + $entity.identifiers.size()) > $entity.allProperties.size())
         // Comment function below
 #end

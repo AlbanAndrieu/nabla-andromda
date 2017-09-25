@@ -14,7 +14,7 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFManageableEntityAttribute.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFManageableEntityAttribute
  */
 public class JSFManageableEntityAttributeLogicImpl extends JSFManageableEntityAttributeLogic
@@ -528,7 +528,7 @@ public class JSFManageableEntityAttributeLogicImpl extends JSFManageableEntityAt
     /**
      * Gets the current value of the specified input type (or an empty string
      * if one isn't specified).
-     * 
+     *
      * @return the input type name.
      */
     private String getInputType()
@@ -538,7 +538,7 @@ public class JSFManageableEntityAttributeLogicImpl extends JSFManageableEntityAt
 
     /**
      * Indicates whether or not this parameter is of the given input type.
-     * 
+     *
      * @param inputType the name of the input type to check for.
      * @return true/false
      */
@@ -549,7 +549,7 @@ public class JSFManageableEntityAttributeLogicImpl extends JSFManageableEntityAt
 
     /**
      * Overridden to provide consistent behavior with {@link JSFParameter#isReadOnly()}.
-     * 
+     *
      * @see org.andromda.metafacades.uml.AttributeFacade#isReadOnly()
      */
     public boolean isReadOnly()
@@ -559,7 +559,7 @@ public class JSFManageableEntityAttributeLogicImpl extends JSFManageableEntityAt
 
     /**
      * Constructs a string representing an array initialization in Java.
-     * 
+     *
      * @return A String representing Java code for the initialization of an array.
      */
     private String constructDummyArray()
@@ -620,7 +620,7 @@ public class JSFManageableEntityAttributeLogicImpl extends JSFManageableEntityAt
     // TODO remove after 3.4 release
     /**
      * Hack to keep the compatibility with Andromda 3.4-SNAPSHOT
-     * 
+     *
      * @return defaultValue
      */
     public String getDefaultValue()

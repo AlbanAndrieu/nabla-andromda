@@ -43,7 +43,7 @@ import org.apache.commons.lang.math.NumberUtils;
 /**
  * MetafacadeLogic implementation for
  * org.andromda.cartridges.ejb3.metafacades.EJB3EntityAttributeFacade.
- * 
+ *
  * @see EJB3EntityAttributeFacade
  */
 public class EJB3EntityAttributeFacadeLogicImpl extends EJB3EntityAttributeFacadeLogic
@@ -94,7 +94,7 @@ public class EJB3EntityAttributeFacadeLogicImpl extends EJB3EntityAttributeFacad
 
     /**
      * Overridden to provide handling of inheritance.
-     * 
+     *
      * @see org.andromda.metafacades.uml.AttributeFacade#isRequired()
      */
     @Override
@@ -443,7 +443,7 @@ public class EJB3EntityAttributeFacadeLogicImpl extends EJB3EntityAttributeFacad
     /**
      * Override the super method to first look at the tagged value if one
      * exists. If not, then return the default column length.
-     * 
+     *
      * @see org.andromda.metafacades.uml.EntityAttribute#getColumnLength()
      */
     @Override
@@ -460,7 +460,7 @@ public class EJB3EntityAttributeFacadeLogicImpl extends EJB3EntityAttributeFacad
     /**
      * Override the super method to first look at the tagged value if one
      * exists. If not, then return the default column name.
-     * 
+     *
      * @see org.andromda.metafacades.uml.EntityAttribute#getColumnName()
      */
     @Override

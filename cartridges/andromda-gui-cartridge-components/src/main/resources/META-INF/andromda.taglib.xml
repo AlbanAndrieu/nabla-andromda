@@ -13,14 +13,14 @@
             <renderer-type>org.andromda.cartridges.jsf.component.JSFValidatorComponent</renderer-type>
         </component>
     </tag>
-    
+
     <tag>
         <tag-name>convertDateTime</tag-name>
         <converter>
             <converter-id>andromda.faces.DateTime</converter-id>
         </converter>
     </tag>
-    
+
     <tag>
         <tag-name>popup</tag-name>
         <component>
@@ -28,7 +28,7 @@
             <renderer-type>org.andromda.cartridges.jsf.Popup</renderer-type>
         </component>
     </tag>
-    
+
     <tag>
         <tag-name>binaryFile</tag-name>
         <component>
@@ -36,7 +36,7 @@
             <renderer-type>org.andromda.cartridges.jsf.BinaryFile</renderer-type>
         </component>
     </tag>
-    
+
     <tag>
         <tag-name>dataTable</tag-name>
         <component>
@@ -52,5 +52,5 @@
             <renderer-type>org.andromda.cartridges.jsf.TransactionToken</renderer-type>
         </component>
     </tag>
-    
+
 </facelet-taglib>

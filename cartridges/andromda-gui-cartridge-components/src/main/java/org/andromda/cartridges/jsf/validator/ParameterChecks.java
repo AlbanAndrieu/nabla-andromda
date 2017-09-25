@@ -90,7 +90,7 @@ public class ParameterChecks implements Serializable
     /**
      * Checks if the field isn't null and length of the field is greater than
      * zero not including whitespace.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -129,7 +129,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the parameter isn't null based on the values of other fields.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -274,7 +274,7 @@ public class ParameterChecks implements Serializable
     /**
      * Checks if the parameter matches the regular expression in the field's
      * mask attribute.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -302,7 +302,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the field can safely be converted to a byte primitive.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -337,7 +337,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the field can safely be converted to a short primitive.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -372,7 +372,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the field can safely be converted to an int primitive.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -407,7 +407,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the field can safely be converted to a long primitive.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -442,7 +442,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the field can safely be converted to a float primitive.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -477,7 +477,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the field can safely be converted to a double primitive.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -521,7 +521,7 @@ public class ParameterChecks implements Serializable
      * specified, then the field gets the DateFormat.SHORT format for the
      * locale. The setLenient method is set to <code>false</code> for all
      * variations. If the <code>object</code> is a date instance, then validation is not performed.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -581,7 +581,7 @@ public class ParameterChecks implements Serializable
     /**
      * Checks if a fields value is within a range (min &amp; max specified in
      * the vars attribute).
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -628,7 +628,7 @@ public class ParameterChecks implements Serializable
     /**
      * Checks if a fields value is within a range (min &amp; max specified in
      * the vars attribute).
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -675,7 +675,7 @@ public class ParameterChecks implements Serializable
     /**
      * Checks if a fields value is within a range (min &amp; max specified in
      * the vars attribute).
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -721,7 +721,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the field is a valid credit card number.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -756,7 +756,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if a field has a valid exception-mail address.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -784,7 +784,7 @@ public class ParameterChecks implements Serializable
     /**
      * Checks if the field's length is less than or equal to the maximum value.
      * A <code>Null</code> will be considered an error.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -829,7 +829,7 @@ public class ParameterChecks implements Serializable
     /**
      * Checks if the field's length is greater than or equal to the minimum
      * value. A <code>Null</code> will be considered an error.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -877,7 +877,7 @@ public class ParameterChecks implements Serializable
      * this by attempting to construct a java.net.URL instance and checking
      * whether or not, it's valid.
      * </p>
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -919,7 +919,7 @@ public class ParameterChecks implements Serializable
     /**
      * Checks if the field is a valid time. If the field has a timePattern variable,
      * that will be used to format <code>java.text.SimpleDateFormat</code>.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.
@@ -975,7 +975,7 @@ public class ParameterChecks implements Serializable
 
     /**
      * Checks if the field's value is equal to another field's value on the same form.
-     * 
+     *
      * @param context the faces context
      * @param object the value of the field being validated.
      * @param parameters Any field parameters from the validation.xml.

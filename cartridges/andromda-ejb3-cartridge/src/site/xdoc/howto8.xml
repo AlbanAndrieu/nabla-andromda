@@ -8,7 +8,7 @@
     <body>
         <section name="Declarative Security">
             <p>
-                The JAAS security framework, in JBoss (JBossSX) or other EJB containers provides authentication 
+                The JAAS security framework, in JBoss (JBossSX) or other EJB containers provides authentication
                 and authorization for components in EJB 3.0 applications.
                 The EJB3 cartridge supports declarative role based security for this security framework.
             </p>
@@ -21,7 +21,7 @@
             <subsection name="Configuration">
                 <p>
                     Enabling security for the EJB3 cartridge is similar to the EJB/hibernate cartridges.  All that
-                    is required is to uncomment the <a href="namespace.html#securityRealm">securityRealm</a> 
+                    is required is to uncomment the <a href="namespace.html#securityRealm">securityRealm</a>
                     property in your AndroMDA build configuration (andromda.xml).  The <code>ejb3</code>
                     namespace section will look something like the following.
 <source><![CDATA[
@@ -37,7 +37,7 @@
                 </p>
                 <p>
                     Once you have done that, the cartridge will create the <code>login-config.xml</code> and
-                    and <code>login-service.xml</code> deployment descriptors for JBoss.  
+                    and <code>login-service.xml</code> deployment descriptors for JBoss.
                     Both files are generated to the ear <code>META-INF</code> directory.  The
                     <code>login-config.xml</code> will look like:
 <source><![CDATA[
@@ -77,7 +77,7 @@
                 <p>
                     JBoss will load the MBean service configured in <code>login-service.xml</code> by
                     specifying this service in the <code>jboss-app.xml</code> deployment descriptor.  The EJB3
-                    cartridge will do this for you, so you don't have to worry about it.  It will add the 
+                    cartridge will do this for you, so you don't have to worry about it.  It will add the
                     following:
 <source><![CDATA[
     ...
@@ -110,37 +110,37 @@ System.setProperty("java.security.auth.login.config", "./auth.conf");
                     policy defined in login-config.xml.  The DDL would look something like the following if you
                     were using MySQL:
 <source><![CDATA[
-create table principal 
+create table principal
 (
-PRINCIPAL_ID varchar(64) not null default '', 
-PASSWORD varchar(64) default NULL, 
+PRINCIPAL_ID varchar(64) not null default '',
+PASSWORD varchar(64) default NULL,
 PRIMARY KEY(PRINCIPAL_ID)
 );
 
 create table role
 (
-PRINCIPAL_ID varchar(64) not null default '', 
-ROLE varchar(64) default NULL, ROLE_GROUP varchar(64) default NULL, 
+PRINCIPAL_ID varchar(64) not null default '',
+ROLE varchar(64) default NULL, ROLE_GROUP varchar(64) default NULL,
 PRIMARY KEY(PRINCIPAL_ID)
 );
 ]]></source>
-                    
+
                 </p>
             </subsection>
             <a name="Modeling"/>
             <subsection name="Modeling">
                 <p>
-                    Now you have to define some roles for your application. This is simply done by adding actors 
+                    Now you have to define some roles for your application. This is simply done by adding actors
                     to your model named with the role's name.
                 </p>
                 <p>
                     <img src="images/org/andromda/test/8/a/uml.gif" alt="images/org/andromda/test/8/a/uml.gif"/>
                 </p>
                 <p>
-                    The next thing to do is to draw a dependency from a logical role actor to a 
-                    <![CDATA[<<Service>>]]> and/or to one or more methods of the service. 
-                    Making the whole service dependent on an actor grants the 
-                    role access to all service operations. To grant access to single operation(s) draw the dependency 
+                    The next thing to do is to draw a dependency from a logical role actor to a
+                    <![CDATA[<<Service>>]]> and/or to one or more methods of the service.
+                    Making the whole service dependent on an actor grants the
+                    role access to all service operations. To grant access to single operation(s) draw the dependency
                     from the actor to the operations(s).
                 </p>
                 <p>
@@ -184,7 +184,7 @@ PRIMARY KEY(PRINCIPAL_ID)
                     <li class="gen"><a class="changed" href="howto/org/andromda/test/howto8/b/howtomodel-login-service.xml"><code>howtomodel-login-service.xml</code></a></li>
                 </ul>
                 <p>
-                    Take a look at the <code>RentalServiceBean</code> class.  You will notice a 
+                    Take a look at the <code>RentalServiceBean</code> class.  You will notice a
                     <code>RolesAllowed</code> annotation at the top level of the class as well as on each
                     operation of the service bean.  The <code>RolesAllowed</code> annotation is a list of security
                     role names mapped to security roles allowed to execute the annotated method or all methods if
@@ -194,7 +194,7 @@ PRIMARY KEY(PRINCIPAL_ID)
                     The EJB3 cartridge provides a couple of extra security related tagged values.  The
                     <code>andromda_service_security_denyAll</code> tagged value which can be assigned on
                     a session bean operation which specifies that no roles are permitted to execute that operation.
-                    If modeled on the session bean class and set to true, then no roles are permitted to 
+                    If modeled on the session bean class and set to true, then no roles are permitted to
                     execute all of the operations in that session bean.  This tag overrides any roles specified
                     using actor dependencies.
                 </p>
@@ -211,7 +211,7 @@ PRIMARY KEY(PRINCIPAL_ID)
                 </p>
                 <p>
                     To specify the <code>RunAs</code> metadata annotation and explicitly specify the caller's
-                    security identity used for the execution of the bean method, you simply need to model 
+                    security identity used for the execution of the bean method, you simply need to model
                     the <![CDATA[<<RunAs>>]]> stereotype on the actor role.  This will imply the identity of
                     the actor applies a run-as identity to the bean when making calls.  The actor's name or
                     corresponding <code>andromda_role_name</code> tagged value contains the logical role name.
@@ -236,7 +236,7 @@ PRIMARY KEY(PRINCIPAL_ID)
         </section>
         <section name="Next">
             <p>
-                We cover entity inheritance in the following section so click <a href="howto9.html">here</a> to go to 
+                We cover entity inheritance in the following section so click <a href="howto9.html">here</a> to go to
                 that section.
             </p>
         </section>

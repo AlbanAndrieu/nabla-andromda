@@ -14,7 +14,7 @@
                         <location patterns="**/*.xml">jar:file:${settings.localRepository}/org/omg/profiles/uml14/UML_Standard_Profile/1.0/UML_Standard_Profile-1.0.jar!/</location>
                     </moduleSearchLocations>
                 </model>
-            </models>            
+            </models>
         </repository>
     </repositories>
     -->
@@ -33,7 +33,7 @@
                 </model>
             </models>
         </repository>
-    </repositories>     
+    </repositories>
     <namespaces>
         <namespace name="gui">
             <properties>

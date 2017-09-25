@@ -20,11 +20,11 @@
 
    <!--
    <core:init jndi-pattern="@jndiPattern@" debug="@debug@" distributable="false"/>
-   
+
    <core:manager conversation-timeout="120000"
                  concurrent-request-timeout="500"
                  conversation-id-parameter="cid"/>
-   
+
    <transaction:ejb-transaction/>
    -->
 
@@ -46,7 +46,7 @@
    <persistence:managed-persistence-context name="entityManager" auto-create="true"
                           entity-manager-factory="@seamEmfRef@"
                       persistence-unit-jndi-name="@puJndiName@"/>
-   -->          
+   -->
    <!--
    <persistence:managed-persistence-context auto-create="true" name="entityManager">
         <persistence:persistence-unit-jndi-name>java:/core-test</persistence:persistence-unit-jndi-name>
@@ -55,7 +55,7 @@
    <persistence:managed-persistence-context auto-create="true" name="entityManager">
         <persistence:persistence-unit-jndi-name>java:/EntityManagerFactories/core-test</persistence:persistence-unit-jndi-name>
    </persistence:managed-persistence-context>
-            
+
    <drools:rule-base name="securityRules">
      <drools:rule-files>
        <value>/META-INF/security.drl</value>

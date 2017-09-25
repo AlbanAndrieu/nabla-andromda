@@ -95,7 +95,7 @@
 #elseif ($adf)
     <af:panelForm>
 #end
-#set($triggerId = "${action.triggerName}Action")  
+#set($triggerId = "${action.triggerName}Action")
 #foreach ($parameter in $action.parameters)
 #if (!$parameter.complex || $parameter.type.enumeration)
 #renderActionInput($parameter "" $triggerId)

@@ -99,7 +99,7 @@
             <version>${project.version}</version>
             <type>xml.zip</type>
             <scope>runtime</scope>
-        </dependency>        
-    </dependencies>        
+        </dependency>
+    </dependencies>
     </dependencies>
 </project>

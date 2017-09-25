@@ -49,7 +49,7 @@ import javax.faces.webapp.UIComponentTag;
 
 /**
  * Utilities for dealing with the JSF components.
- * 
+ *
  * @author Chad Brandon
  */
 public class ComponentUtils
@@ -57,7 +57,7 @@ public class ComponentUtils
 
     /**
      * Sets the value property of a component.
-     * 
+     *
      * @param context the current faces context.
      * @param component the component.
      * @param value the value to set.
@@ -108,7 +108,7 @@ public class ComponentUtils
 
     /**
      * Sets the property with the given <code>name</code> of a component.
-     * 
+     *
      * @param name the name of the component to set.
      * @param context the current faces context.
      * @param component the component.
@@ -140,7 +140,7 @@ public class ComponentUtils
 
     /**
      * Sets the boolean value of property with the given <code>name</code> of a component.
-     * 
+     *
      * @param name the name of the component to set.
      * @param context the current faces context.
      * @param component the component.
@@ -173,7 +173,7 @@ public class ComponentUtils
     /**
      * Gets the attribute from the given object. The object can be either a context, request
      * or response (HttpServletContext/PortletContext, HttpServletRequest/PortletRequest, etc).
-     * 
+     *
      * @param object the object from which to retrieve the attribute.
      * @param attributeName the attribute name.
      * @return the value of the attribute if one is present.
@@ -219,7 +219,7 @@ public class ComponentUtils
     /**
      * Sets the attribute on the given object. The object can be either a context, request
      * or response (HttpServletContext/PortletContext, HttpServletRequest/PortletRequest, etc).
-     * 
+     *
      * @param object the object on which to set the attribute.
      * @param attributeName the attribute name.
      * @param attributeValue the value of the attribute to set.
@@ -260,7 +260,7 @@ public class ComponentUtils
 
     /**
      * Gets the context path from the given request object (PortletRequest/HttpServletRequest)
-     * 
+     *
      * @param request the request object from which to retrieve the context path.
      * @return the context path.
      */

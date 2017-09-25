@@ -38,13 +38,13 @@ public abstract class TimecardDaoBase implements TimecardDao
 {
 
     private static final Logger logger = Logger.getLogger(TimecardDaoBase.class);
-    
+
     /** Session Context Injection */
     @Resource
     protected SessionContext context;
 
     /**
-     * Inject persistence context timetracker-ejb3     */    
+     * Inject persistence context timetracker-ejb3     */
     @PersistenceContext(unitName = "timetracker-ejb3")    protected EntityManager entityManager;
 
     /**
@@ -391,7 +391,7 @@ public abstract class TimecardDaoBase implements TimecardDao
      /**
       * Performs the core logic for {@link #findByCriteria(TimecardSearchCriteriaVO)}
       * @param criteria $argument.fullyQualifiedType
-      * @return List 
+      * @return List
       * @throws Exception
       */
     protected abstract List handleFindByCriteria(TimecardSearchCriteriaVO criteria) throws Exception;
@@ -775,7 +775,7 @@ public abstract class TimecardDaoBase implements TimecardDao
 
     /**
      * @return the hibernateSession
-     */   
+     */
     public Session getHibernateSession()
     {
         return this.hibernateSession;
@@ -787,5 +787,5 @@ public abstract class TimecardDaoBase implements TimecardDao
     public void setHibernateSession(Session hibernateSessionIn)
     {
         this.hibernateSession = hibernateSessionIn;
-    }        
+    }
 }

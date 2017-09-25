@@ -41,7 +41,7 @@ public abstract class EJB3SessionOperationFacadeLogic
 {
 
     private static final long serialVersionUID = 1L;
-    
+
     /**
      * The underlying UML object
      * @see Object
@@ -2907,7 +2907,7 @@ public abstract class EJB3SessionOperationFacadeLogic
     }
 
     /**
-     * UML2 only: If isMany (Collection type returned), is the type unique within the collection. 
+     * UML2 only: If isMany (Collection type returned), is the type unique within the collection.
      * Unique+Ordered determines CollectionType implementation of return result. Default=false.
      * @see OperationFacade#isOrdered()
      */

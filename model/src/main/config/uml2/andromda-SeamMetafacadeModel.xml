@@ -4,7 +4,7 @@
         <property name="failOnValidationErrors">true</property>
         <!--<property name="loggingConfigurationUri">file:${basedir}/../log4j.xml</property>-->
     </properties>
-    <!-- Server will load and validate model in the background automatically when anything changes. 
+    <!-- Server will load and validate model in the background automatically when anything changes.
     To start server from mda directory: mvn andromda:start-server.
     Leave commented, or else AndroMDA will try to connect each time.-->
     <!-- do not activate for custom cartridge
@@ -34,18 +34,18 @@
                         <location patterns="**/*.xml.zip,**/*.xml">${settings.localRepository}/org/andromda/profiles/${uml.type}/andromda-profile-service/${andromda.version}</location>
                         <location patterns="**/*.xml.zip,**/*.xml">${settings.localRepository}/org/andromda/profiles/${uml.type}/andromda-profile-xml/${andromda.version}</location>
                         <location patterns="**/*.xml.zip,**/*.xml">${settings.localRepository}/org/andromda/profiles/${uml.type}/andromda-profile-shared/${andromda.version}</location>
-                        <location patterns="**/*.xml.zip,**/*.xml">${settings.localRepository}/org/andromda/profiles/${uml.type}/andromda-profile-webservice/${andromda.version}</location>                        
+                        <location patterns="**/*.xml.zip,**/*.xml">${settings.localRepository}/org/andromda/profiles/${uml.type}/andromda-profile-webservice/${andromda.version}</location>
                         <location patterns="**/*.xml.zip">${settings.localRepository}/org/andromda/metafacades/andromda-metafacades-uml/${andromda.version}/</location>
-          	    </moduleSearchLocations>          
+          	    </moduleSearchLocations>
                     <modelPackages>
                         <modelPackage process="false">org::andromda::metafacades::uml</modelPackage>
                         <!--<modelPackage process="false">org::andromda::cartridges::jsf::metafacades</modelPackage>-->
                     </modelPackages>
                 </model>
-            </models>            
+            </models>
         </repository>
     </repositories>
-    <namespaces>    
+    <namespaces>
         <namespace name="meta">
             <properties>
         	<property name="languageMappingsUri">Java</property>
@@ -60,7 +60,7 @@
         	<property name="pluralizeAssociationEndNames">true</property>
         	<property name="pluralizeAttributeNames">true</property>
         	<property name="pluralizeParameterNames">true</property>
-        	<property name="toDoTag">TODO</property>                
+        	<property name="toDoTag">TODO</property>
             </properties>
         </namespace>
     </namespaces>

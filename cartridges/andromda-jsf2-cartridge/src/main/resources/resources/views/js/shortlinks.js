@@ -8,7 +8,7 @@ function shortlinks()
 	// defines where the link should be cut off, from the right or the middle
 	var mode='right';
 	// the maximum length of the links
-	var mustlength=60; 
+	var mustlength=60;
 	// the string added to or in the middle of the link text after shortening
 	var connector='...';
 	// the title added to the link, %url% will be replaced with the real link
@@ -39,8 +39,8 @@ function shortlinks()
 			contentlinks[i].title+=titleadd.replace(/%url%/,t);
 			contentlinks[i].replaceChild(document.createTextNode(newt),contentlinks[i].firstChild);
 		}
-	
-	}	
+
+	}
 }
 // start shortlinks when the window is loaded.
 window.onload=shortlinks;

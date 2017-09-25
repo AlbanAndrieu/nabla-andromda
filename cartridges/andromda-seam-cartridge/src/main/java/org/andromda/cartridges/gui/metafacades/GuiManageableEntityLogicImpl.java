@@ -86,7 +86,7 @@ import java.util.Set;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.gui.metafacades.GuiManageableEntity.
- * 
+ *
  * @see org.andromda.cartridges.gui.metafacades.GuiManageableEntity
  */
 public class GuiManageableEntityLogicImpl extends GuiManageableEntityLogic
@@ -754,7 +754,7 @@ public class GuiManageableEntityLogicImpl extends GuiManageableEntityLogic
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     @Override
@@ -777,7 +777,7 @@ public class GuiManageableEntityLogicImpl extends GuiManageableEntityLogic
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     @Override
@@ -792,7 +792,7 @@ public class GuiManageableEntityLogicImpl extends GuiManageableEntityLogic
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public List<ManageableEntityAssociationEnd> getManageableAssociationEndsManageableEntity()
@@ -830,7 +830,7 @@ public class GuiManageableEntityLogicImpl extends GuiManageableEntityLogic
     // TODO remove never used
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public List<ManageableEntityAssociationEnd> getManageableAssociationEndsGuiManageableEntity()
@@ -2258,7 +2258,7 @@ public class GuiManageableEntityLogicImpl extends GuiManageableEntityLogic
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param serviceName DOCUMENT ME!
      * @return DOCUMENT ME!
      */
@@ -2832,7 +2832,7 @@ public class GuiManageableEntityLogicImpl extends GuiManageableEntityLogic
      * Retrieves manageable service facade for a given service name. This method
      * will search in directly attached services, and also in generalizations and
      * specializations.
-     * 
+     *
      * @param serviceName
      * the service name
      * @return Service facade instance

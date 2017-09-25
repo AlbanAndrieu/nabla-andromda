@@ -17,8 +17,8 @@ public interface MovieManageableService
 
 
     public MovieVO readById(Long id)
-        throws MovieReadManageableException;    
-        
+        throws MovieReadManageableException;
+
     public List read(String title, Integer year, Integer version, String director, String plot, Long id)
         throws MovieReadManageableException;
 

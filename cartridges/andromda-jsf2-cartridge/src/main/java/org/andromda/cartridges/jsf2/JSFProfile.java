@@ -4,7 +4,7 @@ import org.andromda.core.profile.Profile;
 
 /**
  * Contains the AndroMDA JSF2 profile.
- * 
+ *
  * @author Chad Brandon
  */
 public class JSFProfile

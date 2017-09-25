@@ -21,11 +21,11 @@
          <property name="hibernate.default_batch_fetch_size" value="${hibernate.default_batch_fetch_size}" />
          <property name="hibernate.show_sql" value="${hibernate.showsql}"/>
          <property name="hibernate.format_sql" value="true"/>
-         
-         <!-- Encoding -->      
+
+         <!-- Encoding -->
          <property name="hibernate.connection.useUnicode" value="true" />
          <property name="hibernate.connection.characterEncoding" value="UTF-8" />
-               
+
          <!-- Only relevant if Seam is loading the persistence unit (Java SE bootstrap) -->
          <!-- <property name="hibernate.cache.provider_class" value="org.hibernate.cache.HashtableCacheProvider"/> -->
          <property name="hibernate.cache.provider_class" value="org.hibernate.cache.EhCacheProvider"/>

@@ -72,7 +72,7 @@
                                     <div class="error">#{messages['login.error']}</div>
                                 </td>
                             </tr>
-                        </c:when> 
+                        </c:when>
                         <c:when test="${${actionParam} == 'roleError'}">
                             <tr>
                                 <td colspan="2"/>
@@ -80,7 +80,7 @@
                                     <div class="error">#{messages['login.error.role']}</div>
                                 </td>
                             </tr>
-                        </c:when> 
+                        </c:when>
                     </c:choose>
                     <tr>
                         <td class="xv" width="37%"><span class="xa"><label for="login:j_username">#{messages['login.username']}:</label></span></td>
@@ -124,7 +124,7 @@
                         </td>
                     </tr>
 #end
-#end                    
+#end
 #if ($adf)
                 </table>
             </form>

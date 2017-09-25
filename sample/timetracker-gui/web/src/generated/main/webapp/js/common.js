@@ -10,25 +10,25 @@ function getElementValueById(id)
 function getElementById(elementId)
 {
     //Netscape layers
-    if(document.layers) 
+    if(document.layers)
     {
         return document.layers[elementId];
     }
 
     //DOM; IE5, NS6, Mozilla, Opera
     if(document.getElementById)
-    { 
+    {
         return document.getElementById(elementId);
     }
 
     //Proprietary DOM; IE4
-    if(document.all) 
+    if(document.all)
     {
         return document.all[elementId];
     }
 
     //Netscape alternative
-    if(document[elementId]) 
+    if(document[elementId])
     {
         return document[elementId];
     }

@@ -110,7 +110,7 @@ public abstract class $entity.entityName##no new line
 #if ($attribute.containsEmbeddedObject)
 #set ($typeName = $attribute.type.fullyQualifiedEntityName)
     //@Id @GeneratedValue
-    @XmlTransient    
+    @XmlTransient
 #end
     private $typeName $attribute.name#if ($attribute.defaultValuePresent) = $attribute.defaultValue#end;
 
@@ -325,7 +325,7 @@ $operation.getDocumentation("     * ")
 #end
 ##// ($entity.allRequiredConstructorParameters.size() + $entity.identifiers.size()) > $entity.allProperties.size()
 ##// $requiredParams $allSize $entity.allRequiredConstructorParameters.size() $entity.identifiers.size() $entity.allProperties.size()
-// Don't use 3.4 or 3.3 use 3.2 vsl 
+// Don't use 3.4 or 3.3 use 3.2 vsl
 #if ( $requiredParams < $allSize && $requiredParams > 0 && ($entity.allRequiredConstructorParameters.size() + $entity.identifiers.size()) > $entity.allProperties.size())
         /**
          * Constructs a new instance of {@link ${entity.fullyQualifiedName}}, taking all required and/or

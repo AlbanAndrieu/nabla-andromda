@@ -59,7 +59,7 @@ import java.util.List;
 
 /**
  * DOCUMENT ME!
- * 
+ *
  * @author $Author: albandri $
  * @version $Revision: 377 $
  * @since $Date: 2010-10-03 03:28:10 +0200 (dim., 03 oct. 2010) $
@@ -73,7 +73,7 @@ public class Parser
 
     /**
      * Creates a new Parser object.
-     * 
+     *
      * @param url DOCUMENT ME!
      * @param attributesAndAssociations DOCUMENT ME!
      */
@@ -98,7 +98,7 @@ public class Parser
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param url DOCUMENT ME!
      * @return DOCUMENT ME!
      * @throws DocumentException DOCUMENT ME!
@@ -115,7 +115,7 @@ public class Parser
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      * @throws DocumentException DOCUMENT ME!
      */
@@ -490,7 +490,7 @@ public class Parser
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @return DOCUMENT ME!
      */
     public List<String> getInvalidAttributes()
@@ -502,7 +502,7 @@ public class Parser
 
     /**
      * DOCUMENT ME!
-     * 
+     *
      * @param invalidAttributes DOCUMENT ME!
      */
     public void setInvalidAttributes(final List<String> invalidAttributes)

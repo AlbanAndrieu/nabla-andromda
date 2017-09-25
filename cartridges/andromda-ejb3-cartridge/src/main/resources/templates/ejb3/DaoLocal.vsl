@@ -487,7 +487,7 @@ $operation.getDocumentation("     * ")
 #**##else
  throws ${entity.fullyQualifiedDaoDefaultExceptionName};
 #**##end
-    
+
 #end
 }
 #end

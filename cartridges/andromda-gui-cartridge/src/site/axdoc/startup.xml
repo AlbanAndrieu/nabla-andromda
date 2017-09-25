@@ -8,7 +8,7 @@
         <section name="AndroMDA + EJB3 + Seam Step-by-Step Getting Started Guide">
             <p>
                 This guide gives you a step-by-step guide to setting up AndroMDA with the EJB3 and Seam
-                cartridges and to start you on your first project.  The commands I show are for installing 
+                cartridges and to start you on your first project.  The commands I show are for installing
                 everything from your home directory on a Unix/Linux system using Bash as your shell.
                 I imagine that the steps would be similar on Windows.
             </p>
@@ -23,7 +23,7 @@
 [user@server java]$ firefox http://java.sun.com/javase/downloads/index_jdk5.jsp
 ]]></source>
                 <p>
-                    Scroll down the web page and click the button to download just <b>JDK 5.0 Update xx</b> 
+                    Scroll down the web page and click the button to download just <b>JDK 5.0 Update xx</b>
                     (presently xx = 12). Select the correct self-extracting file for your hardware and
                     OS (e.g. jdk-1_5_0_12-linux-i586.bin) and save this file into the <b>~/java</b> folder.
                     Back in the terminal:
@@ -279,7 +279,7 @@ When prompted for password hit <ENTER>
                     Now you want to build your project scaffold using AndroMDApp.  Below I show an example.
                     Your particular setup will be different but what is important is that you
                     do a <b>j2ee</b> project, <b>ejb3</b> persistence, <b>yes</b> to web user interface and
-                    <b>jsf</b> for the interface technology.  This will then bring up the Seam option. From the 
+                    <b>jsf</b> for the interface technology.  This will then bring up the Seam option. From the
                     terminal, type:
                 </p>
 <source><![CDATA[
@@ -298,55 +298,55 @@ INFO  [AndroMDA] discovered andromdapp type --> 'j2ee'
 Please choose the type of application to generate [richclient, j2ee]
 j2ee
 
-Please enter the location in which your new application will be created (i.e. f:/java/development): 
+Please enter the location in which your new application will be created (i.e. f:/java/development):
 /path/to/my/projects
 
-Please enter your first and last name (i.e. Chad Brandon): 
+Please enter your first and last name (i.e. Chad Brandon):
 John Doe
 
-Which kind of modeling tool will you use? [uml1.4, uml2, emf-uml2]: 
+Which kind of modeling tool will you use? [uml1.4, uml2, emf-uml2]:
 uml2
 
-Please enter the name of your J2EE project (i.e. Animal Quiz): 
+Please enter the name of your J2EE project (i.e. Animal Quiz):
 MyProject
 
-Please enter an id for your J2EE project (i.e. animalquiz): 
+Please enter an id for your J2EE project (i.e. animalquiz):
 myproject
 
-Please enter a version for your project (i.e. 1.0-SNAPSHOT): 
+Please enter a version for your project (i.e. 1.0-SNAPSHOT):
 0.1
 
-Please enter the root package name for your J2EE project (i.e. org.andromda.samples.animalquiz): 
+Please enter the root package name for your J2EE project (i.e. org.andromda.samples.animalquiz):
 com.company.myproject
 
-Would you like an EAR or standalone WAR? [ear, war]: 
+Would you like an EAR or standalone WAR? [ear, war]:
 ear
 
-Please enter the type of transactional/persistence cartridge to use [hibernate, ejb, ejb3, spring, none]: 
+Please enter the type of transactional/persistence cartridge to use [hibernate, ejb, ejb3, spring, none]:
 ejb3
 
-Please enter the database backend for the persistence layer [hypersonic, mysql, oracle, db2, informix, mssql, pointbase, postgres, sybase, sabdb, progress, derby]: 
+Please enter the database backend for the persistence layer [hypersonic, mysql, oracle, db2, informix, mssql, pointbase, postgres, sybase, sabdb, progress, derby]:
 mysql
 
-Will your project need workflow engine capabilities? (it uses jBPM and Hibernate3)? [yes, no]: 
+Will your project need workflow engine capabilities? (it uses jBPM and Hibernate3)? [yes, no]:
 yes
 
-Will your project have a web user interface? [yes, no]: 
+Will your project have a web user interface? [yes, no]:
 yes
 
-Would you like your web user interface to use JSF or Struts? [jsf, struts]: 
+Would you like your web user interface to use JSF or Struts? [jsf, struts]:
 jsf
 
-Would you like to use Facelets or JSP as your view type for JSF? [facelets, jsp]: 
+Would you like to use Facelets or JSP as your view type for JSF? [facelets, jsp]:
 facelets
 
-Would you like to use the JBoss Seam application framework? [yes, no]: 
+Would you like to use the JBoss Seam application framework? [yes, no]:
 yes
 
-Would you like to be able to expose your services as web services? [yes, no]: 
+Would you like to be able to expose your services as web services? [yes, no]:
 yes
 
-Would you like to use the JSR181 (webservice defined by annotations) EJB3 cartridge specific implementation? [yes, no]: 
+Would you like to use the JSR181 (webservice defined by annotations) EJB3 cartridge specific implementation? [yes, no]:
 yes
 ]]></source>
                 <p>
@@ -359,14 +359,14 @@ yes
                     The project scaffold created above will have a starter XMI file for your modeling.
                     This is located in <b>/path/to/my/projects/myproject/mda/src/main/uml/myproject.xml</b>.
                     Launch your UML modeling application (e.g. MagicDraw), go to File -> Open Project..., and
-                    browse to this file.  When the program initially loads this file it will ask you to 
-                    specify the path to your <b>maven2.repository</b>. Specify the full <b>$M2_REPO path</b>, 
+                    browse to this file.  When the program initially loads this file it will ask you to
+                    specify the path to your <b>maven2.repository</b>. Specify the full <b>$M2_REPO path</b>,
                     i.e. <b>/path/to/your/home/.m2/repository</b>.  It will then load your project and
                     all of the requisite andromda core profiles.
                 </p>
                 <p>
                     Next you need to use the andromda-seam-profile built before.  Go to File -> Use Module...,
-                    first add a new module path: 
+                    first add a new module path:
                     <b>/path/to/your/home/.m2/repository/org/andromda/profiles/uml2/andromda-profile-seam/1.1-SNAPSHOT/</b>,
                     then select this path and pick the andromda-profile-seam-1.1-SNAPSHOT.xml.zip profile.
                     It will load this and you now have all of the necessary seam stereotypes and tagged values.

@@ -6,7 +6,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_3.xsd"
          version="3">
 
-        
+
 
     <!-- ************************ JSF Config **************************** -->
     <context-param>
@@ -24,7 +24,7 @@
         <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
         <param-value>client</param-value>
     </context-param>
-    
+
     <!-- ************************ MyFaces Listener **************************** -->
     <!-- Listener, that does all the startup work (configuration, init). -->
     <!--
@@ -32,7 +32,7 @@
         <listener-class>org.apache.myfaces.webapp.StartupServletContextListener</listener-class>
     </listener>
     -->
-    
+
     <!-- ************************ MyFaces Config **************************** -->
     <context-param>
         <description>
@@ -96,7 +96,7 @@
         <servlet-name>Trinidad Resources Servlet</servlet-name>
 	<url-pattern>/adf/*</url-pattern>
     </servlet-mapping>
-    
+
     <!-- Trinidad Filter -->
     <filter>
         <filter-name>Trinidad Filter</filter-name>
@@ -105,13 +105,13 @@
     <filter-mapping>
         <filter-name>Trinidad Filter</filter-name>
         <url-pattern>*.jsf</url-pattern>
-    </filter-mapping>       
+    </filter-mapping>
     <!-- Trinidad patch filter -->
     <!-- for calendar bug https://issues.apache.org/jira/browse/TRINIDAD-119 -->
     <filter>
         <filter-name>TrinidadDialogFilter</filter-name>
         <filter-class>org.andromda.presentation.gui.TrinidadDialogFilter</filter-class>
-    </filter>    
+    </filter>
     <filter-mapping>
         <filter-name>TrinidadDialogFilter</filter-name>
         <url-pattern>/__ADFv__</url-pattern>
@@ -179,12 +179,12 @@
         <param-name>org.apache.myfaces.trinidad.CHECK_FILE_MODIFICATION</param-name>
         <param-value>true</param-value>
     </context-param>
-  
+
     <context-param>
         <param-name>org.apache.myfaces.trinidad.resource.DEBUG</param-name>
         <param-value>true</param-value>
     </context-param>
-    
+
     <context-param>
         <param-name>org.apache.myfaces.trinidad.ALTERNATE_VIEW_HANDLER</param-name>
         <param-value>com.sun.facelets.FaceletViewHandler</param-value>
@@ -196,7 +196,7 @@
 
 
 
-  
+
     <!-- ************************ Faces Servlet Mapping **************************** -->
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
@@ -207,8 +207,8 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.jsf</url-pattern>
     </servlet-mapping>
-        
-        
+
+
     <!--
     <servlet>
         <servlet-name>File Download Servlet</servlet-name>
@@ -221,7 +221,7 @@
     </servlet-mapping>
     -->
     <!-- resource loader servlet -->
-    <!-- 
+    <!--
     <servlet>
         <servlet-name>AndroMDA JSF Servlet</servlet-name>
         <servlet-class>org.andromda.cartridges.jsf.JSFServlet</servlet-class>
@@ -230,16 +230,16 @@
     <servlet-mapping>
         <servlet-name>AndroMDA JSF Servlet</servlet-name>
         <url-pattern>/jsf/*</url-pattern>
-    </servlet-mapping>  
-    -->  
+    </servlet-mapping>
+    -->
 
 
     <!-- ************************ Manual Servlets **************************** -->
     <!-- precompilation merge-point -->
-      
-    
-    
-    
+
+
+
+
     <!-- ************************ Manual Filters **************************** -->
     <!-- uncomment the following if you're using the open-session-in-view pattern
          note: that you'll need to update the filter-class value if you've changed
@@ -259,14 +259,14 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     -->
-    
+
     <!-- ************************ Manual Merged Config **************************** -->
     <!-- Instruct JBoss to not use Mojarra libs with this application - avoids Myfaces conflict -->
     <context-param>
          <param-name>org.jboss.jbossfaces.WAR_BUNDLES_JSF_IMPL</param-name>
          <param-value>true</param-value>
     </context-param>
-    
+
 
 
     <filter>
@@ -297,7 +297,7 @@
         <url-pattern>/org/andromda/timetracker/domain/crud/task-crud.jsf</url-pattern>
     </filter-mapping>
 
-        
+
     <filter-mapping>
         <filter-name>org.andromda.timetracker.web.timecardsearch.SearchTimecardsPopulator</filter-name>
         <url-pattern>/org/andromda/timetracker/web/timecardsearch/search-timecards.jsf</url-pattern>
@@ -306,7 +306,7 @@
         <filter-name>org.andromda.timetracker.web.timecarddetails.TimecardPopulator</filter-name>
         <url-pattern>/org/andromda/timetracker/web/timecarddetails/timecard.jsf</url-pattern>
     </filter-mapping>
-        
+
     <servlet>
         <servlet-name>org.andromda.timetracker.web.timecardsearch.SearchTimecards</servlet-name>
         <servlet-class>org.andromda.timetracker.web.timecardsearch.SearchTimecards</servlet-class>
@@ -335,11 +335,11 @@
         <session-timeout>45</session-timeout>
         <!-- session-config merge-point -->
     </session-config>
-    
+
 
     <!-- Welcome files -->
     <welcome-file-list>
-        
+
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
@@ -351,7 +351,7 @@
         <error-code>403</error-code>
         <location>/403.jsp</location>
     </error-page>
-    
+
     <!-- taglib merge-point -->
     <!-- resource-ref merge-point -->
 

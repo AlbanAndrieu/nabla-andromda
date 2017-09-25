@@ -16,4 +16,3 @@ WHENEVER OSERROR  EXIT;
 @create-sequences.sql
 
 exit;
-

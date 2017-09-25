@@ -9,8 +9,8 @@
         <section name="Enumerations">
             <p>
                 You might have noticed the attribute named <code>carType</code> in the <code>Car</code> entity. It is
-                is of type <code>String</code>, while in fact it makes more sense to restrict the set of possible 
-                values for this attribute. This can be achieved using <i>Java5 type-safe enumerations</i>. 
+                is of type <code>String</code>, while in fact it makes more sense to restrict the set of possible
+                values for this attribute. This can be achieved using <i>Java5 type-safe enumerations</i>.
                 This is the topic discussed on this page.
             </p>
             <p>
@@ -21,12 +21,12 @@
                 <b>enum</b> object containing your literals.
             </p>
             <p>
-                In the EJB3 cartridge, enumerations are <i>NOT</i> persisted behind the scenes, unlike the 
+                In the EJB3 cartridge, enumerations are <i>NOT</i> persisted behind the scenes, unlike the
                 Hibernate framework, however we can still use these enumeration types for entity attributes.
             </p>
             <p>
-                In the next picture we have replaced the type of the <code>type</code> attribute in the 
-                <code>Car</code> entity from <code>datatype::String</code> to 
+                In the next picture we have replaced the type of the <code>type</code> attribute in the
+                <code>Car</code> entity from <code>datatype::String</code> to
                 <code>org.andromda.test.howto5.a.CarType</code> and set the enumeration type to <code>STRING</code>
                 (default being <code>ORDINAL</code>).
             </p>
@@ -112,7 +112,7 @@ STATION_WAGON : String
                 </p>
                 <p>
                     You simply model the enumeration as you would normally, but add a member variable as an
-                    attribute of the class.  You have to model the 
+                    attribute of the class.  You have to model the
                     <code>andromda_persistence_enumeration_member_variable</code> tagged value on this attribute to
                     indicate that this is NOT a literal.
                 </p>

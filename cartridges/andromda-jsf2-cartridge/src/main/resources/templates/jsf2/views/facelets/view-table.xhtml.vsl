@@ -18,7 +18,7 @@
 #if($trinidad)
 #set($partialTriggers = "")
 #setTablePartialTriggers($table $partialTriggers)
-    <tr:table id="$table.name" allDetailsEnabled="true" var="row" rowBandingInterval="1" value="#{${table.name}}" rows="#{${preferencesBeanName}.maxTableRows}" 
+    <tr:table id="$table.name" allDetailsEnabled="true" var="row" rowBandingInterval="1" value="#{${table.name}}" rows="#{${preferencesBeanName}.maxTableRows}"
         width="90%"#if($trinidad && $partialTriggers.length() > 0) partialTriggers="$partialTriggers"#end>
 #elseif ($adf)
     <af:table allDetailsEnabled="true" var="row" bandingInterval="1" banding="row" value="#{${table.name}}" rows="#{${preferencesBeanName}.maxTableRows}" width="90%">

@@ -4,7 +4,7 @@ import org.andromda.cartridges.jsf2.JSFGlobals;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFBackendService.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFBackendService
  */
 public class JSFBackendServiceLogicImpl extends JSFBackendServiceLogic

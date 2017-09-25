@@ -59,7 +59,7 @@ public class Timecard extends TimecardEmbeddable implements Serializable, Compar
 
     /**
      * Constructor with all POJO attribute values and CMR relations.
-     * 
+     *
      * @param comments Value for the comments property
      * @param startDate Value for the startDate property
      * @param status Value for the status property

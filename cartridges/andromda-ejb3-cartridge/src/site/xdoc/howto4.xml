@@ -49,7 +49,7 @@
                 <li class="gen"><a href="howto/org/andromda/test/howto4/a/RentalServiceException.java"><code>RentalServiceException.java</code></a></li>
             </ul>
             <p>
-                The EJB3 cartridge represents a composite primary key as an embeddable class, implements 
+                The EJB3 cartridge represents a composite primary key as an embeddable class, implements
                 <code>Serializable</code> and defines the <code>equals</code> and <code>hashCode</code> methods.
                 The <code>CarPK</code> embeddable composite primary key class has the
                 <code>@javax.persistence.Embeddable</code> annotation.  The <code>CarEmbeddable</code> class

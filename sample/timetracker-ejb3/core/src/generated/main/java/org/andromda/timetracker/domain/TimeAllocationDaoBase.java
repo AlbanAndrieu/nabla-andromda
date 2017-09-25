@@ -34,13 +34,13 @@ public abstract class TimeAllocationDaoBase implements TimeAllocationDao
 {
 
     private static final Logger logger = Logger.getLogger(TimeAllocationDaoBase.class);
-    
+
     /** Session Context Injection */
     @Resource
     protected SessionContext context;
 
     /**
-     * Inject persistence context timetracker-ejb3     */    
+     * Inject persistence context timetracker-ejb3     */
     @PersistenceContext(unitName = "timetracker-ejb3")    protected EntityManager entityManager;
 
     /**
@@ -563,7 +563,7 @@ public abstract class TimeAllocationDaoBase implements TimeAllocationDao
 
     /**
      * @return the hibernateSession
-     */   
+     */
     public Session getHibernateSession()
     {
         return this.hibernateSession;
@@ -575,5 +575,5 @@ public abstract class TimeAllocationDaoBase implements TimeAllocationDao
     public void setHibernateSession(Session hibernateSessionIn)
     {
         this.hibernateSession = hibernateSessionIn;
-    }        
+    }
 }

@@ -253,7 +253,7 @@ public interface OperationFacade
     public boolean isMany();
 
     /**
-     * UML2 only: If isMany (Collection type returned), is the type unique within the collection. 
+     * UML2 only: If isMany (Collection type returned), is the type unique within the collection.
      * Unique+Ordered determines CollectionType implementation of return result. Default=false.
      * @return boolean
      */

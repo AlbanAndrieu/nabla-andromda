@@ -7,7 +7,7 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFEnumeration.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFEnumeration
  */
 public class JSFEnumerationLogicImpl extends JSFEnumerationLogic

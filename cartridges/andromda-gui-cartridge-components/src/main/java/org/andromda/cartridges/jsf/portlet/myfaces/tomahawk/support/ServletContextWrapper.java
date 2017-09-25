@@ -88,7 +88,7 @@ public class ServletContextWrapper implements ServletContext
 
     /**
      * return null
-     * 
+     *
      * @see javax.servlet.ServletContext#getContext(String)
      */
     public ServletContext getContext(String arg0)
@@ -151,7 +151,7 @@ public class ServletContextWrapper implements ServletContext
 
     /**
      * return null
-     * 
+     *
      * @see javax.servlet.ServletContext#getNamedDispatcher(String)
      */
     public RequestDispatcher getNamedDispatcher(String arg0)
@@ -174,7 +174,7 @@ public class ServletContextWrapper implements ServletContext
 
     /**
      * return null
-     * 
+     *
      * @see javax.servlet.ServletContext#getRequestDispatcher(String)
      */
     public RequestDispatcher getRequestDispatcher(String arg0)
@@ -227,7 +227,7 @@ public class ServletContextWrapper implements ServletContext
 
     /**
      * return null
-     * 
+     *
      * @see javax.servlet.ServletContext#getServlet(String)
      * @deprecated
      */
@@ -252,7 +252,7 @@ public class ServletContextWrapper implements ServletContext
 
     /**
      * return null
-     * 
+     *
      * @see javax.servlet.ServletContext#getServletNames()
      * @deprecated
      */
@@ -267,7 +267,7 @@ public class ServletContextWrapper implements ServletContext
 
     /**
      * return null
-     * 
+     *
      * @see javax.servlet.ServletContext#getServlets()
      * @deprecated
      */

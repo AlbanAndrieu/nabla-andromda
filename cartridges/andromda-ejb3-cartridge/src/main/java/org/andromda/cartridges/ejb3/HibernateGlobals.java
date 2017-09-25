@@ -2,7 +2,7 @@ package org.andromda.cartridges.ejb3;
 
 /**
  * Stores Globals specific to the Hibernate cartridge.
- * 
+ *
  * @author Chad Brandon
  * @author Wouter Zoons
  */

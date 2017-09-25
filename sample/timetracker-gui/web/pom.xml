@@ -8,8 +8,8 @@
         <artifactId>timetracker-gui</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
-    <modelVersion>4.0.0</modelVersion>    
+
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>web</artifactId>
     <packaging>war</packaging>
     <name>TimeTracker GUI Web</name>
@@ -89,14 +89,14 @@
 	        <exclusion>
 	            <groupId>log4j</groupId>
 	            <artifactId>log4j</artifactId>
-	        </exclusion>            
+	        </exclusion>
                 <exclusion>
                     <groupId>org.andromda</groupId>
                     <artifactId>andromda-core</artifactId>
                 </exclusion>
-           </exclusions>                
-        </dependency>  
-        --> 
+           </exclusions>
+        </dependency>
+        -->
         <!--
 	    <dependency>
             <groupId>org.andromda.cartridges</groupId>
@@ -119,13 +119,13 @@
                     <artifactId>andromda-ocl-translation-core</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>  
+        </dependency>
         -->
-	        		
+
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
-        </dependency>        
+        </dependency>
         <!-- myfaces-impl and myfaces-api JARs are the equivalent of Mojarra's jsf-impl and jsf-api -->
         <dependency>
             <groupId>org.apache.myfaces.core</groupId>
@@ -135,7 +135,7 @@
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-impl</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.apache.myfaces.trinidad</groupId>
             <artifactId>trinidad-api</artifactId>
@@ -143,14 +143,14 @@
         <dependency>
             <groupId>org.apache.myfaces.trinidad</groupId>
             <artifactId>trinidad-impl</artifactId>
-        </dependency>        
-                
+        </dependency>
+
         <dependency>
             <groupId>org.apache.myfaces.tomahawk</groupId>
             <artifactId>tomahawk12</artifactId>
             <version>${org.apache.myfaces.tomahawk.version}</version>
         </dependency>
-        
+
         <!--
         <dependency>
             <groupId>org.apache.myfaces.tomahawk</groupId>
@@ -188,7 +188,7 @@
             -->
             <!--<version>${jsf.api.version}</version>-->
             <!--
-            <version>1.2_15</version>      
+            <version>1.2_15</version>
         </dependency>
         -->
         <!--
@@ -197,8 +197,8 @@
             <artifactId>jsf-impl</artifactId>
             <version>2.1.2</version>
             <scope>compile</scope>
-        </dependency>   
-        -->     
+        </dependency>
+        -->
         <dependency>
             <artifactId>hibernate-validator</artifactId>
             <groupId>org.hibernate</groupId>
@@ -224,7 +224,7 @@
         <dependency>
             <groupId>com.sun.facelets</groupId>
             <artifactId>jsf-facelets</artifactId>
-        </dependency>    
+        </dependency>
         <!--
         <dependency>
             <groupId>org.icefaces</groupId>
@@ -234,8 +234,8 @@
             		<groupId>javax.el</groupId>
             		<artifactId>el-api</artifactId>
             	</exclusion>
-            </exclusions>            
-        </dependency>        
+            </exclusions>
+        </dependency>
 	    <dependency>
             <groupId>org.icefaces</groupId>
             <artifactId>icefaces-comps</artifactId>
@@ -244,7 +244,7 @@
             		<groupId>javax.el</groupId>
             		<artifactId>el-api</artifactId>
             	</exclusion>
-            </exclusions> 		
+            </exclusions>
 	     </dependency>
 	     <dependency>
             <groupId>org.icefaces</groupId>
@@ -254,9 +254,9 @@
             		<groupId>javax.el</groupId>
             		<artifactId>el-api</artifactId>
             	</exclusion>
-            </exclusions> 		
-	    </dependency>  
-	    -->   
+            </exclusions>
+	    </dependency>
+	    -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
@@ -265,7 +265,7 @@
             <groupId>com.lowagie</groupId>
             <artifactId>itext</artifactId>
         </dependency>
-        <!-- 
+        <!--
         <dependency>
 	        <groupId>javax.servlet</groupId>
 	        <artifactId>jsp-api</artifactId>
@@ -293,13 +293,13 @@
             <artifactId>testng</artifactId>
         </dependency>
         -->
-        <!-- 
+        <!--
         <dependency>
             <groupId>javax.el</groupId>
             <artifactId>el-api</artifactId>
             <version>${el.api.version}</version>
             <scope>provided</scope>
-        </dependency>                    
+        </dependency>
         -->
     </dependencies>
     <build>

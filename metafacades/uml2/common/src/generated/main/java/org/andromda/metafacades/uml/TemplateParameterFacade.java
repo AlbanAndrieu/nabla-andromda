@@ -9,7 +9,7 @@ import org.andromda.core.metafacade.ModelValidationMessage;
 
 /**
  * Represents a UML template parameter. Exposes a parameterable element as a formal template
- * parameter of a template. Only UML2 TemplateParameter inherits from ModelElement, so the UML14 
+ * parameter of a template. Only UML2 TemplateParameter inherits from ModelElement, so the UML14
  * implementation cannot extend ModelElement. UML14 TemplateParameter.parameter inherits from
  * Parameter.
  *

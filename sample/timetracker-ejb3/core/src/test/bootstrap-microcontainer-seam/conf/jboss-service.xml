@@ -47,7 +47,7 @@
       -->
       <attribute name="ServerMode">true</attribute>
       <attribute name="SecurityManagerClassName">org.jboss.security.plugins.JaasSecurityManager</attribute>
-      <attribute name="DefaultUnauthenticatedPrincipal">anonymous</attribute> 
+      <attribute name="DefaultUnauthenticatedPrincipal">anonymous</attribute>
       <!-- DefaultCacheTimeout: Specifies the default timed cache policy timeout
       in seconds.
       If you want to disable caching of security credentials, set this to 0 to
@@ -71,23 +71,23 @@
       threads.
       -->
       <attribute name="DeepCopySubjectMode">false</attribute>
-   </mbean> 
+   </mbean>
 
    <!-- Authorization manager-->
    <mbean code="org.jboss.security.plugins.AuthorizationManagerService"
-      name="jboss.security:service=AuthorizationManager"> 
+      name="jboss.security:service=AuthorizationManager">
       <attribute name="AuthorizationManagerClassName">org.jboss.security.plugins.JBossAuthorizationManager</attribute>
    </mbean>
 
    <!-- ==================================================================== -->
    <!-- Transactions                                                         -->
    <!-- ==================================================================== -->
-   
+
    <!-- JBossTS JTA -->
    <mbean code="com.arjuna.ats.jbossatx.jta.TransactionManagerService"
       name="jboss:service=TransactionManager">
       <attribute name="TransactionTimeout">300</attribute>
-      <attribute name="ObjectStoreDir">${jboss.server.data.dir}/tx-object-store</attribute>      
+      <attribute name="ObjectStoreDir">${jboss.server.data.dir}/tx-object-store</attribute>
    </mbean>
 
    <mbean code="org.jboss.util.threadpool.BasicThreadPool"
@@ -109,7 +109,7 @@
    </mbean>
 
    <!--
-      | The CachedConnectionManager is used partly to relay started UserTransactions to 
+      | The CachedConnectionManager is used partly to relay started UserTransactions to
       | open connections so they may be enrolled in the new tx.
     -->
    <mbean code="org.jboss.resource.connectionmanager.CachedConnectionManager"

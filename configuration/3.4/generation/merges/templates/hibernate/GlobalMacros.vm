@@ -212,7 +212,7 @@
 #macro (renderAttribute $entity $attribute)
 #set ($typeName = $attribute.getterSetterTypeName)
 #if ($attribute.containsEmbeddedObject)
-    @javax.xml.bind.annotation.XmlTransient  
+    @javax.xml.bind.annotation.XmlTransient
 #set ($typeName = $attribute.type.fullyQualifiedEntityName)
 #end
 #set ($visibility=$attribute.visibility)

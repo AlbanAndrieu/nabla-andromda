@@ -72,7 +72,7 @@
                     <li class="gen"><a href="howto/org/andromda/test/howto7/a/RentalException.java"><code>RentalException.java</code></a></li>
                 </ul>
                 <p>
-                    The following is an example of how you can use the Service Delegate 
+                    The following is an example of how you can use the Service Delegate
                     <code>RentalServiceDelegate</code> above in a client or in the web tier.
                 </p>
                 <p>

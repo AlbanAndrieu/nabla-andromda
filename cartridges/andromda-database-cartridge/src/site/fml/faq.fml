@@ -36,7 +36,7 @@
         <p>
           Migrating from Hibernate will be easier than you think.  Just remember that if you have specified
           tagged values with tags in the <b>andromda.hibernate</b> namespace, you need to change these to the
-          corresponding tag in the <b>andromda.persistence</b> namespace.  Check the 
+          corresponding tag in the <b>andromda.persistence</b> namespace.  Check the
           <a href="profile.html">profile</a> page to find the tagged value you are looking for.
         </p>
       </answer>
@@ -98,7 +98,7 @@
         <p>
           This is a class loader issue where somewhere in the JBoss Microcontainer, the URL referencing your
           Maven 2 repository is not encoded and you have spaces in this URL.  This is particularly the case
-          if you are running under a Windows OS platform and your default Maven 2 repository is 
+          if you are running under a Windows OS platform and your default Maven 2 repository is
           C:\Documents and Settings\username\.m2\repository.  The problem is the space in the URL!
         </p>
         <p>
@@ -149,7 +149,7 @@
       <answer>
         <p>
           The EJB3 cartridge equivalent of the subclass inheritance strategy for the Hibernate cartridge is the
-          JOINED inheritance strategy.  Read more about it in 
+          JOINED inheritance strategy.  Read more about it in
           <a href="http://galaxy.andromda.org/forum/viewtopic.php?t=4825">forum thread</a>.
         </p>
       </answer>
@@ -158,12 +158,12 @@
       <question>How do I access SessionBeans from JSF using the ServiceLocator?</question>
       <answer>
         <p>
-          Use the following properties in <i>andromda.xml</i>.          
+          Use the following properties in <i>andromda.xml</i>.
           namespace "ejb3":
           <code><property name="jndiNamePrefix">${application.id}-${pom.version}</property></code>
           <code><property name="serviceInterfaceNamePattern">{0}Interface</property></code>
           <code><property name="serviceRemoteInterfaceNamePattern">{0}</property></code>
-          
+
           namespace "jsf":
           <code><property name="serviceAccessorPattern">(${application.package}.service.{1}) ${application.package}.ServiceLocator.getInstance().getService("${application.id}-${pom.version}/{1}")</property></code>
         </p>

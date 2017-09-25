@@ -124,7 +124,7 @@ $attribute.getDocumentation("     * ")
         return this.${attribute.name};
     }
 
-## - always have as public, having read-only causes too many issues when attempting to 
+## - always have as public, having read-only causes too many issues when attempting to
 ##   use in other cartridges
     public void ${attribute.setterName}($attribute.getterSetterTypeName $attribute.name)
     {
@@ -147,7 +147,7 @@ $target.getDocumentation("     * ")
         return this.${target.name};
     }
 
-## - always have as public, having read-only causes too many issues when attempting to 
+## - always have as public, having read-only causes too many issues when attempting to
 ##   use in other cartridges
     /**
      * Sets the $target.name

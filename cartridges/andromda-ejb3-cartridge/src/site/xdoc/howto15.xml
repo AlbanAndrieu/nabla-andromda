@@ -21,13 +21,13 @@
                     the class level or bean method level.
                 </p>
                 <p>
-                    The EJB 3.0 spec defines that the transaction management type cannot be specified for EJB 3.0 
+                    The EJB 3.0 spec defines that the transaction management type cannot be specified for EJB 3.0
                     entity POJOs.  These entities execute within the transactional context of the caller, which is
                     the DAO or session bean.
                 </p>
                 <p>
                     The DAO base class also specifies the transaction attribute as <code>REQUIRED</code>.  Remember
-                    your business logic resides in the session facade using the DAO API interface; hence you control 
+                    your business logic resides in the session facade using the DAO API interface; hence you control
                     your transactions from your session beans.
                 </p>
                 <p>

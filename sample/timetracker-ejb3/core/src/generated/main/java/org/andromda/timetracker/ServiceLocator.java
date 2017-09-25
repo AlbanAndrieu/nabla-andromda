@@ -111,10 +111,10 @@ public class ServiceLocator
     public final UserServiceRemote getUserService() throws NamingException
     {
         return get_org_andromda_timetracker_service_UserServiceBean_Remote(null);
-            
+
     }
     */
-    
+
     /**
      * Gets the remote interface {@link UserServiceRemote}.
      *
@@ -149,10 +149,10 @@ public class ServiceLocator
     public final TimeTrackingServiceRemote getTimeTrackingService() throws NamingException
     {
         return get_org_andromda_timetracker_service_TimeTrackingServiceBean_Remote(null);
-            
+
     }
     */
-    
+
     /**
      * Gets the remote interface {@link TimeTrackingServiceRemote}.
      *
@@ -175,10 +175,10 @@ public class ServiceLocator
     public final SecurityServiceRemote getSecurityService() throws NamingException
     {
         return get_org_andromda_timetracker_service_SecurityServiceBean_Remote(null);
-            
+
     }
     */
-    
+
     /**
      * Gets the remote interface {@link SecurityServiceRemote}.
      *

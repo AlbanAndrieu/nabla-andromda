@@ -149,18 +149,18 @@
                         </plugins>
                 </pluginManagement>
         </build>
-        
+
         <properties>
                 <model.uri>file:${pom.basedir}/../../model/src/main/uml/${uml.type}/cartridges/${project.artifactId}/${model.name}.uml</model.uri>
-        </properties>                
-        
+        </properties>
+
         <modules>
                 <module>andromda-database-cartridge</module>
                 <module>andromda-ejb3-cartridge</module>
                 <module>andromda-gui-cartridge-components</module>
                 <module>andromda-gui-cartridge</module>
-                <module>andromda-seam-cartridge</module>     
-                <!--           
+                <module>andromda-seam-cartridge</module>
+                <!--
                 <module>andromda-jsf2-cartridge-components</module>
                 <module>andromda-jsf2-cartridge</module>
                 -->

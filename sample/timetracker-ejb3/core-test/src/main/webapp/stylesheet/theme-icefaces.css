@@ -55,7 +55,7 @@ img.errors {
 	border-color: #bed6f8;
 	/* background-color: #BED6F8; */
 	background-position: top left;
-	
+
 }
 .menuButtons a {
 	font-size: 11px;
@@ -175,7 +175,7 @@ img.errors {
 	border-bottom: 1px solid #CCCCCC;
 	}
 .dataScrollerTable {
-	
+
 }
 
 h1 {
@@ -205,7 +205,7 @@ th {
 	color: white;
 	font-family: Arial,sans-serif;
 	padding: 5px;
-	
+
 }
 td {
 	background-color: transparent;
@@ -224,11 +224,11 @@ td {
 	background-color: white;
 }
 
-.dialog 
+.dialog
 {
 	padding: 15px;
 	background-color: #e6e6e6;
-	margin: 10px;	
+	margin: 10px;
 }
 .dialog table
 {
@@ -284,7 +284,7 @@ td {
 .prop {
 	padding: 5px;
 	display: block;
-		
+
 }
 .prop .name {
 	font-weight: bold;
@@ -293,12 +293,12 @@ td {
 /*	float: left; */
 }
 .prop .value {
-	text-align: left;		
+	text-align: left;
 }
 
 .prop .required{
 	color: red;
-	text-align: left;	
+	text-align: left;
 }
 /*.prop .errors {
 	color: red;
@@ -310,7 +310,7 @@ td {
 }
 
 .contentLayoutGridStyleLogin {
-	width: 280px; /* fixed height of content demos*/	
+	width: 280px; /* fixed height of content demos*/
 }
 
 .icePageNorth {
@@ -358,7 +358,7 @@ td {
 .icePnlTlTip {
 	background:#EDDDDD none repeat scroll;
 }
-.icePnlTlTipHdr{ 
+.icePnlTlTipHdr{
 	background:#CDBBBB url() repeat-x;
 }
 .iceCmdBtn{

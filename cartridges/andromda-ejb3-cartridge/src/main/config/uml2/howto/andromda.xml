@@ -34,7 +34,7 @@
                 </model>
             </models>
         </repository>
-    </repositories>     
+    </repositories>
     <namespaces>
         <namespace name="default">
             <properties>

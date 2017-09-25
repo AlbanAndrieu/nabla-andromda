@@ -6,14 +6,14 @@
         <version>3.6-SNAPSHOT</version>
     </parent>
     <artifactId>andromda-profile-presentation</artifactId>
-    <packaging>xml.zip</packaging>    
+    <packaging>xml.zip</packaging>
     <name>AndroMDA UML 2.0 Presentation Profile</name>
-    
+
     <scm>
     	<connection>scm:svn:http://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/presentation</connection>
     	<developerConnection>scm:svn:https://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/presentation</developerConnection>
     	<url>https://alban.googlecode.com/svn/${project.svn.path}/nabla/profiles/uml2/presentation</url>
     	<tag>HEAD</tag>
     </scm>
-        
+
 </project>

@@ -67,7 +67,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.username
      * Get the username property.
-     * 
+     *
      * @return String The value of username
      */
     @Column(name = "USERNAME", unique = true, nullable = false, insertable = true, updatable = true, length = 50)
@@ -86,7 +86,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.username
      * Set the username property.
-     * 
+     *
      * @param value the new value
      */
     public void setUsername(String value)
@@ -97,7 +97,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.password
      * Get the password property.
-     * 
+     *
      * @return String The value of password
      */
     @Column(name = "PASSWORD", nullable = false, insertable = true, updatable = true)
@@ -113,7 +113,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.password
      * Set the password property.
-     * 
+     *
      * @param value the new value
      */
     public void setPassword(String value)
@@ -124,7 +124,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.firstName
      * Get the firstName property.
-     * 
+     *
      * @return String The value of firstName
      */
     @Column(name = "FIRST_NAME", nullable = false, insertable = true, updatable = true)
@@ -138,7 +138,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.firstName
      * Set the firstName property.
-     * 
+     *
      * @param value the new value
      */
     public void setFirstName(String value)
@@ -149,7 +149,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.lastName
      * Get the lastName property.
-     * 
+     *
      * @return String The value of lastName
      */
     @Column(name = "LAST_NAME", nullable = false, insertable = true, updatable = true)
@@ -163,7 +163,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.lastName
      * Set the lastName property.
-     * 
+     *
      * @param value the new value
      */
     public void setLastName(String value)
@@ -174,7 +174,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.email
      * Get the email property.
-     * 
+     *
      * @return String The value of email
      */
     @Column(name = "EMAIL", unique = true, nullable = false, insertable = true, updatable = true, length = 50)
@@ -191,7 +191,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.email
      * Set the email property.
-     * 
+     *
      * @param value the new value
      */
     public void setEmail(String value)
@@ -202,7 +202,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.isEnable
      * Get the isEnable property.
-     * 
+     *
      * @return boolean The value of isEnable
      */
     @Column(name = "IS_ENABLE", nullable = false, insertable = true, updatable = true)
@@ -216,7 +216,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.isEnable
      * Set the isEnable property.
-     * 
+     *
      * @param value the new value
      */
     public void setIsEnable(boolean value)
@@ -227,7 +227,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.creationDate
      * Get the creationDate property.
-     * 
+     *
      * @return Date The value of creationDate
      */
     @Column(name = "CREATION_DATE", nullable = false, insertable = true, updatable = true)
@@ -241,7 +241,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.creationDate
      * Set the creationDate property.
-     * 
+     *
      * @param value the new value
      */
     public void setCreationDate(Date value)
@@ -252,7 +252,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.comment
      * Get the comment property.
-     * 
+     *
      * @return String The value of comment
      */
     @Column(name = "COMMENT", insertable = true, updatable = true)
@@ -264,7 +264,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.comment
      * Set the comment property.
-     * 
+     *
      * @param value the new value
      */
     public void setComment(String value)
@@ -275,7 +275,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.id
      * Get the id property.
-     * 
+     *
      * @return Long The value of id
      */
     @Id
@@ -289,7 +289,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for org.andromda.timetracker.domain.User.id
      * Set the id property.
-     * 
+     *
      * @param value the new value
      */
     public void setId(Long value)
@@ -301,7 +301,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for UserRole
      * Get the roles Collection
-     * 
+     *
      * @return Set<UserRole>
      */
     @ManyToMany(cascade =
@@ -318,7 +318,7 @@ public abstract class UserEmbeddable implements Serializable
     /**
      * TODO: Model Documentation for UserRole
      * Set the roles
-     * 
+     *
      * @param rolesIn
      */
     public void setRoles(Set<UserRole> rolesIn)
@@ -414,7 +414,7 @@ public abstract class UserEmbeddable implements Serializable
     // -------- Common Methods -----------
     /**
      * Indicates if the argument is of the same type and all values are equal.
-     * 
+     *
      * @param object The target object to compare with
      * @return boolean True if both objects a 'equal'
      * @see Object#equals(Object)
@@ -444,7 +444,7 @@ public abstract class UserEmbeddable implements Serializable
 
     /**
      * Returns a hash code value for the object
-     * 
+     *
      * @return int The hash code value
      * @see Object#hashCode
      */
@@ -459,7 +459,7 @@ public abstract class UserEmbeddable implements Serializable
 
     /**
      * Returns a String representation of the object
-     * 
+     *
      * @return String Textual representation of the object displaying name/value pairs for all attributes
      * @see Object#toString
      */

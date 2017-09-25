@@ -54,7 +54,7 @@
                     <f:selectItem itemLabel="Default" itemValue="default"/>
                 </af:selectOneChoice>
                 <af:inputText id="maxTableRows" value="#{${preferencesBeanName}.maxTableRows}" label="#{messages['preferences.max.table.rows']}:" columns="1">
-                    <f:validateLongRange minimum="5" maximum="100"/>  
+                    <f:validateLongRange minimum="5" maximum="100"/>
                 </af:inputText>
                 <f:facet name="footer">
                     <af:panelButtonBar>

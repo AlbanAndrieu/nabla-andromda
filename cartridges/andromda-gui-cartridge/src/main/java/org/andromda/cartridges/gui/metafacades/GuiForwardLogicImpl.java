@@ -53,7 +53,7 @@ import java.util.Map;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.gui.metafacades.GuiForward.
- * 
+ *
  * @see org.andromda.cartridges.gui.metafacades.GuiForward
  */
 public class GuiForwardLogicImpl extends GuiForwardLogic
@@ -224,7 +224,7 @@ public class GuiForwardLogicImpl extends GuiForwardLogic
 
     /**
      * Collects specific messages in a map.
-     * 
+     *
      * @param taggedValue the tagged value from which to read the message
      * @return maps message keys to message values, but only those that match the arguments
      * will have been recorded

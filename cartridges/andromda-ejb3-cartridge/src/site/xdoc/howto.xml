@@ -8,9 +8,9 @@
     <body>
         <section name="Modeling example">
             <p class="highlight">
-                If you want to know more about how to model your application using the 
-                <a href="http://java.sun.com/products/ejb/docs.html">EJB 3.0</a> cartridge with AndroMDA, 
-                you have arrived at the right place; step-by-step we will work through an example showing the 
+                If you want to know more about how to model your application using the
+                <a href="http://java.sun.com/products/ejb/docs.html">EJB 3.0</a> cartridge with AndroMDA,
+                you have arrived at the right place; step-by-step we will work through an example showing the
                 cartridge's features. The cartridge is part of the andromda base, and is optionally installed
                 during the andromdapp project generation.
                 Read on for more information.
@@ -19,7 +19,7 @@
                 The AndroMDA EJB3 cartridge focuses on the persistence and business tier only. The
                 presentation tier can be handled in AndroMDA as well, but for that we recommend using either the
                 <a href="http://www.andromda.org/docs/andromda-bpm4struts-cartridge/index.html">Bpm4Struts</a>
-                or the <a href="http://www.andromda.org/docs/andromda-jsf-cartridge/index.html">JSF</a> 
+                or the <a href="http://www.andromda.org/docs/andromda-jsf-cartridge/index.html">JSF</a>
                 cartridge.
             </p>
             <p>

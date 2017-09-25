@@ -86,7 +86,7 @@ be tracked.
             <transaction-type>Container</transaction-type>
         </session>
         -->
-        
+
         <!-- session dao TimeAllocationDao seam false -->
         <!--
         <session>
@@ -103,7 +103,7 @@ submitter worked on the associated task.
             <transaction-type>Container</transaction-type>
         </session>
         -->
-        
+
         <!-- session dao TimecardDao seam false -->
         <!--
         <session>
@@ -119,7 +119,7 @@ submitter worked on the associated task.
             <transaction-type>Container</transaction-type>
         </session>
         -->
-        
+
         <!-- session dao UserRoleDao seam true -->
         <!-- session dao MovieDao seam true -->
     <!--

@@ -57,7 +57,7 @@ public class ExtensionsResponseWrapper extends HttpServletResponseWrapper implem
 
     /**
      * This method is used by Tomcat.
-     * 
+     *
      * @throws IOException
      */
     public PrintWriter getWriter()
@@ -72,7 +72,7 @@ public class ExtensionsResponseWrapper extends HttpServletResponseWrapper implem
 
     /**
      * This method is used by Jetty.
-     * 
+     *
      * @throws IOException
      */
     public ServletOutputStream getOutputStream() throws IOException

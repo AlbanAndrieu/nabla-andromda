@@ -16,10 +16,10 @@
 <faces-config version="2.1"
               xmlns="http://java.sun.com/xml/ns/javaee"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">    
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">
 
 <!-- =========== FULL CONFIGURATION FILE ================================== -->
-    
+
     <application>
 
 #if (!$useSeam)
@@ -53,7 +53,7 @@
             <supported-locale>it</supported-locale>
             <supported-locale>no</supported-locale>
             <supported-locale>tr</supported-locale>
-        </locale-config>        
+        </locale-config>
 #elseif ($myfaces)
         <default-render-kit-id>org.apache.myfaces.trinidad.core</default-render-kit-id>
 #end
@@ -83,7 +83,7 @@
 ##    </lifecycle>
     <lifecycle>
         <phase-listener>${managedBeansPackage}.UseCasePhaseListener</phase-listener>
-    </lifecycle>    
+    </lifecycle>
 #end
 #end
 #if ($icefaces)
@@ -149,7 +149,7 @@
     </managed-bean>
 #end
     -->
-#if ($useAutocompleteLookup)       
+#if ($useAutocompleteLookup)
 
     <managed-bean>
         <managed-bean-name>autocompleteHelper</managed-bean-name>
@@ -404,7 +404,7 @@
 #end
         </navigation-case>
     </navigation-rule>
-#if ($enableOds)    
+#if ($enableOds)
     <navigation-rule>
         <navigation-case>
             <from-outcome>${manageable.odsExportFullPath}</from-outcome>
@@ -412,7 +412,7 @@
             <redirect/>
         </navigation-case>
     </navigation-rule>
-#end    
+#end
     -->
 #end
 #if ($enablePreferences)

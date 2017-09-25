@@ -32,11 +32,11 @@ Modify as necessary for JPA unit testing
 
         <!-- use jta-data-source only when transaction-type is JTA -->
         <jta-data-source>${dataSource}</jta-data-source>
-#end        
+#end
 #if ($entityManagerTransactionType.equalsIgnoreCase("RESOURCE_LOCAL"))
         <!-- use non-jta-data-source only when transaction-type is RESOURCE_LOCAL -->
         <non-jta-data-source>${dataSource}Unmanaged</non-jta-data-source>
-#end           
+#end
 #end
 #if ($stringUtils.isNotBlank($jarFiles))
 #**##set ($jars = $stringUtils.split($jarFiles,','))
@@ -128,12 +128,12 @@ Modify as necessary for JPA unit testing
             https://docs.jboss.org/author/display/AS7/Developer+Guide#DeveloperGuide-PackagingtheHibernate3.5orgreater3.xJPApersistenceproviderwithyourapplication
       	    <property name="jboss.as.jpa.providerModule" value="hibernate3-bundled" /> -->
             <property name="jboss.as.jpa.providerModule" value="${hibernateJpaProviderModule}" />
-#end            
+#end
 
             <property name="hibernate.transaction.manager_lookup_class" value="${pu.hibernate.transaction.manager_lookup_class}"/>
 #if($hibernateUtils.seamVersion22)
             <property name="jboss.entity.manager.factory.jndi.name" value="${pu.jboss.entity.manager.factory.jndi.name}"/>
-#end            
+#end
             <property name="hibernate.archive.autodetection" value="class, hbm" />
 
 #if ($hibernateEnableCache.equalsIgnoreCase("true"))

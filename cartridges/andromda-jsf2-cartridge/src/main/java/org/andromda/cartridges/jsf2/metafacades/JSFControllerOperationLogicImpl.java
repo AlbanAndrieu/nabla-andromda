@@ -7,7 +7,7 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFControllerOperation.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFControllerOperation
  */
 public class JSFControllerOperationLogicImpl extends JSFControllerOperationLogic
@@ -94,7 +94,7 @@ public class JSFControllerOperationLogicImpl extends JSFControllerOperationLogic
 
     /**
      * Constructs the signature that takes the form for this operation.
-     * 
+     *
      * @param isAbstract whether or not the signature is abstract.
      * @return the appropriate signature.
      */

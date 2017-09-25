@@ -5,7 +5,7 @@
     	<!-- Comma separated list of cartridges to be processed by namespace name, such as java,webservice. Empty = true = process all>
     	<property name="cartridgeFilter">${filter}</property -->
     	<!-- Debug andromda processing using example log4j.xml file> -->
-    	<property name="loggingConfigurationUri">file:${basedir}/../log4j.xml</property>       
+    	<property name="loggingConfigurationUri">file:${basedir}/../log4j.xml</property>
     </properties>
     <!--
     <repositories>
@@ -18,7 +18,7 @@
                         <location patterns="**/*.xml">jar:file:${settings.localRepository}/org/omg/profiles/uml14/UML_Standard_Profile/1.0/UML_Standard_Profile-1.0.jar!/</location>
                     </moduleSearchLocations>
                 </model>
-            </models>            
+            </models>
         </repository>
     </repositories>
     -->

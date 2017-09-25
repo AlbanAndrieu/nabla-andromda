@@ -16,7 +16,7 @@
                        http://jboss.org/schema/seam/mail http://jboss.org/schema/seam/mail-2.3.xsd
                        http://jboss.org/schema/seam/drools http://jboss.org/schema/seam/drools-2.3.xsd
                        http://jboss.org/schema/seam/components http://jboss.org/schema/seam/components-2.3.xsd">
-  
+
 	<!--  see https://access.redhat.com/site/documentation/en-US/Red_Hat_JBoss_Web_Framework_Kit/2.1/html/Seam_Reference_Guide/configuration.html -->
 	<!-- jndi-pattern="java:app${application.jndi.pattern.test}" -->
 	<core:init debug="true" jndi-pattern="java:app/core/#{ejbName}" security-enabled="true" transaction-management-enabled="true" distributable="false"/>
@@ -35,47 +35,47 @@
 
 <!--
 	<persistence:managed-persistence-context
-		name="entityManager" 
+		name="entityManager"
 		auto-create="true"
-		scope="conversation" 
-		entity-manager-factory="#{entityManagerFactory}" 
+		scope="conversation"
+		entity-manager-factory="#{entityManagerFactory}"
 		persistence-unit-jndi-name="java:/myEntityManagerFactory" />
--->		
+-->
 
 <!--
-  	<transaction:entity-transaction 
-  	             entity-manager="#{entityManager}" 
+  	<transaction:entity-transaction
+  	             entity-manager="#{entityManager}"
   	             auto-create="true"/>
-  	
-  	<persistence:managed-persistence-context 
-  	             name="entityManager" 
+
+  	<persistence:managed-persistence-context
+  	             name="entityManager"
   	             auto-create="true"
   	             entity-manager-factory="#{entityManagerFactory}"
   	             persistence-unit-jndi-name="${pu.jboss.entity.manager.factory.jndi.name}"/>
-  	               	
-  	<persistence:entity-manager-factory 
+
+  	<persistence:entity-manager-factory
   	             name="entityManagerFactory"
   	             class="no.knowit.seam.openejb.mock.SeamManagedEntityManagerFactoryBean"
   	             installed="${loadPersistenceUnits}"
 		     startup="true"/>
--->		     
-  			     
-	<!-- TODO: How do we define OpenEjb entity manager factory here??? 
+-->
+
+	<!-- TODO: How do we define OpenEjb entity manager factory here???
 	<persistence:entity-manager-factory
 		name="entityManagerFactory"
 		class="no.knowit.seam.openejb.mock.SeamManagedEntityManagerFactoryBean"
 		persistence-unit-name="${pu.name}"
 		installed="true"
-		startup="true" /-->    
-		
+		startup="true" /-->
+
 		<!--
-  	<persistence:entity-manager-factory 
+  	<persistence:entity-manager-factory
   	             name="entityManagerFactory"
   	             class="org.jboss.seam.persistence.EntityManagerFactory"
-  	             auto-create="true" 
-  	             persistence-unit-name="timetracker-ejb3"/>           
-               
-  	 <factory name="hibernateSession" method="#{entityManager.getDelegate( )}" scope="STATELESS" auto-create="true" /> 
+  	             auto-create="true"
+  	             persistence-unit-name="timetracker-ejb3"/>
+
+  	 <factory name="hibernateSession" method="#{entityManager.getDelegate( )}" scope="STATELESS" auto-create="true" />
 
 	-->
 	<!--
@@ -89,9 +89,9 @@
    	<event type="org.jboss.seam.security.loginSuccessful">
    	   <action execute="#{redirect.returnToCapturedView}"/>
    	</event>
-   	
+
    	<mail:mail-session host="localhost" port="25"/>
-   	
+
    	<!-- For use with jBPM pageflow or process management -->
    	<!--
    	<bpm:jbpm>
@@ -99,18 +99,18 @@
    	   <bpm:pageflow-definitions></bpm:pageflow-definitions>
    	</bpm:jbpm>
    	-->
-   
+
    	<drools:rule-base name="securityRules">
    	  <drools:rule-files>
    	    <value>/META-INF/security.drl</value>
    	  </drools:rule-files>
    	</drools:rule-base>
-	
+
   	<security:identity authenticate-method="#{authenticator.authenticate}" remember-me="true" />
 
 	<!--
         <component class="org.andromda.timetracker.action.AuthenticatorAction" jndi-name="AuthenticatorAction/Local" />
         <component class="org.andromda.timetracker.action.ChangePasswordAction" jndi-name="ChangePasswordAction/Local" />
         -->
-        	
+
 </components>

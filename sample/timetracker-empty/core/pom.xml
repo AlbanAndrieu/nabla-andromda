@@ -2,18 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-         
+
     <parent>
         <groupId>org.andromda.timetracker</groupId>
         <artifactId>timetracker-gui</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
-    <modelVersion>4.0.0</modelVersion>    
+
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>core</artifactId>
     <packaging>jar</packaging>
     <name>TimeTracker Core Business Tier</name>
-    <dependencies>  
+    <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>common</artifactId>
@@ -75,7 +75,7 @@
 	<dependency>
 	    <groupId>org.hibernate</groupId>
 	    <artifactId>hibernate-search</artifactId>
-	</dependency>        
+	</dependency>
 	-->
         <!-- Do not use 3.3.0.ga See https://jira.springsource.org/browse/SPR-7701, http://forum.springsource.org/showthread.php?89693-AnnotationSessionFactoryBean-needs-MetadataProvider -->
         <!-- validator-legacy forces an earlier version of annotations. Change scope if < JBoss6>
@@ -256,11 +256,11 @@
                   <goals>
                     <goal>hbm2doc</goal>
 		    <goal>hbm2cfgxml</goal>
-		    <!--<goal>hbm2java</goal>-->		    
+		    <!--<goal>hbm2java</goal>-->
 		    <!--<goal>hbm2hbmxml</goal>-->
 		    <!--<goal>hbmtemplate</goal>-->
                   </goals>
-                </execution>                
+                </execution>
               </executions>
               <configuration>
                 <components>
@@ -288,7 +288,7 @@
                   <jdk5>true</jdk5>
                   <persistenceunit>${project.parent.artifactId}</persistenceunit>
                   <configurationfile>src/test/resources/hibernate.cfg.xml</configurationfile>
-                  
+
                   <outputfilename>../../../../app/src/main/sql/schema.sql</outputfilename>
                   <!--
                   <revengfile>${target.dir}/classes/hibernate.reveng.xml</revengfile>
@@ -462,15 +462,15 @@
                     <exclude>**/*.java</exclude>
                 </excludes>
             </resource>
-        </resources>      
+        </resources>
     </build>
     <properties>
-        <!-- Need a running db instance. Changed to automatic maven configured H2 DB --> 
-        <!-- test not working with mvn site --> 
+        <!-- Need a running db instance. Changed to automatic maven configured H2 DB -->
+        <!-- test not working with mvn site -->
         <!--
-        <maven.test.failure.ignore>true</maven.test.failure.ignore>        
+        <maven.test.failure.ignore>true</maven.test.failure.ignore>
         <testFailureIgnore>true</testFailureIgnore>
-        --> 
+        -->
     </properties>
-    
+
 </project>

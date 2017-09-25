@@ -109,14 +109,14 @@
         </section>
         <section name="Criteria Queries">
             <p>
-                In some circumstance it is convenient to have the option of using Hibernate criteria 
+                In some circumstance it is convenient to have the option of using Hibernate criteria
                 queries.  This is particularly useful for search queries which are really on-the-fly
                 queries.  If you are using <b>JBoss AS</b>, then most likely you are using Hibernate as
                 the persistence engine (unless you have changed this default behavior).  Criteria queries
                 are a Hibernate feature, so this is a strict requirement.
             </p>
             <p>
-                Before you can use criteria queries with the EJB3 cartridge, you must enable the 
+                Before you can use criteria queries with the EJB3 cartridge, you must enable the
                 <code>persistenceProviderExtensions</code> namespace property in the <code>ejb3</code>
                 namespace section of your <i>andromda.xml</i> application descriptor, like so:
 <source><![CDATA[
@@ -157,7 +157,7 @@
                 Specifically, this will inject the <code>org.hibernate.Session</code> into the auto-generated
                 DAO base classes of your project like so:
 <source><![CDATA[
-    @javax.persistence.PersistenceContext(unitName = "timetracker")    
+    @javax.persistence.PersistenceContext(unitName = "timetracker")
     protected org.hibernate.Session hibernateSession;
 ]]></source>
             </p>
@@ -167,7 +167,7 @@
                 create the criteria and perform the query.
             </p>
             <p>
-                To further understand this usage, you can take are look at the timetracker-ejb3 
+                To further understand this usage, you can take are look at the timetracker-ejb3
                 <a href="samples.html#Timetracker_EJB3">Timetracker EJB3 - JSF sample</a>.  The following
                 segment of code is taken from this sample project showing you how similar it can be to the
                 standard usage under the Hibernate/Spring cartridges; only difference being that the
@@ -179,37 +179,37 @@
         Criteria timecardCriteria = hibernateSession.createCriteria(Timecard.class);
         timecardCriteria.setFetchMode("submitter", FetchMode.JOIN);
         timecardCriteria.setFetchMode("approver", FetchMode.JOIN);
-        
+
         // Add sumitter criteria
         if (criteria.getSubmitterId() != null)
         {
             timecardCriteria.createCriteria("submitter").add(Restrictions.idEq(criteria.getSubmitterId()));
         }
-        
+
         // Add approver criteria
         if (criteria.getApproverId() != null)
         {
             timecardCriteria.createCriteria("approver").add(Restrictions.idEq(criteria.getApproverId()));
         }
-        
+
         // Add status criteria
         if (criteria.getStatus() != null)
         {
             timecardCriteria.add(Restrictions.eq("status", criteria.getStatus()));
         }
-        
+
         // Add startDateMin criteria
         if (criteria.getStartDateMin() != null)
         {
             timecardCriteria.add(Restrictions.ge("startDate", criteria.getStartDateMin()));
         }
-        
+
         // Add startDateMax criteria
         if (criteria.getStartDateMax() != null)
         {
             timecardCriteria.add(Restrictions.le("startDate", criteria.getStartDateMax()));
         }
-        
+
         List timecards = timecardCriteria.list();
         if (logger.isDebugEnabled())
         {

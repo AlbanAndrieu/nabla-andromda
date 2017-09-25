@@ -8,12 +8,12 @@
     <body>
         <section name="Caching and Clustering">
             <p>
-                This howto will guide you to use the EJB3 cartridge caching and clustering facilities, 
+                This howto will guide you to use the EJB3 cartridge caching and clustering facilities,
                 based on the JBoss distributed/clustered caching environment.
             </p>
             <p>
                 <i>
-                    JBoss Cache supports a high performance, in-memory, transactional, and replicated cache for 
+                    JBoss Cache supports a high performance, in-memory, transactional, and replicated cache for
                     the cluster.
                 </i>
             </p>
@@ -28,7 +28,7 @@
                         <li>Reduces round trips to the database server.</li>
                         <li>
                             <p>
-                                Access by one node in the cluster makes the POJO available to all nodes via the 
+                                Access by one node in the cluster makes the POJO available to all nodes via the
                                 distributed entity cache.
                             </p>
                         </li>
@@ -82,7 +82,7 @@
                 <li class="gen"><a class="changed" href="howto/org/andromda/test/howto17/a/andromda.xml"><code>andromda.xml</code></a></li>
             </ul>
             <p class="highlight">
-                Remember: You must set the 
+                Remember: You must set the
                 <a href="namespace.html#persistenceProviderExtensions">persistenceProviderExtensions</a>
                 namespace property such that Hibernate cache specific annotations are generated.
             </p>
@@ -160,7 +160,7 @@
                     The <code>useDefaultCacheRegion</code> property allows you to specify whether you want all
                     entities to use the default cache region specified in <code>ejb3-entity-cache-service.xml</code>
                     and the cache region set on corresponding finder queries.
-                    By default, this is set to <code>false</code>.  If you set it to <code>true</code>, 
+                    By default, this is set to <code>false</code>.  If you set it to <code>true</code>,
                     the user specified cache regions for entities will not be defined.
                 </p>
                 <p>
@@ -202,8 +202,8 @@
             <a name="Association_Cache"/>
             <subsection name="Association Cache">
                 <p>
-                    To enable entity association relationship caching, you enable the 
-                    <code>hibernateEnableAssociationsCache</code>  ejb3 namespace property in your 
+                    To enable entity association relationship caching, you enable the
+                    <code>hibernateEnableAssociationsCache</code>  ejb3 namespace property in your
                     <code>andromda.xml</code> like so:
 <source><![CDATA[
         <namespace name="ejb3">
@@ -218,7 +218,7 @@
                     You must have <code>hibernateEnableCache</code> enabled.
                 </p>
                 <p>
-                    If you enable the default association cache strategy in your <code>andromda.xml</code> descriptor, 
+                    If you enable the default association cache strategy in your <code>andromda.xml</code> descriptor,
                     (by enabling <code>hibernateAssociationCache</code>), then all collection association caching
                     will be enabled by default.  To override this default value, you can model the
                     <code>andromda_persistence_association_cache</code> tagged value on individual target association
@@ -250,17 +250,17 @@
                     for all queries, including your generic query, the <code>findAll</code> query.
                 </p>
                 <p>
-                    In many circumstance, you shouldn't enable query cache for all queries (using the 
+                    In many circumstance, you shouldn't enable query cache for all queries (using the
                     <code>hibernateUseQueryCache</code> property) but enable caching
-                    for required queries only.  You can enable caching for individual finder method using 
+                    for required queries only.  You can enable caching for individual finder method using
                     the <code>andromda_ejb_query_useCache</code> tagged value which is modeled on the
                     finder method.
                 </p>
                 <p>
                     The <code>useDefaultCacheRegion</code> property allows you to specify whether you want all
                     queries to use the default cache region specified in <code>ejb3-entity-cache-service.xml</code>.
-                    By default, this is set to <code>false</code>.  If you set it to <code>true</code>, 
-                    the user specified cache regions will not be defined and the hint on queries to 
+                    By default, this is set to <code>false</code>.  If you set it to <code>true</code>,
+                    the user specified cache regions will not be defined and the hint on queries to
                     set the cache region will not be assigned.
                 </p>
                 <p>

@@ -175,9 +175,9 @@ $xmlIndent        return transformEntity(transform, ($entity.fullyQualifiedName)
                     }
                 },
                 true);
-        
+
         return this.load(transform, ($identifier.type.fullyQualifiedName)newID);
-        
+
     }
 
 #end
@@ -518,7 +518,7 @@ $xmlIndent        return transformEntity(transform, ($entity.fullyQualifiedName)
      */
 #if ($enableTemplating)
     @SuppressWarnings("unchecked")
-#end	 
+#end
     $finder.visibility $returnType ${finder.name}(final int transform, final java.lang.String queryString#if(!$finder.arguments.empty), ${finder.getTypedArgumentList('final')}#end)
 #if ($finder.exceptionsPresent)
         throws $finder.exceptionList
@@ -907,7 +907,7 @@ $xmlIndent        return transformEntity(transform, ($entity.fullyQualifiedName)
         this.${valueObjectRef.transformationMethodName}(entity, target);
         return target;
     }
-    
+
     /**
      * @see ${entity.fullyQualifiedDaoName}#${valueObjectRef.transformationToEntityMethodName}($valueObjectRef.targetElement.fullyQualifiedName, $entity.fullyQualifiedEntityName)
      */
@@ -930,12 +930,12 @@ $xmlIndent        return transformEntity(transform, ($entity.fullyQualifiedName)
         }
 #*            *##else
         // No conversion for target.${entityProperty.name} (can't convert source.${property.getterName}():${property.type.fullyQualifiedName} to $entityProperty.type.fullyQualifiedName)
-#*            *##end        
+#*            *##end
 #*        *##end
 #*    *##end
 #**##end
 #end
     }
-    
+
 #end
 }

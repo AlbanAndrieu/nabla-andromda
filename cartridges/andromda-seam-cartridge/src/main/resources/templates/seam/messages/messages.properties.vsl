@@ -2,7 +2,7 @@
 #set($applicationUseCase=$applicationUseCases.iterator().next())
 #end
 
-application.name=$applicationName 
+application.name=$applicationName
 
 required.fields.asterisk=Fields marked with an asterisk are required
 online.help.href=Help
@@ -132,7 +132,7 @@ logout.action=logout
 
 #
 # Messages for preferences
-# 
+#
 menu.preferences=Preferences
 preferences.menu.theme=Menu Theme
 preferences.title=Preferences

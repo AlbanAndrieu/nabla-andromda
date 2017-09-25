@@ -54,7 +54,7 @@ public class DatabaseUtils
 
     /**
      * Returns the table's columns that are not present in the collection.
-     * 
+     *
      * @param table cannot be null
      * @param columns if null this method will simply return all columns found on this table
      */
@@ -106,7 +106,7 @@ public class DatabaseUtils
      * endless loop is detected. If that happens it means you should consider allowing a nullable foreign key column
      * in one or more of the remaining tables.
      * </p>
-     * 
+     *
      * @param tables cannot be null
      */
     public static Map resolveOrderedTableMap(Collection tables)
@@ -172,7 +172,7 @@ public class DatabaseUtils
      * <p>
      * When this method inserts a table into the map it assigns null to it.
      * </p>
-     * 
+     *
      * @param tablesToProcess cannot be null
      * @param processedTableMap cannot be null
      * @return true when a table has been moved into the map
@@ -218,7 +218,7 @@ public class DatabaseUtils
     /**
      * Checks whether the table can safely be inserted into the map, this means all its foreign key columns
      * import tables that are already present in the map.
-     * 
+     *
      * @param table cannot be null
      * @param processedTableMap cannot be null
      * @return true if this table is insertable, false otherwise
@@ -287,7 +287,7 @@ public class DatabaseUtils
      * When this method inserts a table into the map it assigns to it all columns that cannot be inserted in one shot
      * and need to be updated after all tables have been populated (this is optional though).
      * </p>
-     * 
+     *
      * @return true if a table has been been resolved, false otherwise
      * @see #collectInsertableTables
      */
@@ -337,7 +337,7 @@ public class DatabaseUtils
      * This method returns those foreign key columns that are nullable and import a table that is not present
      * in the map.
      * </p>
-     * 
+     *
      * @param table cannot be null
      * @param processedTableMap cannot be null
      * @return nullable foreign key columns that import tables not in the map
@@ -408,7 +408,7 @@ public class DatabaseUtils
 
     /**
      * Returns a logical value which indicate if the Object received is an instance of a Table.
-     * 
+     *
      * @param instance the instance to analize
      * @return a <boolean> that especifies if the object received is an instance of a Table.
      */

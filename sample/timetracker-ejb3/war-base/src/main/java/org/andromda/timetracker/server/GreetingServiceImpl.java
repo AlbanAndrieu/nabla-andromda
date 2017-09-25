@@ -33,7 +33,7 @@ public class GreetingServiceImpl implements GreetingService
     /**
      * Escape an html string. Escaping data received from the client helps to
      * prevent cross-site script vulnerabilities.
-     * 
+     *
      * @param html the html string to escape
      * @return the escaped string
      */

@@ -279,7 +279,7 @@
                     <i>Support for the table per class inheritance mapping strategy is optional in this release.</i>
                 </p>
                 <p>
-                    <i>Support for the combination of inheritance strategies within a single entity inheritance 
+                    <i>Support for the combination of inheritance strategies within a single entity inheritance
                     hierarchy is not required by this specification.</i>
                 </p>
 

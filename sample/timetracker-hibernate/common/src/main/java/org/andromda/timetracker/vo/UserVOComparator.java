@@ -11,7 +11,7 @@ public class UserVOComparator implements Comparator<UserVO>
      * Compares two UserVO objects based on their usernames. If the usernames are
      * not available (or null), it compares on id. <p>
      * The comparison is null safe and places null objects less than non-null objects.<p>
-     * 
+     *
      * @param o1
      * @param o2
      * @return result

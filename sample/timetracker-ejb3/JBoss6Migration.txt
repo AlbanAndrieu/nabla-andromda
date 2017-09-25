@@ -48,13 +48,13 @@ t].[/timetracker].[jsp]] Servlet.service() for servlet jsp threw exception: java
 .lang.NullPointerException
         at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1598) [:6.0.0.Final]
  Unable to compile class for JSP
- 
+
 11. 23:33:14,085 ERROR [AbstractKernelController] Error installing to PreInstall: name=PersistenceUnitAnnotationPlugin state=Real: java.lang.NoClassDefFoundError: javax/persistence/PersistenceUnit
  Removing jta.jar from ear?
- 
+
 12.  Caused by: java.lang.NoClassDefFoundError: net/sf/cglib/proxy/CallbackFilter
  Add cglib:cglib:2.2 to runtime dependency classpath for core.  Still very difficult for app to find the jar in classpath - add to common\lib.
- 
+
  Had to add cglib to jboss\common\lib, not recognized when part of ear or war
  Had to add asm-3.3.jar to JBoss lib\endorsed
  Delete antlr*.jar from ear file
@@ -64,7 +64,7 @@ file at file:/C:/Programs/JBoss/6/server/default/data/jnp-service.url: java.io.I
  server\default\data\jnp-service.url: "You do not have permission to view or edit this object's settings"
  See http://www.brianmokeefe.com/node/9
  Use shutdown.bat to stop app instead of stopping the run.bat process? Had to kill explorer.exe file handle.
- 
+
 14. 00:05:08,347 ERROR [org.apache.catalina.core.ContainerBase.[jboss.web].[localhost].[/timetracker].[jsp]] Servlet.service() for servlet jsp threw exception: java.lang.NullPointerException
         at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1598) [:6.0.0
 .Final]
@@ -82,7 +82,7 @@ Users.password has a unique key
 
 mysql> insert into USER_ROLE (ID, ROLE, USER_FK) values (3, 'StandardUser',  2);
 ERROR 1062 (23000): Duplicate entry 'StandardUser' for key 'ROLE'
-USER_ROLE has a unique key on ROLE: 
+USER_ROLE has a unique key on ROLE:
 UML2 migration makes all Class attributes unique! UML2 model version fixed. Need to regenerate hibernate annotations also.
 
 16. org.hibernate.hql.ast.QuerySyntaxException: User is not mapped [from User user left join fetch user.roles where user.username = :username]
@@ -192,8 +192,8 @@ Message: Unexpected element Unexpected element '{http://java.sun.com/xml/ns/j2ee
             <description><![CDATA[Create method security constraint]]></description>
 This is schema valid so I don't understand why it doesn't like  description.
 
-15:57:23,523 ERROR [org.jboss.as.deployment] (DeploymentScanner-threads - 1) {"Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-2" => 
-{"Services with missing/unavailable dependencies" => ["jboss.deployment.unit.\"timetracker-3.4.2-SNAPSHOT.ear\".PARSE 
+15:57:23,523 ERROR [org.jboss.as.deployment] (DeploymentScanner-threads - 1) {"Composite operation failed and was rolled back. Steps that failed:" => {"Operation step-2" =>
+{"Services with missing/unavailable dependencies" => ["jboss.deployment.unit.\"timetracker-3.4.2-SNAPSHOT.ear\".PARSE
 missing [ jboss.deployment.subunit.\"timetracker-3.4.2-SNAPSHOT.ear\".\"lib/timetracker-common-3.4.2-SNAPSHOT.jar\".STRUCTURE ]"]}}}
 Modify application.xml to remove the jar module reference to common under ear/lib directory. Should be valid - AS7 BUG. AS7 does not recognize core ejb.jar file under lib directory even when specified in application.xml.
 
@@ -217,7 +217,7 @@ Caused by: org.jboss.xb.binding.JBossXBException: Failed to parse source: vfs://
 Caused by: org.jboss.xb.binding.JBossXBRuntimeException: Failed to parse schema for nsURI=http://java.sun.com/xml/ns/javaee, localName=taglib, schemaLocation=null
 Caused by: org.jboss.xb.binding.JBossXBRuntimeException: -1:-1 31:3 The declaration for the entity "HTML.Version" must end with '>'.
 SEE https://issues.jboss.org/browse/JBAS-8800 AND http://community.jboss.org/thread/164040
-Add the following to all metadata-deployer-jboss-beans.xml files in AS6, near the bottom: 
+Add the following to all metadata-deployer-jboss-beans.xml files in AS6, near the bottom:
       <!-- schema classes by QName's -->
       <property name="bindingClassesByElementNames">
          <map keyClass="javax.xml.namespace.QName" valueClass="java.lang.String">
@@ -240,7 +240,7 @@ Add the following to all metadata-deployer-jboss-beans.xml files in AS6, near th
    </bean>
 
 ON SEARCH TIMECARDS:
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: 
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException:
 java.lang.NoSuchMethodException: org.hibernate.validator.ClassValidator.<init>(java.lang.Class, java.util.ResourceBundle, org.hibernate.validator.MessageInterpolator, java.util.Map, org.hibernate.annotations.common.reflection.ReflectionManager)
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 SEE: http://jaitechwriteups.blogspot.com/2008/08/how-to-upgrade-hibernate-in-jboss.html
@@ -338,7 +338,7 @@ Moving core under ear/lib, deleting module reference from application.xml fixed 
 
 
 FROM Hibernate metamodel code generation (see )
-      <!-- Annotation processor to generate the JPA 2.0 metamodel classes 
+      <!-- Annotation processor to generate the JPA 2.0 metamodel classes
          for typesafe criteria queries -->
       <dependency>
          <groupId>org.hibernate</groupId>
@@ -351,7 +351,7 @@ JBoss 6.1 Migration:
 - Uses JSF2 by default, must be switched back to JSF12
 
 JBoss7 Migration:
-1. Need to turn off hibernate3 and JSF2 in 
+1. Need to turn off hibernate3 and JSF2 in
 Add hibernate3 persistence provider as described in http://planet.jboss.org/post/using_a_different_persistence_provider_with_as_7_0_1
 Have to add hibernate3 module because hibernate4 scanner can't be turned off. Change to hibernate3 scanner by modifying persistence.xml:
 

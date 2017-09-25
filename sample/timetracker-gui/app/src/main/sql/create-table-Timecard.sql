@@ -1,5 +1,5 @@
 /* --------------- Timecard table definition --------------------- */
-CREATE TABLE TIMECARD 
+CREATE TABLE TIMECARD
 (
     ID BIGINT NOT NULL,
     COMMENTS VARCHAR(256) NOT NULL,

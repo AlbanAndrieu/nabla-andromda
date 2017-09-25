@@ -26,9 +26,9 @@
             </documentation></div><ul><li><a href="#clientValidation" title="Optional, defaults to 'true'">clientValidation</a></li><li><a href="#defaultRole" title="Optional, no default value available">defaultRole</a></li><li><a href="#loginConfigAuthMethod" title="Optional, defaults to 'FORM'">loginConfigAuthMethod</a></li><li><a href="#securityRealm" title="Optional, no default value available">securityRealm</a></li><li><a href="#validationExtension" title="Optional, defaults to 'annotations'">validationExtension</a></li></ul></div><div class="namespacePropertyGroup"><a name="Views" class="namespacePropertyGroup">Views</a><div class="namespacePropertyGroupDocumentation"><documentation>
                 Properties that configure view information.
             </documentation></div><ul><li><a href="#defaultDateFormat" title="Optional, defaults to 'MM/dd/yyyy'">defaultDateFormat</a></li><li><a href="#defaultInputColumnCount" title="Optional, no default value available">defaultInputColumnCount</a></li><li><a href="#defaultInputRowCount" title="Optional, no default value available">defaultInputRowCount</a></li><li><a href="#defaultMultiSelectSize" title="Optional, defaults to '3'">defaultMultiSelectSize</a></li><li><a href="#defaultTableExportTypes" title="Optional, defaults to 'xml csv excel pdf'">defaultTableExportTypes</a></li><li><a href="#defaultTimeFormat" title="Optional, defaults to 'HH:mm'">defaultTimeFormat</a></li><li><a href="#enableFaceletsDevelopmentSupport" title="Optional, defaults to 'false'">enableFaceletsDevelopmentSupport</a></li><li><a href="#enableMyFacesDevelopmentSupport" title="Optional, defaults to 'false'">enableMyFacesDevelopmentSupport</a></li><li><a href="#loginFileName" title="Optional, defaults to 'login'">loginFileName</a></li><li><a href="#logoutFileName" title="Optional, defaults to 'logout'">logoutFileName</a></li><li><a href="#strictDateTimeFormat" title="Optional, defaults to 'false'">strictDateTimeFormat</a></li><li><a href="#welcomeFileName" title="Optional, defaults to 'index.jsp'">welcomeFileName</a></li></ul></div><p>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="configuration" class="namespacePropertyTitle">configuration</a><a href="#Outlets" title="Go to Outlets namespace element group">(Back to Outlets)</a></td></tr><tr><td><div class="required">Required property</div></td><td>
                                 No default value available
                             </td></tr><tr><td colspan="2" class="documentation"><documentation>
@@ -85,9 +85,9 @@
                             </td></tr><tr><td colspan="2" class="documentation"><documentation>
                     The forms to which input is stored are output here.
                 </documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="facesConfig" class="namespacePropertyTitle">facesConfig</a><a href="#Configuration" title="Go to Configuration namespace element group">(Back to Configuration)</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 Default value: <code class="defaultValue">faces-config.xml</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     The name of the JSF configuration file (this file stores the JSF managed bean
@@ -131,9 +131,9 @@
                                 Default value: <code class="defaultValue">true</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     Uses 'redirect' instead of 'forward' to navigate between views.
                 </documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="enablePreferences" class="namespacePropertyTitle">enablePreferences</a><a href="#UI Layout" title="Go to UI Layout namespace element group">(Back to UI Layout)</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 Default value: <code class="defaultValue">true</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     Whether or not a preferences menu item should be included in the menu (this
@@ -159,9 +159,9 @@
                 </documentation></td></tr></table></div>
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="navigationStyle" class="namespacePropertyTitle">navigationStyle</a><a href="#UI Layout" title="Go to UI Layout namespace element group">(Back to UI Layout)</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 Default value: <code class="defaultValue">sidebar</code></td></tr><tr><td colspan="2" class="documentation"><documentation>Controls the way navigation items are displayed</documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="applicationName" class="namespacePropertyTitle">applicationName</a><a href="#Messages and i18n" title="Go to Messages and i18n namespace element group">(Back to Messages and i18n)</a></td></tr><tr><td><div class="required">Required property</div></td><td>
                                 No default value available
                             </td></tr><tr><td colspan="2" class="documentation"><documentation>
@@ -179,9 +179,9 @@
                     less evident to customize labels for certain fields (which is rarely the
                     case anyway).
                 </documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="welcomeFileName" class="namespacePropertyTitle">welcomeFileName</a><a href="#Views" title="Go to Views namespace element group">(Back to Views)</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 Default value: <code class="defaultValue">index.jsp</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     The path of the file that will be the welcome file (minus the extension).
@@ -251,9 +251,9 @@
                                 Default value: <code class="defaultValue">xml csv excel pdf</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     The types of files to which a table can be exported.
                 </documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="securityRealm" class="namespacePropertyTitle">securityRealm</a><a href="#Validation and Security" title="Go to Validation and Security namespace element group">(Back to Validation and Security)</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 No default value available
                             </td></tr><tr><td colspan="2" class="documentation"><documentation>
@@ -282,9 +282,9 @@
                                 Default value: <code class="defaultValue">true</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     Indicates whether or not validation should occur on the client side.
                 </documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="portletContainer" class="namespacePropertyTitle">portletContainer</a><a href="#Portlet Support" title="Go to Portlet Support namespace element group">(Back to Portlet Support)</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 No default value available
                             </td></tr><tr><td colspan="2" class="documentation"><documentation>
@@ -312,9 +312,9 @@
                         <li>trinidad</li>
                     </ul>
                 </documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="paginationResultClassName" class="namespacePropertyTitle">paginationResultClassName</a><a href="#Table Paging (DB paging)" title="Go to Table Paging (DB paging) namespace element group">(Back to Table Paging (DB paging))</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 No default value available
                             </td></tr><tr><td colspan="2" class="documentation"><documentation>
@@ -323,9 +323,9 @@
                     the name of your model's root package).  This must be defined in order for the PageableDataModel class to be generated (which is required
                     for DB backed paging support).
                 </documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="virtualHost" class="namespacePropertyTitle">virtualHost</a><a href="#Other" title="Go to Other namespace element group">(Back to Other)</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 No default value available
                             </td></tr><tr><td colspan="2" class="documentation"><documentation>
@@ -494,9 +494,9 @@
                                 Default value: <code class="defaultValue">false</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     Use autocomplete instead of select, to select related entities.
                 </documentation></td></tr></table></div>
-        
-        
-            
+
+
+
             <div class="namespaceProperty"><table class="bodyTable"><tr class="a"><td colspan="2" class="namespacePropertyTitle"><a name="crudValueObjectSuffix" class="namespacePropertyTitle">crudValueObjectSuffix</a><a href="#Manageable Entities" title="Go to Manageable Entities namespace element group">(Back to Manageable Entities)</a></td></tr><tr><td><div class="optional">Optional property</div></td><td>
                                 Default value: <code class="defaultValue">ValueObject</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     The suffix to append to the names of generated value objects used in CRUD (manageable entities).
@@ -505,6 +505,6 @@
                                 Default value: <code class="defaultValue">true</code></td></tr><tr><td colspan="2" class="documentation"><documentation>
                     Show a confirmation message after each CRUD operation.
                 </documentation></td></tr></table></div>
-        
+
     </p></section>
 </body></document>

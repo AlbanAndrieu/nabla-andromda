@@ -31,7 +31,7 @@ import org.apache.log4j.Logger;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFAction.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFAction
  */
 public class JSFActionLogicImpl extends JSFActionLogic
@@ -64,7 +64,7 @@ public class JSFActionLogicImpl extends JSFActionLogic
 
     /**
      * Constructs the form bean name, with our without prefixing the use case name.
-     * 
+     *
      * @param withUseCaseName whether or not to prefix the use case name.
      * @return the constructed form bean name.
      */
@@ -419,7 +419,7 @@ public class JSFActionLogicImpl extends JSFActionLogic
 
     /**
      * Overridden to provide the owning use case's package name.
-     * 
+     *
      * @see org.andromda.metafacades.uml.ModelElementFacade#getPackageName()
      */
     @Override
@@ -622,7 +622,7 @@ public class JSFActionLogicImpl extends JSFActionLogic
     // TODO remove after 3.4 release
     /**
      * Hack to keep the compatibility with Andromda 3.4-SNAPSHOT
-     * 
+     *
      * @return getSource() instanceof FrontEndView
      */
     @Override
@@ -763,7 +763,7 @@ public class JSFActionLogicImpl extends JSFActionLogic
 
     /**
      * Collects specific messages in a map.
-     * 
+     *
      * @param taggedValue the tagged value from which to read the message
      * @return maps message keys to message values, but only those that match the arguments
      * will have been recorded

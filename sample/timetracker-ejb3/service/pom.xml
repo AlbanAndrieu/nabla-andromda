@@ -8,8 +8,8 @@
         <artifactId>timetracker-ejb3</artifactId>
         <version>1.0.1-SNAPSHOT</version>
     </parent>
-    
-    <modelVersion>4.0.0</modelVersion>    
+
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>service</artifactId>
     <packaging>jar</packaging>
     <name>[${project.parent.artifactId} :: EJB3 Service Business Tier] - ${project.artifactId} : ${project.version}</name>
@@ -18,7 +18,7 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>database</artifactId>
             <version>${project.version}</version>
-        </dependency>        
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
@@ -53,18 +53,18 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
         </dependency>
-        
+
 		<dependency>
 			<groupId>antlr</groupId>
 			<artifactId>antlr</artifactId>
 			<version>${antlr.version}</version>
 		</dependency>
-		        
+
             <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
-            </dependency>           
-        <dependency>                     
+            </dependency>
+        <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
         </dependency>
@@ -97,9 +97,9 @@
             <artifactId>hibernate-commons-annotations</artifactId>
             <!--<version>${hibernate.commons.annotations.version}</version>-->
             <scope>provided</scope>
-        </dependency>            
+        </dependency>
         <!--
-        <dependency>             
+        <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache</artifactId>
             <type>pom</type>
@@ -109,7 +109,7 @@
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib-nodep</artifactId>
-        </dependency>        
+        </dependency>
         <!-- works with asm 1.5.1
         <dependency>
             <groupId>cglib</groupId>
@@ -121,7 +121,7 @@
 			<artifactId>asm</artifactId>
 			<version>2.2.3</version>
 		</dependency>
-			-->	
+			-->
         <dependency>
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
@@ -178,7 +178,7 @@
             <artifactId>slf4j-simple</artifactId>
             <scope>test</scope>
         </dependency>
-                
+
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -189,12 +189,12 @@
             <groupId>org.jboss.logging</groupId>
             <artifactId>jboss-logging</artifactId>
         </dependency>
-        	
+
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<scope>test</scope>
-		</dependency>        
+		</dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -204,7 +204,7 @@
             <artifactId>${jdbc.client.artifactId}</artifactId>
             <version>${jdbc.version}</version>
             <scope>test</scope>
-        </dependency>          
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -221,7 +221,7 @@
                                 <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                         </suiteXmlFiles>
                 </configuration>
-            </plugin>            
+            </plugin>
         </plugins>
         <!-- comment resources for mvn eclipse:eclipse -->
         <resources>
@@ -257,7 +257,7 @@
         <!--
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
         <testFailureIgnore>true</testFailureIgnore>
-        <maven.test.skip>true</maven.test.skip>        
+        <maven.test.skip>true</maven.test.skip>
         -->
     </properties>
 

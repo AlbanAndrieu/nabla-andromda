@@ -248,5 +248,3 @@ See : http://www.andromda.org/docs/andromda-documentation/getting-started-java/t
 
 
         -- The AndroMDA Team
-
-

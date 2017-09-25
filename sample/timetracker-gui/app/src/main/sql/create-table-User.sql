@@ -1,5 +1,5 @@
 /* --------------- User table definition --------------------- */
-CREATE TABLE USERS 
+CREATE TABLE USERS
 (
     ID BIGINT NOT NULL,
     USERNAME VARCHAR(50) NOT NULL,

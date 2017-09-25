@@ -1,5 +1,5 @@
 /* --------------- TimeAllocation table definition --------------------- */
-CREATE TABLE TIME_ALLOCATION 
+CREATE TABLE TIME_ALLOCATION
 (
     ID BIGINT NOT NULL,
     TIME_PERIOD org::andromda::timetracker::domain::TimePeriod NOT NULL,

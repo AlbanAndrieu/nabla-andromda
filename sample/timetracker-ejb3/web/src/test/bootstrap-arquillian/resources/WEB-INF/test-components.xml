@@ -16,7 +16,7 @@
                        http://jboss.org/schema/seam/mail http://jboss.org/schema/seam/mail-2.3.xsd
                        http://jboss.org/schema/seam/drools http://jboss.org/schema/seam/drools-2.3.xsd
                        http://jboss.org/schema/seam/components http://jboss.org/schema/seam/components-2.3.xsd">
-  
+
 	<!--  see https://access.redhat.com/site/documentation/en-US/Red_Hat_JBoss_Web_Framework_Kit/2.1/html/Seam_Reference_Guide/configuration.html -->
 	<!-- jndi-pattern="java:app${application.jndi.pattern.test}" -->
 	<core:init debug="true" jndi-pattern="java:app/core/#{ejbName}" security-enabled="true" transaction-management-enabled="true" distributable="false"/>
@@ -34,28 +34,28 @@
 	<!--  <web:hot-deploy-filter url-pattern="*.seam"/>-->
 
 	<persistence:managed-persistence-context
-		name="entityManager" 
+		name="entityManager"
 		auto-create="true"
-		scope="conversation" 
-		entity-manager-factory="#{entityManagerFactory}" 
+		scope="conversation"
+		entity-manager-factory="#{entityManagerFactory}"
 		persistence-unit-jndi-name="java:/myEntityManagerFactory" />
 
 	<persistence:entity-manager-factory
 		name="entityManagerFactory" class="org.jboss.seam.persistence.EntityManagerFactory"
 		auto-create="true" persistence-unit-name="timetracker-ejb3" />
 
-	<!-- 
+	<!--
 	<factory name="hibernateSession" method="#{entityManager.getDelegate( )}"
-		scope="STATELESS" auto-create="true" /> 
+		scope="STATELESS" auto-create="true" />
 	 -->
-<!--  
+<!--
    	<event type="org.jboss.seam.security.notLoggedIn">
    	   <action execute="#{redirect.captureCurrentView}"/>
    	</event>
    	<event type="org.jboss.seam.security.loginSuccessful">
    	   <action execute="#{redirect.returnToCapturedView}"/>
    	</event>
-   	
+
    	<mail:mail-session host="localhost" port="25"/>
    	-->
    	<!-- For use with jBPM pageflow or process management -->
@@ -76,7 +76,7 @@
 	<security:rule-based-permission-resolver security-rules="#{securityRules}" />
 	-->
 
-   	 <!-- 
+   	 <!--
    	<security:jpa-identity-store
    	 entity-manager="#{entityManager}" user-class="org.andromda.timetracker.domain.User"
    	 role-class="org.andromda.timetracker.domain.UserRole" />

@@ -98,7 +98,7 @@ public final class TaskManageableServiceBase
         }
     }
 
- 
+
      /**
      * Entity read operation
      *
@@ -116,7 +116,7 @@ public final class TaskManageableServiceBase
             throw new TaskReadManageableException(ex);
         }
     }
-       
+
     /**
      * Read operation
      *

@@ -42,7 +42,7 @@ import org.andromda.utils.StringUtilsHelper;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.gui.metafacades.GuiExceptionHandler.
- * 
+ *
  * @see org.andromda.cartridges.gui.metafacades.GuiExceptionHandler
  */
 public class GuiExceptionHandlerLogicImpl extends GuiExceptionHandlerLogic
@@ -52,7 +52,7 @@ public class GuiExceptionHandlerLogicImpl extends GuiExceptionHandlerLogic
 
     /**
      * Public constructor for GuiExceptionHandlerLogicImpl
-     * 
+     *
      * @param metaObject
      * @param context
      * @see org.andromda.cartridges.gui.metafacades.GuiExceptionHandler
@@ -68,7 +68,7 @@ public class GuiExceptionHandlerLogicImpl extends GuiExceptionHandlerLogic
      * The key to use with this handler's message resource bundle that
      * will retrieve the error message template for this exception.
      * </p>
-     * 
+     *
      * @return exceptionKey
      * @see org.andromda.cartridges.gui.metafacades.GuiExceptionHandler#getExceptionKey()
      */
@@ -89,7 +89,7 @@ public class GuiExceptionHandlerLogicImpl extends GuiExceptionHandlerLogic
      * The module-relative URI to the resource that will complete the
      * request/response if this exception occurs.
      * </p>
-     * 
+     *
      * @return exceptionPath
      * @see org.andromda.cartridges.gui.metafacades.GuiExceptionHandler#getExceptionPath()
      */
@@ -123,7 +123,7 @@ public class GuiExceptionHandlerLogicImpl extends GuiExceptionHandlerLogic
      * Fully qualified Java class name of the exception type to
      * register with this handler.
      * </p>
-     * 
+     *
      * @return exceptionType
      * @see org.andromda.cartridges.gui.metafacades.GuiExceptionHandler#getExceptionType()
      */

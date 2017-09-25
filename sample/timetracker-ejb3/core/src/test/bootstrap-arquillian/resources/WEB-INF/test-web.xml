@@ -8,13 +8,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 -->
- 
+
 	<listener>
 		<!-- Seam 2.2<listener-class>org.jboss.seam.servlet.SeamListener</listener-class> -->
 		<listener-class>org.jboss.seam.mock.MockSeamListener</listener-class>
 	</listener>
 
-	<!-- 
+	<!--
 	<filter>
 		<filter-name>Seam Filter</filter-name>
 		<filter-class>org.jboss.seam.servlet.SeamFilter</filter-class>

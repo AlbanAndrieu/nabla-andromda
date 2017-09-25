@@ -13,7 +13,7 @@
                             be considered with caution. A tagged value is something extra, something optional,
                             and the application should run fine without them.
                         </div><ul><li><a href="#andromda_manageable_table_displayname" title="Applied on: A class with the &lt;&lt;Manageable&gt;&gt; stereotype">andromda_manageable_table_displayname</a></li><li><a href="#andromda_persistence_assigned_identifier" title="">andromda_persistence_assigned_identifier</a></li><li><a href="#andromda_persistence_associationEnd_primary" title="Applied on: AssociationEnd">andromda_persistence_associationEnd_primary</a></li><li><a href="#andromda_persistence_associationEnd_uniqueGroup" title="">andromda_persistence_associationEnd_uniqueGroup</a></li><li><a href="#andromda_persistence_column" title="">andromda_persistence_column</a></li><li><a href="#andromda_persistence_column_index" title="">andromda_persistence_column_index</a></li><li><a href="#andromda_persistence_column_length" title="">andromda_persistence_column_length</a></li><li><a href="#andromda_persistence_column_uniqueGroup" title="">andromda_persistence_column_uniqueGroup</a></li><li><a href="#andromda_persistence_enumeration_literal_parameters" title="Applied on: Enumeration Literal">andromda_persistence_enumeration_literal_parameters</a></li><li><a href="#andromda_persistence_enumeration_member_variable" title="Applied on: Enumeration Attribute">andromda_persistence_enumeration_member_variable</a></li><li><a href="#andromda_persistence_foreign_identifier" title="">andromda_persistence_foreign_identifier</a></li><li><a href="#andromda_persistence_foreignkey_constraint" title="">andromda_persistence_foreignkey_constraint</a></li><li><a href="#andromda_persistence_immutable" title="">andromda_persistence_immutable</a></li><li><a href="#andromda_persistence_schema" title="Applied on: Any &lt;&lt;Entity&gt;&gt; stereotyped class">andromda_persistence_schema</a></li><li><a href="#andromda_persistence_table" title="">andromda_persistence_table</a></li><li><a href="#andromda_presentation_controller_usecase" title="">andromda_presentation_controller_usecase</a></li><li><a href="#andromda_presentation_usecase_activity" title="">andromda_presentation_usecase_activity</a></li><li><a href="#andromda_presentation_view_table" title="Applied on: A collection type parameter going into an action state carrying the &lt;&lt;FrontEndView&gt;&gt; stereotype">andromda_presentation_view_table</a></li><li><a href="#andromda_presentation_view_table_columns" title="Applied on: A collection type parameter going into an action state carrying the &lt;&lt;FrontEndView&gt;&gt; stereotype">andromda_presentation_view_table_columns</a></li><li><a href="#andromda_role_name" title="">andromda_role_name</a></li><li><a href="#andromda_serialVersionUID" title="">andromda_serialVersionUID</a></li><li><a href="#andromda_webservice_provider" title="">andromda_webservice_provider</a></li><li><a href="#andromda_webservice_style" title="">andromda_webservice_style</a></li><li><a href="#andromda_webservice_use" title="">andromda_webservice_use</a></li><li><a href="#documentation" title="">documentation</a></li><li><a href="#hyperlinkModel" title="">hyperlinkModel</a></li><li><a href="#hyperlinkTextActive" title="">hyperlinkTextActive</a></li></ul></div><p>
-        
+
             <div class="profileElement"><table><tr><td class="profileElementTitle"><a name="Criteria" class="profileElementTitle">Criteria</a><a href="#Stereotypes" title="Go to Stereotypes profile element group">(Back to Stereotypes)</a></td></tr><tr><td>
                             Applied on: <appliedOnElement>class</appliedOnElement></td></tr><tr><td class="documentation"><documentation>
                     Specifies this class's attributes are to be used in criteria queries.
@@ -148,8 +148,8 @@
                             Applied on: <appliedOnElement>Package</appliedOnElement></td></tr><tr><td class="documentation"><documentation>
                     Modeled component is part of an RUP perspective package. Do not generate code.
                 </documentation></td></tr></table></div>
-        
-        
+
+
             <div class="profileElement"><table><tr><td class="profileElementTitle"><a name="documentation" class="profileElementTitle">documentation</a><a href="#Tagged Values" title="Go to Tagged Values profile element group">(Back to Tagged Values)</a></td></tr><tr><td class="documentation">
                                 No documentation available
                             </td></tr></table></div>
@@ -282,8 +282,8 @@
                             Allowed values for this element:
                             <ul><li><code><value>any column name present in this entity</value></code></li><li><code class="defaultValue"><value default="true">the name of the identifier column</value></code> (default)
                                             </li></ul></td></tr></table></div>
-        
-        
+
+
             <div class="profileElement"><table><tr><td class="profileElementTitle"><a name="datatype::Object" class="profileElementTitle">datatype::Object</a><a href="#Data Types" title="Go to Data Types profile element group">(Back to Data Types)</a></td></tr><tr><td class="documentation">
                                 No documentation available
                             </td></tr></table></div>
@@ -365,6 +365,6 @@
             <div class="profileElement"><table><tr><td class="profileElementTitle"><a name="datatype::void" class="profileElementTitle">datatype::void</a><a href="#Data Types" title="Go to Data Types profile element group">(Back to Data Types)</a></td></tr><tr><td class="documentation">
                                 No documentation available
                             </td></tr></table></div>
-        
+
     </p></section>
 </body></document>

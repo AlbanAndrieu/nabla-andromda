@@ -16,9 +16,9 @@
                  http://jboss.org/schema/seam/web http://jboss.org/schema/seam/web-2.2.xsd
                  http://jboss.org/schema/seam/components http://jboss.org/schema/seam/components-2.2.xsd">
 
-    <core:init jndi-pattern="${ejbJndiNamePrefix}/#{ejbName}/local" debug="true"/>    
+    <core:init jndi-pattern="${ejbJndiNamePrefix}/#{ejbName}/local" debug="true"/>
 
-    <core:manager conversation-timeout="120000" 
+    <core:manager conversation-timeout="120000"
                   concurrent-request-timeout="500"
                   conversation-id-parameter="cid"
                   conversation-is-long-running-parameter="clr"/>
@@ -28,6 +28,6 @@
     <core:ejb installed="false"/>
 
     <security:identity authenticate-method="#{authenticator.authenticate}"/>
-    
+
     <!-- seam-components merge-point -->
 </components>

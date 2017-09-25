@@ -39,7 +39,7 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.ejb3.metafacades.EJB3TypeFacade.
- * 
+ *
  * @see EJB3TypeFacade
  */
 public class EJB3TypeFacadeLogicImpl extends EJB3TypeFacadeLogic
@@ -76,7 +76,7 @@ public class EJB3TypeFacadeLogicImpl extends EJB3TypeFacadeLogic
 
     /**
      * Gets the <code>hibernateTypeMappings</code> for this ejb3/hibernate type.
-     * 
+     *
      * @return the hibernate type TypeMappings.
      */
     protected TypeMappings getEJB3TypeMappings()

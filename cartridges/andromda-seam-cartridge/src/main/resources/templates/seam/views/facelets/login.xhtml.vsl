@@ -7,7 +7,7 @@
       xmlns:af="http://xmlns.oracle.com/adf/faces">
 
 <ui:insert name="head">
-    <ui:include src="/layout/head.xhtml"/>  
+    <ui:include src="/layout/head.xhtml"/>
 </ui:insert>
 
 <body>
@@ -42,7 +42,7 @@
                                     <div class="error">#{messages['login.error']}</div>
                                 </td>
                             </tr>
-                        </c:when> 
+                        </c:when>
                         <c:when test="${${actionParam} == 'roleError'}">
                             <tr>
                                 <td colspan="2"/>
@@ -50,7 +50,7 @@
                                     <div class="error">#{messages['login.error.role']}</div>
                                 </td>
                             </tr>
-                        </c:when> 
+                        </c:when>
                     </c:choose>
                     <tr>
                         <td class="xv" width="37%"><span class="xa"><label for="login:j_username">#{messages['login.username']}:</label></span></td>
@@ -82,12 +82,12 @@
                             </a>
                         </td>
                     </tr>
-#end                    
+#end
                 </table>
             </form>
         </div>
     </af:panelPage>
-   
+
     <script type="text/javascript" language="Javascript1.1">
         var field = document.forms["login"].elements["j_username"];
         field.focus();

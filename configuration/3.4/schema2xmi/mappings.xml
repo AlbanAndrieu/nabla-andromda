@@ -11,7 +11,7 @@
     <mapping>
        <from>REAL</from>
        <to>datatype::Float</to>
-    </mapping>    
+    </mapping>
     <mapping>
         <from>INTEGER</from>
         <to>datatype::Integer</to>
@@ -23,15 +23,15 @@
     <mapping>
         <from>TINYINT</from>
         <to>datatype::Byte</to>
-    </mapping>    
+    </mapping>
     <mapping>
         <from>NUMERIC(19,0)</from>
         <to>datatype::Long</to>
-    </mapping>       
+    </mapping>
     <mapping>
        <from>BIGINT</from>
        <to>datatype::Long</to>
-    </mapping>    
+    </mapping>
     <mapping>
         <from>FLOAT</from>
         <to>datatype::Float</to>
@@ -43,7 +43,7 @@
     <mapping>
        <from>BIT</from>
        <to>datatype::Boolean</to>
-    </mapping>    
+    </mapping>
     <mapping>
         <from>VARCHAR</from>
         <to>datatype::String</to>
@@ -61,7 +61,7 @@
        <from>CHAR</from>
        <to>datatype::Character</to>
     </mapping>
- -->   
+ -->
     <mapping>
         <from>TIMESTAMP</from>
         <to>datatype::Timestamp</to>
@@ -78,12 +78,12 @@
         <from>DATE</from>
         <to>datatype::Date</to>
    </mapping>
-    <!--   
+    <!--
    <mapping>
       <from>DATETIME</from>
       <to>datatype::DateTime</to>
-   </mapping>    
-    -->   
+   </mapping>
+    -->
    <mapping>
         <from>DOUBLE</from>
         <to>datatype::Float</to>
@@ -103,13 +103,13 @@
     <mapping>
         <from>TEXT</from>
         <to>datatype::Clob</to>
-    </mapping>    
+    </mapping>
     <mapping>
         <from>IMAGE</from>
         <to>datatype::Blob</to>
-    </mapping> 
+    </mapping>
     <mapping>
        <from>UNIQUEIDENTIFIER</from>
        <to>datatype::Guid</to>
-    </mapping>   
+    </mapping>
 </mappings>

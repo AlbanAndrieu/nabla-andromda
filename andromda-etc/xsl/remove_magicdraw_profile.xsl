@@ -28,4 +28,3 @@
 	<xsl:template match="xmi:XMI/uml:Model/profileApplication/eAnnotations/references[@href='*Validation_Profile*']"/>
 	<xsl:template match="xmi:XMI/uml:Model/profileApplication/eAnnotations/references[@href='*DSL_Customization*']"/>
 </xsl:stylesheet>
-

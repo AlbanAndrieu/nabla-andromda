@@ -97,7 +97,7 @@ ${indent}    </key>
 ###end
 ${indent}    <one-to-many class="$otherEnd.type.fullyQualifiedEntityImplementationName" not-found="$hibernateOneToManyNotFoundAction"/>
 ${indent}</$otherEnd.collectionType>
-#elseif ($sourceEnd.many2One && !$sourceEnd.identifiersPresent)    
+#elseif ($sourceEnd.many2One && !$sourceEnd.identifiersPresent)
 $otherEnd
 $otherEnd.name
 $otherEnd.type.fullyQualifiedEntityImplementationName

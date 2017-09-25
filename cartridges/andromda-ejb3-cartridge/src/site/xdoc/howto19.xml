@@ -8,16 +8,16 @@
     <body>
         <section name="Data Access Objects (DAO)">
             <p>
-                The Data Access Layer provides an API for accessing and manipulating data in the persistence tier 
+                The Data Access Layer provides an API for accessing and manipulating data in the persistence tier
                 and abstracts or hides much of this complexity from the session bean business logic tier.
                 To find out more about the different tiers on an enterprise application and where DAO object
-                typically fit in the stack, you can read the 
+                typically fit in the stack, you can read the
                 <a href="http://docs.andromda.org/getting-started/java/index.html">getting started
                 guide</a>.
             </p>
             <p>
                 For every entity class, modeled with the <![CDATA[<<Entity>>]]> stereotype, 3 DAO related
-                objects are created.  This provides the typical CRUD API and finder method accessability for a 
+                objects are created.  This provides the typical CRUD API and finder method accessability for a
                 specific entity.
             </p>
             <p>
@@ -50,7 +50,7 @@
             </ul>
             <p>
                 Since the <code>Person</code> entity contains finder methods, the <code>PersonDaoImpl</code>
-                is generated once only to <code>core/src/main/java</code>. You can override or add any method 
+                is generated once only to <code>core/src/main/java</code>. You can override or add any method
                 implementation to this file.
             </p>
             <p>
@@ -73,7 +73,7 @@
             <subsection name="View Interface">
                 <p>
                     The DAO stateless session bean is accessed via the local interface. This means that you
-                    cannot access DAO from a remote container, but this isn't a concern since your session 
+                    cannot access DAO from a remote container, but this isn't a concern since your session
                     facade exposes the remote interface and contains your business logic.
                 </p>
             </subsection>
@@ -93,7 +93,7 @@
                     To find out how to enable JAAS security, click on <a href="howto8.html">Security</a>.
                 </p>
                 <p>
-                    If you enable security and do not model actor dependencies on the entities to limit 
+                    If you enable security and do not model actor dependencies on the entities to limit
                     roles permitted to access your DAO, the EJB3 cartridge will add the
                     <code>@javax.annotation.security.PermitAll</code> annotation at the class level of your
                     base DAO class.  This implies that all methods of the DAO are not checked for

@@ -50,7 +50,7 @@
       <incallback method="addDeployer"/>
       <uncallback method="removeDeployer"/>
    </bean>
-      
+
    <!-- The holder for deployers that do real deployment -->
    <bean name="Deployers" class="org.jboss.deployers.plugins.deployers.DeployersImpl">
       <constructor><parameter><inject bean="jboss.kernel:service=KernelController"/></parameter></constructor>

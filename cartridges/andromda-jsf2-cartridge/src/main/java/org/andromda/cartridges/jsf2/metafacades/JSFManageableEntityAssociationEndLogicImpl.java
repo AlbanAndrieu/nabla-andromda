@@ -10,7 +10,7 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * MetafacadeLogic implementation for org.andromda.cartridges.jsf2.metafacades.JSFManageableEntityAssociationEnd.
- * 
+ *
  * @see org.andromda.cartridges.jsf2.metafacades.JSFManageableEntityAssociationEnd
  */
 public class JSFManageableEntityAssociationEndLogicImpl extends JSFManageableEntityAssociationEndLogic

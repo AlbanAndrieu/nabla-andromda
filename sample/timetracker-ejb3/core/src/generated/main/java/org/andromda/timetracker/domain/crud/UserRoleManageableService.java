@@ -19,8 +19,8 @@ public interface UserRoleManageableService
 
 
     public UserRoleVO readById(Long id)
-        throws UserRoleReadManageableException;    
-        
+        throws UserRoleReadManageableException;
+
     public List read(Role role, Boolean isConditional, Long id, Long[] groups)
         throws UserRoleReadManageableException;
 
