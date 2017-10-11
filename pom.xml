@@ -12,9 +12,9 @@
         <modelVersion>4.0.0</modelVersion>
         <groupId>com.nabla.project.uml</groupId>
         <artifactId>nabla</artifactId>
-        <name>Nabla Assembly</name>
+        <name>Nabla Andromda</name>
         <packaging>pom</packaging>
-        <description>Nabla Assembly</description>
+        <description>Nabla Andromda</description>
         <url>${JOB_URL}</url>
 
     	<scm>
