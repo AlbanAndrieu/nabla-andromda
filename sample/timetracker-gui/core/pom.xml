@@ -115,7 +115,8 @@
 
 		<!-- must be use with hibernate.cache.provider_class org.hibernate.cache.EhCacheProvider in persistence.xml -->
         <dependency>
-            <groupId>net.sf.ehcache</groupId>
+            <!--<groupId>net.sf.ehcache</groupId>-->
+            <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
             <type>pom</type>
         </dependency>
