@@ -299,10 +299,10 @@
                 -->
 
                 <dependency>
-                  <groupId>javax.ejb</groupId>
-                  <artifactId>ejb-api</artifactId>
-                  <scope>provided</scope>
-                  <optional>true</optional>
+						<groupId>javax.ejb</groupId>
+						<artifactId>ejb-api</artifactId>
+						<scope>provided</scope>
+						<optional>true</optional>
                 </dependency>
 
                 <!-- *************** Seam Dependencies *************** -->

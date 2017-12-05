@@ -551,10 +551,12 @@
             <groupId>jboss</groupId>
             <artifactId>jboss-ejb3x</artifactId>
         </dependency>
+        <!--
         <dependency>
             <groupId>org.jboss</groupId>
             <artifactId>ejb3-persistence</artifactId>
         </dependency>
+        -->
         <!--
         <dependency>
             <groupId>hibernate-entitymanager</groupId>

@@ -118,7 +118,7 @@
             <!--<groupId>net.sf.ehcache</groupId>-->
             <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
-            <type>pom</type>
+            <version>${org.ehcache.version}</version>
         </dependency>
 
         <dependency>
