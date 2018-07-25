@@ -12,6 +12,7 @@
         <modelVersion>4.0.0</modelVersion>
         <groupId>com.nabla.project.uml</groupId>
         <artifactId>nabla</artifactId>
+        <version>1.0.1-SNAPSHOT</version>
         <name>Nabla Andromda</name>
         <packaging>pom</packaging>
         <description>Nabla Andromda</description>
