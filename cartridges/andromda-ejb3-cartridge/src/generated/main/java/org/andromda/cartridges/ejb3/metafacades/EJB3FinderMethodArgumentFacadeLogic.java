@@ -36,7 +36,7 @@ public abstract class EJB3FinderMethodArgumentFacadeLogic
 {
 
     private static final long serialVersionUID = 1L;
-
+    
     /**
      * The underlying UML object
      * @see Object

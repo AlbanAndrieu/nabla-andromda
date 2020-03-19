@@ -636,7 +636,7 @@ public interface EJB3EntityFacade
     public boolean isUseDefaultCacheRegion();
 
     /**
-     * Returns true if the application wide namespace property hibernateUseQueryCache is enabled.
+     * Returns true if the application wide namespace property hibernateUseQueryCache is enabled. 
      * This is used for generic finder methods i.e. findAll.
      * @return boolean
      */

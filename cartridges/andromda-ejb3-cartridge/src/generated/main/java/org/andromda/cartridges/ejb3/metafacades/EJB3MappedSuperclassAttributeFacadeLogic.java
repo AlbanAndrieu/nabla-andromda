@@ -20,7 +20,7 @@ public abstract class EJB3MappedSuperclassAttributeFacadeLogic
 {
 
     private static final long serialVersionUID = 1L;
-
+    
     /**
      * The underlying UML object
      * @see Object

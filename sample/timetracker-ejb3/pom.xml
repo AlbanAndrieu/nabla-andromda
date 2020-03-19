@@ -155,7 +155,6 @@
 		<!--<drools.version>5.0.1</drools.version>-->
 		<!--<drools.version>5.3.0.Final</drools.version>-->
 
-		<!--OK<jbpm.jpdl.version>3.2.3</jbpm.jpdl.version>-->
 		<!--OK <jboss.cache.version>1.4.1.SP9</jboss.cache.version>-->
 		<!--<org.mvel.mvel2.version>2.0.10-SNAPSHOT</org.mvel.mvel2.version>-->
 		<org.mvel.mvel2.version>2.1.0.Final</org.mvel.mvel2.version>

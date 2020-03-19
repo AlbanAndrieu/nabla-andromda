@@ -307,7 +307,7 @@ public interface EJB3SessionFacade
 
     /**
      * If multiple roles are specified (since a seam component can be bound to multiple context
-     * variables), then multiple roles are specified in the order the role names are specified.
+     * variables), then multiple roles are specified in the order the role names are specified. 
      * This is done by modelling the andromda.seam.component.role.scope tag with a comma separated
      * list of scopes.
      * @return Collection
@@ -315,7 +315,7 @@ public interface EJB3SessionFacade
     public Collection getSeamComponentRoleScopeTypes();
 
     /**
-     * Tagged value andromda.seam.component.scope. Defines the default context of the component.
+     * Tagged value andromda.seam.component.scope. Defines the default context of the component. 
      * Possible values are
      * EVENT
      * PAGE
