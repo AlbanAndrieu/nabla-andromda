@@ -250,11 +250,11 @@ public abstract class UserDaoBase
         String firstName,
         String lastName,
         String email,
-        boolean isActive,
+        boolean isEnable,
         Date creationDate,
         String comment)
     {
-        return (User)this.create(UserDao.TRANSFORM_NONE, username, password, firstName, lastName, email, isActive, creationDate, comment);
+        return (User)this.create(UserDao.TRANSFORM_NONE, username, password, firstName, lastName, email, isEnable, creationDate, comment);
     }
 
     /**
@@ -268,7 +268,7 @@ public abstract class UserDaoBase
         String firstName,
         String lastName,
         String email,
-        boolean isActive,
+        boolean isEnable,
         Date creationDate,
         String comment)
     {
@@ -278,7 +278,7 @@ public abstract class UserDaoBase
         entity.setFirstName(firstName);
         entity.setLastName(lastName);
         entity.setEmail(email);
-        entity.setIsActive(isActive);
+        entity.setIsEnable(isEnable);
         entity.setCreationDate(creationDate);
         entity.setComment(comment);
         return this.create(transform, entity);
@@ -849,7 +849,6 @@ public abstract class UserDaoBase
         target.setLastName(source.getLastName());
         target.setPassword(source.getPassword());
         target.setEmail(source.getEmail());
-        target.setIsActive(source.isIsActive());
         target.setCreationDate(source.getCreationDate());
         target.setComment(source.getComment());
         // No conversion for target.roles (can't convert source.getRoles():org.andromda.timetracker.domain.UserRole to org.andromda.timetracker.vo.UserRoleVO[])
@@ -898,10 +897,6 @@ public abstract class UserDaoBase
         if (copyIfNull || source.getEmail() != null)
         {
             target.setEmail(source.getEmail());
-        }
-        if (copyIfNull || source.isIsActive() != false)
-        {
-            target.setIsActive(source.isIsActive());
         }
         if (copyIfNull || source.getCreationDate() != null)
         {

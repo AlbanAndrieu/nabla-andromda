@@ -45,7 +45,8 @@ public abstract class TimecardDaoBase implements TimecardDao
 
     /**
      * Inject persistence context timetracker-ejb3     */
-    @PersistenceContext(unitName = "timetracker-ejb3")    protected EntityManager entityManager;
+    @PersistenceContext(unitName = "timetracker-ejb3")
+    protected EntityManager entityManager;
 
     /**
      * Inject Hibernate Session
@@ -57,7 +58,7 @@ public abstract class TimecardDaoBase implements TimecardDao
     /**
      * Inject DAO TimeAllocationDao
      */
-    @EJB(mappedName="java:global/TimeTracker/TimeAllocationDaoImpl")
+    @EJB
     protected TimeAllocationDao timeAllocationDao;
 
     /**
@@ -169,7 +170,7 @@ public abstract class TimecardDaoBase implements TimecardDao
      * @see TimecardDao#create(Collection)
      */
     @Override
-    //@SuppressWarnings({"unchecked"})
+    @SuppressWarnings({"unchecked"})
     public Collection<Timecard> create(final Collection<Timecard> entities) throws TimecardDaoException
     {
         return create(TRANSFORM_NONE, entities);
@@ -533,6 +534,7 @@ public abstract class TimecardDaoBase implements TimecardDao
      * @see TimecardDao#timecardSummaryVOToEntityCollection(Collection)
      */
     @Override
+    @SuppressWarnings({"rawtypes"})
     public final void timecardSummaryVOToEntityCollection(Collection instances)
     {
         if (instances != null)
@@ -669,6 +671,7 @@ public abstract class TimecardDaoBase implements TimecardDao
      * @see TimecardDao#timecardVOToEntityCollection(Collection)
      */
     @Override
+    @SuppressWarnings({"rawtypes"})
     public final void timecardVOToEntityCollection(Collection instances)
     {
         if (instances != null)

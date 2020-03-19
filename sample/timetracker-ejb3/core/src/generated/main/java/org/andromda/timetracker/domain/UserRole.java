@@ -22,9 +22,6 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.NotEmpty;
-import org.jboss.seam.annotations.security.management.RoleConditional;
-import org.jboss.seam.annotations.security.management.RoleGroups;
-import org.jboss.seam.annotations.security.management.RoleName;
 
 /**
  * TODO: Model Documentation for UserRole
@@ -72,7 +69,6 @@ public class UserRole implements Serializable, Comparable<UserRole>{
     @NotNull(message="role is required")
     @NotEmpty(message = "You should enter a value for role.")
 
-    @RoleName
     public Role getRole()
     {
         return this.role;
@@ -95,7 +91,6 @@ public class UserRole implements Serializable, Comparable<UserRole>{
      */
     @Column(name="IS_CONDITIONAL", insertable=true, updatable=true)
 
-    @RoleConditional
     public Boolean getIsConditional()
     {
         return this.isConditional;
@@ -149,7 +144,6 @@ public class UserRole implements Serializable, Comparable<UserRole>{
         joinColumns={@JoinColumn(name="ROLES_ID", referencedColumnName="ID")},
         inverseJoinColumns={@JoinColumn(name="GROUPS_ID", referencedColumnName="ID")}
     )
-    @RoleGroups
     public Set<UserRole> getGroups()
     {
         return this.groups;

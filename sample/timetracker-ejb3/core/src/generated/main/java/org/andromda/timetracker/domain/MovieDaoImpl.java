@@ -9,11 +9,9 @@ import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
-
 import org.apache.log4j.Logger;
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.AutoCreate;
-import org.jboss.seam.annotations.JndiName;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
 
@@ -21,16 +19,13 @@ import org.jboss.seam.annotations.Scope;
  * @see org.andromda.timetracker.domain.Movie
  */
 @Stateless
-// @Name("movie")
+//@Name("movie")
 @Name("MovieDao")
-// @Scope(ScopeType.SESSION)
+//@Scope(ScopeType.SESSION)
 @Scope(ScopeType.EVENT)
 @AutoCreate
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
-@Local(
-{ MovieDao.class })
-// @JndiName("java:global/TimeTracker/MovieDaoImpl")
-@JndiName("java:app/core/MovieDaoImpl")
+@Local({MovieDao.class})
 public class MovieDaoImpl extends MovieDaoBase
 {
     private static final Logger logger = Logger.getLogger(MovieDaoImpl.class);

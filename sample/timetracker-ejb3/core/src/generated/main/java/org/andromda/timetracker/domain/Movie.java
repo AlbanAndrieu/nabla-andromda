@@ -16,7 +16,6 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Version;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import org.hibernate.annotations.Index;
 import org.hibernate.validator.constraints.Length;
@@ -67,7 +66,6 @@ public class Movie implements Serializable, Comparable<Movie>{
 
     @Length(min = 5, max = 60)
     @Size(max=60)
-    @Pattern(regexp = "^\\w*$", message = "not a valid field")
     public String getTitle()
     {
         return this.title;

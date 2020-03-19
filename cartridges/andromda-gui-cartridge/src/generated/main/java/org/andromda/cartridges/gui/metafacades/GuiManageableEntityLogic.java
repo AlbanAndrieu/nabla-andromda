@@ -52,7 +52,7 @@ public abstract class GuiManageableEntityLogic
 {
 
     private static final long serialVersionUID = 1L;
-    
+
     /**
      * The underlying UML object
      * @see Object
@@ -3925,7 +3925,7 @@ public abstract class GuiManageableEntityLogic
     }
 
     /**
-     * A collection containing all required and/or read-only 'properties' of the classifier. 
+     * A collection containing all required and/or read-only 'properties' of the classifier.
      * Properties are any attributes and navigable connecting association ends.
      * @see ClassifierFacade#getRequiredConstructorParameters()
      */

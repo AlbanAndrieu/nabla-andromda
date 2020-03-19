@@ -22,6 +22,7 @@
                 <value>classpath:org/andromda/timetracker/domain/TimeAllocation.hbm.xml</value>
                 <value>classpath:org/andromda/timetracker/domain/Timecard.hbm.xml</value>
                 <value>classpath:org/andromda/timetracker/domain/UserRole.hbm.xml</value>
+                <value>classpath:org/andromda/timetracker/domain/Movie.hbm.xml</value>
             </list>
          </property>
     </bean>
@@ -129,6 +130,22 @@
     <bean id="userRoleDao" class="org.springframework.aop.framework.ProxyFactoryBean">
         <property name="target" ref="org.andromda.timetracker.domain.UserRoleDaoImpl"/>
         <property name="proxyInterfaces" value="org.andromda.timetracker.domain.UserRoleDao"/>
+        <property name="interceptorNames">
+            <list>
+                <value>hibernateInterceptor</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="org.andromda.timetracker.domain.MovieDaoImpl" class="org.andromda.timetracker.domain.MovieDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+        <!-- Movie entity property merge-point -->
+    </bean>
+
+    <!-- Movie Entity Proxy with inner Movie Entity implementation -->
+    <bean id="movieDao" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="org.andromda.timetracker.domain.MovieDaoImpl"/>
+        <property name="proxyInterfaces" value="org.andromda.timetracker.domain.MovieDao"/>
         <property name="interceptorNames">
             <list>
                 <value>hibernateInterceptor</value>

@@ -43,7 +43,7 @@ public abstract class GuiManageableEntityAttributeLogic
 {
 
     private static final long serialVersionUID = 1L;
-    
+
     /**
      * The underlying UML object
      * @see Object
@@ -2974,11 +2974,11 @@ public abstract class GuiManageableEntityAttributeLogic
     /**
      * <p><b>Constraint:</b> org::andromda::cartridges::gui::metafacades::GuiManageableEntityAttribute::required fields may not be hidden</p>
      * <p><b>Error:</b> Required fields may not be hidden, unless they are auto-generated identifiers.</p>
-     * <p><b>OCL:</b> context GuiManageableEntityAttribute inv: 
+     * <p><b>OCL:</b> context GuiManageableEntityAttribute inv:
 (required and not (identifier and owner.dynamicIdentifiersPresent)) implies not hidden</p>
      * <p><b>Constraint:</b> org::andromda::cartridges::gui::metafacades::GuiManageableEntityAttribute::widget type cannot be arbitrary</p>
      * <p><b>Error:</b> Only text, textarea and hidden widgets are supported, please select another one or let the cartridge decide by not specifying anything.</p>
-     * <p><b>OCL:</b> context GuiManageableEntityAttribute inv: widgetType->notEmpty() implies 
+     * <p><b>OCL:</b> context GuiManageableEntityAttribute inv: widgetType->notEmpty() implies
 (widgetType = 'text' or widgetType = 'textarea' or widgetType = 'hidden' or widgetType='select')</p>
      * <p><b>Constraint:</b> org::andromda::cartridges::gui::metafacades::GuiManageableEntityAssociationEnd::SAFE NAME - TO BE REMOVED LATER</p>
      * <p><b>Error:</b> The names you give to fields cannot start with a lowercase character directly followed by a character in uppercase. This is due to a bug in the Jakarta commons library which is used by Gui. The behavior of that library is inconsistent with the reflection API provided by the JDK. Please rename this field or you'll get exceptions when running your web application.</p>

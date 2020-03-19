@@ -255,14 +255,16 @@ public interface UserRoleDao
      * the persistent store.
      * </p>
      * @param role TODO: Model Documentation for UserRole.role
+     * @param isConditional TODO: Model Documentation for UserRole.isConditional
      * @return UserRole
      */
     public UserRole create(
-        Role role);
+        Role role,
+        Boolean isConditional);
 
     /**
      * <p>
-     * Does the same thing as {@link #create(Role)} with an
+     * Does the same thing as {@link #create(Role, Boolean)} with an
      * additional flag called <code>transform</code>. If this flag is set to <code>TRANSFORM_NONE</code> then
      * the returned entity will <strong>NOT</strong> be transformed. If this flag is any of the other constants
      * defined here then the result <strong>WILL BE</strong> passed through an operation which can optionally
@@ -271,11 +273,13 @@ public interface UserRoleDao
      * </p>
      * @param transform
      * @param role TODO: Model Documentation for UserRole.role
+     * @param isConditional TODO: Model Documentation for UserRole.isConditional
      * @return UserRole
      */
     public Object create(
         int transform,
-        Role role);
+        Role role,
+        Boolean isConditional);
 
 
     /**

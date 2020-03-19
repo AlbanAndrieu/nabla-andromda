@@ -220,9 +220,10 @@ public abstract class UserRoleDaoBase
      */
     @Override
     public UserRole create(
-        Role role)
+        Role role,
+        Boolean isConditional)
     {
-        return (UserRole)this.create(UserRoleDao.TRANSFORM_NONE, role);
+        return (UserRole)this.create(UserRoleDao.TRANSFORM_NONE, role, isConditional);
     }
 
     /**
@@ -231,10 +232,12 @@ public abstract class UserRoleDaoBase
     @Override
     public Object create(
         final int transform,
-        Role role)
+        Role role,
+        Boolean isConditional)
     {
         UserRole entity = new UserRoleImpl();
         entity.setRole(role);
+        entity.setIsConditional(isConditional);
         return this.create(transform, entity);
     }
 

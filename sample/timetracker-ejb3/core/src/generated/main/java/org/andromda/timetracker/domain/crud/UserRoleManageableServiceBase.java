@@ -54,6 +54,7 @@ public final class UserRoleManageableServiceBase
 
     // ------------ Private Operations ----------
 
+    @SuppressWarnings({"unchecked"})
     private List<UserRole> findUserRoleByIds(Long[] ids)
         throws UserRoleReadManageableException
     {
@@ -69,6 +70,7 @@ public final class UserRoleManageableServiceBase
         }
     }
 
+    @SuppressWarnings({"unchecked"})
     private List<User> findUserByIds(Long[] ids)
         throws UserRoleReadManageableException
     {

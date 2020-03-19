@@ -38,7 +38,8 @@ public abstract class MovieDaoBase implements MovieDao
 
     /**
      * Inject persistence context timetracker-ejb3     */
-    @PersistenceContext(unitName = "timetracker-ejb3")    protected EntityManager entityManager;
+    @PersistenceContext(unitName = "timetracker-ejb3")
+    protected EntityManager entityManager;
 
     /**
      * @see MovieDao#load
@@ -140,7 +141,7 @@ public abstract class MovieDaoBase implements MovieDao
      * @see MovieDao#create(Collection)
      */
     @Override
-    //@SuppressWarnings({"unchecked"})
+    @SuppressWarnings({"unchecked"})
     public Collection<Movie> create(final Collection<Movie> entities) throws MovieDaoException
     {
         return create(TRANSFORM_NONE, entities);

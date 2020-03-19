@@ -117,7 +117,7 @@ public class ManageableServiceLocator
      */
     public final UserManageableService getUserManageableServiceRemote(Properties env) throws NamingException
     {
-        return (UserManageableService) getContext(env).lookup("java:global/TimeTracker/UserManageableService/remote");
+        return (UserManageableService) getContext(env).lookup("UserManageableService/remote");
     }
 
     /**
@@ -128,7 +128,7 @@ public class ManageableServiceLocator
      */
     public final UserManageableService getUserManageableServiceLocal(Properties env) throws NamingException
     {
-        return (UserManageableService) getContext(env).lookup("java:global/TimeTracker/UserManageableService/local");
+        return (UserManageableService) getContext(env).lookup("UserManageableService/local");
     }
     /**
      * Gets an instance of {@link TaskManageableService}.
@@ -148,7 +148,7 @@ public class ManageableServiceLocator
      */
     public final TaskManageableService getTaskManageableServiceRemote(Properties env) throws NamingException
     {
-        return (TaskManageableService) getContext(env).lookup("java:global/TimeTracker/TaskManageableService/remote");
+        return (TaskManageableService) getContext(env).lookup("TaskManageableService/remote");
     }
 
     /**
@@ -159,7 +159,7 @@ public class ManageableServiceLocator
      */
     public final TaskManageableService getTaskManageableServiceLocal(Properties env) throws NamingException
     {
-        return (TaskManageableService) getContext(env).lookup("java:global/TimeTracker/TaskManageableService/local");
+        return (TaskManageableService) getContext(env).lookup("TaskManageableService/local");
     }
     /**
      * Gets an instance of {@link UserRoleManageableService}.
@@ -179,7 +179,7 @@ public class ManageableServiceLocator
      */
     public final UserRoleManageableService getUserRoleManageableServiceRemote(Properties env) throws NamingException
     {
-        return (UserRoleManageableService) getContext(env).lookup("java:global/TimeTracker/UserRoleManageableService/remote");
+        return (UserRoleManageableService) getContext(env).lookup("UserRoleManageableService/remote");
     }
 
     /**
@@ -190,7 +190,7 @@ public class ManageableServiceLocator
      */
     public final UserRoleManageableService getUserRoleManageableServiceLocal(Properties env) throws NamingException
     {
-        return (UserRoleManageableService) getContext(env).lookup("java:global/TimeTracker/UserRoleManageableService/local");
+        return (UserRoleManageableService) getContext(env).lookup("UserRoleManageableService/local");
     }
     /**
      * Gets an instance of {@link MovieManageableService}.
@@ -210,7 +210,7 @@ public class ManageableServiceLocator
      */
     public final MovieManageableService getMovieManageableServiceRemote(Properties env) throws NamingException
     {
-        return (MovieManageableService) getContext(env).lookup("java:global/TimeTracker/MovieManageableService/remote");
+        return (MovieManageableService) getContext(env).lookup("MovieManageableService/remote");
     }
 
     /**
@@ -221,7 +221,7 @@ public class ManageableServiceLocator
      */
     public final MovieManageableService getMovieManageableServiceLocal(Properties env) throws NamingException
     {
-        return (MovieManageableService) getContext(env).lookup("java:global/TimeTracker/MovieManageableService/local");
+        return (MovieManageableService) getContext(env).lookup("MovieManageableService/local");
     }
 
     /**

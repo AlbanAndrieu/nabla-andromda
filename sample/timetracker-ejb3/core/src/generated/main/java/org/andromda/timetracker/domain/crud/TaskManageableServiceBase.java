@@ -49,6 +49,7 @@ public final class TaskManageableServiceBase
 
     // ------------ Private Operations ----------
 
+    @SuppressWarnings({"unchecked"})
     private List<TimeAllocation> findTimeAllocationByIds(Long[] ids)
         throws TaskReadManageableException
     {

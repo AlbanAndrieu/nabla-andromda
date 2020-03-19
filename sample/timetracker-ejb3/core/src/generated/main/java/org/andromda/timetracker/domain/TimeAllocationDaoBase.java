@@ -41,7 +41,8 @@ public abstract class TimeAllocationDaoBase implements TimeAllocationDao
 
     /**
      * Inject persistence context timetracker-ejb3     */
-    @PersistenceContext(unitName = "timetracker-ejb3")    protected EntityManager entityManager;
+    @PersistenceContext(unitName = "timetracker-ejb3")
+    protected EntityManager entityManager;
 
     /**
      * Inject Hibernate Session
@@ -148,7 +149,7 @@ public abstract class TimeAllocationDaoBase implements TimeAllocationDao
      * @see TimeAllocationDao#create(Collection)
      */
     @Override
-    //@SuppressWarnings({"unchecked"})
+    @SuppressWarnings({"unchecked"})
     public Collection<TimeAllocation> create(final Collection<TimeAllocation> entities) throws TimeAllocationDaoException
     {
         return create(TRANSFORM_NONE, entities);
@@ -473,6 +474,7 @@ public abstract class TimeAllocationDaoBase implements TimeAllocationDao
      * @see TimeAllocationDao#timeAllocationVOToEntityCollection(Collection)
      */
     @Override
+    @SuppressWarnings({"rawtypes"})
     public final void timeAllocationVOToEntityCollection(Collection instances)
     {
         if (instances != null)

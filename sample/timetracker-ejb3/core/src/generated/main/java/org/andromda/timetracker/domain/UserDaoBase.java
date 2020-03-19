@@ -45,14 +45,15 @@ public abstract class UserDaoBase implements UserDao
 
     /**
      * Inject persistence context timetracker-ejb3     */
-    @PersistenceContext(unitName = "timetracker-ejb3")    protected EntityManager entityManager;
+    @PersistenceContext(unitName = "timetracker-ejb3")
+    protected EntityManager entityManager;
 
     // ------ DAO Injections ------
 
     /**
      * Inject DAO UserRoleDao
      */
-    @EJB(mappedName="java:global/TimeTracker/UserRoleDaoImpl")
+    @EJB
     protected UserRoleDao userRoleDao;
 
     /**
@@ -164,7 +165,7 @@ public abstract class UserDaoBase implements UserDao
      * @see UserDao#create(Collection)
      */
     @Override
-    //@SuppressWarnings({"unchecked"})
+    @SuppressWarnings({"unchecked"})
     public Collection<User> create(final Collection<User> entities) throws UserDaoException
     {
         return create(TRANSFORM_NONE, entities);
@@ -562,6 +563,7 @@ public abstract class UserDaoBase implements UserDao
      * @see UserDao#userVOToEntityCollection(Collection)
      */
     @Override
+    @SuppressWarnings({"rawtypes"})
     public final void userVOToEntityCollection(Collection instances)
     {
         if (instances != null)
@@ -698,6 +700,7 @@ public abstract class UserDaoBase implements UserDao
      * @see UserDao#userDetailsVOToEntityCollection(Collection)
      */
     @Override
+    @SuppressWarnings({"rawtypes"})
     public final void userDetailsVOToEntityCollection(Collection instances)
     {
         if (instances != null)

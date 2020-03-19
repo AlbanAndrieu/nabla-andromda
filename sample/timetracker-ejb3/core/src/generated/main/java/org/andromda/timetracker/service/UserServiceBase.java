@@ -39,7 +39,7 @@ public abstract class UserServiceBase implements UserService
     /**
      * Inject DAO UserDao
      */
-    @EJB(mappedName="java:global/TimeTracker/UserDaoImpl")
+    @EJB
     private UserDao userDao;
 
     // --------- Attribute Definitions ------------

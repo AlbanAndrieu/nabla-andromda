@@ -35,7 +35,7 @@ package org.andromda.cartridges.gui;
 
 /**
  * Stores globals for the Gui cartridge metafacades.
- * 
+ *
  * @author Chad Brandon
  */
 public class GuiGlobals

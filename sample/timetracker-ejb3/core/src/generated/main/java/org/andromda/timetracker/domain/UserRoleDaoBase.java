@@ -42,7 +42,8 @@ public abstract class UserRoleDaoBase implements UserRoleDao
 
     /**
      * Inject persistence context timetracker-ejb3     */
-    @PersistenceContext(unitName = "timetracker-ejb3")    protected EntityManager entityManager;
+    @PersistenceContext(unitName = "timetracker-ejb3")
+    protected EntityManager entityManager;
 
     /**
      * @see UserRoleDao#load
@@ -144,7 +145,7 @@ public abstract class UserRoleDaoBase implements UserRoleDao
      * @see UserRoleDao#create(Collection)
      */
     @Override
-    //@SuppressWarnings({"unchecked"})
+    @SuppressWarnings({"unchecked"})
     public Collection<UserRole> create(final Collection<UserRole> entities) throws UserRoleDaoException
     {
         return create(TRANSFORM_NONE, entities);
@@ -443,6 +444,7 @@ public abstract class UserRoleDaoBase implements UserRoleDao
      * @see UserRoleDao#userRoleVOToEntityCollection(Collection)
      */
     @Override
+    @SuppressWarnings({"rawtypes"})
     public final void userRoleVOToEntityCollection(Collection instances)
     {
         if (instances != null)

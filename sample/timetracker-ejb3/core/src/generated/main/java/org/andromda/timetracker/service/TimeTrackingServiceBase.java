@@ -44,7 +44,7 @@ public abstract class TimeTrackingServiceBase implements TimeTrackingService
     /**
      * Inject DAO TimecardDao
      */
-    @EJB(mappedName="java:global/TimeTracker/TimecardDaoImpl")
+    @EJB
     private TimecardDao timecardDao;
 
     // --------------- Constructors ---------------
