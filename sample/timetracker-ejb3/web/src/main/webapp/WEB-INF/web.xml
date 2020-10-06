@@ -226,9 +226,9 @@
 
     <!-- ************************ Manual Servlets **************************** -->
     <!-- precompilation merge-point -->
-
-
-
+    
+    
+    
 
     <!-- ************************ Manual Filters **************************** -->
     <!-- uncomment the following if you're using the open-session-in-view pattern
@@ -366,11 +366,11 @@
         <session-timeout>45</session-timeout>
         <!-- session-config merge-point -->
     </session-config>
-
+    
 
     <!-- Welcome files -->
     <welcome-file-list>
-
+        
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
@@ -386,7 +386,7 @@
     	<error-code>404</error-code>
     	<location>/404.xhtml</location>
     </error-page>
-
+    
     <!-- taglib merge-point -->
     <!-- resource-ref merge-point -->
 

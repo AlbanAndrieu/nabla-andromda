@@ -18,7 +18,7 @@ public class PasswordEncoder
         final MessageDigest md = MessageDigest.getInstance("MD5");
         md.update(plaintext.getBytes("UTF8"));
         final byte raw[] = md.digest();
-        //String hash = new sun.misc.BASE64Encoder().encode(raw);
+        // String hash = new sun.misc.BASE64Encoder().encode(raw);
         String hash = new String(Base64.encodeBase64(raw));
         return hash;
     }
