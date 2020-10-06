@@ -13,6 +13,11 @@
 	<name>[${project.parent.artifactId} :: EJB3 Common] - ${project.artifactId} : ${project.version}</name>
 	<dependencies>
 		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<scope>provided</scope>
