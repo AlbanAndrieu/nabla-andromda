@@ -398,28 +398,36 @@
         </dependency>
         -->
 
-	<dependency>
-		<groupId>javassist</groupId>
-		<artifactId>javassist</artifactId>
-		<version>${javassist.version}</version>
-		<scope>provided</scope>
-	</dependency>
+      <dependency>
+        <groupId>javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>${javassist.version}</version>
+        <scope>provided</scope>
+      </dependency>
 
-        <dependency>
-        	<groupId>asm</groupId>
-        	<artifactId>asm</artifactId>
-        	<version>${asm.version}</version>
-        </dependency>
-       <dependency>
-		<groupId>cglib</groupId>
-		<artifactId>cglib</artifactId>
-		<version>${cglib.version}</version>
-	</dependency>
+      <!-- moved to org.ow2.asm » asm
+      <dependency>
+        <groupId>asm</groupId>
+        <artifactId>asm</artifactId>
+        <version>${asm.version}</version>
+      </dependency>
+      -->
+			<dependency>
+				<groupId>org.ow2.asm</groupId>
+				<artifactId>asm</artifactId>
+				<version>${asm.ow2.version}</version>
+			</dependency>
 
-        <dependency>
-          <groupId>javax.servlet</groupId>
-          <artifactId>servlet-api</artifactId>
-        </dependency>
+      <dependency>
+        <groupId>cglib</groupId>
+        <artifactId>cglib</artifactId>
+        <version>${cglib.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+      </dependency>
 
         <!--
         <dependency>

@@ -2,7 +2,7 @@ package org.andromda.cartridges.ejb3;
 
 /**
  * Contains utilities used within the Hibernate cartridge.
- *
+ * 
  * @author Chad Brandon
  * @author Joel Kozikowski
  * @author Wouter Zoons
@@ -27,7 +27,7 @@ public class HibernateUtils
 
     /**
      * Sets the version of Hibernate we're generating for.
-     *
+     * 
      * @param hibernateVersion The version to set.
      */
     public void setHibernateVersion(final String hibernateVersion)
@@ -37,7 +37,7 @@ public class HibernateUtils
 
     /**
      * Retrieves the appropriate Hibernate package for the given version.
-     *
+     * 
      * @return the Hibernate package name.
      */
     public String getHibernatePackage()
@@ -48,7 +48,7 @@ public class HibernateUtils
     /**
      * Retrieves the appropriate package for Hibernate user types given
      * the version defined within this class.
-     *
+     * 
      * @return the hibernate user type package.
      */
     public String getHibernateUserTypePackage()
@@ -58,7 +58,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Hibernate 2 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isVersion2()
@@ -68,7 +68,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Hibernate 3 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isVersion3()
@@ -78,7 +78,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Hibernate 4 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isVersion4()
@@ -88,7 +88,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 3 or not.
-     *
+     * 
      * @param hibernateVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -104,7 +104,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 3 or not.
-     *
+     * 
      * @param hibernateVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -120,7 +120,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 4 or not.
-     *
+     * 
      * @param hibernateVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -136,7 +136,7 @@ public class HibernateUtils
 
     /**
      * Sets the version of Persistence we're generating for.
-     *
+     * 
      * @param persistenceVersion The version to set.
      */
     public void setPersistenceVersion(final String persistenceVersion)
@@ -146,7 +146,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Persistence 1 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isPersistenceVersion1()
@@ -156,7 +156,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Persistence 2 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isPersistenceVersion2()
@@ -166,7 +166,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Persistence 3 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isPersistenceVersion3()
@@ -176,7 +176,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 1 or not.
-     *
+     * 
      * @param persistenceVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -192,7 +192,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 2 or not.
-     *
+     * 
      * @param persistenceVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -208,7 +208,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 3 or not.
-     *
+     * 
      * @param persistenceVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -224,7 +224,7 @@ public class HibernateUtils
 
     /**
      * Sets the version of Seam we're generating for.
-     *
+     * 
      * @param seamVersion The version to set.
      */
     public void setSeamVersion(final String seamVersion)
@@ -234,7 +234,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Seam 2 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isSeamVersion22()
@@ -244,7 +244,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Seam 3 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isSeamVersion23()
@@ -254,7 +254,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not Seam 3 is enabled.
-     *
+     * 
      * @return true/false
      */
     public boolean isSeamVersion3()
@@ -264,7 +264,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 2.2 or not.
-     *
+     * 
      * @param seamVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -280,7 +280,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 2.3 or not.
-     *
+     * 
      * @param seamVersionPropertyValue the value of the property
      * @return true/false
      */
@@ -296,7 +296,7 @@ public class HibernateUtils
 
     /**
      * Indicates whether or not the given property value is version 3 or not.
-     *
+     * 
      * @param seamVersionPropertyValue the value of the property
      * @return true/false
      */

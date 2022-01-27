@@ -43,7 +43,7 @@ public abstract class EJB3SessionFacadeLogic
 {
 
     private static final long serialVersionUID = 1L;
-
+    
     /**
      * The underlying UML object
      * @see Object
@@ -1856,7 +1856,7 @@ public abstract class EJB3SessionFacadeLogic
     private transient boolean seamComponentScopeType57aSet = false;
 
     /**
-     * Tagged value andromda.seam.component.scope. Defines the default context of the component.
+     * Tagged value andromda.seam.component.scope. Defines the default context of the component. 
      * Possible values are
      * EVENT
      * PAGE
@@ -2344,7 +2344,7 @@ public abstract class EJB3SessionFacadeLogic
 
     /**
      * If multiple roles are specified (since a seam component can be bound to multiple context
-     * variables), then multiple roles are specified in the order the role names are specified.
+     * variables), then multiple roles are specified in the order the role names are specified. 
      * This is done by modelling the andromda.seam.component.role.scope tag with a comma separated
      * list of scopes.
      * @return (Collection)handleGetSeamComponentRoleScopeTypes()
@@ -2975,7 +2975,7 @@ public abstract class EJB3SessionFacadeLogic
     }
 
     /**
-     * A collection containing all required and/or read-only 'properties' of the classifier.
+     * A collection containing all required and/or read-only 'properties' of the classifier. 
      * Properties are any attributes and navigable connecting association ends.
      * @see ClassifierFacade#getRequiredConstructorParameters()
      */

@@ -43,7 +43,7 @@ public abstract class GuiTriggerLogic
 {
 
     private static final long serialVersionUID = 1L;
-
+    
     /**
      * The underlying UML object
      * @see Object

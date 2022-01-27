@@ -69,7 +69,7 @@ import javax.portlet.WindowState;
 /**
  * This class handles multipart/form-date request for Portlet. It will be called
  * if the request is multipart/form-data.
- *
+ * 
  * @author <a href="mailto:shinsuke@yahoo.co.jp">Shinsuke Sugaya</a>
  * @author Sylvain Vieujot
  */
@@ -352,7 +352,7 @@ public class MultipartPortletRequestWrapper implements ActionRequest, MultipartR
     /**
      * Not used internally by MyFaces, but provides a way to handle the uploaded
      * files out of MyFaces.
-     *
+     * 
      * @return fileItems
      */
     public Map getFileItems()

@@ -47,7 +47,7 @@ public abstract class EJB3EntityFacadeLogic
 {
 
     private static final long serialVersionUID = 1L;
-
+    
     /**
      * The underlying UML object
      * @see Object
@@ -1933,7 +1933,7 @@ public abstract class EJB3EntityFacadeLogic
     private transient boolean useQueryCache59aSet = false;
 
     /**
-     * Returns true if the application wide namespace property hibernateUseQueryCache is enabled.
+     * Returns true if the application wide namespace property hibernateUseQueryCache is enabled. 
      * This is used for generic finder methods i.e. findAll.
      * @return (boolean)handleIsUseQueryCache()
      */
@@ -2950,7 +2950,7 @@ public abstract class EJB3EntityFacadeLogic
     }
 
     /**
-     * A collection containing all required and/or read-only 'properties' of the classifier.
+     * A collection containing all required and/or read-only 'properties' of the classifier. 
      * Properties are any attributes and navigable connecting association ends.
      * @see ClassifierFacade#getRequiredConstructorParameters()
      */

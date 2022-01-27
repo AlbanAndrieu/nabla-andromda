@@ -3,14 +3,14 @@ var andromdaJsfPopupPosition = -1;
 if(navigator.userAgent.indexOf("Gecko") > 0)
 {
     browserType = "Gecko";
-    document.onclick = executeListeners
+    document.onclick = executeListeners;
 }else
 {
     browserType = "IE";
     document.onclick = function()
     {
-        executeListeners(event)
-    }
+        executeListeners(event);
+    };
 }
 if(typeof(HTMLElement) != "undefined" && !HTMLElement.prototype.insertAdjacentHTML)
 {
@@ -20,7 +20,7 @@ if(typeof(HTMLElement) != "undefined" && !HTMLElement.prototype.insertAdjacentHT
         range.setStartBefore(this);
         var parsedHTML=range.createContextualFragment(htmlStr);
         this.appendChild(parsedHTML);
-     }
+     };
 }
 function registerClickListener(exec)
 {
@@ -151,10 +151,10 @@ function hidePopupFrame()
     }
     else
     {
-        popupFrameForm=false
+        popupFrameForm=false;
     }
 }
 function popupFrameWriteSelectorHTML(styleClass, style)
 {
-    var selectorHTML = '<table border="0" cellpadding="0" cellspacing="0" class="' + styleClass + '" style="' + style + '" id="popupFrameContainer"><tr><td id="popupFrameArea"></td></tr></table>';document.body.insertAdjacentHTML("BeforeEnd",selectorHTML)
+    var selectorHTML = '<table border="0" cellpadding="0" cellspacing="0" class="' + styleClass + '" style="' + style + '" id="popupFrameContainer"><tr><td id="popupFrameArea"></td></tr></table>';document.body.insertAdjacentHTML("BeforeEnd",selectorHTML);
 }

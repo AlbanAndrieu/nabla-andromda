@@ -299,11 +299,18 @@
 						<artifactId>javassist</artifactId>
 						<version>${javassist.version}</version>
 					</dependency>
+                  <!-- moved to org.ow2.asm » asm
 					<dependency>
 						<groupId>asm</groupId>
 						<artifactId>asm</artifactId>
 						<version>${asm.version}</version>
 					</dependency>
+                  -->
+          <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>${asm.ow2.version}</version>
+          </dependency>
 					<dependency>
 						<groupId>cglib</groupId>
 						<artifactId>cglib</artifactId>
